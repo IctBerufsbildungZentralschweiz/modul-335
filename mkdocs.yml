@@ -8,9 +8,9 @@ repo_url: https://github.com/IctBerufsbildungZentralschweiz/modul-335
 pages:
 - Home: README.md
 - Tag 1:
-    - Übersicht: tag-1/tag1.md
+    - Übersicht: Tag_1/tag1.md
 - Tag 2:
-    - Übersicht: tag-2/tag2.md
+    - Übersicht: Tag_2/tag2.md
 extra_css:
     - css/extra.css
 
