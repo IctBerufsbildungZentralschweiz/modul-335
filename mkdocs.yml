@@ -10,7 +10,7 @@ pages:
 - Tag 1:
     - Übersicht: tag-1/tag1.md
 - Tag 2:
-
+    - Übersicht: tag-2/tag2.md
 extra_css:
     - css/extra.css
 
