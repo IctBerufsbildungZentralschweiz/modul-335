@@ -1,23 +1,6 @@
-site_name: Modul 336
-site_url: https://modul-335.enz.lu
-site_description: Project documentation with Markdown.
-site_author: Tom Enz
-
-repo_url: https://github.com/IctBerufsbildungZentralschweiz/modul-335
-
+site_name: ICT-BZ - Modul 335
+site_description: Kursunterlagen für "Mobile-Applikation realisieren"
+theme: readthedocs
 pages:
-- Home: README.md
-- Tag 1:
-    - Übersicht: Tag_1/tag1.md
-- Tag 2:
-    - Übersicht: Tag_2/tag2.md
-extra_css:
-    - css/extra.css
+- ['index.md', 'Index']
 
-markdown_extensions:
-    - toc:
-        permalink: 
-    - admonition:
-
-copyright: Copyright &copy; 2017 <a href="http://tomenz.ch">Tom Enz</a>.
-google_analytics: ['UA-87616772-1', 'https://modul-335.enz.lu']
