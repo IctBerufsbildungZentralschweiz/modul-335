@@ -1,6 +1,11 @@
 site_name: ICT-BZ - Modul 335
 site_description: Kursunterlagen für "Mobile-Applikation realisieren"
+site_url: https://modul-335.enz.lu
+repo_url: https://github.com/IctBerufsbildungZentralschweiz/modul-335.git
 theme: readthedocs
+google_analytics: ['UA-87616772-1', 'modul-335.enz.lu']
+site_author: Tom Enz
+site_copyright: ICT Berufsbildung Zentralschweiz - Tom Enz
 pages:
 - ['index.md', 'Index']
 
