@@ -1,7 +1,7 @@
 {
     "plugins": [
         "-copy-code-button",
-        "youtube"
+        "-youtube"
     ],
     "pluginsConfig": {}
 }
