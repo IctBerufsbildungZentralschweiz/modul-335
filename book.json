@@ -12,7 +12,8 @@
         "codesnippet",
         "codepen",
         "create-issue",
-        "emoji"
+        "emoji",
+        "googledocs"
     ],
     "pluginsConfig": {}
 }
