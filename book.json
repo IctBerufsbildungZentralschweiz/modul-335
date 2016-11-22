@@ -10,7 +10,8 @@
         "bibtex-citation",
         "codeex",
         "codesnippet",
-        "codepen"
+        "codepen",
+        "create-issue"
     ],
     "pluginsConfig": {}
 }
