@@ -1,1 +1,1 @@
-# Willkommen in den Kursunterlagen des Moduls 335 - Mobile-Applikation realisieren
+# Willkommen in den Kursunterlagen des Modul 335 - Mobile-Applikation realisieren
