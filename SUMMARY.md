@@ -1,6 +1,6 @@
 # Summary
 
-* Intro
+* [Intro](README.md)
 * [Tag 1](tag1/README.md)
    * Organisation
 
