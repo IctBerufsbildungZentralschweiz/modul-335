@@ -2,7 +2,8 @@
     "plugins": [
         "-copy-code-button",
         "youtube",
-        "styles-sass"
+        "styles-sass",
+        "styles-less"
     ],
     "pluginsConfig": {}
 }
