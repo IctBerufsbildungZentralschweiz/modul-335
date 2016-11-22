@@ -11,7 +11,8 @@
         "codeex",
         "codesnippet",
         "codepen",
-        "create-issue"
+        "create-issue",
+        "emoji"
     ],
     "pluginsConfig": {}
 }
