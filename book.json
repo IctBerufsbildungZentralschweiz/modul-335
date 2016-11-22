@@ -1,7 +1,8 @@
 {
     "plugins": [
         "-copy-code-button",
-        "youtube"
+        "youtube",
+        "styles-sass"
     ],
     "pluginsConfig": {}
 }
