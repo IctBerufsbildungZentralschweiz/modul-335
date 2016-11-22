@@ -12,13 +12,8 @@ pages:
     - Organisation:  organisation.md
     - Kursplanung:  kursplanung.md
 - Tag 1 :
-    - Writing Your Docs: user-guide/writing-your-docs.md
-    - Styling Your Docs: user-guide/styling-your-docs.md
-    - Configuration: user-guide/configuration.md
-    - Deploying Your Docs: user-guide/deploying-your-docs.md
-    - Custom Themes: user-guide/custom-themes.md
-- About:
-    - Release Notes: about/release-notes.md
-    - Contributing: about/contributing.md
-    - License: about/license.md
-
+    - Native / Hybrid / Web: 
+        - Begriffe: tag1/native_hybrid_web/begriffe.md
+        - Vor- / Nachteile:  tag1/native_hybrid_web/vor_nachteile.md
+        - Übungen Beispiele:  tag1/native_hybrid_web/uebung1_begriffe.md
+    - Frameworks: 
