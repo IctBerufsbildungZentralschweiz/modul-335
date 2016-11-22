@@ -3,7 +3,8 @@
         "-copy-code-button",
         "youtube",
         "styles-sass",
-        "styles-less"
+        "styles-less",
+        "autocover"
     ],
     "pluginsConfig": {}
 }
