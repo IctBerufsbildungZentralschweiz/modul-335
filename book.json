@@ -13,7 +13,8 @@
         "codepen",
         "create-issue",
         "emoji",
-        "googledocs"
+        "googledocs",
+        "infinitescroll"
     ],
     "pluginsConfig": {}
 }
