@@ -6,7 +6,8 @@
         "styles-less",
         "autocover",
         "back-to-top-button",
-        "bibtex"
+        "bibtex",
+        "bibtex-citation"
     ],
     "pluginsConfig": {}
 }
