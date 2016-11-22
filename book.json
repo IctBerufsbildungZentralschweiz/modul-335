@@ -9,7 +9,8 @@
         "bibtex",
         "bibtex-citation",
         "codeex",
-        "codesnippet"
+        "codesnippet",
+        "codepen"
     ],
     "pluginsConfig": {}
 }
