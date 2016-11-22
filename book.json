@@ -4,7 +4,8 @@
         "youtube",
         "styles-sass",
         "styles-less",
-        "autocover"
+        "autocover",
+        "back-to-top-button"
     ],
     "pluginsConfig": {}
 }
