@@ -8,4 +8,17 @@ site_author: Tom Enz
 site_copyright: ICT Berufsbildung Zentralschweiz - Tom Enz
 pages:
 - ['index.md', 'Index']
+- Intro: index.md
+    - Organisation:  organisation.md
+    - Kursplanung:  kursplanung.md
+- Tag 1 :
+    - Writing Your Docs: user-guide/writing-your-docs.md
+    - Styling Your Docs: user-guide/styling-your-docs.md
+    - Configuration: user-guide/configuration.md
+    - Deploying Your Docs: user-guide/deploying-your-docs.md
+    - Custom Themes: user-guide/custom-themes.md
+- About:
+    - Release Notes: about/release-notes.md
+    - Contributing: about/contributing.md
+    - License: about/license.md
 
