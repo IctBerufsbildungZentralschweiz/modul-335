@@ -1,4 +1,6 @@
 {
+    "title": "Modul 335 - Mobile-Applikation realisieren",
+    "author": "Tom Enz, t@tomenz.ch",
     "plugins": [
         "-copy-code-button",
         "youtube",
@@ -7,5 +9,20 @@
         "autocover",
         "back-to-top-button"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+      "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        }
+    }
 }
