@@ -37,16 +37,7 @@ Anbei eine gegebüberstellung der wichtigsten Eigenschaften:
 | Verlinkung von Apps (Deep Linking) | Ja                                                                                                                                                                                             | Ja                                                                                                                                                     | Ja                                                                                                                               |
 | Suche                              | Ja, Indexierung läuft auf Webserver.                                                                                                                                                           | Ja, Indexierung läuft auf Webserver.                                                                                                                   | Über Datenbank, wenn indexiert, oder via Suche über Webserver, falls angebunden.                                                 |
 | Monetarisierung der App            | Gleich wie auf Internetseiten. Pay-Per-Use, Abonnement, Werbung, Zugang nur gegen Bezahlung, usw.                                                                                              | Beim Kauf der App sowie In-App Käufe möglich                                                                                                           | Beim Kauf der App sowie In-App Käufe möglich                                                                                     |
- 
- 
- 
- 
- 
- 
-## Übungen
- 
- 
- 
+  
  
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen dafür:
@@ -55,12 +46,13 @@ Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen d
 * Wir wollen Apps schreiben und uns nicht mit einer Programmiersprache abmühen
 * Wir sparen uns das mühsame Set-Up der Entwicklungsumgebungen auf den BYOD-Geräten
  
+
+
+---
+
+ 
+## Übung
  
  
  
-## Begriffe
  
-- Erklären was sind Web-Apps mit Responsive Funktionalitäten
-- Erklärung wann eine Applikation als Native bezeichnet wird
-- Mischform Hybride Applikation
-- Vor-/Nachteile der jeweilgen Formen zusammen auflisten (Sicherheit, Performance, Time to Market, Cross-Plattform)"
