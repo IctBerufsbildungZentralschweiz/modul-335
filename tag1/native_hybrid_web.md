@@ -40,6 +40,9 @@ Anbei eine gegebüberstellung der wichtigsten Eigenschaften:
   
  
 ## Welche Art von Apps schreiben wir in diesem Kurs?
+
+![](hybrid.gif)
+
 Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen dafür:
 * Ihr könnt die Apps auf allen Geräten testen
 * Ihr habt bereits Erfahrungen mit HTML, CSS & JS
