@@ -5,8 +5,13 @@
         "styles-sass",
         "styles-less",
         "autocover",
-        "back-to-top-button"
+        "back-to-top-button",
+        "codeex",
+        "codesnippet",
+        "codepen",
+        "emoji"
     ],
     "pluginsConfig": {}
 }
+
 
