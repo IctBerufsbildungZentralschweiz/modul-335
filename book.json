@@ -9,9 +9,10 @@
         "codeex",
         "codesnippet",
         "codepen",
-        "emoji"
+         "bibtex",
+        "bibtex-citation",
+        "googledocs",
+        "infinitescroll"
     ],
     "pluginsConfig": {}
 }
-
-
