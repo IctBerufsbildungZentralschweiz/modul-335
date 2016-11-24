@@ -8,6 +8,8 @@
 - Vor-/Nachteile der jeweilgen Formen zusammen auflisten (Sicherheit, Performance, Time to Market, Cross-Plattform)"
 
 
+
+
 ### Native
 
 
