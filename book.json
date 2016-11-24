@@ -6,13 +6,7 @@
         "styles-less",
         "autocover",
         "back-to-top-button",
-        "codeex",
-        "codesnippet",
-        "codepen",
-         "bibtex",
-        "bibtex-citation",
-        "googledocs",
-        "infinitescroll"
+       
     ],
     "pluginsConfig": {}
 }
