@@ -6,18 +6,6 @@
         "styles-less",
         "autocover",
         "back-to-top-button",
-        "bibtex",
-        "bibtex-citation",
-        "codeex",
-        "codesnippet",
-        "codepen",
-        "create-issue",
-        "emoji",
-        "googledocs",
-        "infinitescroll"
     ],
-    "pluginsConfig": {
-   
-     }
+    "pluginsConfig": {}
 }
-
