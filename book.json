@@ -5,7 +5,7 @@
         "styles-sass",
         "styles-less",
         "autocover",
-        "back-to-top-button",
+        "back-to-top-button"
     ],
     "pluginsConfig": {}
 }
