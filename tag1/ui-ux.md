@@ -34,7 +34,7 @@ Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise übers
 | Prinzip der zeitlichen Synchronizität | ![](http://www.stroopr.de/wp-content/uploads/2013/07/gestaltprinzip_synchronizitaet.gif) | Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehörig wahrgenommen. Dieses Prinzip ähnelt dem Prinzip des gemeinsamen Schicksals, jedoch fehlt hier der Aspekt der Bewegung. Ein gemeinsames Blinken reicht aus, um diese Elemente gruppiert zu erleben. |
 | Prinzip der Bedeutung | ![](http://www.stroopr.de/wp-content/uploads/2013/07/gestaltprinzip_bedeutung.gif) | Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt. |
 
-[Mehr gibts hier!](http://www.stroopr.de/wahrnehmung/gestaltprinzipien/)
+
 
 ## Begriffe
 
