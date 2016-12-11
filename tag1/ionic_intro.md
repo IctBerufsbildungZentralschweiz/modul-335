@@ -30,6 +30,18 @@ Ionic basiert und verwendet:
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
+
+
+## Dokumentation
+
+Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Dann hast du die Dokumentation von Ionic noch nicht gesehen: 
+
+[http://ionicframework.com/docs/v2/faq/](http://ionicframework.com/docs/v2/faq/)
+
+Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
+
+
+
 ## Ionic Creator
 
 Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [Creator](https://creator.ionic.io/app/login). Creator ist in einer einfachen Form gratis, vollumfänglich aber kostenpflichtig nutzbar.
@@ -37,4 +49,17 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 [https://creator.ionic.io/](https://creator.ionic.io/app/login)
 
 ![](/tag1/ionic_creator.png)
+
+---
+
+## Übung
+
+1. Log dich auf [https://creator.ionic.io/](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#) ein
+
+2. Erstelle dein erstes Test-Projekt
+
+3. Mach dich mit der IDE vertraut
+
+
+
 
