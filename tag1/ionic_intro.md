@@ -36,13 +36,5 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 
 [https://creator.ionic.io/](https://creator.ionic.io/app/login)
 
-
-
-
-
-
-
-
-
-
+![](/tag1/ionic_creator.png)
 
