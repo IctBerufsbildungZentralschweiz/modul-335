@@ -20,7 +20,7 @@ Apple installiert auf seiner Produktlinie hauptsächlich ihr eigenes Betriebssys
 
 Wie ihr der Grafik oben entnehmen könnt, bleiben neben den zwei grossen Firmen Google und Apple kaum noch Hersteller von mobilen Betriebsystemen. Windows, Blackberry und co. sind praktisch weg vom Markt.
 
-![](/_general/ralph_tipp.png)
+![](/_allgemein/ralph_tipp.png)
 
 **Tipp von Ralph:**
 
