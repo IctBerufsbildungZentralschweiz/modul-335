@@ -20,7 +20,9 @@
 
 ![](http://www.maschinenrichtlinie-2006-42-eg.de/images/news/normenteile-iso-9241-11-9241-110-9241-12.png)
 
-## Gestalt Prinzip
+## Gestaltprinzip
+
+Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise überschneiden. Insofern beschränke ich mich exemplarisch auf die wichtigsten:
 
 | Prinzip der Ähnlichkeit | ![](http://www.stroopr.de/wp-content/uploads/2014/03/gestaltprinzip_aehnlichkeit-300x300.gif) | Ähnliche Elemente werden als zusammengehörig und gruppiert wahrgenommen. Die Ähnlichkeit der Elemente kann dabei auch in Farbe, Form oder Orientierung erfolgen. Im Bild links oben sehen wir Punkte, die nicht zwingend horizontale Zeilen oder vertikale Spalten bilden. Färben wir einige Punkte ein, sehen wir vertikale Spalten. Unten sehen wir die gedrehten Rechtecke als zusammengehörig. |
 | :--- | :--- | :--- |
