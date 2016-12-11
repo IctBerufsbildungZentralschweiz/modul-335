@@ -32,5 +32,17 @@ Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
 ## Ionic Creator
 
+Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [Creator](https://creator.ionic.io/app/login). Creator ist in einer einfachen Form gratis, vollumfänglich aber kostenpflichtig nutzbar.
+
+[https://creator.ionic.io/](https://creator.ionic.io/app/login)
+
+
+
+
+
+
+
+
+
 
 
