@@ -13,11 +13,9 @@ Ionic ist unter folgender Website zu finden:
 
 ### Welche Apps wurde mit Ionic erstellt?
 
-Das Framework wird immer beliebter, im Showcase \(deutsch. Schaufenster\) sind einige coole Apps zu sehen: 
+Das Framework wird immer beliebter, im Showcase \(deutsch. Schaufenster\) sind einige coole Apps zu sehen:
 
 [http://showcase.ionicframework.com/apps/top](http://showcase.ionicframework.com/apps/top)
-
-
 
 ## Technologien
 
@@ -30,13 +28,9 @@ Ionic basiert und verwendet:
 * [SASS](http://sass-lang.com/)
 * [Angular JS](https://angularjs.org/)
 
-Geh auf die Link
-
-
+Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
 ## Ionic Creator
-
-
 
 
 
