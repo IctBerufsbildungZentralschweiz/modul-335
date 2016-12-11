@@ -1,17 +1,5 @@
 # UI / UX / Usability
 
-* Standard \(z.B. EN-9241-110\) beschreiben
-
-* "Laws of good Gestalt" erklären
-
-
-* Erklären der 3 Begriffe
-
-* Zusammentragen in Gruppen UX, UI, Usabilty Beispielen
-
-* Aufzeigen von Guten/Schlechten Beispielen von Apps
-
-
 ## Standard EN-9241-110
 
 > Die Norm EN ISO 9241 ist ein internationaler Standard, der Richtlinien der Mensch-Computer-Interaktion beschreibt. Die Normenreihe trägt seit 2006 den deutschen Titel Ergonomie der Mensch-System-Interaktion und löst damit den bisherigen Titel Ergonomische Anforderungen für Bürotätigkeiten mit Bildschirmgeräten ab, um die frühere Einschränkung auf Büroarbeit aufzulösen.
@@ -34,15 +22,11 @@ Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise übers
 | Prinzip der zeitlichen Synchronizität | ![](http://www.stroopr.de/wp-content/uploads/2013/07/gestaltprinzip_synchronizitaet.gif) | Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehörig wahrgenommen. Dieses Prinzip ähnelt dem Prinzip des gemeinsamen Schicksals, jedoch fehlt hier der Aspekt der Bewegung. Ein gemeinsames Blinken reicht aus, um diese Elemente gruppiert zu erleben. |
 | Prinzip der Bedeutung | ![](http://www.stroopr.de/wp-content/uploads/2013/07/gestaltprinzip_bedeutung.gif) | Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt. |
 
-
-
 ## Begriffe
 
 ![](http://www.measuringu.com/images/uiuxusability.jpg)
 
 ### UI - User Interface
-
-### 
 
 ### UX - User Experience
 
@@ -51,6 +35,8 @@ Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise übers
 ---
 
 ## Übung
+
+
 
 ---
 
