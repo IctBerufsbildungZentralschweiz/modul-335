@@ -1,7 +1,7 @@
 # Summary
 
 * [Intro](README.md)
-* [Tag 1](tag1/intro.md)
+* [Tag 1](tag1/organisation.md)
     * [Organisation](tag1/organisation.md)
     * [Kursplanung](tag1/kursplanung.md)
     * [Native, Hybrid, Web](tag1/native_hybrid_web.md)
@@ -13,4 +13,5 @@
     * [Ionic: UI](tag1/ionic-ui.md)
     * [SASS](tag1/sass.md)
 * [Tag 2](tag-2.md)
+* [Angular: Architektur](angular-architektur.md)
 
