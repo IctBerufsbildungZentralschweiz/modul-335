@@ -13,10 +13,11 @@
     * [Ionic: UI](tag1/ionic-ui.md)
     * [SASS](tag1/sass.md)
 * [Tag 2](tag-2.md)
-    * Angular: Architektur
-    * [Angular: Syntax](angular-syntax.md)
-    * [Angular: Template](angular-template.md)
+    * [Angular: Architektur](tag2/angular-architektur.md)
+    * [Angular: Syntax](tag2/angular-syntax.md)
+    * [Angular: Template](tag2/angular-template.md)
+    * [Two-Way-Binding](tag2/two-way-binding.md)
 * [Tag 3](tag-3.md)
-* Tag 4
-* Tag 5
+* [Tag 4](tag-4.md)
+* [Tag 5](tag-5.md)
 
