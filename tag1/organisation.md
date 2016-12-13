@@ -25,3 +25,8 @@ Das in diesem Kurs erlernte Fachwissen wird in 3 Teilen geprüft und bewertet:
 	* Schriftliche, elektronische Einzelarbeit
 
 
+
+## Leistungsbeurteilung
+
+
+
