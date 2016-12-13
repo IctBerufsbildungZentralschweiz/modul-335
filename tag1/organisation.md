@@ -2,7 +2,9 @@
 
 ## Author
 Tom Enz
+
 Mobile: 0797143000
+
 Email: 
 [t@tomenz.ch](mailto:t@tomenz.ch?subject=Modul-335)
 
@@ -10,6 +12,7 @@ Email:
 
 ## Nützliche Links
 * [chat.enz.lu](https://chat.enz.lu)
+* [Moodle - Kurse ICT-BZ](https://kurse.ict-bz.ch)
  
 
 ## Modulidentifikation und Handlungskompetenzen
@@ -34,7 +37,6 @@ Das in diesem Kurs erlernte Fachwissen wird in 3 Teilen geprüft und bewertet:
 
 
 
-## Leistungsbeurteilung
 
 
 
