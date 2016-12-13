@@ -7,7 +7,8 @@
         "autocover",
         "back-to-top-button",
         "codepen",
-        "gist"
+        "gist",
+        "responsive-iframes"
     ],
     "pluginsConfig": {
         "autocover": {
