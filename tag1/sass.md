@@ -23,10 +23,17 @@ Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, P
 **Kleines Beispiel:**  
 ![](https://futurestud.io/blog/content/images/2014/Jun/sass-vs-scss.png)
 
+
 ## Variablen
 
-Du kannst ganz einfach Variablen in Sass definieren. Oft werden Variablen für Grössen oder Farben verwendet:
+Du kannst ganz einfach Variablen in Sass definieren. Oft werden Variablen für Grössen oder Farben verwendet.
 
+```html
+<div class="wrapper">
+  <h1>Variablen</h1>
+  <h2>Ich liebe diese verschiedene Farben!</h2>
+</div>
+```
 ```css
 // SASS: Variablen
 // ----
@@ -49,15 +56,50 @@ h2 {
   color: $farbe-gruen;
 }
 ```
+wird zu CSS
+```css
+.wrapper {
+  background: #34495E;
+}
 
-**Beispiel auf: **
-{% gist id="https://gist.github.com/motzne/fb4b559749692856d2cd591645dca353" %}{% endgist %}
+h1 {
+  font-style: italic;
+  color: #E74C3C;
+}
 
+h2 {
+  font-size: 20px;
+  color: #2ECC71;
+}
 
+```
+
+<p class="sassmeister" data-gist-id="e4a777cd959c035502658c0bded5f66b" data-height="480" data-theme="tomorrow"><a href="http://sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b">Play with this gist on SassMeister.</a></p><script src="http://cdn.sassmeister.com/js/embed.js" async></script>
 
 
 
 ## Nesting
+```css
+// SASS: Nesting
+// ----
+$farbe-blau: #34495E;
+$farbe-rot: #E74C3C;
+$farbe-gruen: #2ECC71;
+$groesse: 20px;
 
+$hintergrund: $farbe-blau;
+
+.wrapper {
+  background: $hintergrund;
+}
+h1 { 
+  font-style: italic;
+  color: $farbe-rot;
+}
+h2 {
+  font-size: $groesse;
+  color: $farbe-gruen;
+}
+```
 
 
