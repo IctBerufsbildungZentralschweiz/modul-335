@@ -12,4 +12,5 @@
 
 
 
-<p class="sassmeister" data-gist-id="e4a777cd959c035502658c0bded5f66b" data-height="480" data-theme="tomorrow"><a href="http://sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b">Play with this gist on SassMeister.</a></p><script src="http://cdn.sassmeister.com/js/embed.js" async></script>
+
+{% gist id="motzne/fb4b559749692856d2cd591645dca353",file="variables.scss" %}{% endgist %}```
