@@ -27,7 +27,7 @@ Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, P
 
 Du kannst ganz einfach Variablen in Sass definieren. Oft werden Variablen für Grössen oder Farben verwendet:
 
-```sass
+```css
 // SASS: Variablen
 // ----
 $farbe-blau: #34495E;
@@ -51,12 +51,6 @@ h2 {
 ```
 
 **Beispiel auf: **
-
-[http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b](http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
-
-
-
-
 {% gist id="https://gist.github.com/motzne/fb4b559749692856d2cd591645dca353" %}{% endgist %}
 
 
