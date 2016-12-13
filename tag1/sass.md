@@ -2,7 +2,7 @@
 [Link zur offiziellen SASS-Website](http://sass-lang.com/guide)
 
 <div class="intrinsic-container">
-  <iframe src="//www.sassmeister.com/gist/855910db908128842a9eb6936d7516be" allowfullscreen></iframe>
+  <iframe src="http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be" allowfullscreen></iframe>
 </div>
 
 
