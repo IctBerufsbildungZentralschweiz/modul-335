@@ -18,6 +18,14 @@
     * [Angular: Template](tag2/angular-template.md)
     * [Two-Way-Binding](tag2/two-way-binding.md)
 * [Tag 3](tag-3.md)
+    * [Ionic: API](tag3/ionic-api.md)
+    * [Use Case 1](tag3/use-case-1.md)
+    * [Native Komponenten](tag3/native-komponenten.md)
+    * [REST](tag3/rest.md)
 * [Tag 4](tag-4.md)
+    * Datenanbindung
+    * Social Logins
+    * iOS \/ Android
+    * [Ionic Cloud](ionic-cloud.md)
 * [Tag 5](tag-5.md)
 
