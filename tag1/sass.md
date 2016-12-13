@@ -150,8 +150,7 @@ h1 {
 }
 ```
 
-[Auf Sassmeister ansehen]
-(http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
+[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
 
 
 
