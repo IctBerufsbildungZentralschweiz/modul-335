@@ -73,33 +73,51 @@ h2 {
 }
 
 ```
+[](http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
 
-<p class="sassmeister" data-gist-id="e4a777cd959c035502658c0bded5f66b" data-height="480" data-theme="tomorrow"><a href="http://sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b">Play with this gist on SassMeister.</a></p><script src="http://cdn.sassmeister.com/js/embed.js" async></script>
 
 
 
 ## Nesting
+Bei der Verschachtelung kann man sich einiges an Platz sparen und wie im HTML DOM die effektive Struktur der Seite stylen.
+```html
+<h1>Ausserhalb eines DIV</h1>
+<div class="wrapper">
+  <h1>In einem DIV</h1>
+</div>
+```
+
 ```css
 // SASS: Nesting
 // ----
-$farbe-blau: #34495E;
-$farbe-rot: #E74C3C;
-$farbe-gruen: #2ECC71;
-$groesse: 20px;
-
-$hintergrund: $farbe-blau;
+h1 { 
+  color: red; 
+}
 
 .wrapper {
-  background: $hintergrund;
-}
-h1 { 
+  h1 { 
   font-style: italic;
-  color: $farbe-rot;
-}
-h2 {
-  font-size: $groesse;
-  color: $farbe-gruen;
+  color: black;
+  }
 }
 ```
+
+Wird zu folgendem CSS:
+```css
+h1 {
+  color: red;
+}
+
+.wrapper h1 {
+  font-style: italic;
+  color: black;
+}
+
+```
+
+
+
+
+[](http://www.sassmeister.com/gist/2fdb11998adcf5b390d053c006d56e11)
 
 
