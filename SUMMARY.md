@@ -11,6 +11,6 @@
     * [Prototyping](tag1/prototyping.md)
     * [Ionic: Archtiektur](tag1/ionic-archtiektur.md)
     * [Ionic: UI](tag1/ionic-ui.md)
-    * SASS
+    * [SASS](tag1/sass.md)
 * [Tag 2](tag-2.md)
 
