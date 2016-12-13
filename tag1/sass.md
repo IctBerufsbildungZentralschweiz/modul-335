@@ -13,4 +13,5 @@
 
 
 
-{% gist id="motzne/fb4b559749692856d2cd591645dca353",file="variables.scss" %}{% endgist %}```
+{% gist id="https://gist.github.com/motzne/fb4b559749692856d2cd591645dca353" %}{% endgist %}
+
