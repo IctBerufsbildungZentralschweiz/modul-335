@@ -1,11 +1,6 @@
 # SASS
 [Link zur offiziellen SASS-Website](http://sass-lang.com/guide)
 
-<div class="intrinsic-container">
-  <iframe src="http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be" allowfullscreen></iframe>
-</div>
-
-
 ## Preprocessors
 
 CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer und schwieriger zu Warten. Hier können dir Preprocessoren helfen. SASS bietet dir Funktionen die es so in CSS nicht gibt:
@@ -18,7 +13,7 @@ CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer
 Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche.
 
-**Kleines Beispiel:**  
+_Kleines Beispiel:_
 ![](https://futurestud.io/blog/content/images/2014/Jun/sass-vs-scss.png)
 
 
@@ -33,7 +28,7 @@ Du kannst ganz einfach Variablen in Sass definieren. Oft werden Variablen für G
 </div>
 ```
 ```css
-// SASS: Variablen
+// SCSS: Variablen
 // ----
 $farbe-blau: #34495E;
 $farbe-rot: #E74C3C;
@@ -86,7 +81,7 @@ Bei der Verschachtelung kann man sich einiges an Platz sparen und wie im HTML DO
 ```
 
 ```css
-// SASS: Nesting
+// SCSS: Nesting
 // ----
 h1 { 
   color: red; 
@@ -125,9 +120,9 @@ Operatoren sind eine ziemlich nützliche Sache.
 </div>
 ```
 
-Die SASS-Datei
+Die SCSS-Datei
 ```sass
-// SASS: Operatoren
+// SCSS: Operatoren
 // ----
 $faktor:15;
 h1 { 
