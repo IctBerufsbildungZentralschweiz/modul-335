@@ -1,12 +1,5 @@
 # SASS
-
-... kennt die heutigen verwendeten Standards für CSS Styling  
-... kann in Creator die App mit SASS umstylen
-
-"- Vorteil von SASS / Less
-
-* Variablen, Nesting, Function, Syntax erläutern, auf Doku verweisen"
-* Übung lösen
+[Link zur offiziellen SASS-Website](http://sass-lang.com/guide)
 
 ## Preprocessors
 
@@ -14,8 +7,8 @@ CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer
 
 * Variablen \(variables\)
 * Verschachtelung \(nesting\)
-* Mixins
-* usw.
+* Operatoren
+* Mixins, Extend, usw.
 
 Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche.
@@ -73,7 +66,7 @@ h2 {
 }
 
 ```
-[](http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
+[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
 
 
 
@@ -115,9 +108,61 @@ h1 {
 
 ```
 
+[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/2fdb11998adcf5b390d053c006d56e11)
+
+
+## Operatoren
+Operatoren sind eine ziemlich nützliche Sache.
+
+```html
+<h1>Dies ist eine Box die durch Operatoren 15x grösser ist:</h1>
+<div class="box">
+</div>
+```
+
+Die SASS-Datei
+```sass
+// SASS: Operatoren
+// ----
+$faktor:15;
+h1 { 
+  color: black; 
+}
+
+.box {
+  background: red;
+  height: 20px;
+  width: 10px * $faktor;
+}
+```
+
+wird zur CSS-Datei:
+
+```css
+h1 {
+  color: black;
+}
+
+.box {
+  background: red;
+  height: 20px;
+  width: 150px;
+}
+```
+
+[Auf Sassmeister ansehen]
+(http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
 
 
 
-[](http://www.sassmeister.com/gist/2fdb11998adcf5b390d053c006d56e11)
+
+
+
+
+
+
+
+
+
 
 
