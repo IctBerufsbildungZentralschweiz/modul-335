@@ -64,15 +64,17 @@ Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, 
 
 ## Übung
 
+
+
 ---
 
 ## Beispiele von gutem/schlechtem UI
 
 ![](https://signalvnoise.com/images/68-triplog-large.jpg)
 
-![](https://signalvnoise.com/images/68-triplog-large.jpg)
+![](https://theresaneil.files.wordpress.com/2011/08/overdesigned.jpg)
 
-
+![](https://theresaneil.files.wordpress.com/2011/08/myfavorites.png)
 
 
 
