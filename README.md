@@ -2,7 +2,7 @@
 
 # Mobile App entwickeln
 
-![](/bookcover.png)
+![](/bookcover.jpg)
 
 ## Über dieses Buch
 
