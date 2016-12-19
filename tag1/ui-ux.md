@@ -68,7 +68,7 @@ Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, 
 
 ---
 
-## Beispiele von gutem/schlechtem UI
+## Beispiele von schlechtem UI
 
 ![](https://signalvnoise.com/images/68-triplog-large.jpg)
 
