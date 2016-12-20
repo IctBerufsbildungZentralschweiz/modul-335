@@ -85,7 +85,7 @@ export class ProductComponent {
 }
 ```
 
-## Was ist TypeScript?
+
 
 
 
