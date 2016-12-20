@@ -7,7 +7,7 @@
 [AngularJS](https://angularjs.org/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
 In AngularJS werden mit HTML-Code deklarativ die Oberflächen gestaltet. Ein wichtiger Aspekt ist, dass Anwendungslogik nur in den JavaScript-Dateien definiert wird. Dieser sollte weitmöglichst unabhängig von der Oberfläche sein. Im Gegensatz zu manch anderen MVC-Frameworks erweitert AngularJS den HTML-Code aber nur, anstatt ihn zu abstrahieren.  
-Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von AngularJS. Der HTML Code ist einfach zu verstehen, enthält jedoch keine Logik. Durch das von AngularJS kontrollierte Binding ändert sich die Anzeige in Zeile 6, sobald in Zeile 5 ein Wert geändert wird. Der vergleichbare jQuery Code wäre deutlich länger! 
+Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von AngularJS. Der HTML Code ist einfach zu verstehen, enthält jedoch keine Logik. Durch das von AngularJS kontrollierte Binding ändert sich die Anzeige in Zeile 6, sobald in Zeile 5 ein Wert geändert wird. Der vergleichbare jQuery Code wäre deutlich länger!
 
 ```html
 <body ng-app="myModule" ng-controller="MyCtrl">
