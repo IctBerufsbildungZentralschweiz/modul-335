@@ -1,3 +1,4 @@
 # Kursplanung
 
-TODO: Modul-Zeitplan einfügen
+Dieser Kurs ist auf 5 Tage 
+

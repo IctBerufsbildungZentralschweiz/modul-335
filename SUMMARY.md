@@ -29,7 +29,7 @@
 ## Tag 4
 * [Datenanbindung](tag4/datenanbindung.md)
 * [Social Logins](tag4/social-logins.md)
-* [iOS \/ Android](tag4/ios--android.md)
+* [iOS, Android Entwicklung](tag4/ios--android.md)
 * [Ionic Cloud](tag4/ionic-cloud.md)
 
 ## Tag 5

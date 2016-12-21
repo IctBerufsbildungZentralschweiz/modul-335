@@ -51,14 +51,44 @@ Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehöri
 Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt.
 
 ## Begriffe
+>„The difference lies in whether people are regarded as extentions of the machine or the machine is designed as an extention of people.“ Czaja (1987)
 
 ![](http://www.measuringu.com/images/uiuxusability.jpg)
+
+### Usability
+>"Dumme" Benutzer gibt es nicht, es gibt nur schlecht gestaltete Benutzungsschnittstellen.
+
+Usability steht für die Benutzbarkeit oder Bedienungsfreundlichkeit eines interaktiven Systems. Interaktive Systeme sind Systeme, die eine Benutzungsschnittstelle aufweisen und auf Benutzeraktionen reagieren. Dazu gehören einfache Maschinen ebenso wie komplexe Softwaresysteme.
+
+Der Begriff Usability bedeutet, dass ein System:
+* leicht erlernbar
+* eine geringe Fehlerrate aufweist (effektiv)
+* effizient benutzbar
+* Benutzerbefriedigung bewirken
+
+#### Die 5 E’s nach Whitney Quesenbery
+Im Zusammenhang mit Usabilty werden die folgenden 5 E's oft verwendet:
+![](/_allgemein/usab_5es.png)
+
+
+* **Effective**: 
+  How completely and accurately the work or experience is completed or goals reached
+* **Efficient**: 
+How quickly this work can be completed
+* **Engaging**: 
+How well the interface draws the user into the interaction and how pleasant and satisfying it is to use
+* **Error Tolerant**: 
+How well the product prevents errors and can help the user recover from mistakes that do occur
+* **Easy to Learn**: How well the product supports both the initial orientation and continued learning throughout the complete lifetime of use
+
+
 
 ### UI - User Interface
 
 ### UX - User Experience
 
-### Usability
+
+
 
 ---
 
@@ -69,12 +99,22 @@ Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, 
 ---
 
 ## Beispiele von schlechtem UI
+Was ist für dich gut oder schlecht? Ist es nicht eifach eine Geschmacksache? Für die Entwickler der folgenden Apps war ihre Lösung wohl super... naja!
 
+
+
+  
 ![](https://signalvnoise.com/images/68-triplog-large.jpg)
 
 ![](https://theresaneil.files.wordpress.com/2011/08/overdesigned.jpg)
 
 ![](https://theresaneil.files.wordpress.com/2011/08/myfavorites.png)
+
+![](/_allgemein/ralph_tipp.png)
+
+**Tipp von Ralph:**
+
+> Auch hier empfehl ich dir, orientiere dich an den grossen Apps . Hast du eine super Idee, kannst du dein UI auch später nochmals anpassen.
 
 
 
