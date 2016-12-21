@@ -9,8 +9,8 @@
 * [Ionic: Intro](tag1/ionic_intro.md)
 * [Frameworks](tag1/frameworks.md)
 * [UI, UX, Usabilty](tag1/ui-ux.md)
+* [Ionic: Architektur](tag1/ionic-archtiektur.md)
 * [Prototyping](tag1/prototyping.md)
-* [Ionic: Archtiektur](tag1/ionic-archtiektur.md)
 * [Ionic: UI](tag1/ionic-ui.md)
 * [SASS](tag1/sass.md)
 
