@@ -1,17 +1,5 @@
 # Prototyping
 
-... weiss was Prototypen sind und warum man diese erstellt  
-... kennt verschiedene Arten von Prototypen  
-... kann eine Text in einen Prototypen umwandeln
-
-"- Frühes Feedback Verschiedene Displaygrössen, Ausrichtung, Eingabeoptionen"  
-"- Gruppen bilden und Googlen lassen
-
-* Ergebnisse zusammentragen
-* Mindestens Kontex, PenPaper, Mock, Hi-Fi"
-  "- Übung lösen
-* Pen & Paper Prototyp zusammenstellen"
-
 ![](https://www.boardofinnovation.com/wp-content/uploads/2013/04/paperprotoyping.jpg)
 
 
@@ -48,18 +36,34 @@ Bei Prototypen wird of von der "fidelity" (deutsch: Wiedergabetreue) gesprochen.
 
 ![](/_allgemein/prototyp-arten.png)
 
-### Wireframing
-
-![](http://images.sixrevisions.com/2010/10/28-02_iphoneapp.jpg)
-
 
 ### Pen & Paper
 
 ![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
 
 
+### Wireframing
+Anders als ein „Mock-up“ ‒ ein visueller Prototyp ‒ wird der Begriff Wireframe (Drahtmodell) dazu benutzt, einen sehr frühen konzeptionellen Entwurf einer Website oder eines Software-Frontends darzustellen. Dabei spielt die Gestaltung und Funktion noch keine Rolle. Das Augenmerk liegt auf der Anordnung von Elementen und der Benutzerführung (UX, Benutzererfahrung).
+
+Es gibt zwei Arten eines Wireframes:
+
+* Zum einen statische Wireframes: 
+  Dies ist eine schematische Darstellung einer einzelnen Seitenvorlage. Hier werden die grundlegenden Elemente der Seite festgehalten. Ein konzeptionelles Layout sollte erkennbar sein. Ein vollendetes Design ist nicht notwendig.
+* Des Weiteren gibt es auch dynamische Wireframes. 
+Diese bestehen aus mehreren Seiten, die als funktioneller Prototyp interaktiv miteinander verknüpft sind. So ist eine Navigation von einer zur anderen Seite möglich. Dynamische Wireframes werden häufig durch einen beiliegenden Navigationsbaum oder ein Flussdiagramm ergänzt, welche beide die Struktur abstrahieren und leichter verständlich machen.
 
 
+
+---
+
+## Gruppenübung
+
+
+
+
+---
+
+## Übung
 
 
 
