@@ -53,7 +53,6 @@ Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, 
 ## Begriffe
 >„The difference lies in whether people are regarded as extentions of the machine or the machine is designed as an extention of people.“ Czaja (1987)
 
-![](http://www.measuringu.com/images/uiuxusability.jpg)
 
 ### Usability
 >"Dumme" Benutzer gibt es nicht, es gibt nur schlecht gestaltete Benutzungsschnittstellen.
@@ -84,9 +83,25 @@ How well the product prevents errors and can help the user recover from mistakes
 
 
 ### UI - User Interface
+Das User Interface oder auch Benutzerschnittstelle ist die Art wie ein Mensch mit einer Maschine in Kontakt tritt. Daher wird es in Fachliteratur oft auch Mensch-Maschine-Schnittstelle genannt. Damit eine Benutzerschnittstelle für den Menschen nutzbar und sinnvoll ist, muss sie seinen Bedürfnissen und Fähigkeiten angepasst sein. Die Grundlagenkenntnisse für eine ergonomische und benutzerfreundliche Schnittstellen-Gestaltung werden in der Wissenschaftsdisziplin der Ergonomie erarbeitet. 
+
+Der Erfolg eines technischen Produktes hängt nicht nur von den Faktoren Preis, Zuverlässigkeit und Lebensdauer ab, sondern auch vom Faktor Handhabbarkeit bzw. Bedienungsfreundlichkeit. Idealerweise erklärt sich eine Benutzerschnittstelle intuitiv von selbst, also ohne Schulungsaufwand. Der Lichtschalter ist trotz seiner Beliebtheit und Einfachheit keine ideale Benutzerschnittstelle, sondern der Kompromiss eines Zielkonflikts. Dieser besteht darin, dass der Schalter einerseits direkt am einzuschaltenden Gerät angebracht sein sollte, also an der Lampe selbst (damit man ihn nicht suchen muss). Andererseits sollte er in der Nähe der Tür sein (wo er in der Regel auch ist), damit man nicht im Dunklen erst nach der Lampe tasten muss.
+
 
 ### UX - User Experience
+Die User Experience oder wörtlich Deutsch Nutzererfahrung  umschreibt alle Aspekte der Erfahrungen eines Nutzers bei der Interaktion mit einem Produkt, Dienst, einer Umgebung oder Einrichtung. Der Begriff „User Experience“ kommt meist im Zusammenhang mit der Gestaltung von Websites oder Apps zur Anwendung, umfasst jedoch jegliche Art der Produktinteraktion, also unter anderem auch die nicht-digitale, physische Nutzung.
+Festigkeit bzw. Stabilität, Nützlichkeit und Schönheit können gemessen werden. Bei der Stabilität oder einer minimalen Antwortzeit ist das noch relativ einfach. Das Messen der beiden anderen Kriterien ist aufwändiger. Es stehen verschiedene Methoden zur Verfügung, u. a. die Blickerfassungsmethode, bei der die spontane Wahrnehmung der Website über die Augenbewegung des Benutzers gemessen wird. Auch Benutzerbefragungen anhand standardisierter Fragebögen sind üblich.
+Bei der Validierung der User Experience in der Praxis sind Fragen wichtig wie: „Wie schnell vermittelt sich dem User Sinn, Konzept und Zweck einer Website?“
 
+
+
+
+
+
+### Beispiel der Heinz Ketchup-Flasche
+![](http://www.measuringu.com/images/uiuxusability.jpg)
+
+[Hier gehts zum vollen Artikel](http://www.measuringu.com/blog/evaluating-ux.php)
 
 
 
@@ -105,10 +120,10 @@ Was ist für dich gut oder schlecht? Ist es nicht eifach eine Geschmacksache? F�
 
   
 ![](https://signalvnoise.com/images/68-triplog-large.jpg)
-
 ![](https://theresaneil.files.wordpress.com/2011/08/overdesigned.jpg)
-
 ![](https://theresaneil.files.wordpress.com/2011/08/myfavorites.png)
+
+
 
 ![](/_allgemein/ralph_tipp.png)
 
