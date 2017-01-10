@@ -44,6 +44,11 @@ Bei Prototypen wird of von der "fidelity" \(deutsch: Wiedergabetreue\) gesproche
 Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei.    Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
 ![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
 
+Mögliche Vorlagen gibt es z.B. hier:  
+https://www.interfacesketch.com/iPhone-5-template-A4.pdf 
+
+### 
+
 ### Wireframing
 
 Anders als ein „Mock-up“ ‒ ein visueller Prototyp ‒ wird der Begriff Wireframe \(Drahtmodell\) dazu benutzt, einen sehr frühen konzeptionellen Entwurf einer Website oder eines Software-Frontends darzustellen. Dabei spielt die Gestaltung und Funktion noch keine Rolle. Das Augenmerk liegt auf der Anordnung von Elementen und der Benutzerführung \(UX, Benutzererfahrung\).
