@@ -30,17 +30,15 @@ Ionic basiert und verwendet:
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
-
-
 ## Dokumentation
 
-Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Dann hast du die Dokumentation von Ionic noch nicht gesehen: 
+Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Dann hast du die Dokumentation von Ionic noch nicht gesehen:
 
-[http://ionicframework.com/docs/v2/faq/](http://ionicframework.com/docs/v2/faq/)
+Ionic 1: [http://ionicframework.com/docs/v1/](http://ionicframework.com/docs/v1/)
+
+Ionic 2: [http://ionicframework.com/docs/v2/faq/](http://ionicframework.com/docs/v2/faq/)
 
 Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
-
-
 
 ## Ionic Creator
 
@@ -58,8 +56,11 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 
 2. Erstelle dein erstes Test-Projekt
 
-3. Mach dich mit der IDE vertraut
+3. Mach dich mit der IDE vertraut. Versuch dabei folgenden Fragen zu beantworten:
 
+   1. Wo kann ich Einstellungen machen?
+
+   2. Wie kann ich eine But
 
 
 
