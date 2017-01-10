@@ -79,5 +79,45 @@ Wir besprechen deine Ergebnisse gemeinsam.
 
 ![](/_allgemein/ralph_uebung.png)
 
+Schnapp dir ein Stift, Papier \(evt. eine Vorlage\) und beginn mit der folgenden Übungen. Ralph ist dein Auftraggeber und hatte eine coole Idee für ein App, er hat sie dir hier textuell beschrieben. Erstelle einen Lo-Fi Prototypen, die jeweiligen Text, Links, Bilder müssen nicht
+
+#### Ausgangslage:
+
+Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er aber nie so richtig wie viele Leute an die Party kommen resp. wie sie die Party fanden. Meistens wurde er auch nach dem Event mit unzähligen Fotos in Whatsapp bombardiert welche er nur mühsam mit allen Gästen teilen konnte.
+
+#### Details:
+
+1. Die App wird durch ein Login geschützt
+   1. Für ein Login braucht es ein Benutzername / Passwort
+
+   1. Wenn jemand noch keinen Account hat, soll er sich Registrieren können. Dazu braucht er mind. Benutzername, Email, Passwort.
+
+   2. Ein soziales Login mit Facebook und Twitter soll auch möglich sein
+
+   3. Hat ein Benutzer sein Passwort vergessen, soll ihm an sein Email ein neues gesendet werden.
+2. Die App soll aus drei Tabs bestehen:
+
+   1. Anmeldung
+
+   2. Fotos
+
+   3. Einstellungen
+
+3. Im Tab Anmeldung soll eine Liste von Events erscheinen
+
+   1. Ein Event hat jeweils ein Titel, ein kleines Foto und ein Datum welches in der Liste angezeigt wird
+
+   2. Klickt ein Benutzer auf den Event kommt er zur Detailseite, dort sieht er zusätzlich noch einen Beschreibungstext zum Event.
+
+   3. Will er sich für den Event Anmelden, kann er dies dort mittels Button  tun
+
+4. Der Tab Fotos ist eine Sammlung von mehreren Fotos und jeweils pro Event gruppiert.
+
+   1. Die Gruppierung muss optisch ersichtlich sein
+
+   2. Ein Benutzer muss ein Foto zu einem Event hochladen können
+
+
+
 
 
