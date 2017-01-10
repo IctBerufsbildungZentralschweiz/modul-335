@@ -79,11 +79,11 @@ Wir besprechen deine Ergebnisse gemeinsam.
 
 ![](/_allgemein/ralph_uebung.png)
 
-Schnapp dir ein Stift, Papier \(evt. eine Vorlage\) und beginn mit der folgenden Übungen. Ralph ist dein Auftraggeber und hatte eine coole Idee für ein App, er hat sie dir hier textuell beschrieben. Erstelle einen Lo-Fi Prototypen, die jeweiligen Text, Links, Bilder müssen nicht
+Schnapp dir einen Stift, Papier \(evt. eine Vorlage\) und beginne mit der folgenden Übung. Ralph ist dein Auftraggeber und hatte eine coole Idee für ein App, er hat sie dir hier textuell beschrieben. Erstelle einen Lo-Fi Prototypen, die jeweiligen Text, Links, Bilder müssen nicht
 
 #### Ausgangslage:
 
-Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er aber nie so richtig wie viele Leute an die Party kommen resp. wie sie die Party fanden. Meistens wurde er auch nach dem Event mit unzähligen Fotos in Whatsapp bombardiert welche er nur mühsam mit allen Gästen teilen konnte.
+Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er aber nie so richtig, wie viele Leute an die Party kommen resp. wie sie die Party fanden. Meistens wurde er auch nach dem Event mit unzähligen Fotos im Whatsapp bombardiert, welche er nur mühsam mit allen Gästen teilen konnte.
 
 #### Details:
 
@@ -124,9 +124,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
    2. Es gibt ein Logout-Button
 
-   3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt ob die Mail-App geöffnet werden soll 
-
-
+   3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt ob die Mail-App geöffnet werden soll
 
 ##### Zusatzaufgaben
 
