@@ -76,6 +76,9 @@ Wir besprechen deine Ergebnisse gemeinsam.
 ---
 
 ## Übung
+![](/_allgemein/ralph_uebung.png)
+
+**Tipp von Ralph:**
 
 
 
