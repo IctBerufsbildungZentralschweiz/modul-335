@@ -52,7 +52,7 @@ Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen d
 
 ---
 
-## Übung
+## Gruppenübung
 
 Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 

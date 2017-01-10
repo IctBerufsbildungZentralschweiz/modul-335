@@ -2,13 +2,14 @@
 
 ![](https://www.boardofinnovation.com/wp-content/uploads/2013/04/paperprotoyping.jpg)
 
-
 ## Definition Protoyping
-> Prototyping ist eine Methode, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht.
 
+> Prototyping ist eine Methode, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht.
+>
 > Durch Prototyping entsteht eine zum Teil funktionsfähige Vorabversion einer Benutzeroberfläche. Mit ihr kann früh getestet werden, ob die Anwendung die Anforderungen erfüllt.
 
 ### Einsatzgebiet von Prototypen
+
 * Diskutieren von Design-Lösungen im Projekt
 * Testen von Design-Lösungen mit Benutzern 
 * Vergleich von verschiedenen Varianten
@@ -16,55 +17,60 @@
 * Prototyp als Basis für Styleguide
 * Prototyp als Spezifikation
 
-
 ### Vorteile von Prototypen
+
 * Ermöglicht produktspezifisches Testing von Fragen, die nicht durch allgemeine Forschungsergebnisse oder Richtlinien beantwortet werden können
 * Liefert relativ schnell bedeutungsvolle Rückmeldungen vom Benutzer
 * Reduziert die totalen Entwicklungskosten für ein Produkt
 * Kann früh im Entwicklungsprozess eingesetzt werden
 
-
 ### Nachteile des Prototyping
+
 * Begrenzungen und Randbedingungen, auf die das reale Produkt trifft, werden oft während des Prototyping zu stark vernachlässigt
 * Erzeugung unrealistischer Erwartungen für die Fähigkeiten des Endproduktes
 * Gefahr der Überfrachtung des Prototyps
-* Der Prototypingprozess kann schwierig zu managen und zu kontrollieren sein
-* Prototyp ist nur eine begrenzte Simulation des schlussendlichen Produktes (flach/tief)
+* Der Prototypingprozess kann schwierig zu managen und zu
+  kontrollieren sein
+* Prototyp ist nur eine begrenzte Simulation des schlussendlichen Produktes \(flach/tief\)
 
 ## Arten von Prototypen
-Bei Prototypen wird of von der "fidelity" (deutsch: Wiedergabetreue) gesprochen. Dabei unterscheidet man zwischen einem Lo-Fi resp. Hi-Fi Prototypen. Lo-Fi ist eher eine Skizze, wobei Hi-Fi ein sehr durchgedachter, designter Prototyp ist. 
+
+Bei Prototypen wird of von der "fidelity" \(deutsch: Wiedergabetreue\) gesprochen. Dabei unterscheidet man zwischen einem Lo-Fi resp. Hi-Fi Prototypen. Lo-Fi ist eher eine Skizze, wobei Hi-Fi ein sehr durchgedachter, designter Prototyp ist.
 
 ![](/_allgemein/prototyp-arten.png)
 
-
 ### Pen & Paper
-Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift (z.B. Moleskine) dabei.    Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping. 
+
+Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei.    Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
 ![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
 
-
 ### Wireframing
-Anders als ein „Mock-up“ ‒ ein visueller Prototyp ‒ wird der Begriff Wireframe (Drahtmodell) dazu benutzt, einen sehr frühen konzeptionellen Entwurf einer Website oder eines Software-Frontends darzustellen. Dabei spielt die Gestaltung und Funktion noch keine Rolle. Das Augenmerk liegt auf der Anordnung von Elementen und der Benutzerführung (UX, Benutzererfahrung).
+
+Anders als ein „Mock-up“ ‒ ein visueller Prototyp ‒ wird der Begriff Wireframe \(Drahtmodell\) dazu benutzt, einen sehr frühen konzeptionellen Entwurf einer Website oder eines Software-Frontends darzustellen. Dabei spielt die Gestaltung und Funktion noch keine Rolle. Das Augenmerk liegt auf der Anordnung von Elementen und der Benutzerführung \(UX, Benutzererfahrung\).
 
 Es gibt zwei Arten eines Wireframes:
 
 * Zum einen statische Wireframes: 
   Dies ist eine schematische Darstellung einer einzelnen Seitenvorlage. Hier werden die grundlegenden Elemente der Seite festgehalten. Ein konzeptionelles Layout sollte erkennbar sein. Ein vollendetes Design ist nicht notwendig.
 * Des Weiteren gibt es auch dynamische Wireframes. 
-Diese bestehen aus mehreren Seiten, die als funktioneller Prototyp interaktiv miteinander verknüpft sind. So ist eine Navigation von einer zur anderen Seite möglich. Dynamische Wireframes werden häufig durch einen beiliegenden Navigationsbaum oder ein Flussdiagramm ergänzt, welche beide die Struktur abstrahieren und leichter verständlich machen.
-
-
+  Diese bestehen aus mehreren Seiten, die als funktioneller Prototyp interaktiv miteinander verknüpft sind. So ist eine Navigation von einer zur anderen Seite möglich. Dynamische Wireframes werden häufig durch einen beiliegenden Navigationsbaum oder ein Flussdiagramm ergänzt, welche beide die Struktur abstrahieren und leichter verständlich machen.
 
 ---
 
 ## Gruppenübung
 
+Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
+1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
+2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag1/Teil10\_PrototypingTools"_ und öffne die Datei online.
+3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
+4. Ergänze deine Slides wie in der Vorlage ersichtlich.
 
+Wir besprechen deine Ergebnisse gemeinsam.
 
 ---
 
 ## Übung
-
 
 
 
