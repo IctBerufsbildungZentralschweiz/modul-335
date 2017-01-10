@@ -113,27 +113,6 @@ Bei der Validierung der User Experience in der Praxis sind Fragen wichtig wie: �
 
 ---
 
-## Beispiele von schlechtem UI
-Was ist für dich gut oder schlecht? Ist es nicht eifach eine Geschmacksache? Für die Entwickler der folgenden Apps war ihre Lösung wohl super... naja!
-
-
-
-  
-![](https://signalvnoise.com/images/68-triplog-large.jpg)
-![](https://theresaneil.files.wordpress.com/2011/08/overdesigned.jpg)
-![](https://theresaneil.files.wordpress.com/2011/08/myfavorites.png)
-
-
-
-![](/_allgemein/ralph_tipp.png)
-
-**Tipp von Ralph:**
-
-> Auch hier empfehl ich dir, orientiere dich an den grossen Apps . Hast du eine super Idee, kannst du dein UI auch später nochmals anpassen.
-
-
-
-
 
 
 
