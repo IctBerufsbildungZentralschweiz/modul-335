@@ -54,5 +54,13 @@ Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen d
 
 ## Übung
 
+Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+
+1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
+2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Teil3\_NativeHybridWeb"_ und öffne die Datei online.
+3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
+4. Ergänze deine Slides mit Bildern
+
+Wir besprechen deine Ergebnisse gemeinsam.
 
 
