@@ -157,11 +157,8 @@ Ionic setzt voll und ganz auf SASS. Du kannst so deine App bis ins letzte Detail
 
 {% youtube %}https://www.youtube.com/watch?list=PLOMESIqyrpf-rpNjFGzuCoTwNdv_-PUD1&v=IYJyA90KqWc {% endyoutube %}
 
-Ionic hat eine [Liste von überschreibaren Variablen](https://github.com/driftyco/ionic/blob/1.x/scss/_variables.scss) publiziert, an welcher du dich orientiern kannst. 
+Ionic hat eine [Liste von überschreibaren Variablen](https://github.com/driftyco/ionic/blob/1.x/scss/_variables.scss) publiziert, an welcher du dich orientieren kannst. 
 
-
----
-## Übung 
 
 
 
