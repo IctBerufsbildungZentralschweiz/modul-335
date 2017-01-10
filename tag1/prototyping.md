@@ -13,7 +13,7 @@
 * Testen von Design-Lösungen mit Benutzern 
 * Vergleich von verschiedenen Varianten
 * Präsentation für Überzeugungsarbeit
-* Prototyp als Basis für Styleguide
+* Prototyp als Basis für Styleguide
 * Prototyp als Spezifikation
 
 
