@@ -20,7 +20,7 @@
 ### Vorteile von Prototypen
 * Ermöglicht produktspezifisches Testing von Fragen, die nicht durch allgemeine Forschungsergebnisse oder Richtlinien beantwortet werden können
 * Liefert relativ schnell bedeutungsvolle Rückmeldungen vom Benutzer
-* Reduziert die totalen Entwicklungskosten für ein Produkt
+* Reduziert die totalen Entwicklungskosten für ein Produkt
 * Kann früh im Entwicklungsprozess eingesetzt werden
 
 
