@@ -87,14 +87,11 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
 #### Details:
 
-1. Die App wird durch ein Login geschützt
+1. Die App wird durch ein Login geschützt  
    1. Für ein Login braucht es ein Benutzername / Passwort
 
    1. Wenn jemand noch keinen Account hat, soll er sich Registrieren können. Dazu braucht er mind. Benutzername, Email, Passwort.
 
-   2. Ein soziales Login mit Facebook und Twitter soll auch möglich sein
-
-   3. Hat ein Benutzer sein Passwort vergessen, soll ihm an sein Email ein neues gesendet werden.
 2. Die App soll aus drei Tabs bestehen:
 
    1. Anmeldung
@@ -117,7 +114,24 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
    2. Ein Benutzer muss ein Foto zu einem Event hochladen können
 
+   3. Klickt er in der Übersicht auf ein Fotos geht dies in voller Grösse auf
 
+   4. Er kann ein Foto Liken oder auch Teilen \(z.B. via Facebook, Whatsapp\)
+
+5. Im Tab Einstellungen kann folgendes gemacht werden
+
+   1. Es werden Informationen zu Copyright & Author angezeigt
+
+   2. Es gibt ein Logout-Button
+
+   3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt ob die Mail-App geöffnet werden soll 
+
+
+
+##### Zusatzaufgaben
+
+1. Überleg dir was du alles umbauen musst um die App in einem Sidemenu darzustellen, zeichne einige Mocks da
+2. Probier die App mit einem Online Prototyping Tool nachzuzeichnen und gehe dabei von einem Lo-Fi zu einem klickbaren Prototypen über
 
 
 
