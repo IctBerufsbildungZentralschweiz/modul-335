@@ -45,7 +45,7 @@ Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft ei
 ![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
 
 Mögliche Vorlagen gibt es z.B. hier:  
-https://www.interfacesketch.com/iPhone-5-template-A4.pdf 
+[https://www.interfacesketch.com/iPhone-5-template-A4.pdf](https://www.interfacesketch.com/iPhone-5-template-A4.pdf)
 
 ### 
 
@@ -76,9 +76,8 @@ Wir besprechen deine Ergebnisse gemeinsam.
 ---
 
 ## Übung
-![](/_allgemein/ralph_uebung.png)
 
-**Tipp von Ralph:**
+![](/_allgemein/ralph_uebung.png)
 
 
 
