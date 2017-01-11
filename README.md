@@ -6,6 +6,12 @@
 
 ## Über dieses Buch
 
-[https://docs.google.com/presentation/d/1cM8bt-h5i\_OS\_Q31l7L6ns6J70Whxcw4q\_VnWQAvdS0/edit?usp=sharing](https://docs.google.com/presentation/d/1cM8bt-h5i_OS_Q31l7L6ns6J70Whxcw4q_VnWQAvdS0/edit?usp=sharing)
+Dieses Script wurde im Rahmen des Moduls 335 - Mobile Applikation realisieren für [ICT Berufsbildung Zentralschweiz ](http://ict-bz.ch) von Tom Enz erstellt. In 5 Tagen soll ein Überblick in die mobile Programmierung mit dem hybriden Framework Ionic gegeben werden. Dabei wird der Aufbau einer App, so wie auch die technische Umsetzung mit AngularJS angeschaut.
 
+## Über Ralph
+
+![](/_allgemein/ralph_hello.png)
+
+Heyy, mein Name ist Ralph!  
+Ich bin die Person hinter [Roomies](https://roomies.ch) und auch in diesem Buch öfters mal anzutreffen. Du wirst mich bei Übungen oder an wichtigen Stellen mit einem Tipp finden. Freu mich dich zu sehen ...
 
