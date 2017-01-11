@@ -38,7 +38,7 @@ angular.module('myModule', [])
 
 ### Vorteil einer Single Page Applikation
 
-* Gesamte Applikations-Login im Browser
+* Gesamte Applikations-Logik im Browser
 * Hohe Geschwindigkeit durch Wegfall langer Ladezyklen
 * App-Feeling durch schnelle dynamische Inhaltsanpassungen
 * Tiefes zu übertragendes Datenvolumen, mit einhergehendem Performance-Vorteil bei Mobile-Webapplikationen.
@@ -84,8 +84,6 @@ export class ProductComponent {
     prods = {name: 'Prod1', quantity: 1 };
 }
 ```
-
-
 
 
 
