@@ -1,6 +1,6 @@
 # Native, Hybrid, Web
 
-Wir werden in den kommenden Tagen viel über die drei Hauptbegriffe Native, Hybrid, Web und deren Vor-/Nachteile sprechen. In diesem Kapitel lernst du die genannten drei Hauptbegriffe kennen und verschaffst dir ein Überblick in die mobile App Entwicklung.
+Wir werden in den kommenden Tagen viel über die drei Hauptbegriffe Native, Hybrid, Web und deren Vor-/Nachteile sprechen. In diesem Kapitel lernst du die genannten drei Hauptbegriffe kennen und verschaffst dir einen Überblick in die mobile App Entwicklung.
 
 ![](http://www.ibm.com/support/knowledgecenter/en/SSZH4A_5.0.6/com.ibm.worklight.help.doc/devref/Pictures/app_types.jpg)
 
