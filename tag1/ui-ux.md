@@ -107,15 +107,21 @@ Bei der Validierung der User Experience in der Praxis sind Fragen wichtig wie: �
 
 ---
 
-## Übung
+## Gruppenübung
+![](/_allgemein/ralph_uebung.png)
+
+Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+
+1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
+2. Geh via Moodle -> Nützliche Links auf den entsprechenden Ordner "Tag1/Teil8_BeispieleSchlechtesUI" und öffne die Datei online.
+3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
+Ergänze deine Slides wie in der Vorlage ersichtlich.
+
+Wir besprechen deine Ergebnisse gemeinsam.
 
 
 
 ---
-
-
-
-
 
 
 
