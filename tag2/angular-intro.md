@@ -11,7 +11,7 @@ Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von AngularJS. Der 
 
 ```html
 <body ng-app="myModule" ng-controller="MyCtrl">
-  <span>{{list.length}} elements</span>
+  <span>Anzahl Elemente: {{list.length}} </span>
   <ul>
     <li ng-repeat="element in list">
       <input type="text" ng-model="element.text">
@@ -31,6 +31,7 @@ angular.module('myModule', [])
     {text:'jQuery'}];
 });
 ```
+
 
 ## Ablauf einer Anfrage
 
