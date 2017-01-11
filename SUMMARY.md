@@ -15,7 +15,7 @@
 * [SASS](tag1/sass.md)
 
 ## Tag 2
-* [Angular: Intro](tag2/angular-architektur.md)
+* [Angular: Intro](tag2/angular-intro.md)
 * [Angular: Syntax](tag2/angular-syntax.md)
 * [Angular: Template](tag2/angular-template.md)
 * [Two-Way-Binding](tag2/two-way-binding.md)
