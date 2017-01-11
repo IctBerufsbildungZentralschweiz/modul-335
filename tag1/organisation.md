@@ -6,7 +6,7 @@ Tom Enz
 
 Mobile: 0797143000
 
-Email:   
+Email:  
 [t@tomenz.ch](mailto:t@tomenz.ch?subject=Modul-335)
 
 ## Nützliche Links
@@ -16,7 +16,7 @@ Email:
 
 ## Modulidentifikation und Handlungskompetenzen
 
-Die detaillierte [Modulidentifikation inkl. beschriebenen Handlungskompetenzen](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=307) kann auf der Website von ict-berufbildung.ch nachgelesen werden.
+Die detaillierte [Modulidentifikation inkl. beschriebenen Handlungskompetenzen](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=307) kann auf der Website von ict-berufsbildung.ch nachgelesen werden.
 
 ## Leistungsbeurteilung
 
