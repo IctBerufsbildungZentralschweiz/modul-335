@@ -1,4 +1,4 @@
-# Angular: Architektur
+# Angular: Intro
 
 ## Was ist AngularJS?
 
