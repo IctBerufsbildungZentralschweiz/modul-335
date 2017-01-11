@@ -2,14 +2,12 @@
 
 Betrachten wir uns nun den Syntax von AngularJS etwas genauer. AngularJS bindet Daten ans HTML mit sogenannten Expressions.
 
-
 ## Expressions
 
-In AngularJS schreibt man Expressions (Ausdrücke) mit doppelt geschweiten klammern:`{{`_`expression`_`}}`. Eine AngularJS Expression kann auch innerhalb einer direktive geschrieben werden mit:`ng-bind="`_`expression`_`"`
+In AngularJS schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. Eine AngularJS Expression kann auch innerhalb einer direktive geschrieben werden mit:`ng-bind="expression"`  
 AngularJS löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
 
-### Beispiel  
-
+### Beispiel
 
 ```html
 <!DOCTYPE html>
@@ -24,54 +22,63 @@ AngularJS löst diese Expression auf und gibt das Resultat am entsprechenden Ort
 </body>
 </html>
 ```
+
 _Ausgabe:_
+
 ```
 Mein erster Ausdruck: 12
 ```
 
-
 ## Zahlen
+
 In Expressions kann man sehr eifach mit Zahlen und den gängigen Operatoren rechnen:
+
 ```html
 <div ng-app="" ng-init="anzahl=3;kosten=5">
 <p>Total in CHF: {{ anzahl * kosten }}.-</p>
 </div>
 ```
+
 _Ausgabe:_
+
 ```
 Total in CHF: 15.-
 ```
 
 ## Strings
+
 Strings in AngularJS sind wie in Javascript:
+
 ```html
 <div ng-app="" ng-init="vorname='Max';nachname='Muster'">
 <p>Mein Name ist {{ vorname + " " + nachname }}.</p>
 </div>
 ```
+
 _Ausgabe:_
+
 ```
 Mein Name ist Max Muster.
 ```
 
-
 ## Objekte
+
 Auch Objekte funktionieren wie in JS:
+
 ```html
 <div ng-app="" ng-init="person={vorname:'Max',nachname:'Muster'}">
 <p>Sein Nachname lautet {{ person.nachname }}!</p>
 </div>
 ```
+
 _Ausgabe:_
+
 ```
 Sein Nachname lautet Muster!
 ```
 
-
-
-
-
 ## Arrays
+
 ```html
 <div ng-app="" ng-init="punkte=[1,15,19,2,40]">
 
@@ -79,12 +86,21 @@ Sein Nachname lautet Muster!
 
 </div>
 ```
+
 _Ausgabe:_
+
 ```
 Das Dritte Resultat ist 19
 ```
 
+---
 
+## Übung
+
+![](/_allgemein/ralph_uebung.png)
+
+1. Erstelle in Creator ein neues Projekt. Nenne es z.B. Übung22\_Syntax
+2. 
 
 
 

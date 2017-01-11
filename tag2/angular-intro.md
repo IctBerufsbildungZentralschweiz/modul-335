@@ -88,6 +88,7 @@ export class ProductComponent {
 
 ---
 ## Gruppenübung
+![](/_allgemein/ralph_uebung.png)
 
 Lass uns in ein paar Google Slides einige AngularJS Applikationen zusammentragen:
 
