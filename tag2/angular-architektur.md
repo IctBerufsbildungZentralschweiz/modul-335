@@ -85,5 +85,15 @@ export class ProductComponent {
 }
 ```
 
+---
+## Gruppenübung
 
+Lass uns in ein paar Google Slides einige AngularJS Applikationen zusammentragen:
+
+
+1. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag2/Teil22\_AngularApps"_ und öffne die Datei online.
+2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation (auch Beispiel Apps) welche mit Angular 1 oder 2 erstellt werden. 
+4. Ergänze deine Slides mit Bildern oder Code-Beispielen.
+
+Wir besprechen die Ergebnisse in Rund 15min gemeinsam gemeinsam.
 
