@@ -16,5 +16,6 @@ Die Architektur von Ionic kann sogar noch etwas detailierter aufgeteilt werden:
 
 
 ## Wichtige Dateien in der Projektstruktur
-Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende Gegenüberstel![](http://www.gajotres.net/wp-content/uploads/2015/12/Ionic1_2_project_structure.jpg)
+Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende Gegenüberstellung:
+![](http://www.gajotres.net/wp-content/uploads/2015/12/Ionic1_2_project_structure.jpg)
 
