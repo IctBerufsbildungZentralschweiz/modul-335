@@ -26,6 +26,11 @@ app.controller('myCtrl', function($scope) {
 </script>
 ```
 
+{% youtube %} https://www.youtube.com/watch?v=21sFeFlvzks{% endyoutube %}
+
+
+
+
 ## Data binding in Creator mit ng-model
 
 `ng-model` erlaubt es einem eine `$scope` Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder \(Inputs\) sondern auch mit Radios, Selects, usw.
