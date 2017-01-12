@@ -51,7 +51,6 @@ Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusam
 
 Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ng-repeat` ein Filter setzen. Möchte man hier eine umgekehrte Ausgabe wäre dies mit `item in items | orderBy: '-id'` zu erreichen. Mehr zu Filter aber später.
 
-### ng-if
 
 
 
