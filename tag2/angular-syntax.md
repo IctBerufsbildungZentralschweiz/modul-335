@@ -100,22 +100,13 @@ Das Dritte Resultat ist 19
 ![](/_allgemein/ralph_uebung.png)
 
 1. Erstelle in Creator ein neues Sidemenu Projekt. Nenne es z.B. Übung23\_Syntax
-2. Erstelle für jedes der folgenden Themen eine eigene Seite: Zahlen, String, Objekte, Array
+2. Erstelle für jedes der folgenden Themen eine eigene Seite: 
+3. * Zahlen
+   * String
+   * Objekte
+   * Array
+4. 
 
-
-1. Zahlen
-
-   1. Füge der Seite ein Paragraph hinzu
-
-   2. Versuche die folgenden Rechnungen mit Hilfe von Expressions zu lösen, so das im ausgeführten Code das Resulat erscheint:   
-
-2. String
-   1. Füge der Seite ein Paragraph hinzu
-   2. asdasd
-
-3. Objekte
-
-4. Array
 
 
 
