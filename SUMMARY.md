@@ -11,10 +11,10 @@
 * [UI, UX, Usabilty](tag1/ui-ux.md)
 * [Prototyping](tag1/prototyping.md)
 * [Ionic: Architektur](tag1/ionic-archtiektur.md)
-* [Ionic: UI](tag1/ionic-ui.md)
 * [SASS](tag1/sass.md)
 
 ## Tag 2
+* [Ionic: UI](tag1/ionic-ui.md)
 * [Angular: Intro](tag2/angular-intro.md)
 * [Angular: Syntax](tag2/angular-syntax.md)
 * [Angular: Template](tag2/angular-template.md)
