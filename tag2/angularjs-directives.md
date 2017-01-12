@@ -123,7 +123,7 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Erstelle ein neues, blankes Ionic Projekt. Nenne es "Tag2\_Übung28\_Rechner"
+1. Erstelle ein neues, blankes Ionic Projekt. Nenne es "Tag2\_Übung28\_Rechner" und setze es auf "Public" so dass es alle Teilnehmer deiner Gruppe anschauen können
 2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
 3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
 4. Der Rechner soll folgenden Funktionumfang haben:
@@ -136,6 +136,8 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
    3. Ein Button zum zurücksetzen
 
 
+
+Wir schauen uns einigen Lösungen gemeinsamen an.
 
 
 
