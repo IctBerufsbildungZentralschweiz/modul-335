@@ -43,7 +43,7 @@ Die Seite zeigt dir nicht nur die Unterschiede auf, sondern bietet dir und deine
 
 ## Kurzübung
 
-1. Geh auf die Website: [http://mobile-frameworks-comparison-chart.com](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#)
+1. Geh auf die Website: [http://mobile-frameworks-comparison-chart.com](http://mobile-frameworks-comparison-chart.com)
 2. Mach dich mit den Filtermöglichkeiten vertraut
 3. Beantworte folgende Fragen für dich:
    1. Welche Frameworks kennst du schon?

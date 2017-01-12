@@ -52,7 +52,7 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 
 ## Übung
 
-1. Log dich auf [https://creator.ionic.io/](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#) ein
+1. Log dich auf [https://creator.ionic.io/](https://creator.ionic.io/) ein
 
 2. Erstelle dein erstes Test-Projekt
 
