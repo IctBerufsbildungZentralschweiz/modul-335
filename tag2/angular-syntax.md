@@ -100,11 +100,36 @@ Das Dritte Resultat ist 19
 ![](/_allgemein/ralph_uebung.png)
 
 1. Erstelle in Creator ein neues Sidemenu Projekt. Nenne es z.B. Übung23\_Syntax
-2. Erstelle für jedes der folgenden Themen eine eigene Seite: 
-3. * Zahlen
-   * String
-   * Objekte
-   * Array
-4. 
+2. Erstelle für jedes der folgenden Themen eine eigene Seite inkl. Link im Menu: Zahlen, String, Objekte, Array
+3. Auf der Seite _Zahlen_, füge einen neuen Paragraph hinzu und versuche die folgenden Rechnungen direkt mit Expressions aufzulösen:  
+   5 + 7 =  
+   25 / 5 =  
+   100 - 1 =
+
+4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deinem Controller stammt. Füge dazu folgenden Wert im Controller hinzu und versuche es mit Expressions zu lösen:  
+   `$scope.myString = 'Welt!';`
+
+5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von dem Controller stammen. Füge dazu im Controller folgende Zeile hinzu:  
+   `$scope.person = {    
+    'name' : 'Muster',    
+    'vorname' : 'Max'    
+   }`
+
+6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
+
+   ```
+   $scope.fruechte = [
+   {name:'Orange'},
+   {name:'Banane'},
+   {name:'Apfel'}
+   ];
+   ```
+
+   Gibt dabei den Namen der Frucht aus.
+
+7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf folgende Website nach einem passenden Bild: [https://pixabay.com](https://pixabay.com/)  
+   
+   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in form einer Expression ```{{fruechte.imgURL}}``` angeben.
+
 
 
