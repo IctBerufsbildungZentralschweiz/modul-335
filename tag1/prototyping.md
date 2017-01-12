@@ -88,7 +88,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 #### Details:
 
 1. Die App wird durch ein Login geschützt  
-   1. Für ein Login braucht es ein Benutzername / Passwort
+   1. Für ein Login braucht es ein Benutzername / Passwort und ein Login-Button
 
    1. Wenn jemand noch keinen Account hat, soll er sich Registrieren können. Dazu braucht er mind. Benutzername, Email, Passwort.
 
