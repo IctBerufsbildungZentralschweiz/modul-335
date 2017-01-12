@@ -95,8 +95,6 @@ Das Result ist hier zu sehen:
 
 [![](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)
 
-
-
 ## ng-show and ng-hide
 
 Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist.   Sometimes you want to show or hide a component based on whether or not a\(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
@@ -104,6 +102,7 @@ Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachde
 Diese Direktiven funktioniert in sich genau gleich, Sie invertieren einfach den Ausgang. Als Beispiel der Wert  `true` in `ng-show` wird die Komponente anzeigen, aber ein Wert `true` mit `ng-hide` wird Sie verstecken.
 
 Lass uns ein einfaches Beispiel mit folgenden Controller-Code machen:
+
 ```js
 $scope.showPicture = true;
 ```
@@ -118,13 +117,25 @@ Danach fügen wir bei unserem Bild die Komponente auf `ng-show` mit Wert `showPi
 
 Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. [![](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)
 
-
-
 ---
 
 ## Übung
 
 ![](/_allgemein/ralph_uebung.png)
+
+1. Erstelle ein neues, blankes Ionic Projekt. Nenne es "Tag2\_Übung28\_Rechner"
+2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
+3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
+4. Der Rechner soll folgenden Funktionumfang haben:
+   1. Nur ein Input-Feld \(Für Eingabe und auch Ausgabe des Resultats\)
+   2. Dein Rechner soll die folgenden Grundfunktionen anbieten \(Buttons verwenden\)
+      1. Addition \(+\) 
+      2. Subtraktion \(-\)
+      3. Multiplikation \(x\)
+      4. Division \(÷\)
+   3. Ein Button zum zurücksetzen
+
+
 
 
 
