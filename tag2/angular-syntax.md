@@ -108,5 +108,3 @@ Das Dritte Resultat ist 19
 4. 
 
 
-
-
