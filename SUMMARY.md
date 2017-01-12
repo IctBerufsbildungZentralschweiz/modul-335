@@ -20,7 +20,6 @@
 * [AngularJS: Data Binding](tag2/two-way-binding.md)
 * [AngularJS: Directives](tag2/angularjs-directives.md)
 * [AngularJS: Filters](angularjs-filters.md)
-* [Angular: Template](tag2/angular-template.md)
 
 ## Tag 3
 * [Ionic: API](tag3/ionic-api.md)
