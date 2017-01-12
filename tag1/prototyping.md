@@ -128,7 +128,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
 ##### Zusatzaufgaben
 
-1. Überleg dir was du alles umbauen musst um die App in einem Sidemenu darzustellen, zeichne einige Mocks da
+1. Überleg dir was du alles umbauen musst um die App in einem Sidemenu darzustellen, zeichne einige Mocks dazu
 2. Probier die App mit einem Online Prototyping Tool nachzuzeichnen und gehe dabei von einem Lo-Fi zu einem klickbaren Prototypen über
 
 
