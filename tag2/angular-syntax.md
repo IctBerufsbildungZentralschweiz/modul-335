@@ -117,7 +117,7 @@ Das Dritte Resultat ist 19
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
 
-   ```
+   ```js
    $scope.fruechte = [
    {name:'Orange'},
    {name:'Banane'},

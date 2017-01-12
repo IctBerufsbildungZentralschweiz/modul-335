@@ -10,7 +10,7 @@ Bei einer einfachen Applikation hat man Daten im Model (blau) und meist ein Temp
 ## Two-Way Data Binding
 Genau hier hat AngularJS seinen Vorteil. Das Data Binding in AngularJS synchronisiert das Model mit der View und umgekehrt. So kann ein Wert in der View geändert werden und gleichzeitig wird der Wert im Model auch angepasst. Umgekehrt natürlich auch, siehe Grafik rechts. Diese ständige Zweiweg-Synchronisation nennt man Two-Way Data Binding. 
 
-```HTML
+```html
 <div ng-app="myApp" ng-controller="myCtrl">
     Name: <input ng-model="firstname">
     <h1>{{firstname}}</h1>
@@ -24,3 +24,33 @@ app.controller('myCtrl', function($scope) {
 });
 </script>
 ```
+
+## Data binding in Creator mit ng-model
+```ng-model``` erlaubt es einem eine ```$scope``` Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder (Inputs) sondern auch mit Radios, Selects, usw. 
+
+Mit dem folgenden Controller code:
+```js
+ $scope.data = {
+  'name': 'Ralph'
+}
+```
+
+
+
+Setze ```ng-model```: ```data.name``` unter "Angular Directives" auf der Komponente. Dies verbindet den im Textfeld eingegeben Text mit der effektiven ```$scope``` Variable.
+
+First, put an ng-model on a Text Input, and then add a Paragraph component that displays the value ```{{data.name}}```:
+
+Setze zuerst ein ```ng-model``` auf den Text-Input und dann füge der Paragraph-Komponente den Ausdruck ```{{data.name}}``` zum Anzeigen des Werts hinzu.
+
+![](https://files.readme.io/ceef229-Ionic_Creator_2016-10-31_19-54-57.png)
+
+Hier ist das Resultat welches angezeigt wird wenn man den Text ändert:
+![](https://files.readme.io/8887f44-Screenshot_2016-10-31_19.52.20.png)
+
+---
+## Übungen
+![](/_allgemein/ralph_uebung.png)
+
+
+
