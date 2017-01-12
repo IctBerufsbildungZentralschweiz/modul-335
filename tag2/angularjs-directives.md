@@ -1,6 +1,6 @@
 # AngularJS: Directives
 
-_Übersetzer Text aus: _[http://docs.usecreator.com/docs/directives](http://docs.usecreator.com/docs/directives)
+_Übersetzer und Ergänzter Text aus: _[http://docs.usecreator.com/docs/directives](http://docs.usecreator.com/docs/directives)
 
 Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://docs.angularjs.org/guide/directive). Mit Direktiven werden die Komponenten in einer App dynmaisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
@@ -47,10 +47,84 @@ Nachdem wir in `$scope` einige Daten gesetzt haben, können wir mit `ng-repeat` 
 This results in the List Item being duplicated 5 times, with the ID being placed in the text of each List Item:  
 Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusammen mit dem Tag "Item" ausgegeben wird.
 
-#### Sortierung
+##### Sortierung
 
 Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ng-repeat` ein Filter setzen. Möchte man hier eine umgekehrte Ausgabe wäre dies mit `item in items | orderBy: '-id'` zu erreichen. Mehr zu Filter aber später.
 
+### ng-change
+
+Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ng-model` für dein Textfeld ändert. Obwohl man es auch mit `$scope.watch` machen könnte, bevorzugen wir mit Creator eine `ng-change` Direktive.
+
+Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine doofe Idee - erfüllt aber in diesem Beispiel den Zweck.
+
+```js
+$scope.data = {
+  'name': 'Ralph'
+}
+
+$scope.nameChanged = function(){
+    alert("Mein Name wurde geändert auf: "+$scope.data.name);
+}
+```
+
+Setze dann `ng-change`:`nameChanged()` auf deiner Komponente.  **Info: Vergiss die Klammer \(\) für den Funktionsaufruf nicht!**
+
+[![](https://files.readme.io/f2a0bc9-Ionic_Creator_2016-10-31_20-02-36.png)](https://files.readme.io/f2a0bc9-Ionic_Creator_2016-10-31_20-02-36.png)
+
+Dann erhalten wir den folgenden Output: 🙃
+
+[![](https://files.readme.io/d180402-Screenshot_2016-10-31_20.01.21.png)](https://files.readme.io/d180402-Screenshot_2016-10-31_20.01.21.png)
+
+### ng-click
+
+`ng-click` wird natürlich oft im Zusammenhang mit Links resp. Buttons verwendet.
+
+Lass uns eine einfache `$scope` Funktion hinzufügen, welche eine Javascript-Alert aufruft:
+
+```js
+$scope.buttonClick = function(){
+    alert("Yeah, ich wurde angeklickt!"); 
+}
+```
+
+Nun setzen wir `ng-click`:`buttonClick()` wiederum auf der Button-Komponente. Auch hier dürfen die Klammer `()` für den Funktionsaufruf nicht fehlen.
+
+[![](https://files.readme.io/fd50abb-Ionic_Creator_2016-10-31_21-22-48.png)](https://files.readme.io/fd50abb-Ionic_Creator_2016-10-31_21-22-48.png)
+
+Das Result ist hier zu sehen:
+
+[![](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)
+
+
+
+## ng-show and ng-hide
+
+Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist.   Sometimes you want to show or hide a component based on whether or not a\(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
+
+Diese Direktiven funktioniert in sich genau gleich, Sie invertieren einfach den Ausgang. Als Beispiel der Wert  `true` in `ng-show` wird die Komponente anzeigen, aber ein Wert `true` mit `ng-hide` wird Sie verstecken.
+
+Lass uns ein einfaches Beispiel mit folgenden Controller-Code machen:
+```js
+$scope.showPicture = true;
+```
+
+We will then set up a Toggle with  `ng-model` so that we can change this variable while viewing our app.
+
+[![](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)
+
+Danach fügen wir bei unserem Bild die Komponente auf `ng-show` mit Wert `showPicture` hinzu.
+
+[![](https://files.readme.io/e00e9d1-Ionic_Creator_2016-10-31_21-30-15.png)](https://files.readme.io/e00e9d1-Ionic_Creator_2016-10-31_21-30-15.png)
+
+Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. [![](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)
+
+
+
+---
+
+## Übung
+
+![](/_allgemein/ralph_uebung.png)
 
 
 
