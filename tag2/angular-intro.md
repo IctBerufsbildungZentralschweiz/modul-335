@@ -1,4 +1,4 @@
-# Angular: Intro
+# AngularJS: Intro
 
 ## Was ist AngularJS?
 
