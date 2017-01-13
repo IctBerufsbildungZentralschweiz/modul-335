@@ -97,7 +97,7 @@ Das Result ist hier zu sehen:
 
 ## ng-show and ng-hide
 
-Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist.   Sometimes you want to show or hide a component based on whether or not a\(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
+Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
 
 Diese Direktiven funktioniert in sich genau gleich, Sie invertieren einfach den Ausgang. Als Beispiel der Wert  `true` in `ng-show` wird die Komponente anzeigen, aber ein Wert `true` mit `ng-hide` wird Sie verstecken.
 
@@ -107,7 +107,7 @@ Lass uns ein einfaches Beispiel mit folgenden Controller-Code machen:
 $scope.showPicture = true;
 ```
 
-We will then set up a Toggle with  `ng-model` so that we can change this variable while viewing our app.
+Wir bauen nun ein Toggle  mit  `ng-model` so dass wir die Variable geändert wird wenn wir unsere App anschauen:
 
 [![](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)
 
@@ -135,9 +135,5 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
       4. Division \(÷\)
    3. Ein Button zum zurücksetzen
 
-
-
 Wir schauen uns einigen Lösungen gemeinsamen an.
-
-
 
