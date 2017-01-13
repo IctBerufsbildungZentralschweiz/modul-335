@@ -60,7 +60,7 @@ Hier ist das Resultat welches angezeigt wird wenn man den Text ändert:
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Erstelle ein blankes, neues Projekt
+1. Erstelle ein blankes, neues Projekt und nenne es "Tag2_Übung26_DataBinding".
 2. Füge deiner Seite die folgenden Felder hinzu:
    1. Input: Name - Text
    2. Input: Vorname - Text
