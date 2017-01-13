@@ -70,7 +70,7 @@ Hier ist das Resultat welches angezeigt wird wenn man den Text ändert:
 ```Mein Name ist Max Muster und ich bin 23 Jahre alt!```
 5. Teste deine App  
    1. Funktioniert Sie wie erwartet?  
-   2. Hast du die richtigen Input-Typen gewählt? Kannst du bei deinem Alter auch wirklich nur ein Zahl eingeben?
+   2. Hast du die richtigen Input-Typen gewählt? Kannst du bei deinem Alter auch wirklich nur eine Zahl eingeben?
 
 
 
