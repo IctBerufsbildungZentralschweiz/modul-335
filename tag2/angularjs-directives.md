@@ -126,7 +126,7 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
 1. Erstelle ein neues, blankes Ionic Projekt. Nenne es "Tag2\_Übung28\_Rechner" und setze es auf "Public" so dass es alle Teilnehmer deiner Gruppe anschauen können
 2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
 3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
-4. Der Rechner soll folgenden Funktionumfang haben:
+4. Der Rechner soll folgenden Funktionsumfang haben:
    1. Nur ein Input-Feld \(Für Eingabe und auch Ausgabe des Resultats\)
    2. Dein Rechner soll die folgenden Grundfunktionen anbieten \(Buttons verwenden\)
       1. Addition \(+\) 
@@ -136,4 +136,12 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
    3. Ein Button zum zurücksetzen
 
 Wir schauen uns einigen Lösungen gemeinsamen an.
+
+##### Zusatzaufgabe:
+
+1. Nimm dein Prototyp aus der Ionic: UI Übungen von heute Morgen. Vervollständige alle Listen mit ng-repeat und setze dazu ein paar fiktive Daten in deinem Controller.  
+
+
+
+
 
