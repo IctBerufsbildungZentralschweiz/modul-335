@@ -4,11 +4,8 @@ Du konntest nun schon einige Erfahrungen sammeln und siehst die Möglichkeiten m
 
 ## Vorgehen:
 
-1. Idee suchen \(Falls nicht schon geschehen\). 
+1. Idee suchen \(Falls nicht schon geschehen\).  Weitere Ideen findest du im [Market](https://market.ionic.io/), Code Copy+Paste ist nicht erlaubt. 
 2. 
-  
-
-
 ## Mindestanforderung:
 
 
