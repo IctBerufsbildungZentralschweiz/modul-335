@@ -19,13 +19,14 @@
 * [AngularJS: Syntax](tag2/angular-syntax.md)
 * [AngularJS: Data Binding](tag2/two-way-binding.md)
 * [AngularJS: Directives](tag2/angularjs-directives.md)
-* [AngularJS: Filters](angularjs-filters.md)
+* [AngularJS: Filters](tag2/angularjs-filters.md)
 
 ## Tag 3
 * [Ionic: API](tag3/ionic-api.md)
 * [Use Case 1](tag3/use-case-1.md)
 * [Native Komponenten](tag3/native-komponenten.md)
 * [REST](tag3/rest.md)
+* [CRUD](tag3/crud.md)
 
 ## Tag 4
 * [Datenanbindung](tag4/datenanbindung.md)

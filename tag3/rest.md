@@ -57,7 +57,20 @@ REST-Clients, die HTTP verwenden, können folgende Befehle absetzen, um Ressourc
 
 Abhängig von der Implementierung können noch weitere HTTP-Befehle unterstützt werden. \(HEAD, PATCH, OPTIONS, CONNECT, TRACE, usw.\)
 
-
-
 _Quelle : _[Wikipedia - Representational State Transfer](https://de.wikipedia.org/wiki/Representational_State_Transfer#cite_ref-optional_8-0)
+
+---
+
+## Gruppenübung
+
+![](/_allgemein/ralph_uebung.png)
+
+Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+
+1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
+2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag3/TeilXX\_REST"_ und öffne die Datei online.
+3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
+4. Ergänze deine Slides wie in der Vorlage ersichtlich.
+
+Wir besprechen deine Ergebnisse gemeinsam.
 
