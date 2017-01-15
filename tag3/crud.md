@@ -4,10 +4,10 @@ Das Akronym CRUD umfasst die grundlegenden Datenbankoperationen:
 
 | CRUD-Operation | Beschreibung | SQL | HTTP \(REST\) |
 | :--- | :--- | :--- | :--- |
-| Create | Datensatz anlegen | INSERT | POST |
-| Read | Datensatz lesen | SELECT | GET |
-| Update | Datensatz aktualisieren | UPDATE | PUT |
-| Delete | Datensatz löschen | DELETE | DELETE |
+| Create | Datensatz anlegen | ```INSERT``` | ```POST``` |
+| Read | Datensatz lesen | ```SELECT``` | ```GET``` |
+| Update | Datensatz aktualisieren | ```UPDATE``` | ```PUT``` |
+| Delete | Datensatz löschen | ```DELETE``` | ```DELETE``` |
 
 Vergleich herkömmliches Framework \(links\) versus CRUD-Framework \(rechts\) am Beispiel von:
 
