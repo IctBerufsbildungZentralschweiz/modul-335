@@ -6,8 +6,6 @@ Ionic 1: [http://ionicframework.com/docs/api/](http://ionicframework.com/docs/ap
 
 Ionic 2: [http://ionicframework.com/docs/v2/api/ ](http://ionicframework.com/docs/v2/api/)
 
-
-
 Hier einige Beispiele:
 
 ### Action Sheet
@@ -16,6 +14,16 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ![](http://ionicframework.com.s3.amazonaws.com/docs/controllers/actionSheet.gif)
 
-
 ### Spinner
+![](/_allgemein/ion-spinner.png)
 
+
+
+### Pop
+
+![](/_allgemein/ion-popup.png)
+
+
+
+---
+## Übung
