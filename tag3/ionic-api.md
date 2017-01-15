@@ -17,9 +17,5 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 ![](http://ionicframework.com.s3.amazonaws.com/docs/controllers/actionSheet.gif)
 
 
-
-<iframe id="result-iframe" sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms" src="//s.codepen.io/ionic/fullembedgrid/gblny?type=embed&amp;animations=run" allowtransparency="true" frameborder="0" scrolling="yes" style="height: 533px;" allowfullscreen="true" name="CodePen Preview for Modal: Nightly" title="CodePen Preview for Modal: Nightly">
-      </iframe>
-
-
+### Spinner
 
