@@ -6,6 +6,7 @@ Tom Enz, 0797143000, [t@tomenz.ch](mailto:t@tomenz.ch?subject=Modul-335)
 
 ## Moodle - Kurse ICT-BZ
 
+Diese Kursunterlagen wurden mit Markdown auf Basis von Gitbook erstellt und dienen als Erweiterung der Kursdokumentation unter:  
 [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch)
 
 ## Modulidentifikation und Handlungskompetenzen
@@ -20,7 +21,7 @@ Das in diesem Kurs erlernte Fachwissen wird in 3 Teilen geprüft und bewertet:
 | :--- | :--- | :--- | :--- |
 | Prototyping | Schriftlich, Einzelarbeit auf Papier | Tag 2 | 20% |
 | Komponenten | Vorbereite Gruppenarbeit inkl. mündlicher Präsentation | Tag 3 | 30% |
-| Projekt | Schriftlich, elektronische Einzelarbeit  | Tag 5 | 50% |
+| Projekt | Schriftlich, elektronische Einzelarbeit | Tag 5 | 50% |
 
 
 
