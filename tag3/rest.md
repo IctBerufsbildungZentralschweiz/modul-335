@@ -1,4 +1,4 @@
-###### REST - Representational State Transfer
+# REST - Representational State Transfer
 
 Representational State Transfer \(abgekürzt REST, seltener auch ReST\) bezeichnet ein Programmierparadigma für verteilte Systeme, insbesondere für Webservices. REST ist eine Abstraktion der Struktur und des Verhaltens des World Wide Web. REST hat das Ziel, einen Architekturstil zu schaffen, der die Anforderungen des modernen Web besser darstellt. Dabei unterscheidet sich REST vor allem in der Forderung nach einer einheitlichen Schnittstelle \(siehe Abschnitt Prinzipien\) von anderen Architekturstilen.
 
