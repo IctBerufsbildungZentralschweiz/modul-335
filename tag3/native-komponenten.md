@@ -25,12 +25,14 @@ Bevor das Ionic CLI installiert werden kann, müssen als Voraussetzung NodeJS, N
 Sind alle Voraussetzungen erfüllt, kann es losgehen. Unter Windows wird jetzt eine neue Git-Bash oder unter OSX ein neues Terminal geöffnet. Nun folgt die Eingabe des Installationsbefehls \(Windows\):
 
 ```bash
+npm install -g cordova
 npm install -g ionic
 ```
 
 Unter Mac OSX und Linux-Betriebssystemen muss der Befehl mit root-Rechten ausgeführt werden, weshalb der Befehl wie folgt aussieht:
 
 ```bash
+sudo npm install -g cordova
 sudo npm install -g ionic
 ```
 
