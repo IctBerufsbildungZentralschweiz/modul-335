@@ -3,6 +3,7 @@
 * [Intro](README.md)
 * [Organisation](tag1/organisation.md)
 * [Kursplanung](tag1/kursplanung.md)
+* Lokale Entwicklungsumgebung
 
 ## Tag 1
 * [Native, Hybrid, Web](tag1/native_hybrid_web.md)
@@ -33,6 +34,7 @@
 * [Social Logins](tag4/social-logins.md)
 * [iOS, Android Entwicklung](tag4/ios--android.md)
 * [Ionic Cloud](tag4/ionic-cloud.md)
+* Lokale Entwicklungsumgebung
 
 ## Tag 5
 * [Use Case 2](tag5/use-case-2.md)
