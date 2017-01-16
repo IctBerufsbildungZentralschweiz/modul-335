@@ -34,7 +34,7 @@
 * [Social Logins](tag4/social-logins.md)
 * [iOS, Android Entwicklung](tag4/ios--android.md)
 * [Ionic Cloud](tag4/ionic-cloud.md)
-* Lokale Entwicklungsumgebung
+* [Lokale Entwicklungsumgebung](tag4/lokale-entwicklungsumgebung)
 
 ## Tag 5
 * [Use Case 2](tag5/use-case-2.md)
