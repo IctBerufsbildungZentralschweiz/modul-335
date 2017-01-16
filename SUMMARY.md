@@ -29,16 +29,3 @@
 * [REST](tag3/rest.md)
 * [CRUD](tag3/crud.md)
 
-## Tag 4
-* [Datenanbindung](tag4/datenanbindung.md)
-* [Social Logins](tag4/social-logins.md)
-* [iOS, Android Entwicklung](tag4/ios--android.md)
-* [Projekt exportieren](tag4/projekt-exportieren.md)
-* [Ionic Cloud](tag4/ionic-cloud.md)
-
-## Tag 5
-* [Use Case 2](tag5/use-case-2.md)
-* [App Store](tag5/app-store.md)
-* [Veröffentlichung](tag5/veröffentlichung.md)
-* [Testing](tag5/testing.md)
-
