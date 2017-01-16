@@ -33,8 +33,8 @@
 * [Datenanbindung](tag4/datenanbindung.md)
 * [Social Logins](tag4/social-logins.md)
 * [iOS, Android Entwicklung](tag4/ios--android.md)
+* [Projekt exportieren](tag4/projekt-exportieren.md)
 * [Ionic Cloud](tag4/ionic-cloud.md)
-* [Lokale Entwicklungsumgebung](tag4/lokale-entwicklungsumgebung)
 
 ## Tag 5
 * [Use Case 2](tag5/use-case-2.md)
