@@ -32,8 +32,8 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 2. Lies dir die Dokumentation zu Popup's durch.
 3. Wir wollen nun ein Popup anzeigen:
    1. Durch eine Klick auf den einen Button "Nickname erfassen" wir das Popup angezeigt
-   2. Ich kann in diesem Popup in eine Textfeld mein Spitznamen eintragen
-   3. Wird das Popup geschlossen, wir auf der Ansicht ein Text "Ich liebe es XXX genannt zu werden!" angezeigt, wobei XXX der zuvor im Popup eingegeben Nickname ist. 
+   2. Ich kann in diesem Popup in ein Textfeld mein Spitznamen eintragen
+   3. Wird das Popup geschlossen, wird auf der Ansicht ein Text "Ich liebe es XXX genannt zu werden!" angezeigt, wobei XXX der zuvor im Popup eingegeben Nickname ist. 
 4. Ein Klick ist nicht immer das Beste für ein Benutzer. Füge nun ein Button hinzu und gib ihm 4 Swipe Gesten je nach Richtung \(Oben, Unten, Rechts, Links\). 
    Ein Paragraph soll dabei wie ein Log dienen und pro Geste soll die Richtung reingeschrieben werden.
 
