@@ -51,7 +51,3 @@ Damit ist die Installation des CLI abgeschlossen und es kann mit dem Erstellen e
 
 
 
-
-
-
-
