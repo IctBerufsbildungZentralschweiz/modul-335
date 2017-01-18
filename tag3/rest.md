@@ -74,3 +74,25 @@ Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderun
 
 Wir besprechen deine Ergebnisse gemeinsam.
 
+---
+# CRUD
+
+Das Akronym CRUD umfasst die grundlegenden Datenbankoperationen:
+
+| CRUD-Operation | Beschreibung | SQL | HTTP \(REST\) |
+| :--- | :--- | :--- | :--- |
+| Create | Datensatz anlegen | `INSERT` | `POST` |
+| Read | Datensatz lesen | `SELECT` | `GET` |
+| Update | Datensatz aktualisieren | `UPDATE` | `PUT` |
+| Delete | Datensatz löschen | `DELETE` | `DELETE` |
+
+Vergleich herkömmliches Framework \(links\) versus CRUD-Framework \(rechts\) am Beispiel von:
+
+
+Der Hauptvorteil eines CRUD-Frameworks ist der folgenden Grafik zu entnehmen. Eine Anfrage geht direkt von der Präsentationsschicht bis runter in die Datenbank. Es werden keine zusätzlichen Verzweigungen und Verschachtelungen gebaut. 
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Nakedobjects.png/500px-Nakedobjects.png)
+
+_Quelle: _[_Wikipedia - CRUD _](https://de.wikipedia.org/wiki/CRUD)
+
+
