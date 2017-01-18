@@ -53,11 +53,12 @@ Der Ionic Package Service erlaubt es dir schnell Entwicklungs- reps. Produktions
 4. Versuch nun mit Hilfe dieser  [Doku ](https://docs.ionic.io/services/auth/) ein einfaches Login inkl. Profil zu erstellen
    1. Benutzer sollen sich Registrieren können
    2. Benutzer sollen sich einloggen können und dann in die App kommen
-   3. Der Inhalt der App, soll nur angezeigt werden wenn ein Benutzer eingeloggt ist
-   4. Ein Logout soll natürlich auch möglich sein
-   5. 
-
-### 
+   3. Der Inhalt der App soll nur angezeigt werden wenn ein Benutzer eingeloggt ist
+   4. Ein Logout soll natürlich auch möglich sein. Erstelle dazu  ein Logout-Button in den Einstellungen oder im Menu.
+   5. Unter Einstellungen soll der Benutzer sein Profil \(z.B. Name, Vorname\) ändern können
+   6. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
+   7. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
+   8. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein, evt. kannst du hier mit Gravatar arbeiten.
 
 
 
