@@ -9,12 +9,8 @@ Tom Enz, 0797143000, [t@tomenz.ch](mailto:t@tomenz.ch?subject=Modul-335)
 Diese Kursunterlagen wurden mit Markdown auf Basis von Gitbook erstellt und dienen als Erweiterung der Kursdokumentation unter:  
 [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch)
 
-
-
 Als alternative für den Datenaustausch im Klassenraum kann auch folgende Google Drive Seite verwendet werden:  
 [http://enz.lu/m335-exchange](http://enz.lu/m335-exchange)
-
-
 
 ## Modulidentifikation und Handlungskompetenzen
 

@@ -6,27 +6,24 @@ _Quelle: _[_https://de.wikipedia.org/wiki/App\_Store_](https://de.wikipedia.org/
 
 ![](http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2014/05/app-store-930x384.jpg)
 
-
-
 ## Die wichtigsten Links
-
-
 
 | Apple App Store | Google Play Store |
 | :--- | :--- |
 | [Public](https://itunes.apple.com/ch/genre/ios/id36?mt=8) | [Public](https://play.google.com/store/apps?hl=de) |
 | [Entwickler](https://developer.apple.com/) | [Entwickler](https://developer.android.com/index.html) |
 
-
-
-
-
-
-
-
-
 * [Google Essentials Guide](https://developer.android.com/distribute/essentials/index.html)
 * [Apple Human Interface Guide](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
+
+
+
+...kennt die Schritte zur Vermarktung der App	"- In-App Käufe
+- App Stores 
+- Was machte eine gute App im App Store bekannt (
+"
+
+
 
 
 
