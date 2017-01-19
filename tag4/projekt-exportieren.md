@@ -25,7 +25,7 @@ ionic start myapp
 Gehe nun in den neu erstellten ```myapp``` Ordner, du wirst darin ein Verzeichnis namens ```www``` finden.
 
 Lösche alles im Verzeichnis ```www``` und verschiebe die ausgepackten Dateien aus ZIP (Schritt 1) hier rein. Die Struktur sollte so aussehen:
-https://files.readme.io/f169778-Screen_Shot_2016-11-04_at_12.58.15_PM.png
+![](https://files.readme.io/f169778-Screen_Shot_2016-11-04_at_12.58.15_PM.png)
 
 #### 3. Verschiebe dein SCSS Ordner
 Verschiebe das Verzeichnis namens ```SCSS-MOVEME``` eine Eben hoch und benenne es in ```scss``` um. Der Verzeichnis sollte nun auf der gleichen Ebene wie```www```sein.

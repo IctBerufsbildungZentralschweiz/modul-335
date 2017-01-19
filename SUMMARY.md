@@ -26,7 +26,7 @@
 * [Ionic: API](tag3/ionic-api.md)
 * [Use Case 1](tag3/use-case-1.md)
 * [Native Komponenten](tag3/native-komponenten.md)
-* [REST \/ CRUD](tag3/rest.md)
+* [REST, CRUD](tag3/rest.md)
 
 ## Tag 4
 * [Ionic Cloud](tag4/ionic-cloud.md)
@@ -35,4 +35,9 @@
 * [iOS, Android Entwicklung](tag4/ios--android.md)
 * [Projekt exportieren](tag4/projekt-exportieren.md)
 
+## Tag 5
+* [App Store](tag5/app-store.md)
+* [Veröffentlichung](tag5/veröffentlichung.md)
+* [Use Case 2](tag5/use-case-2.md)
+* [Testing,  Ausblick](tag5/testing.md)
 
