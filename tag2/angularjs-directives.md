@@ -117,6 +117,16 @@ Danach fügen wir bei unserem Bild die Komponente auf `ng-show` mit Wert `showPi
 
 Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. [![](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)
 
+## Route Parameters
+Mit Route Parameters kannst du Informationen zu Seiten an welche du navigierst weitergeben. Wenn du z.B. eine Liste von Unterhaltungen hast, kannst du die ``ìd``` einer spezifischen Seite an eine Detailseite übergeben. Das erlaubt dir deine Liste dynamisch vom Code aufzubauen und so die gesamte Funktionalität herzustellen. 💪
+
+
+
+http://docs.usecreator.com/docs/route-parameters 
+
+
+
+
 ---
 
 ## Übung
