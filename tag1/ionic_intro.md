@@ -19,7 +19,6 @@ Das Framework wird immer beliebter, im Showcase \(deutsch. Schaufenster\) sind e
 
 ![](/_allgemein/ionic-usage.png)
 
-
 ## Technologien
 
 ![](/tag1/html_css_angular.png)
@@ -51,19 +50,30 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 
 ![](/tag1/ionic_creator.png)
 
+### Einige Performance Tipps
+
+![](/_allgemein/ralph_tipp.png)
+
+1. Verwende Creator am besten ohne Browser-Plugins \(Ad-Blocker, Cookie-Blocker, usw.\) -&gt; z.B. auch im Privaten/Inkognito Modus 
+2. Speichere deine Projekt-URL als Lesezeichen ab. Alternativ kannst du dir auch dein Projekt-Hash https://creator.ionic.io/app/designer/8e936b638dbc \(Hier: ```8e936b638dbc``` für deine Übungen ab, so kannst du später direkt darauf zugreifen
+
+
+
 ---
 
 ## Übung
 
 1. Log dich auf [https://creator.ionic.io/](https://creator.ionic.io/) ein
 
-2. Erstelle dein erstes Test-Projekt
+2. Erstelle dein erstes Test-Projekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. 
 
 3. Mach dich mit der IDE vertraut. Versuch dabei folgenden Fragen zu beantworten:
 
    1. Wo kann ich Einstellungen machen?
 
-   2. Wie kann ich eine But
+   2. Wie kann ich ein Button reinziehen?
+
+   3. Wie kann ich Code schreiben?
 
 
 
