@@ -17,6 +17,9 @@ Das Framework wird immer beliebter, im Showcase \(deutsch. Schaufenster\) sind e
 
 [http://showcase.ionicframework.com/apps/top](http://showcase.ionicframework.com/apps/top)
 
+![](/_allgemein/ionic-usage.png)
+
+
 ## Technologien
 
 ![](/tag1/html_css_angular.png)
