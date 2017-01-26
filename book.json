@@ -8,8 +8,16 @@
         "codepen",
         "gist",
         "responsive-iframes",
-        "nocache"
+        "nocache",
+        "download-pdf"
     ],
+    "pluginsConfig": {
+        "download-pdf": {
+            "base": "https://www.gitbook.com/download/pdf/book/motzne/ict-bz-modul-335",
+            "label": "Download PDF",
+            "multilingual": false
+        }
+    },
     "author": "Tom Enz, t@tomenz.ch",
     "title": "Modul 335 - Mobile-Applikation realisieren"
 }
