@@ -3,7 +3,6 @@
 * [Intro](README.md)
 * [Organisation](tag1/organisation.md)
 * [Kursplanung](tag1/kursplanung.md)
-* Lokale Entwicklungsumgebung
 
 ## Tag 1
 * [Native, Hybrid, Web](tag1/native_hybrid_web.md)
