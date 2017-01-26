@@ -9,10 +9,15 @@
         "gist",
         "responsive-iframes",
         "nocache",
-        "download-pdf"
+        "downloadpdf"
     ],
     "pluginsConfig": {
         "download-pdf": {
+            "base": "https://www.gitbook.com/download/pdf/book/motzne/ict-bz-modul-335",
+            "label": "Download PDF",
+            "multilingual": false
+        },
+        "downloadpdf": {
             "base": "https://www.gitbook.com/download/pdf/book/motzne/ict-bz-modul-335",
             "label": "Download PDF",
             "multilingual": false
