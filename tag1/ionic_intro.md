@@ -2,7 +2,7 @@
 
 > Ionic ist ein Open-Source-Framework zur Erstellung von Hybrid-Apps auf der Basis von HTML5, CSS, Sass und JavaScript. Dabei basiert es auf AngularJS und Apache Cordova. Es stellt eine Programmbibliothek aus verschiedenen Komponenten zur Verfügung, mit denen interaktive Apps programmiert werden können. Der Fokus des Frameworks liegt auf der Seite des Front-Ends, also der Benutzerschnittstelle
 
-[https://de.wikipedia.org/wiki/Ionic\_\(Framework\)](https://de.wikipedia.org/wiki/Ionic_(Framework) )
+[https://de.wikipedia.org/wiki/Ionic\_\(Framework\))](https://de.wikipedia.org/wiki/Ionic_(Framework)
 
 ![](https://camo.githubusercontent.com/37a6df450ce824e202f7e1df124bafc3a3156a1d/687474703a2f2f646e6469676974616c2e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f30332f696f6e69632d6c6f676f2d626c6f672d373637783335352e706e67)
 
