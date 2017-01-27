@@ -19,7 +19,7 @@
         },
         "downloadpdf": {
             "base": "https://www.gitbook.com/download/pdf/book/motzne/ict-bz-modul-335",
-            "label": "Download PDF",
+            "label": "PDF",
             "multilingual": false
         }
     },
