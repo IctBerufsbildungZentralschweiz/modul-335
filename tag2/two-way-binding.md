@@ -60,8 +60,8 @@ Hier ist das Resultat welches angezeigt wird wenn man den Text ändert:
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Erstelle ein blankes, neues Projekt und nenne es "Tag2_Übung26_DataBinding".
-2. Füge deiner Seite die folgenden Felder hinzu:
+1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung"
+2. Füge eine neue Seite "Data Binding" mit folgenden Felder hinzu:
    1. Input: Name - Text
    2. Input: Vorname - Text
    3. Input: Alter - Number
