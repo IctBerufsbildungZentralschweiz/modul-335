@@ -28,7 +28,22 @@ app.controller('myCtrl', function($scope) {
 
 {% youtube %} https://www.youtube.com/watch?v=21sFeFlvzks{% endyoutube %}
 
+##### Hier noch ein kleiner Vergleich mit jQuery:
+```html
+<html>
+  <input id="eingabe" type="text">
+  <h1 id="ausgabe"></h1> 
+</html>
+```
+```js
+$(document).ready(function() {
+  $('#eingabe').keyup(function(){
+    $('#ausgabe').html($('#eingabe').val());
+    $('html').css("background-color", $('#eingabe').val());
+  });
+});
 
+```
 
 
 ## Data binding in Creator mit ng-model
