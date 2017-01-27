@@ -2,7 +2,7 @@
 
 _Übersetzer und Ergänzter Text aus: _[http://docs.usecreator.com/docs/directives](http://docs.usecreator.com/docs/directives)
 
-Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://docs.angularjs.org/guide/directive). Mit Direktiven werden die Komponenten in einer App dynmaisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
+Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://docs.angularjs.org/guide/directive). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
 Kurz gesagt: Mit Direktiven wird deine App zu einer voll funktionsfähigen App.
 
