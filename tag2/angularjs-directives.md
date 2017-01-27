@@ -153,7 +153,7 @@ Wenn du eine Seite selektiert hast, siehst du unter dem Titel "State / sref". Di
 
 
 
-Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#)  
+Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](http://docs.usecreator.com/docs/route-parameters)  
 
 ---
 
