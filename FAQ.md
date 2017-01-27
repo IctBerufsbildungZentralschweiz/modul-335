@@ -21,6 +21,8 @@ http://docs.usecreator.com/docs/route-parameters
 ---
 
 #### Wie kann ich ein Seperator im UI machen?
+![](/_allgemein/seperator-example.png)
+
 Verwende dazu mehrere ```<div>```'s und ein wenig CSS.
 
 ```html
