@@ -161,7 +161,7 @@ Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](https:/
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Erstelle ein neues, blankes Ionic Projekt. Nenne es "Tag2\_Übung28\_Rechner" und setze es auf "Public" so dass es alle Teilnehmer deiner Gruppe anschauen können
+1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Rechner" 
 2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
 3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
 4. Der Rechner soll folgenden Funktionsumfang haben:
@@ -172,6 +172,7 @@ Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](https:/
       3. Multiplikation \(x\)
       4. Division \(÷\)
    3. Ein Button zum zurücksetzen
+5. Teste dein App mittels Ionic Creator -App auf deinem Smartphone. Zufrieden?
 
 Wir schauen uns einigen Lösungen gemeinsamen an.
 
