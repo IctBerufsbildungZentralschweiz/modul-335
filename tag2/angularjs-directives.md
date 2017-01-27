@@ -137,7 +137,7 @@ Es gibt zwei Varianten Informationen an eine Seite weiterzugeben, welche Route P
 __Variante 1__ 
 
 Du verknüpfst die Seiten über einen "Link", wo du automatisch nach den Route Parameters gefragt wirst.
-Dabei kannst du die Werte auch leer lassen, du kannst einen String aber auch einen dynamischen Tag mit doppelt-geschweiften Klammer {{ mitgeben. 
+Dabei kannst du die Werte auch leer lassen, du kannst einen String aber auch einen dynamischen Tag mit doppelt-geschweiften Klammer ```{{``` mitgeben. 
 
 
 [![](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)
@@ -151,14 +151,9 @@ Wenn du eine Seite selektiert hast, siehst du unter dem Titel "State / sref". Di
 
 [![](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)
 
-# 
+
 
 Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#)  
-
-
-
-
-
 
 ---
 
