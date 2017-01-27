@@ -3,6 +3,7 @@
 * [Intro](README.md)
 * [Organisation](tag1/organisation.md)
 * [Kursplanung](tag1/kursplanung.md)
+* [FAQ](faq.md)
 
 ## Tag 1
 * [Native, Hybrid, Web](tag1/native_hybrid_web.md)
