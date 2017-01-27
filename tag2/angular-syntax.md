@@ -130,7 +130,7 @@ Das Dritte Resultat ist 19
 
 7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array. 
    
-   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in form einer Expression ```{{fruechte.imgURL}}``` angeben.
+   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in Form einer Expression ``` {{fruechte.imgURL}} ``` angeben.
 
 
 
