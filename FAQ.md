@@ -21,22 +21,15 @@ http://docs.usecreator.com/docs/route-parameters
 ---
 
 #### Wie kann ich ein Seperator im UI machen?
-Verwende dazu mehrere ```<div>``` und ein wenig CSS.
+Verwende dazu mehrere ```<div>```'s und ein wenig CSS.
 
 ```html
 <ion-view title="SeperatorExample">
 	<ion-content padding="true" class="has-header">
         <div class="row">
-            <div class="col">
-                <div class="separator"></div>
-            </div>
-            <div class="col text-center">
-                ODER
-            </div>
-            <div class="col">
-                <div class="separator"></div>
-            </div>
-            
+            <div class="col"><div class="separator"></div></div>
+            <div class="col text-center">ODER</div>
+            <div class="col"><div class="separator"></div></div>
         </div>
 	</ion-content>
 </ion-view>
