@@ -118,11 +118,48 @@ Danach fügen wir bei unserem Bild die Komponente auf `ng-show` mit Wert `showPi
 Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. [![](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)
 
 ## Route Parameters
-Mit Route Parameters kannst du Informationen zu Seiten an welche du navigierst weitergeben. Wenn du z.B. eine Liste von Unterhaltungen hast, kannst du die ``ìd``` einer spezifischen Seite an eine Detailseite übergeben. Das erlaubt dir deine Liste dynamisch vom Code aufzubauen und so die gesamte Funktionalität herzustellen. 💪
+
+Mit Route Parameters kannst du Informationen zu Seiten an welche du navigierst weitergeben. Wenn du z.B. eine Liste von Unterhaltungen hast, kannst du die \`\`ìd\`\`\` einer spezifischen Seite an eine Detailseite übergeben. Das erlaubt dir deine Liste dynamisch vom Code aufzubauen und so die gesamte Funktionalität herzustellen. 💪
+
+#### Füge Parameter deiner Seite hinzu
+
+ Jede Seite kann mehrere Route Parameter haben, auch default-Werte können dabei gesetzt werden. Benenne deine Variable "Code-Freundlich" \(keine Abstände, usw.\).  
+Man findet die Route Parameters im Property-Panel im Ionic Creator. 
+
+[![](https://files.readme.io/6677d0a-Ionic_Creator_2016-10-31_13-13-28.png)](https://files.readme.io/6677d0a-Ionic_Creator_2016-10-31_13-13-28.png)
+
+Hier ist unsere Such-Resultat-Seite, wo wir die Variablen `name`,`favorite_color`, und `favorite_pizza` definiert haben. Dabei haben wir keine Standartwerte definiert, da wir alle Informationen anzeigen möchten. 
+
+#### Informationen an eine Seite weitergeben
+
+Es gibt zwei Varianten Informationen an eine Seite weiterzugeben, welche Route Parameters hat. 
+
+__Variante 1__ 
+
+Du verknüpfst die Seiten über einen "Link", wo du automatisch nach den Route Parameters gefragt wirst.
+Dabei kannst du die Werte auch leer lassen, du kannst einen String aber auch einen dynamischen Tag mit doppelt-geschweiften Klammer {{ mitgeben. 
+
+You can feel free to leave any of the items blank, you can include a String, or you can include dynamic data using Template tags.
+
+[![](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)
+
+# Using $state.go to pass information
+
+Alternatively, you can use`$state.go`in your Controller code and pass the Route Parameters as an object.**Be sure to import $state in your controller.**
+
+### Get the State for $state.go from the Page Properties
+
+When you have a page selected, under it's Title in properties you'll see it's "State / sref", this is what you use for $state.go!
+
+Here's an example for how you'd use`$state.go`to navigate and pass dynamic parameters to your page.
+
+[![](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)
+
+# 
+
+Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#)  
 
 
-
-http://docs.usecreator.com/docs/route-parameters 
 
 
 
