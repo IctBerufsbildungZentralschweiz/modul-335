@@ -24,13 +24,33 @@ Die Variable kann dann z.B. mittels Expression ```{{globalVar}}``` im Template v
 
 ---
 #### Wie kann ich ein Objekt zu einem Array hinzufügen? 
-(PUSH)
+Dies kann mittels ```push``` erreicht werden:
+```js
+(function() {
+var app = angular.module('meineApp', []);
+ app.controller('meinController', ['$scope', function($scope) {
+    $scope.myText = "Let's go";
+    $scope.arrayText = [
+            'Hello',
+            'world'
+        ];
+    $scope.addText = function() {
+        $scope.arrayText.push(this.myText);
+    }
+
+ }]);
+})();
+```
 
 ---
 #### Wo kann ich meine App in Creator debuggen?
-```html
-http://docs.usecreator.com/docs/route-parameters
-```
+Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
+
+{% youtube %}https://www.youtube.com/watch?v=GVGbs6YHiKw
+ {% endyoutube %}
+
+
+
 
 #### Wie kann ich Abstände im UI machen?
 

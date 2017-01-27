@@ -126,6 +126,7 @@ Das Dritte Resultat ist 19
    ```
 
    Gibt dabei den Namen der Frucht aus.
+   Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits ```ng-repeat``` verwenden.
 
 7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf folgende Website nach einem passenden Bild: [https://pixabay.com](https://pixabay.com/)  
    
