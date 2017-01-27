@@ -1,9 +1,26 @@
 # Frequently Asked Questions 
 
-Hier findest du eine Sammlung der meist gestellten Fragen:
+Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 
 
 #### Wie kann ich in Creator eine globale Variablen definieren?
+Du hast dabei 2 Möglichkeiten um "globale" Variablen zu definieren:
+
+* mittels  ```$rootScope``` [http://docs.angularjs.org/api/ng.$rootScope](http://docs.angularjs.org/api/ng.$rootScope)
+* oder mit einem Service [http://docs.angularjs.org/guide/services](http://docs.angularjs.org/guide/services)
+
+
+```$rootScope``` ist die Mutter aller Scopes, also sind dessen Variablen in allen Templates und Controller sichtbar. Die Verwendung von ```$rootScope``` ist sehr einfach indem man ihn in den Controller injizieren kann. Mit steigender komplexität deiner Applikation kann dies aber vermehrt zu unübersichtlichen Problemen führen. 
+
+Services sind Singletons welche ebenfalls in Controller injiziert werden könnnen, dabei offenbaren Sie ihre Variablen an den Controller. Da sie Singletons sind, sind nach wie vor "global", aber man hat als Entwickler viel bessere Kontrolle darüber. 
+Hier ein Beispiel in Creator, vergisst nicht ```$rootScope``` in deinem Controller einzubinden:
+```js
+function ($scope, $stateParams, $rootScope) {
+   $rootScope.globalVar = "Meine Globale Variable";
+}
+```
+Die Variable kann dann z.B. mittels Expression ```{{globalVar}}``` im Template verwendet werden. 
+
 
 ---
 #### Wie kann ich ein Objekt zu einem Array hinzufügen? 
