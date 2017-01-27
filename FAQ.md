@@ -2,7 +2,13 @@
 
 Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 
+---
+#### Wo kann ich meine App in Creator debuggen?
+Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
 
+{% youtube %}https://www.youtube.com/watch?v=GVGbs6YHiKw{% endyoutube %}
+
+---
 #### Wie kann ich in Creator eine globale Variablen definieren?
 Du hast dabei 2 Möglichkeiten um "globale" Variablen zu definieren:
 
@@ -41,22 +47,11 @@ var app = angular.module('meineApp', []);
  }]);
 })();
 ```
-
 ---
-#### Wo kann ich meine App in Creator debuggen?
-Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
-
-{% youtube %}https://www.youtube.com/watch?v=GVGbs6YHiKw
- {% endyoutube %}
-
-
-
-
 #### Wie kann ich Abstände im UI machen?
-
+Abstände in Creator kannst du mittel "Spacer" machen. Achte dabei bitte auf prozentuale Angaben, sonst wirst du je nach Displaygrösse böse Überraschungen erhalten. 
 
 ---
-
 #### Wie kann ich ein Seperator im UI machen?
 ![](/_allgemein/seperator-example.png)
 
@@ -81,13 +76,6 @@ Verwende dazu mehrere ```<div>```'s und ein wenig CSS.
     margin-top: 10px !important;
 }
 ```
-
----
-
-
-
-
-
 ---
 #### Wie kann ich Werte zwischen einzelnen Pages mitgeben?
 Oft generiert man sich dynamisch z.B. aus einer Datenbank eine Liste. Möchte man nun die Details eines Eintrags anzeigen und so auf eine Detail-Seite verweisen wird meist eine ID resp. das ganze Objekt mitgegeben. 
