@@ -139,19 +139,15 @@ __Variante 1__
 Du verknüpfst die Seiten über einen "Link", wo du automatisch nach den Route Parameters gefragt wirst.
 Dabei kannst du die Werte auch leer lassen, du kannst einen String aber auch einen dynamischen Tag mit doppelt-geschweiften Klammer {{ mitgeben. 
 
-You can feel free to leave any of the items blank, you can include a String, or you can include dynamic data using Template tags.
 
 [![](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)
 
-# Using $state.go to pass information
 
-Alternatively, you can use`$state.go`in your Controller code and pass the Route Parameters as an object.**Be sure to import $state in your controller.**
+__Variante 2__ 
 
-### Get the State for $state.go from the Page Properties
+Du verwendest  ```$state.go``` in deinem Code und übergibst so deine Route Parameters als object. Sei dabei sicher dass du ```$state``` in  deinem Controller auch eingebunden hast. 
 
-When you have a page selected, under it's Title in properties you'll see it's "State / sref", this is what you use for $state.go!
-
-Here's an example for how you'd use`$state.go`to navigate and pass dynamic parameters to your page.
+Wenn du eine Seite selektiert hast, siehst du unter dem Titel "State / sref". Dies brauchst du in deinem Code in ```$state.go```. Hier ein Beispiel dazu:
 
 [![](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)
 
