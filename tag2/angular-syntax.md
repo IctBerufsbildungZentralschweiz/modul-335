@@ -128,7 +128,7 @@ Das Dritte Resultat ist 19
    Gibt dabei den Namen der Frucht aus.
    Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits ```ng-repeat``` verwenden.
 
-7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf folgende Website nach einem passenden Bild: [https://pixabay.com](https://pixabay.com/)  
+7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array. 
    
    Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in form einer Expression ```{{fruechte.imgURL}}``` angeben.
 
