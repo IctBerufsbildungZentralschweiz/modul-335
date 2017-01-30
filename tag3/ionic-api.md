@@ -28,7 +28,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Erstelle ein neues, blankes Projekt in Creator.
+1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "PopUp"
 2. Lies dir die Dokumentation zu Popup's durch.
 3. Wir wollen nun ein Popup anzeigen:
    1. Durch eine Klick auf den einen Button "Nickname erfassen" wir das Popup angezeigt
@@ -37,11 +37,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 4. Ein Klick ist nicht immer das Beste für ein Benutzer. Füge nun ein Button hinzu und gib ihm 4 Swipe Gesten je nach Richtung \(Oben, Unten, Rechts, Links\). 
    Ein Paragraph soll dabei wie ein Log dienen und pro Geste soll die Richtung reingeschrieben werden.
 
-
-
 ##### Zusatzaufgabe:
 
 Ergänze unsere Früchte-Liste aus Tag 2 mit neuen Früchten, dabei soll ein Popup erscheinen wo ich eine neu Frucht erfassen kann. Die Liste soll auch sortierbar sein, resp. ich möchte einzelne Einträge wieder löschen können. \(Hinweis: Auch hier gibt es in der Doku ein Beispiel\).
-
- 
 
