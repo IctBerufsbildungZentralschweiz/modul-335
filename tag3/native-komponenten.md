@@ -47,6 +47,32 @@ ionic -v
 Damit ist die Installation des CLI abgeschlossen und es kann mit dem Erstellen eines eigenen Ionic-Projekts begonnen werden.
 
 
+#### Ein lokales Projekt erstellen
+
+Du kannst mit folgendem Befehl ein Projekt erstellen
+
+```bash
+ionic start <PROJEKTNAME> <TYP>
+```
+Wobei du einen Projektnamen geben kannst, resp. als Typ ```blank```, ```sidemenu``` oder ```tabs``` wählen kannst.
+Bsp. von Ralph
+```bash
+ionic start RalphsFirstApp sidemenu
+```
+
+Wechsle nun in den Ordner
+```bash
+cd <PROJEKTNAME>
+cd RalphsFirstApp
+```
+
+Du kannst deine App lokal anzeigen mit:
+```bash
+ionic serve
+```
+WICHTIG: Du musst dabei immer in deinem Projektordner sein.
+
+Willst du deine 
 
 
 
