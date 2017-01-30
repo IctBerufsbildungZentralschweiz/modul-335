@@ -65,7 +65,7 @@ Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [
 
 1. Log dich auf [https://creator.ionic.io/](https://creator.ionic.io/) ein
 
-2. Erstelle dein erstes Test-Projekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Das Projekt in den Ordner M335_KursX (z.B. bei Ralph M335_Kurs1) und wähle dabei ein Sidemenu-Projekt!
+2. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Das Projekt in den Ordner M335_KursX (z.B. bei Ralph M335_Kurs1) und wähle dabei ein Sidemenu-Projekt!
 
 3. Mach dich mit der IDE vertraut. Versuch dabei folgenden Fragen zu beantworten:
 
