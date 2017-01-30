@@ -52,7 +52,7 @@ Damit ist die Installation des CLI abgeschlossen und es kann mit dem Erstellen e
 Du kannst mit folgendem Befehl ein Projekt erstellen
 
 ```bash
-ionic start <PROJEKTNAME> <TYP>
+ionic start PROJEKTNAME TYP
 ```
 Wobei du einen Projektnamen geben kannst, resp. als Typ ```blank```, ```sidemenu``` oder ```tabs``` wählen kannst.
 Bsp. von Ralph
@@ -62,7 +62,7 @@ ionic start RalphsFirstApp sidemenu
 
 Wechsle nun in den Ordner
 ```bash
-cd <PROJEKTNAME>
+cd PROJEKTNAME
 cd RalphsFirstApp
 ```
 
