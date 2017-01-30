@@ -49,14 +49,9 @@ Damit ist die Installation des CLI abgeschlossen und es kann mit dem Erstellen e
 
 #### Ein lokales Projekt erstellen
 
-Du kannst mit folgendem Befehl ein Projekt erstellen
-
+Du kannst mit folgendem Befehl ein Projekt erstellen. Wobei du einen Projektnamen geben, resp. als Typ ```blank```, ```sidemenu``` oder ```tabs``` wählen kannst.
 ```bash
 ionic start PROJEKTNAME TYP
-```
-Wobei du einen Projektnamen geben kannst, resp. als Typ ```blank```, ```sidemenu``` oder ```tabs``` wählen kannst.
-Bsp. von Ralph
-```bash
 ionic start RalphsFirstApp sidemenu
 ```
 
@@ -66,13 +61,24 @@ cd PROJEKTNAME
 cd RalphsFirstApp
 ```
 
-Du kannst deine App lokal anzeigen mit:
+wo du deine Projekt lokal im Browser (inkl. Live-Refresh bei Änderungen im Code) anzeigen kannst:
 ```bash
 ionic serve
 ```
 WICHTIG: Du musst dabei immer in deinem Projektordner sein.
 
-Willst du deine 
+#### Cordova Plugin hinzufügen
+Du musst dazu im Projektordner (z.B RalphsFirstApp) sein:
+```bash
+ionic plugin add cordova-plugin-camera
+```
+
+#### Projekt hochladen
+Du kannst dein Projekt in die [Ionic Cloud](https://apps.ionic.io/apps/) hochladen und somit auch auf deinem Handy (Mit der [Ionic View App](http://view.ionic.io/)) anschauen. Führ dazu im Projektordner folgenden Befehl aus:
+```bash
+ionic upload
+```
+
 
 
 
