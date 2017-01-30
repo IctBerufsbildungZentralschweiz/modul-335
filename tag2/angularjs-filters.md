@@ -19,11 +19,13 @@ Filter können in AngularJS hinzugefügt werden um Daten zu formatieren. Anbei e
 
 1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Filters" 
 2. Deine Aufgabe soll es nun sein die folgenden Filter in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [AngularJS Dokumentation](https://docs.angularjs.org) dienen.
-   1. `currency` \(Hier wäre schön wenn du eine Formatierung für CHF findest\)
-   2. `limitTo` \(Hier kannst du das Früchte-Array nehmen und damit etwas spielen\)
-   3. `lowercase`
-   4. `uppercase`
-   5. `orderBy` \(Nimm auch hier das Früchte-Array aus der Syntax-Übung\)
+   1. `lowercase`
+   2. `uppercase`
+   3. `limitTo` \(Hier kannst du das Früchte-Array nehmen und damit etwas spielen\)
+   4. `orderBy` \(Nimm auch hier das Früchte-Array aus der Syntax-Übung\)
+   5. `currency` \(Hier wäre schön wenn du eine Formatierung für CHF findest\)
+
+   
 
 
 
