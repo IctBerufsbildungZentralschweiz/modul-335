@@ -49,7 +49,7 @@ Der Ionic Package Service erlaubt es dir schnell Entwicklungs- reps. Produktions
 
 1. Mach dich mit der Dokumention zu Ionic Cloud vertraut
 2. Falls du noch keinen Account hast, erstell dir [Hier](https://apps.ionic.io/signup) einen
-3. Erstell dir deine eigene App und benenn Sie nach deiner App-Idee aus Use Case 1. 
+3. Erstell dir unter apps.ionic.io deine eigene App und benenn Sie nach deiner App-Idee aus Use Case 1, du sollst nun mit deiner Use-Case Idee arbeiten... 
 4. Versuch nun mit Hilfe dieser  [Doku ](https://docs.ionic.io/services/auth/) ein einfaches Login inkl. Profil zu erstellen
    1. Benutzer sollen sich Registrieren können
    2. Benutzer sollen sich einloggen können und dann in die App kommen
