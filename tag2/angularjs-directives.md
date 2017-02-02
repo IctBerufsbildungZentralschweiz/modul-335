@@ -24,7 +24,7 @@ Ein einfaches **ng-repeat** hat es uns nun erlaubt über die komplette Liste von
 
 Eine Direktive zu einer Komponente in Creator hinzuzufügen ist sehr einfach. Klicke auf der rechten Seite im Einstellungs-Fenster auf einen Komponente, dann füge mit dem "+ Add" ein neuen Eintrag hinzu. Gibt den Namen der Direktive inkl. zugehörigen Wert ein.  
 ![](https://files.readme.io/fdf45a0-Ionic_Creator_2016-10-28_14-54-16.png)  
-Jede Komponente in Creator hat ihre eigene Angular Direktiven welche du bearbeiten kannst.
+Jede Komponente in Creator hat ihre eigene Angular Direktiven, welche du bearbeiten kannst.
 
 Um eine Direktive zu entfernen, klicke au das rote "-" Minus.
 
