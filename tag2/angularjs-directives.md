@@ -152,6 +152,18 @@ Wenn du eine Seite selektiert hast, siehst du unter dem Titel "State / sref". Di
 [![](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)
 
 
+##### Zugriff auf übermittelte Daten
+Alle Informationen sind nun mit ```$stateParams``` in deinem Ziel-Controller erreichbar. ```$stateParams``` wird automatisch in jedem Controller injiziert, aber falls du Probleme hast prüfe dies nochmals.
+
+Um nun unsere Beispiele von Oben (Name, Pizza, Farbe) zu verwenden:
+```js
+$stateParams.name
+$stateParams.favorite_pizza
+$stateParams.favorite_color
+```
+
+Falls die Parameter nicht gesetzt sind, sind Sie entweder leer oder undefiniert. 
+
 
 Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](http://docs.usecreator.com/docs/route-parameters)  
 
