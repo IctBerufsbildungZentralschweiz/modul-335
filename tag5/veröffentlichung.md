@@ -72,4 +72,9 @@ Bist du schon auf Angular 2 inkl. Ionic 2 gespannt, in den letzen Tagen hat Matt
 Ich hoffe schon bald dich auch mit Ionic 2 wieder zu sehen...
 Talk soon, Ralph!
 
+{% youtube %}https://www.youtube.com/watch?v=O2WiI9QrS5s{% endyoutube %}
+
+
+
+
 
