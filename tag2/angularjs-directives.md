@@ -43,8 +43,7 @@ $scope.items = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 Nachdem wir in `$scope` einige Daten gesetzt haben, können wir mit `ng-repeat` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
 
 ![](https://files.readme.io/11de288-Ionic_Creator_2016-10-31_21-15-47.png)
-
-This results in the List Item being duplicated 5 times, with the ID being placed in the text of each List Item:  
+ 
 Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusammen mit dem Tag "Item" ausgegeben wird.
 
 ##### Sortierung
