@@ -47,7 +47,22 @@ Der rechtliche Aspekt einer App wird oft stark vernachlässigt.
 http://www.schweizer-vertraege.ch/Suchbegriff/60-AGB 
 
 
+---
+## Übung
+
+![](/_allgemein/ralph_uebung.png)
+
+1. Mach dich mit der Dokumention zu Ionic Cloud vertraut
+2. 
 
 
+
+
+---
+# Ausblick
+Bist du schon auf Angular 2 inkl. Ionic 2 gespannt, in den letzen Tagen hat Matt von Ionic folgende Roadmap publiziert: http://docs.usecreator.com/docs/ionic-2-support-roadmap
+
+Ich hoffe schon bald dich auch mit Ionic 2 wieder zu sehen...
+Talk soon, Ralph!
 
 

@@ -31,6 +31,44 @@ storageBucket: "m335-usecase2.appspot.com",
 messagingSenderId: "327137245327"
 ```
 
+#### Struktur der Daten
+```json
+{
+  "ferienorte" : {
+    "-KapaxtCtq_Oy6jWFJea" : {
+      "name" : "Ibiza"
+    },
+    "-KapayjfGFmD3LoKyJui" : {
+      "name" : "Malediven"
+    },
+    "-KaqlRQ5tZNB0yubBUp0" : {
+      "name" : "Cancun"
+    },
+    "-KatAx_GxTKmKAx4lOi9" : {
+      "name" : "New York"
+    }
+  },
+  "gallerie" : {
+    "-KaqmAPFcaCRjI_Nm3AQ" : {
+      "imgurl" : "http://vitalmag.eu/wp-content/uploads/2014/06/Ferienorte-in-Europa-vitalmag4.jpg"
+    },
+    "-KaqmBJ3TBEHJ106f0Mk" : {
+      "imgurl" : "https://deavita.com/wp-content/uploads/2013/10/Exotische-Ferienorte-Fidschi-Pazifik-Laucala-Insel-Resort.jpeg"
+    },
+    "-KaqmCAXU-6dQi_YObc6" : {
+      "imgurl" : "http://www.reise-informationen.net/cms/wp-content/uploads/2009/03/negril-strand.jpg"
+    },
+    "-KaqmD2Xtz6700fi0aNU" : {
+      "imgurl" : "http://www.pustertal.net/images/gallery/pustertal/ferienregion/small/pragser-wildsee-pustertal.jpg"
+    },
+    "-Kar26HsKOhgip-SY4tq" : {
+      "imgurl" : "http://www.savognin.ch/typo3temp/pics/bb-dorf-bivio2-2009_a6e92a647d.jpg"
+    }
+  }
+}
+
+```
+
 ## Detailbeschreibung
 
 #### Allgemein / Styling
