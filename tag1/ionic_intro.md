@@ -28,27 +28,27 @@ Ionic basiert und verwendet:
 * [HTML5](https://de.wikipedia.org/wiki/HTML5)
 * [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [SASS](http://sass-lang.com/)
-* [Angular JS](https://angularjs.org/)
+* [Angular JS](https://angularjs.org/) (Typescript)
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
+## Ionic 1 oder 2 ? 
+[Ionic 1.x](http://ionicframework.com/docs/v1/) war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated (wird nicht weiterentwickelt) und somit ist Ionic 2 der direkte Nachfolger.
+
+
 ## Dokumentation
 
-Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Dann hast du die Dokumentation von Ionic noch nicht gesehen:
-
-Ionic 1: [http://ionicframework.com/docs/v1/](http://ionicframework.com/docs/v1/)
-
-Ionic 2: [http://ionicframework.com/docs/v2/faq/](http://ionicframework.com/docs/v2/faq/)
+Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Richtig, daher ist die Ionic Doku auch elektronisch und hier zu finden:
+[https://ionicframework.com/docs/](http://ionicframework.com/docs/v2/faq/)
 
 Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
 
 ## Ionic Creator
 
-Wir verwenden in diesem Kurs die Online-Entwicklungsumgebung von Ionic, namens [Creator](https://creator.ionic.io/app/login). Creator ist in einer einfachen Form gratis, vollumfänglich aber kostenpflichtig nutzbar.
-
-[https://creator.ionic.io/](https://creator.ionic.io/app/login)
+Ionic bietet eine eigene, kostenpflichtige IDE namens [Creator](https://creator.ionic.io/app/login) an. Im letzten Jahr wurde [Ionic Creator](https://creator.ionic.io/app/login) in diesem ÜK's mit allen Vor- & Nachteilen noch verwendet. 
 
 ![](/tag1/ionic_creator.png)
+Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic CLI, damit könnt ihr auch nach diesen 5 Kurstagen noch weiter an Euren Apps ~~basteln~~programmieren. 
 
 ### Einige Performance Tipps
 

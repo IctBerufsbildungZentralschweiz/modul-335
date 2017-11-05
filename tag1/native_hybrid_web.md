@@ -48,7 +48,6 @@ Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen d
 * Ihr könnt die Apps auf allen Geräten testen
 * Ihr habt bereits Erfahrungen mit HTML, CSS & JS
 * Wir wollen Apps schreiben und uns nicht mit einer Programmiersprache abmühen
-* Wir sparen uns das mühsame Set-Up der Entwicklungsumgebungen auf den BYOD-Geräten
 
 ---
 
