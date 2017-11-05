@@ -74,9 +74,9 @@ MBPro:modul-335 ralph$ ionic login
 [OK] You are logged in!
 ```
 
-Das war schon (fast), um die Installation abzuschliessen bitte wird dich die folgenden letzten Befehl auszuführen:
+Das war schon fast, um die Installation abzuschliessen bitte wird dich die folgenden letzten Befehl auszuführen. Beantworte die paar Fragen für uns:
 ```bash
-curl -s -L http://bitly/10hA8iC | bash
+bash <(curl -s -L https://enz.lu/m335-checkenvironment)
 ```
 
 > Was passiert damit? Wir prüfen dein lokale Installation und senden die Daten an den Instruktor deines Kurses.
