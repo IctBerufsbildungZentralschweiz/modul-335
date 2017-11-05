@@ -50,12 +50,22 @@ Ionic bietet eine eigene, kostenpflichtige IDE namens [Creator](https://creator.
 ![](/tag1/ionic_creator.png)
 Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic CLI, damit könnt ihr auch nach diesen 5 Kurstagen noch weiter an Euren Apps ~~basteln~~programmieren. 
 
-### Einige Performance Tipps
+## Ionic Command Line Interface 
 
-![](/_allgemein/ralph_tipp.png)
+Die [Ionic CLI](https://ionicframework.com/docs/cli/) ist bester Helfer für die künftige Entwicklung mit Ionic. Wir Wissen, aller Anfang ist schwer, aber wie wärs mit 
+```bash
+ionic 
+```
+in deinem Terminal/Gitbash einzugeben.
 
-1. Verwende Creator am besten ohne Browser-Plugins \(Ad-Blocker, Cookie-Blocker, usw.\) -&gt; z.B. auch im Privaten/Inkognito Modus 
-2. Speichere deine Projekt-URL als Lesezeichen ab. Alternativ kannst du dir auch dein Projekt-Hash https://creator.ionic.io/app/designer/8e936b638dbc \(Hier: ```8e936b638dbc``` für deine Übungen ab, so kannst du später direkt darauf zugreifen
+### Wie erstelle ich ein neues Projekt
+
+
+### Wie 
+
+
+
+
 
 
 
@@ -63,11 +73,12 @@ Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic 
 
 ## Übung
 
-1. Log dich auf [https://creator.ionic.io/](https://creator.ionic.io/) ein
+1. Öffnen dein Terminal oder deine Gitbash und tippe ionic ein
+2. Mach dich mit der Hilfe (ionic --help) und den wichtigsten Commands vertraut
 
-2. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Das Projekt in den Ordner M335_KursX (z.B. bei Ralph M335_Kurs1) und wähle dabei ein Sidemenu-Projekt!
+3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Mit dem Befehl ```cd```kannst du unter Linux/Unix navigieren. Wähle dabei ein Sidemenu-Projekt, ```ionic start``` legt übrigens immer einen neuen Ordner an :) 
 
-3. Mach dich mit der IDE vertraut. Versuch dabei folgenden Fragen zu beantworten:
+4. Mach dich mit der CLI vertraut. Versuch dabei folgenden Fragen zu beantworten:
 
    1. Wo kann ich Einstellungen machen?
 
