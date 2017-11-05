@@ -14,6 +14,9 @@ USER_GROUP=""
 USER_COMPANY=""
 TMP_JSON=""
 TMP_IONIC_VERSION_FILE="ionic_version.tmp"
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
 #
 # FUNCTIONS
 #
@@ -30,7 +33,7 @@ function gatherInformationFromSystem {
         NPM_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'npm'  | cut -d':' -f2)"
         OS_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'OS'  | cut -d':' -f2)"
     else
-        echo "ERROR: Ionic ist nicht korrekt installiert. Bitte versuche es mit der Anleitung erneut oder wende dich an deinen Instruktor (am 1. Kurstag)."
+        echo "${RED}ERROR: Ionic ist nicht korrekt installiert. Bitte versuche es mit der Anleitung erneut oder wende dich am 1. Kurstag an deinen Instruktor.${NC}"
     fi
 }
 # Generating a json-file for sending the data to the server
@@ -49,9 +52,10 @@ function  generateJSONData {
 }
 
 function promptForUserData {
-  echo -e "---"
-  echo -e "MODUL 335 - Mobile App realisieren "
-  echo -e "---"
+  echo -e "${GREEN}---"
+  echo -e "ICT BERUFBILDUNG ZENTRALSCHWEIZ"
+  echo -e "Modul 335 - Mobile Applikation realisieren "
+  echo -e "---${NC}"
   echo -e "Wir brauchen noch ein paar Informationen von dir..."
   echo -e "  "
   echo -e "Wie ist dein Vorname? \c"
@@ -70,7 +74,13 @@ function promptForUserData {
 # If possible, send the json to the M335 server, if not print it on the console
 function postJSONToServer {
     #echo $TMP_JSON
-    curl -H "Content-Type: application/json" -X POST -d "${TMP_JSON}" ${SERVER_URL}
+    curl -H "Content-Type: application/json" -X POST -d "${TMP_JSON}" ${SERVER_URL} > /dev/null 2>&1
+
+    if [[ $? -eq 0 ]]; then
+      echo "${GREEN}Bravo!${NC} Beim senden der Daten. Wende dich am 1. Kurstag an deinen Instruktor."
+    else
+      echo "${RED}ERROR: Beim senden der Daten. Wende dich am 1. Kurstag an deinen Instruktor.${NC}"
+    fi
 }
 
 # Always clean the temporary stuff
