@@ -52,7 +52,8 @@ Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic 
 
 ## Ionic Command Line Interface 
 
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPcAAADMCAMAAACY78UPAAAAaVBMVEX////J3P5PjvdFifeux/umwvpEiPfA1v2vyvy90fu2z/0+hvfl7P5Ji/fM3v6au/vz9v54p/lRkPdzpPljmvjF2v5Tkvf2+f9rn/nR4f1+qvno8P5dlvjA1Pza5/6qxfuQt/uGsPqFrvlNQXpKAAAFvElEQVR4nO2d2ZaiMBBAWUYWtYIom4jL9P9/5KgQSDyjbYesdt1Hjni4pqgKKQTPQxAEQRAEQRAEQRAEMcnpmPxxg+R4kma9zLsgdIWgy5cypOu0iyBwCYi6tJ6rfWjBLesbAO1hnva+cM/6BhT7OdqkclP7Kl4Rce1D56r2VbwTDvVN7q72VTzfCHqfJ20IV24QMsd8Fhzu7fQVRbJ2g4RJxFuxAc9Cal2lYr+cEdIxF4eZyP41/eWgK2Ufm1JKmo2hEJm++GOYx9IPTS3xGOi+wN40q0Er/cBU09JDF8lsi+H0Xk0zn0NyuSz4+cBpcbkka3ZLnWZ/M7Mhsl8NJ/hCYOfF8KOtaFass+vE98pu0ly39y1hNmXOa1q5MWe6NJvN4A1SvC/02wp6iXugqS9saQZZ0g9tDQ65VO90LIzQDB+50Eo3RtSpGj8kWD1lINP7sJsmBKs+T+6niU0A90/V0y8hWD2lINP7FDCSl/umJGS23Wv8oWGmiTtZGj9Gpre/Yrzz+6aMuWyB5LZlzURAUMy89hdHpjdhvfuS/h/vatoSFMZOcKlxzp7M/am7ZOIc7qc8F+fN8+9WjEzvTcvktb6QnbrJu+J3uhIlkix+jtQ65o9KIZ25ZlMdG9Zu1+MKjdhFgRzkzlsWq35L1NCEVTf9EjNEFyrpDx8yOmGT6+3Fu20UQpExA7koIAqDgrk+P7VVGEL3ZSyZe9K9vY2/TGK+D7OOk6XPOdb7NDnOWsWdjWxvV0BvgZ1/vbe5eiRKLcM7TFLXoBdMs7yDMHKNcQF8lre7oDd6ozd6ozfrDaZvzfoxIMMbzolrjK29Od5RTFwjjqR4+66B3uiN3uiN3uiN3ujtCuiN3uiN3uiN3uiN3q6A3uiN3uiN3uiN3ujtCuiN3uiN3sLeJC712byPam9S5jnR6PMuir1J2QDsLDwN1HqT+PacE8jtC3Wl3iTu/ylrobhKb6p9E7ct1FV6x9PDfGBnWXLT5G1dqCuN89JecS15bRC3KdR11DEbR1z1vCVu7BRXPk89sqHeajR7jYbrEitDXf116EOoW5LcNFx/P4S6HSOuY92BL2d2iGtZbyFHNtS/bAh1PetMfHKzYcQ1ra9xyS2woJzpWlckKRfqGsxeo2091bLkpm8dmUtuQWs4uWlcP+fr+JfZEdfZN+BD3ay41n7JQ3IzGep6+0T2JDfN/TG+jhssZ7r7gnyo/zUW6tr7oZYkN/19YG7EjdVxA/1vkjAPHwwzM+IGxptfXFZm9hr95zffTDDVN9Oez2M71ld11++SC3JzExfN87WSecSq0fsg9M7PH1KawQm61uuxh5T2S65LHjonZu+A0LjewgX5TrnZa/Strz2ktF+yzvTYHjTdO9DlzaW0nXFtXf2S8suSuk3R0x/jgnxnsm5TtPRD7Uppd3R4x609dZuiwbu0Lsh9Hfe3PKQ0O7TV38/EB7n5AjagfLwtq9sUxd5vBPm3j4B0z5u8kdLibx/5qWRRRqn3G3WbJKtvnvC6UlL4VHq/s6hEuDd1/Q81f05T6c30+aF5Urc/0XtqfkJzfJKePtF7+j9R83S68pHeg/gL7Q/1vooXAE36vAZ/qPdtxJtXs7RrHYPXuFfHerH0WUrrOWbf4d685S0+cJ5qMeiN3uiN3uiN3uiN3q6A3uiN3uiN3ujtLYa1sfBsTb/vTciZHrqI9/iyOtueQvQtZHxy1FnA298GA4b+LSEKyeiBb30B77qgjaBq4ZI4WVTDcUMh9ArvbFz83mYy3naoiWyM0zAT0fY24xcE0F2WbnDppjbtVvBN9efpK5x5eSp7yCJZ7T7gzA0N7gG54HB73qFzVxy6g6i255HKVXGoiLi25+0LN8Wh2M/RvoZ6C+6ZA7QzgrynTrvILXOIulRowvLIMu8C0/XpbYIuX8qQvnM6Jn/cIDmepFkjCIIgCIIgCIIgCIKI8A9WWCUnAyGaNgAAAABJRU5ErkJggg==)
+![](https://ionicframework.com/img/docs/symbols/docs-cli-symbol@2x.png)
+
 Die [Ionic CLI](https://ionicframework.com/docs/cli/) ist bester Helfer für die künftige Entwicklung mit Ionic. Wir Wissen, aller Anfang ist schwer, aber wie wärs mit 
 ```bash
 ionic 
@@ -60,6 +61,15 @@ ionic
 in deinem Terminal/Gitbash einzugeben.
 
 ### Wie erstelle ich ein neues Projekt
+Ein neues Projekt erstellt du mit 
+```bash
+ionic start myNewProject 
+```
+wobei myNewProject der Name deines Projekt ist. Es dauert einen Moment, dann kannst du mit
+```bash
+cd myNewProject
+```
+ins eigentlich Projektverzeichnis wechseln.
 
 
 ### Wie 
