@@ -71,8 +71,33 @@ cd myNewProject
 ```
 ins eigentlich Projektverzeichnis wechseln.
 
+![](/_allgemein/ralph_tipp.png)
 
-### Wie 
+**Tipp von Ralph:**
+
+
+>Mit dem Befehl ```cd``` kannst du unter Linux/Unix navigieren. , ```ionic start``` legt übrigens immer einen neuen Ordner an :) 
+
+
+
+### Wie kann ich meine App im Browser simulieren
+Ionic bietet uns ein super Möglichkeit die von Euch programmierte App mit folgenden Befehl in Eurem Projektordner anzuschauen:
+```bash
+ionic serve
+```
+Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL http://localhost:8100/
+
+**Vorteile von ``` ionic serve ```**
+* kein direktes Deployment via Build (Android SDK / XCode) auf Mobiltelefon nötig (==> Ihr spart Zeit)
+* Änderungen sind direkt sichtbar (inkl. Live-Reload im Browser)
+* Ihr könnt eine App ohne zusätzliche Installation von SDK's / XCode Programmen mit HTML, CSS, JS (Typescript) entwickeln
+* Hinsichtlich von PWA (Progressive Web Apps) ein weitere Vorteil
+
+
+
+
+
+
 
 
 
@@ -88,7 +113,7 @@ ins eigentlich Projektverzeichnis wechseln.
 
 2. Mach dich mit der Hilfe (``` ionic --help ```) und den wichtigsten Commands vertraut
 
-3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Mit dem Befehl ```cd``` kannst du unter Linux/Unix navigieren. Wähle dabei bitte ein Sidemenu-Projekt, ```ionic start``` legt übrigens immer einen neuen Ordner an :) 
+3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" (also z.B. G1\_RoomiesRalph\_Übungen), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner.  Wähle dabei bitte ein Sidemenu-Projekt.
 
 4. Mach dich mit der CLI vertraut. Versuch dabei folgenden Fragen zu beantworten:
 
