@@ -205,9 +205,9 @@ Das Dritte Resultat ist 19
    Gibt dabei den Namen der Frucht aus.  
    Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits `ngFor` verwenden, du findest sicher ein Bespiel im Netz.
 
-7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element `imgURL` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array.
+7. Wir kopieren nun die Liste unserer Früchte z.B. in ```fruechte2``` und erweitern Sie um ein Bild. Erweitere das Array um eine Element `imgURL` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array.
 
-   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in Form einer Expression `{{fruechte.imgURL}}` angeben.
+   Wir möchten nun eine Liste mit "Avatar" erstellen. Konsultiere dazu die Ionic-Doku. Als Avatar-Image kannst du die URL in Form einer Expression `{{fruechte.imgURL}}` angeben.
 
 
 
