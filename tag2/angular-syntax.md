@@ -192,7 +192,7 @@ Das Dritte Resultat ist 19
    person: any = { 'name' : 'Muster', 'vorname' : 'Max' };  
    ```
 
-6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
+6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Component holen:
 
    ```js
    fruechte: any = [
