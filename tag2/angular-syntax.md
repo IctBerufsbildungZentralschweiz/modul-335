@@ -180,19 +180,22 @@ Das Dritte Resultat ist 19
    25 / 5 =  
    100 - 1 =
 
-4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deiner Component stammt. Füge dazu folgenden Variable in deiner Klasse hinzu und versuche es mit Expressions zu lösen:  
-   `myString: string = 'Welt!';`
+4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deiner Component stammt. Füge dazu folgenden Variable in deiner Klasse hinzu und versuche es mit Expressions zu lösen:
 
-5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von dem Controller stammen. Füge dazu im Controller folgende Zeile hinzu:  
-   `$scope.person = {          
-    'name' : 'Muster',          
-    'vorname' : 'Max'          
-   }`
+   ```js 
+   myString: string = 'Welt!';
+   ``` 
+   
+
+5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von deiner Component stammen. Füge dazu in deiner Klasse folgende Zeile hinzu:  
+   ```js   
+   person: any = { 'name' : 'Muster', 'vorname' : 'Max' };  
+   ```
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
 
    ```js
-   $scope.fruechte = [
+   fruechte: any = [
    {name:'Orange'},
    {name:'Banane'},
    {name:'Apfel'}
@@ -200,7 +203,7 @@ Das Dritte Resultat ist 19
    ```
 
    Gibt dabei den Namen der Frucht aus.  
-   Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits `ng-repeat` verwenden.
+   Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits `ngFor` verwenden, du findest sicher ein Bespiel im Netz.
 
 7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element `imgURL` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array.
 
