@@ -37,21 +37,18 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'zahlen.html'
 })
 
-
-
 export class ZahlenPage {
   anzahl: any = 3;
   kosten: any = 5;
-  
-  constructor(public navCtrl: NavController) {
-  
-  }
 
+  constructor(public navCtrl: NavController) {
+
+  }
 }
 ```
 
 ```html
-// zahlen.html
+<!-- zahlen.html -->
 <p>
 Total in CHF: {{ anzahl * kosten }}.-
 </p>
@@ -67,10 +64,31 @@ Total in CHF: 15.-
 
 Strings in AngularJS sind wie in Javascript:
 
+```js
+// zeichenketten.ts
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-zeichenketten',
+  templateUrl: 'zeichenketten.html'
+})
+
+export class ZeichenkettenPage {
+  vorname: string = 'Max';
+  nachname: string = 'Muster';
+
+  constructor(public navCtrl: NavController) {
+
+  }
+}
+```
+
 ```html
-<div ng-app="" ng-init="vorname='Max';nachname='Muster'">
-<p>Mein Name ist {{ vorname + " " + nachname }}.</p>
-</div>
+<!-- zeichenkette.html -->
+<p>
+Mein Name ist {{ vorname + " " + nachname }}.
+</p>
 ```
 
 _Ausgabe:_
@@ -83,10 +101,30 @@ Mein Name ist Max Muster.
 
 Auch Objekte funktionieren wie in JS:
 
+```js
+// objekte.ts
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-objekte',
+  templateUrl: 'objekte.html'
+})
+
+export class ObjektePage {
+  person: any = { vorname: 'Max', nachname: 'Muster'};
+
+  constructor(public navCtrl: NavController) {
+
+  }
+}
+```
+
 ```html
-<div ng-app="" ng-init="person={vorname:'Max',nachname:'Muster'}">
-<p>Sein Nachname lautet {{ person.nachname }}!</p>
-</div>
+<!-- objekte.html -->
+<p>
+Sein Nachname lautet {{ person.nachname }}!
+</p>
 ```
 
 _Ausgabe:_
@@ -97,12 +135,30 @@ Sein Nachname lautet Muster!
 
 ## Arrays
 
+```js
+// arrays.ts
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-arrays',
+  templateUrl: 'arrays.html'
+})
+
+export class ArraysPage {
+  punkte: any = [1,15,19,2,40];
+
+  constructor(public navCtrl: NavController) {
+
+  }
+}
+```
+
 ```html
-<div ng-app="" ng-init="punkte=[1,15,19,2,40]">
-
-<p>Das Dritte Resultat ist {{ punkte[2] }}</p>
-
-</div>
+<!-- arrays.html -->
+<p>
+Das Dritte Resultat ist {{ punkte[2] }}
+</p>
 ```
 
 _Ausgabe:_
@@ -128,9 +184,9 @@ Das Dritte Resultat ist 19
    `$scope.myString = 'Welt!';`
 
 5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von dem Controller stammen. Füge dazu im Controller folgende Zeile hinzu:  
-   `$scope.person = {      
-    'name' : 'Muster',      
-    'vorname' : 'Max'      
+   `$scope.person = {        
+    'name' : 'Muster',        
+    'vorname' : 'Max'        
    }`
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
