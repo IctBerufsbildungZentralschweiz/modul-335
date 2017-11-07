@@ -32,7 +32,6 @@ angular.module('myModule', [])
 });
 ```
 
-
 ## Ablauf einer Anfrage
 
 ![](http://www.innotix.com/files/2914/5631/4175/SinglePage_Lifecycle.png)
@@ -44,34 +43,21 @@ angular.module('myModule', [])
 * App-Feeling durch schnelle dynamische Inhaltsanpassungen
 * Tiefes zu übertragendes Datenvolumen, mit einhergehendem Performance-Vorteil bei Mobile-Webapplikationen.
 
-## Angular 1 vs. 2
+## Kurze Geschichte von Angular
 
 Angular 1.x wurde nicht für den mobilen Einsatz gebaut, Angular 2.0 hingegen schon. Angular 2 ist durch eine hirarchische Dependency Injection um einiges schneller als Angular 1.x. und ist grosses Update.  
-Hier weitere Unterschiede:
+Hier weitere wichtige Vorteile von 2.0:
 
-| Angular 1.x | Angular 2.0 |
-| :--- | :--- |
-| Ein modulares Programmierkonzept | Komponenten basierte Programmierung |
-| Ist eine Javascript Bibliothek | Ist ein Framework |
-| Kein TypeScript | Verwendet TypeScript |
-| Verwendet controller und $scope | Verwendetet component und directives |
-| Einfache Installation. Alles was es braucht ist eine Reference zur Bibliothek | Etwas kompliziertes mit Aufwand verbundenes Setup, da Abhängigkeiten zu Bibliotheken bestehen |
-| Kein camelCase-Syntax für direktiven z.B. ng-model | Verwendet camelCase, z.B. ngModel |
+| Vorteile Angular 2.0 |
+| :--- |
+| Komponenten basierte Programmierung |
+| Ist ein Framework |
+| Verwendet TypeScript |
+| Verwendetet component und directives |
+| Etwas kompliziertes mit Aufwand verbundenes Setup, da Abhängigkeiten zu Bibliotheken bestehen |
+| Verwendet camelCase, z.B. ngModel |
 
-### Codebeispiel
-
-**Angular 1.x:**
-
-```js
-var myApp = angular
-.module("myModule", [])
-.controller("productController", function($scope) {
-         var prods = { name: "Prod1", quantity: 1 };
-         $scope.products = prods;
-});
-```
-
-**Angular 2:**
+### Codebeispiel Angular 2.0
 
 ```js
 import { Component } from '@angular/core';
@@ -87,15 +73,16 @@ export class ProductComponent {
 ```
 
 ---
+
 ## Gruppenübung
+
 ![](/_allgemein/ralph_uebung.png)
 
 Lass uns in ein paar Google Slides einige AngularJS Applikationen zusammentragen:
 
-
 1. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag2/Teil22\_AngularApps"_ und öffne die Datei online.
-2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation (auch Beispiel Apps) welche mit Angular 1 oder 2 erstellt werden. 
-4. Ergänze deine Slides mit Bildern oder Code-Beispielen.
+2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation \(auch Beispiel Apps\) welche mit Angular 2 erstellt werden. \(Alternativ auch mit Angular 1\) 
+3. Ergänze deine Slides mit Bildern oder Code-Beispielen.
 
 Wir besprechen die Ergebnisse in Rund 15min gemeinsam gemeinsam.
 
