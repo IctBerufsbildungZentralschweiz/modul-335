@@ -10,17 +10,11 @@ AngularJS löst diese Expression auf und gibt das Resultat am entsprechenden Ort
 ### Beispiel
 
 ```html
-<!DOCTYPE html>
-<html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<body>
+// expressions.html
 
-<div ng-app="">
-  <p>Mein erster Ausdruck: {{ 7 + 5 }}</p>
-</div>
-
-</body>
-</html>
+<p>
+  Mein erster Ausdruck: {{ 7 + 5 }}
+</p>
 ```
 
 _Ausgabe:_
@@ -33,10 +27,34 @@ Mein erster Ausdruck: 12
 
 In Expressions kann man sehr eifach mit Zahlen und den gängigen Operatoren rechnen:
 
+```js
+// zahlen.ts
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+@Component({
+  selector: 'page-zahlen',
+  templateUrl: 'zahlen.html'
+})
+
+
+
+export class ZahlenPage {
+  anzahl: any = 3;
+  kosten: any = 5;
+  
+  constructor(public navCtrl: NavController) {
+  
+  }
+
+}
+```
+
 ```html
-<div ng-app="" ng-init="anzahl=3;kosten=5">
-<p>Total in CHF: {{ anzahl * kosten }}.-</p>
-</div>
+// zahlen.html
+<p>
+Total in CHF: {{ anzahl * kosten }}.-
+</p>
 ```
 
 _Ausgabe:_
@@ -110,9 +128,9 @@ Das Dritte Resultat ist 19
    `$scope.myString = 'Welt!';`
 
 5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von dem Controller stammen. Füge dazu im Controller folgende Zeile hinzu:  
-   `$scope.person = {    
-    'name' : 'Muster',    
-    'vorname' : 'Max'    
+   `$scope.person = {      
+    'name' : 'Muster',      
+    'vorname' : 'Max'      
    }`
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
@@ -125,12 +143,12 @@ Das Dritte Resultat ist 19
    ];
    ```
 
-   Gibt dabei den Namen der Frucht aus.
-   Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits ```ng-repeat``` verwenden.
+   Gibt dabei den Namen der Frucht aus.  
+   Versuche es entweder statisch wie im Beispiel oben in dem du auf des n-te Element des Arrays zugreifst. Oder erweitert kannst du auch bereits `ng-repeat` verwenden.
 
-7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element ```imgURL``` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array. 
-   
-   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in Form einer Expression ``` {{fruechte.imgURL}} ``` angeben.
+7. Wir wollen nun noch die Liste unserer Früchte um ein Bild erweitern. Erweitere das Array um eine Element `imgURL` und suche auf [Google Bilder](https://images.google.ch/?gws_rd=ssl) nach einem passenden Bild und kopiere die Bild-Adresse in dein Array.
+
+   Wähle das Listen-Element an und ändere rechts in den Einstellungen den Style-Type auf "Avatar". Jetzt kannst du dort als Avatar-Image die URL in Form einer Expression `{{fruechte.imgURL}}` angeben.
 
 
 
