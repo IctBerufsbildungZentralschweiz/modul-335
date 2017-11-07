@@ -173,20 +173,20 @@ Das Dritte Resultat ist 19
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung"
-2. Erstelle für jedes der folgenden Themen eine eigene Seite inkl. Link im Menu: Zahlen, String, Objekte, Array
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung"
+2. Erstelle für jedes der folgenden Themen eine eigene Seite inkl. Link im Menu: Zahlen, String, Objekte, Array.  \(Verwende doch dazu `ionic g` - den Generator - wenn du ihn noch nicht kennst, versuche dein Wissen mit der Hilfe: `ionic --help` aufzubessern\)
 3. Auf der Seite _Zahlen_, füge einen neuen Paragraph hinzu und versuche die folgenden Rechnungen direkt mit Expressions aufzulösen:  
    5 + 7 =  
    25 / 5 =  
    100 - 1 =
 
-4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deinem Controller stammt. Füge dazu folgenden Wert im Controller hinzu und versuche es mit Expressions zu lösen:  
-   `$scope.myString = 'Welt!';`
+4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deiner Component stammt. Füge dazu folgenden Variable in deiner Klasse hinzu und versuche es mit Expressions zu lösen:  
+   `myString: string = 'Welt!';`
 
 5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von dem Controller stammen. Füge dazu im Controller folgende Zeile hinzu:  
-   `$scope.person = {        
-    'name' : 'Muster',        
-    'vorname' : 'Max'        
+   `$scope.person = {          
+    'name' : 'Muster',          
+    'vorname' : 'Max'          
    }`
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Controller holen:
