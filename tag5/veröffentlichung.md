@@ -40,6 +40,7 @@ https://launchkit.io/
 
 Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von Mockdrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen. 
 http://mockdrop.io/
+https://mockuphone.com/
 
 ## AGB's / Terms of Use / Datenschutz
 Der rechtliche Aspekt einer App wird oft stark vernachlässigt. Speicherst du Daten eines Benutzer (Email/Passwort)? Sind Daten deiner App auf einem Server im Ausland (USA) gespeichert? Stell dich diese Fragen doch bevor du vor einem Richter sitzt und für Millionen angeklagt wirst 😅
