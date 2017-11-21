@@ -36,5 +36,5 @@ https://ionicframework.com/docs/cli/generate/
 
 
 ## Ionic DevApp
-
+![](http://blog.ionic.io/wp-content/uploads/2017/10/devapp-image.jpg)
 
