@@ -3,11 +3,7 @@
 ![](/_allgemein/ionic-ui.jpeg)  
 Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige Duplikationen zu vermeiden verweisen ich hier auf folgende Links:
 
-[Dokumentation für Ionic 1.x](http://ionicframework.com/docs/components/ "Ionic 1:  Dokumentation")
-
-resp.
-
-[Dokumentation für Ionic 2.x](http://ionicframework.com/docs/v2/components/ "Ionic 2: Dokumentation")
+[Dokumentation ab Ionic 2.x](http://ionicframework.com/docs/v2/components/ "Ionic 2: Dokumentation")
 
 Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber später mehr...
 
@@ -26,11 +22,9 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 ![](/_allgemein/ralph_uebung.png)  
 
 
-Hey, du hast vorher für meine WG-Partys auf Papier einen Prototypen gezeichnet - hoffe es hat dir Spass gemacht. Ich denke es ist nun an der Zeit das du dich mit der IDE vertraut machst:
+Hey, du hast am Tag 1 für meine WG-Partys auf Papier einen Prototypen gezeichnet - hoffe es hat dir Spass gemacht. Ich denke es ist nun an der Zeit das du dich mit der IDE vertraut machst:
 
-1. Erstelle ein neues Projekt in Creator. 
-2. Versuche die einzelnen Screens, inkl. UI-Elemente nachzubilden
-3. Achte dabei auf die verschiedenen Einstellungen \(rechte Seite\) resp. gib den Seiten bereits jetzt logische Namen. 
-
+1. Erstelle ein neues Projekt in der Ionic CLI. Wähle dabei doch ein Tabs-Projekt und nenne es z.B. _Uebung_UI_WGParty_
+2. Versuche die einzelnen Screens, inkl. UI-Elemente nachzubilden, die UI Elemente findest du in der Ionic Doku. Kümmere dich vorerst mal ums HTML und erst in einem zweiten Schritt ums Styling (SCSS)
 
 
