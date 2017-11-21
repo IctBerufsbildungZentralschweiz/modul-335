@@ -152,12 +152,13 @@ h1 {
 
 [Auf Sassmeister ansehen](http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
 
-## SASS in Creator
-Ionic setzt voll und ganz auf SASS. Du kannst so deine App bis ins letzte Detail stylen. In Creator findet sich das ganze unter _Theming_.
+## SCSS in Ionic
+Ionic setzt voll und ganz auf SCSS. Du kannst so deine App bis ins letzte Detail stylen. Dazu wurde in der Doku ein eigenes Kapitel gewidmet:
+https://ionicframework.com/docs/theming/theming-your-app/
 
-{% youtube %}https://www.youtube.com/watch?list=PLOMESIqyrpf-rpNjFGzuCoTwNdv_-PUD1&v=IYJyA90KqWc {% endyoutube %}
+Etwas für die Lachmuskeln:
+{% youtube %}https://www.youtube.com/watch?v=1cgr0z9TXnQ {% endyoutube %}
 
-Ionic hat eine [Liste von überschreibaren Variablen](https://github.com/driftyco/ionic/blob/1.x/scss/_variables.scss) publiziert, an welcher du dich orientieren kannst. 
 
 
 
