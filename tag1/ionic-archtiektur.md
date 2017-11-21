@@ -18,3 +18,7 @@ Die Architektur von Ionic kann sogar noch etwas detailierter aufgeteilt werden:
 Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende Aufstellung:  
 ![](https://www.techiediaries.com/images/content/understanding-ionic2-first-steps-with-ionic2/ionic2-anatomy.png)
 
+
+## Wichtige Dateien in der Projektstruktur
+
+
