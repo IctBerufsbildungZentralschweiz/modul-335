@@ -19,6 +19,19 @@ Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende A
 ![](https://www.techiediaries.com/images/content/understanding-ionic2-first-steps-with-ionic2/ionic2-anatomy.png)
 
 
-## Wichtige Dateien in der Projektstruktur
+## Ionic Generator
+Ionic hat seit CLI-Version 3.x den Generator eingeführt. Ein super Hilfsmittel um die wichtigsten Dinge per CLI generieren zu lassen. In der Struktur oben kann du sehen, dass es z.B. im Verzeichnis _/app/pages/home_ immer 3 Dateien hat:
+* HTML
+* Typescript
+* Styling (SCSS)
+
+Möchten wir nun eine ein neue Seite z.B. Einstellungen (settings) zu unseren Projekt hinzufügen, könnten wir den Ordner _home_ duplizieren und ein mühsames Refactoring starten, oder die einfache Variante wählen und mit
+```bash
+ionic g pages Settings 
+``
+uns das ganze generieren lassen. Praktisch nicht?
+
+Verschaff dir doch bitte in folgender Doku einen Überblick:
+https://ionicframework.com/docs/cli/generate/ 
 
 
