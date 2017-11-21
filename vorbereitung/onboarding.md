@@ -1,5 +1,4 @@
-#
-Modul 335 - OnBoarding
+# Modul 335 - OnBoarding
 
 Herzliche Gratulation,
 
