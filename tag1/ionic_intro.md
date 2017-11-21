@@ -33,7 +33,7 @@ Ionic basiert und verwendet:
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
 ## Ionic 1 oder 2 ? 
-[Ionic 1.x](http://ionicframework.com/docs/v1/) war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated (wird nicht weiterentwickelt) und somit ist Ionic 2 der direkte Nachfolger.
+[Ionic 1.x](http://ionicframework.com/docs/v1/) war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated (wird nicht weiterentwickelt) und somit sind Ionic 2 resp. 3 die direkte Nachfolger.
 
 
 ## Dokumentation
