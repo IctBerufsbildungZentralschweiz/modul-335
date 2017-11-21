@@ -77,9 +77,9 @@ function postJSONToServer {
     curl -H "Content-Type: application/json" -X POST -d "${TMP_JSON}" ${SERVER_URL} > /dev/null 2>&1
 
     if [[ $? -eq 0 ]]; then
-      echo "${GREEN}Bravo!${NC} Beim senden der Daten. Wende dich am 1. Kurstag an deinen Instruktor."
+      echo -e "${GREEN}Bravo!${NC} Deine Daten konnte erfolgreich übermittelt werden. Bis am 1. Kurstag..."
     else
-      echo "${RED}ERROR: Beim senden der Daten. Wende dich am 1. Kurstag an deinen Instruktor.${NC}"
+      echo -e "${RED}ERROR: Fehler beim senden der Daten. Wende dich am 1. Kurstag an deinen Instruktor.${NC}"
     fi
 }
 
