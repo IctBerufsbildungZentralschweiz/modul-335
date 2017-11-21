@@ -37,4 +37,14 @@ https://ionicframework.com/docs/cli/generate/
 
 ## Ionic DevApp
 ![](http://blog.ionic.io/wp-content/uploads/2017/10/devapp-image.jpg)
+DevApp ist eine 100% gratis App für iOS und Android, welche es dir ermöglicht deine Apps direkt auf deinem Mobiltelefon zu testen. Sie bietet eine perfekte Live-Ansicht deiner Änderungen und hat auch sehr vielen nativen Plugins bereits vorinstalliert.
+
+
+---
+
+## Übung
+
+1. Lade dir die DevApp auf dein Android oder iOS Gerät runter
+2. Logge dich mit deinem Ionic Account ein
+3. Folge den Anweisungen auf deinem Handy und probiere DevApp aus
 
