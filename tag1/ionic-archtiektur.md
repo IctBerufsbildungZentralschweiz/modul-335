@@ -44,12 +44,13 @@ HTML, CSS & JS sind cool oder? Ja, das denkt wohl jeder Entwickler bis er vor de
 Hast du ein Fehler in deinem Typescript-Code, wird dich Ionic ziemlich nett darauf hinweisen. Manchmal passieren aber auch komische Dinge, dann heisst es analysieren. Hier einige Tipps von Ralph.
 
 ### HTML, CSS: Der Entwickler-Bereich deines Browsers
-
+Alle grossen Browser verfügen heute über super Analyse-Tools und Console. Du findest Sie hier:
 * Google Chrome: Entwickler Tools über Menu oder "Untersuchen" mit Rechtsklick auf der Seite
 * Firefox: Inspector über Menu -> Web-Entwickler oder "Element untersuchen" mit Rechtsklick auf der Seite
-* Safari: Via Einstellungen -> 
+* Safari: Via Einstellungen -> Erweitert -> Entwickler-Modus
 
 ![](_allgemein/chrome_entwicklertools.png)
+Du siehst deinen kompletten HTML DOM, also alles was ausgegeben wurde. Z.B. Wichtig um zu sehen ob deine Schleife funktioniert hat. Und auch das effektive Styling eines Elements, ob das richtige CSS zieht und woher die effektiven Werte kommen. 
 
 
 ### Javascript: Der einfache Weg
