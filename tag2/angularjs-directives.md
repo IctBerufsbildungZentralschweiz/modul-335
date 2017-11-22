@@ -41,7 +41,7 @@ items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 
 Nachdem wir im Component einige Daten gesetzt haben, können wir mit `*ngFor` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
 
-![](https://imgur.com/Zn8uhYh) 
+![](//imgur.com/Zn8uhYh) 
  
 Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusammen mit dem Tag "Item" ausgegeben wird.
 
