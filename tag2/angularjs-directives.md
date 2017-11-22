@@ -1,8 +1,6 @@
 # AngularJS: Directives
 
-_Übersetzer und Ergänzter Text aus: _[http://docs.usecreator.com/docs/directives](http://docs.usecreator.com/docs/directives)
-
-Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://docs.angularjs.org/guide/directive). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
+Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://angular.io/guide/structural-directives). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
 Kurz gesagt: Mit Direktiven wird deine App zu einer voll funktionsfähigen App.
 
@@ -15,32 +13,25 @@ Eine Direktive erlaubt es uns nun, ein Stück HTML Code um zusätzliche Informat
 Wir dieser um einige mächtigen wenn wir ihn so schreiben:
 
 ```html
-<ion-item ng-repeat="item in items">{{item.name}}</ion-item>.
+<ion-item *ngFor="let item in items">{{item.name}}</ion-item>.
 ```
 
-Ein einfaches **ng-repeat** hat es uns nun erlaubt über die komplette Liste von Elementen zu iterieren.
+Ein einfaches `*ngFor` hat es uns nun erlaubt über die komplette Liste von Elementen zu iterieren.
 
-## Direktiven in Creator
-
-Eine Direktive zu einer Komponente in Creator hinzuzufügen ist sehr einfach. Klicke auf der rechten Seite im Einstellungs-Fenster auf einen Komponente, dann füge mit dem "+ Add" ein neuen Eintrag hinzu. Gibt den Namen der Direktive inkl. zugehörigen Wert ein.  
-![](https://files.readme.io/fdf45a0-Ionic_Creator_2016-10-28_14-54-16.png)  
-Jede Komponente in Creator hat ihre eigene Angular Direktiven, welche du bearbeiten kannst.
-
-Um eine Direktive zu entfernen, klicke au das rote "-" Minus.
 
 ## Die wichtigsten Direktiven
 
-### ng-repeat
+### ngFor
 
 Ist wohl eine der meist verwendeten Direktiven im Zusammenhang mit Listen und Objekten. Es lässt sich sehr einfach über alle Elemente in einer Liste iterieren:
 
-Controller JavaScript:
+Component Code:
 
-```JS
-$scope.items = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
+```js
+items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 ```
 
-Nachdem wir in `$scope` einige Daten gesetzt haben, können wir mit `ng-repeat` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
+Nachdem wir im Component einige Daten gesetzt haben, können wir mit `ng-repeat` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
 
 ![](https://files.readme.io/11de288-Ionic_Creator_2016-10-31_21-15-47.png)
  
