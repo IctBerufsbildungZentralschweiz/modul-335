@@ -1,4 +1,4 @@
-# AngularJS: Directives
+![](/assets/Bildschirmfoto 2017-11-22 um 20.59.25.png)# AngularJS: Directives
 
 Direktiven \(Directives\) sind ein wichtiges Konzept in einer AngularJS Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://angular.io/guide/structural-directives). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
@@ -41,7 +41,7 @@ items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 
 Nachdem wir im Component einige Daten gesetzt haben, können wir mit `*ngFor` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
 
-![](//imgur.com/Zn8uhYh) 
+![](/_allgemein/ngFor.png)
  
 Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusammen mit dem Tag "Item" ausgegeben wird.
 
