@@ -28,11 +28,12 @@ Ist wohl eine der meist verwendeten Direktiven im Zusammenhang mit Listen und Ob
 
 ```js
 // ngForExample.ts
+...
 items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
+...
 ```
 ```html
 <!-- ngForExample.ts -->
-
 <ion-content padding>
     <ion-list>
         <ion-item *ngFor="let item of items"r>Item {{item.id}}</ion-item>
@@ -51,50 +52,56 @@ Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusam
 
 Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ngFor` ein Filter setzen. Möchte man z.B. hier eine umgekehrte Ausgabe wäre dies mit Pipes zu lösen, dazu später mehr.
 
-### ng-change
+### (keyup) - Event
 
-Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `$scope.watch` machen könnte, bevorzugen wir mit Creator eine `ng-change` Direktive.
+Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfacher Variante.
 
 Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine doofe Idee - erfüllt aber in diesem Beispiel den Zweck.
 
 ```js
-  
+// keyupExample.ts
+...
   data: any = {'name': 'Ralph'}
 
   nameChanged(){
     alert("Mein Name wurde geändert auf: " + this.data.name);
   }
+...
 ```
 
-Setze dann `ng-change`:`nameChanged()` auf deiner Komponente.  **Info: Vergiss die Klammer \(\) für den Funktionsaufruf nicht!**
+```html
+<!-- keyupExample.html -->
+<ion-item>
+  <ion-label fixed>Name</ion-label>
+  <ion-input type="text" [value]="data.name" (keyup)="nameChanged()"></ion-input>
+</ion-item>
 
-[![](https://files.readme.io/f2a0bc9-Ionic_Creator_2016-10-31_20-02-36.png)](https://files.readme.io/f2a0bc9-Ionic_Creator_2016-10-31_20-02-36.png)
+```
+Achtung: hier wird `(keyup)` als Event verwendet. Das heisst nach jedem Tastaturanschlag wir ein `alert()` ausgelöst, natürlich unschön. Eine saubere Lösung würde man mit Observables implementieren, sprengt aber den aktuellen Rahmen hier. 
 
-Dann erhalten wir den folgenden Output: 🙃
 
-[![](https://files.readme.io/d180402-Screenshot_2016-10-31_20.01.21.png)](https://files.readme.io/d180402-Screenshot_2016-10-31_20.01.21.png)
+### (click) - Event
 
-### ng-click
+`(click)` wird natürlich oft im Zusammenhang mit Links resp. Buttons verwendet.
 
-`ng-click` wird natürlich oft im Zusammenhang mit Links resp. Buttons verwendet.
-
-Lass uns eine einfache `$scope` Funktion hinzufügen, welche eine Javascript-Alert aufruft:
+Lass uns eine einfache Funktion hinzufügen, welche eine Javascript-Alert aufruft:
 
 ```js
-$scope.buttonClick = function(){
+// clickExample.ts
+...
+buttonClicked(){
     alert("Yeah, ich wurde angeklickt!"); 
 }
+...
 ```
+```html
+<!-- clickExample.html -->
+<button ion-button color="secondary" round (click)="buttonClicked()">Klick mich!</button>
 
-Nun setzen wir `ng-click`:`buttonClick()` wiederum auf der Button-Komponente. Auch hier dürfen die Klammer `()` für den Funktionsaufruf nicht fehlen.
+```
+Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
 
-[![](https://files.readme.io/fd50abb-Ionic_Creator_2016-10-31_21-22-48.png)](https://files.readme.io/fd50abb-Ionic_Creator_2016-10-31_21-22-48.png)
-
-Das Result ist hier zu sehen:
-
-[![](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)](https://files.readme.io/dc993b7-Screenshot_2016-10-31_21.22.15.png)
-
-## ng-show and ng-hide
+## show oder hide 
 
 Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
 
