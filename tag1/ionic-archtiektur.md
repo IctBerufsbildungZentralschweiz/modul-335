@@ -85,12 +85,7 @@ Tadaaaa:
 ```
 (so schwierig war das jetzt auch nicht, oder?) 
 
-Mit dem ```debugger;```-Befehl 
-
-
-
-
-
+Mit dem ```debugger;```-Befehl wird ein Projekt an jener Stelle angehalten und du kannst  wiederum im Browser-Entwickler-Modus etwas genauer hinschauen. Probiers einmal aus, es lohnt sich
 
 
 
