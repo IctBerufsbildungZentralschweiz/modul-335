@@ -25,15 +25,23 @@ Ein einfaches `*ngFor` hat es uns nun erlaubt über die komplette Liste von Elem
 
 Ist wohl eine der meist verwendeten Direktiven im Zusammenhang mit Listen und Objekten. Es lässt sich sehr einfach über alle Elemente in einer Liste iterieren:
 
-Component Code:
 
 ```js
+// ngForExample.ts
 items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 ```
+```html
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let item of items"r>Item {{item.id}}</ion-item>
+    </ion-list>
+</ion-content>
+```
 
-Nachdem wir im Component einige Daten gesetzt haben, können wir mit `ng-repeat` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
 
-![](https://files.readme.io/11de288-Ionic_Creator_2016-10-31_21-15-47.png)
+Nachdem wir im Component einige Daten gesetzt haben, können wir mit `*ngFor` durch die Liste gehen. Dies erlaubt uns nachher `{{item.id}}` in einem List-Item zu verwenden und den Inhalt so dynamisch auszugeben:
+
+![](https://imgur.com/Zn8uhYh) 
  
 Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusammen mit dem Tag "Item" ausgegeben wird.
 
