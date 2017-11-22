@@ -31,6 +31,8 @@ Ist wohl eine der meist verwendeten Direktiven im Zusammenhang mit Listen und Ob
 items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 ```
 ```html
+<!-- ngForExample.ts -->
+
 <ion-content padding>
     <ion-list>
         <ion-item *ngFor="let item of items"r>Item {{item.id}}</ion-item>
@@ -47,22 +49,21 @@ Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusam
 
 ##### Sortierung
 
-Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ng-repeat` ein Filter setzen. Möchte man hier eine umgekehrte Ausgabe wäre dies mit `item in items | orderBy: '-id'` zu erreichen. Mehr zu Filter aber später.
+Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ngFor` ein Filter setzen. Möchte man z.B. hier eine umgekehrte Ausgabe wäre dies mit Pipes zu lösen, dazu später mehr.
 
 ### ng-change
 
-Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ng-model` für dein Textfeld ändert. Obwohl man es auch mit `$scope.watch` machen könnte, bevorzugen wir mit Creator eine `ng-change` Direktive.
+Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `$scope.watch` machen könnte, bevorzugen wir mit Creator eine `ng-change` Direktive.
 
 Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine doofe Idee - erfüllt aber in diesem Beispiel den Zweck.
 
 ```js
-$scope.data = {
-  'name': 'Ralph'
-}
+  
+  data: any = {'name': 'Ralph'}
 
-$scope.nameChanged = function(){
-    alert("Mein Name wurde geändert auf: "+$scope.data.name);
-}
+  nameChanged(){
+    alert("Mein Name wurde geändert auf: " + this.data.name);
+  }
 ```
 
 Setze dann `ng-change`:`nameChanged()` auf deiner Komponente.  **Info: Vergiss die Klammer \(\) für den Funktionsaufruf nicht!**
