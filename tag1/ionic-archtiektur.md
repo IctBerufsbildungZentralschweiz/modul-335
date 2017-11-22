@@ -56,7 +56,7 @@ Du siehst deinen kompletten HTML DOM, also alles was ausgegeben wurde. Z.B. Wich
 Einer deiner besten Freunde wird sicher
 
 
-```
+```js
  console.log("Hallo ich bin Ralph!");
 ```
 
