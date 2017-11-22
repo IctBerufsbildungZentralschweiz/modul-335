@@ -101,27 +101,33 @@ buttonClicked(){
 ```
 Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
 
-## show oder hide 
+## [hidden] / ngIf
 
-Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in der `$scope` Variable  true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Ionic zu machen, brauchst du entweder `ng-show` oder `ng-hide` Direktiven.
+Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable  true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
 
-Diese Direktiven funktioniert in sich genau gleich, Sie invertieren einfach den Ausgang. Als Beispiel der Wert  `true` in `ng-show` wird die Komponente anzeigen, aber ein Wert `true` mit `ng-hide` wird Sie verstecken.
+Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert  `true` in `*ngIf` wird die Komponente anzeigen, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
 
-Lass uns ein einfaches Beispiel mit folgenden Controller-Code machen:
+Lass uns ein einfaches Beispiel mit folgenden Code machen:
 
 ```js
-$scope.showPicture = true;
+...
+showPicture: boolean = true;
+...
 ```
+Wir bauen nun ein Toggle  mit  `ngModel` so dass wir die Variable geändert wird wenn wir unsere App anschauen. Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPicture` hinzu.
 
-Wir bauen nun ein Toggle  mit  `ng-model` so dass wir die Variable geändert wird wenn wir unsere App anschauen:
+```html
+  <ion-item>
+    <ion-label>Bild anzeigen</ion-label>
+    <ion-toggle [(ngModel)]="showPicture"></ion-toggle>
+  </ion-item>
 
-[![](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)](https://files.readme.io/5de5a75-Ionic_Creator_2016-10-31_21-28-49.png)
+  <img *ngIf="showPicture" src="https://jaxenter.de/wp-content/uploads/2015/05/Ionic-Logo.jpg">
+```
+Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. 
+![](https://image.ibb.co/dQacXm/ngIf.png)
 
-Danach fügen wir bei unserem Bild die Komponente auf `ng-show` mit Wert `showPicture` hinzu.
-
-[![](https://files.readme.io/e00e9d1-Ionic_Creator_2016-10-31_21-30-15.png)](https://files.readme.io/e00e9d1-Ionic_Creator_2016-10-31_21-30-15.png)
-
-Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. [![](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)](https://files.readme.io/de07e98-Screenshot_2016-10-31_21.30.54.png)
+Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPicture` hinzu.
 
 ## Route Parameters
 
