@@ -11,35 +11,63 @@ Bei einer einfachen Applikation hat man Daten im Model \(blau\) und meist ein Te
 
 Genau hier hat AngularJS seinen Vorteil. Das Data Binding in AngularJS synchronisiert das Model mit der View und umgekehrt. So kann ein Wert in der View geändert werden und gleichzeitig wird der Wert im Model auch angepasst. Umgekehrt natürlich auch, siehe Grafik rechts. Diese ständige Zweiweg-Synchronisation nennt man Two-Way Data Binding.
 
+Anstatt der langen Methode:
 ```html
-<div ng-app="myApp" ng-controller="myCtrl">
-    Name: <input ng-model="firstname">
-    <h1>{{firstname}}</h1>
-</div>
-
-<script>
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.firstname = "John";
-    $scope.lastname = "Doe";
-});
-</script>
+<!-- DataBindingExample.html -->
+<ion-content padding>
+    <h1>Hello World</h1>
+    Hello {{ username }}
+    <input type="text" value="username (input)="changeUsername($event)">
+</ion-content>
 ```
 
-{% youtube %} https://www.youtube.com/watch?v=21sFeFlvzks{% endyoutube %}
+```js
+// DataBindingExample.ts
+...
+export class TwoWayBindingExample {
+
+  username: any = "default";
+
+  changeUsername(ev) {
+    this.username = ev.target.value;
+  }
+
+}
+...
+```
+Können wir unser TwoWayDataBinding auch mittels ngModel in etwas weniger Code schreiben:
+```html
+<!-- TwoWayDataBindingExample.html -->
+<ion-content padding>
+    <h1>Hello World</h1>
+    Hello {{ username }}
+    <input type="text" [(ngModel)]="username" >
+</ion-content>
+```
+
+```js
+// TwoWayDataBindingExample.ts
+...
+export class TwoWayBindingExample {
+
+  username: any = "default";
+}
+...
+```
+
+
 
 ##### Hier noch ein kleiner Vergleich mit jQuery:
 ```html
 <html>
-  <input id="eingabe" type="text">
   <h1 id="ausgabe"></h1> 
+  <input id="username" type="text">
 </html>
 ```
 ```js
 $(document).ready(function() {
-  $('#eingabe').keyup(function(){
-    $('#ausgabe').html($('#eingabe').val());
-    $('html').css("background-color", $('#eingabe').val());
+  $('#username').keyup(function(){
+    $('#ausgabe').html("Hallo " + $('#eingabe').val());
   });
 });
 
