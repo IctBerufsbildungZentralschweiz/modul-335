@@ -52,11 +52,10 @@ Alle grossen Browser verfügen heute über super Analyse-Tools und Console. Du f
 ![](_allgemein/chrome_entwicklertools.png)
 Du siehst deinen kompletten HTML DOM, also alles was ausgegeben wurde. Z.B. Wichtig um zu sehen ob deine Schleife funktioniert hat. Und auch das effektive Styling eines Elements, ob das richtige CSS zieht und woher die effektiven Werte kommen. 
 
-
 ### Javascript: Der einfache Weg
 
 
-### Javascript: Der einfache Weg
+### Javascript: Der erweiterte  Pfad
 
 
 
