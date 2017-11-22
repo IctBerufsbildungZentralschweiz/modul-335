@@ -8,7 +8,7 @@ Wie bereits erwähnt ist Ionic ein Framework welches sich die folgenden Technolo
 * CSS
 * JS
 
-Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova dem eigentlichen Hybriden App Framework. Cordova wiederum greift auf die nativen API's des darunterliegenden Betriebssystems \(iOS / Android\) zu.
+Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova dem eigentlichen Hybriden App Framework. Cordova wiederum greift auf die nativen API's des darunterliegenden Betriebssysteme \(iOS / Android\) zu.
 
 Die Architektur von Ionic kann sogar noch etwas detailierter aufgeteilt werden:  
 ![](https://blog.codecentric.de/files/2014/11/overview.png)
@@ -39,10 +39,40 @@ https://ionicframework.com/docs/cli/generate/
 ![](http://blog.ionic.io/wp-content/uploads/2017/10/devapp-image.jpg)
 DevApp ist eine 100% gratis App für iOS und Android, welche es dir ermöglicht deine Apps direkt auf deinem Mobiltelefon zu testen. Sie bietet eine perfekte Live-Ansicht deiner Änderungen und hat auch sehr vielen nativen Plugins bereits vorinstalliert.
 
+## Wie debugge ich meine App?
+HTML, CSS & JS sind cool oder? Ja, das denkt wohl jeder Entwickler bis er vor dem ersten wirklichen Problem steht.
+Hast du ein Fehler in deinem Typescript-Code, wird dich Ionic ziemlich nett darauf hinweisen. Manchmal passieren aber auch komische Dinge, dann heisst es analysieren. Hier einige Tipps von Ralph.
+
+### HTML, CSS: Der Entwickler-Bereich deines Browsers
+
+* Google Chrome: Entwickler Tools über Menu oder "Untersuchen" mit Rechtsklick auf der Seite
+* Firefox: Inspector über Menu -> Web-Entwickler oder "Element untersuchen" mit Rechtsklick auf der Seite
+* Safari: Via Einstellungen -> 
+
+![](_allgemein/chrome_entwicklertools.png)
+
+
+### Javascript: Der einfache Weg
+
+
+### Javascript: Der einfache Weg
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
 ## Übung
+![](/_allgemein/ralph_uebung.png)
 
 1. Lade dir die DevApp auf dein Android oder iOS Gerät runter
 2. Logge dich mit deinem Ionic Account ein

@@ -12,8 +12,8 @@
 * [Ionic: Intro](tag1/ionic_intro.md)
 * [UI, UX, Usabilty](tag1/ui-ux.md)
 * [Prototyping](tag1/prototyping.md)
-* [Ionic: Architektur](tag1/ionic-archtiektur.md)
 * [SASS](tag1/sass.md)
+* [Ionic: Architektur](tag1/ionic-archtiektur.md)
 
 ## Tag 2
 
