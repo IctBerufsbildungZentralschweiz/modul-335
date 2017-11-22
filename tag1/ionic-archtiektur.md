@@ -54,18 +54,28 @@ Du siehst deinen kompletten HTML DOM, also alles was ausgegeben wurde. Z.B. Wich
 
 ### Javascript: Der einfache Weg
 Einer deiner besten Freunde wird sicher
-```js
+
+
+```
  console.log("Hallo ich bin Ralph!");
 ```
 
+
+
 Du kannst so schon die wichtigsten Werte in deinem Code abfangen. Console.log erwartet einen String, du kannst aber auch eine Kombination machen und ein String + deine Zahl ausgeben. Dazu hier ein kleines Beispiel:
 
+
+
+```
  myNumber: any = 4;
  
  console.log("Nummer >> "+ myNumber);
  
  // Gibt auf der Console
  // Nummer >> 4
+```
+
+
 
 ### Javascript: Der erweiterte  Pfad
 Console.log's sind praktisch, schnell und auch gut - aber sie geben dir nur eine entsprechende Ausgabe und sind teilweise auch viel zu schnell durch. Wie bei allen grossen Sprachen und IDE's kann man auch Typscript sauber Schritt für Schritt debuggen. Das Zauberwort das du in deinen Code schreiben musst heisst also:
