@@ -78,12 +78,14 @@ Du kannst so schon die wichtigsten Werte in deinem Code abfangen. Console.log er
 
 
 ### Javascript: Der erweiterte  Pfad
-Console.log's sind praktisch, schnell und auch gut - aber sie geben dir nur eine entsprechende Ausgabe und sind teilweise auch viel zu schnell durch. Wie bei allen grossen Sprachen und IDE's kann man auch Typscript sauber Schritt für Schritt debuggen. Das Zauberwort das du in deinen Code schreiben musst heisst also:
-Tadaaaa
+Console.log's sind praktisch, schnell und auch gut - aber sie geben dir nur eine entsprechende Ausgabe und sind meist viel zu schnell durch. Wie bei allen grossen Sprachen und IDE's kann man auch Typescript sauber Schritt für Schritt debuggen. Das Zauberwort welches du in deinen Code schreiben musst heisst somit...
+Tadaaaa:
 ```js
   debugger;
 ```
+(so schwierig war das jetzt auch nicht, oder?) 
 
+Mit dem ```debugger;```-Befehl 
 
 
 
