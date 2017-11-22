@@ -129,55 +129,6 @@ Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder versch
 
 Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPicture` hinzu.
 
-## Route Parameters
-
-Mit Route Parameters kannst du Informationen zu Seiten an welche du navigierst weitergeben. Wenn du z.B. eine Liste von Unterhaltungen hast, kannst du die \`\`ìd\`\`\` einer spezifischen Seite an eine Detailseite übergeben. Das erlaubt dir deine Liste dynamisch vom Code aufzubauen und so die gesamte Funktionalität herzustellen. 💪
-
-#### Füge Parameter deiner Seite hinzu
-
- Jede Seite kann mehrere Route Parameter haben, auch default-Werte können dabei gesetzt werden. Benenne deine Variable "Code-Freundlich" \(keine Abstände, usw.\).  
-Man findet die Route Parameters im Property-Panel im Ionic Creator. 
-
-[![](https://files.readme.io/6677d0a-Ionic_Creator_2016-10-31_13-13-28.png)](https://files.readme.io/6677d0a-Ionic_Creator_2016-10-31_13-13-28.png)
-
-Hier ist unsere Such-Resultat-Seite, wo wir die Variablen `name`,`favorite_color`, und `favorite_pizza` definiert haben. Dabei haben wir keine Standartwerte definiert, da wir alle Informationen anzeigen möchten. 
-
-#### Informationen an eine Seite weitergeben
-
-Es gibt zwei Varianten Informationen an eine Seite weiterzugeben, welche Route Parameters hat. 
-
-__Variante 1__ 
-
-Du verknüpfst die Seiten über einen "Link", wo du automatisch nach den Route Parameters gefragt wirst.
-Dabei kannst du die Werte auch leer lassen, du kannst einen String aber auch einen dynamischen Tag mit doppelt-geschweiften Klammer ```{{``` mitgeben. 
-
-
-[![](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)](https://files.readme.io/c054de1-Ionic_Creator_2016-10-31_13-30-57.png)
-
-
-__Variante 2__ 
-
-Du verwendest  ```$state.go``` in deinem Code und übergibst so deine Route Parameters als object. Sei dabei sicher dass du ```$state``` in  deinem Controller auch eingebunden hast. 
-
-Wenn du eine Seite selektiert hast, siehst du unter dem Titel "State / sref". Dies brauchst du in deinem Code in ```$state.go```. Hier ein Beispiel dazu:
-
-[![](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)](https://files.readme.io/d6a5639-Ionic_Creator_2016-10-31_13-34-55.png)
-
-
-##### Zugriff auf übermittelte Daten
-Alle Informationen sind nun mit ```$stateParams``` in deinem Ziel-Controller erreichbar. ```$stateParams``` wird automatisch in jedem Controller injiziert, aber falls du Probleme hast prüfe dies nochmals.
-
-Um nun unsere Beispiele von Oben (Name, Pizza, Farbe) zu verwenden:
-```js
-$stateParams.name
-$stateParams.favorite_pizza
-$stateParams.favorite_color
-```
-
-Falls die Parameter nicht gesetzt sind, sind Sie entweder leer oder undefiniert. 
-
-
-Mehr in Englisch auf: [http://docs.usecreator.com/docs/route-parameters](http://docs.usecreator.com/docs/route-parameters)  
 
 ---
 
