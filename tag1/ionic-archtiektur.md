@@ -28,7 +28,7 @@ Ionic hat seit CLI-Version 3.x den Generator eingeführt. Ein super Hilfsmittel 
 Möchten wir nun eine ein neue Seite z.B. Einstellungen (settings) zu unseren Projekt hinzufügen, könnten wir den Ordner _home_ duplizieren und ein mühsames Refactoring starten, oder die einfache Variante wählen und mit
 ```bash
 ionic g pages Settings 
-``
+``` 
 uns das ganze generieren lassen. Praktisch nicht?
 
 Verschaff dir doch bitte in folgender Doku einen Überblick:
@@ -49,7 +49,7 @@ Alle grossen Browser verfügen heute über super Analyse-Tools und Console. Du f
 * Firefox: Inspector über Menu -> Web-Entwickler oder "Element untersuchen" mit Rechtsklick auf der Seite
 * Safari: Via Einstellungen -> Erweitert -> Entwickler-Modus
 
-![](_allgemein/chrome_entwicklertools.png)
+
 Du siehst deinen kompletten HTML DOM, also alles was ausgegeben wurde. Z.B. Wichtig um zu sehen ob deine Schleife funktioniert hat. Und auch das effektive Styling eines Elements, ob das richtige CSS zieht und woher die effektiven Werte kommen. 
 
 ### Javascript: Der einfache Weg
@@ -58,10 +58,18 @@ Einer deiner besten Freunde wird sicher
  console.log("Hallo ich bin Ralph!");
 ```
 
-Du kannst so schon die wichtigsten Werte in deinem Code abfangen.  
+Du kannst so schon die wichtigsten Werte in deinem Code abfangen. Console.log erwartet einen String, du kannst aber auch eine Kombination machen und ein String + deine Zahl ausgeben. Dazu hier ein kleines Beispiel:
+```js
+ myNumber: any = 4;
+ 
+ console.log("Nummer >> "+ myNumber);
+ 
+ // Gibt auf der Console
+ // Nummer >> 4
+  
+```  
 
 ### Javascript: Der erweiterte  Pfad
-
 
 
 
