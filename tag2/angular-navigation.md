@@ -7,8 +7,7 @@ Die aktuelle Seite ist die letzte im Array, oder zuoberst im Stapel (wenn du so 
 ![](http://mcgivery.com/wp-content/uploads/2015/12/stack.png)
 
 
-Bitte lies folgende Doku nochmals durch und stelle wenn nötig im Plenum fragen:
-https://ionicframework.com/docs/api/navigation/NavController/ 
+
 
 ## Wie kann ich zu einer Seite resp. zurück navigieren?
 Wir möchten von unserer Hauptseite zu den Einstellungen navigieren:
@@ -39,7 +38,8 @@ export class HomePage {
 Die Funktion `goToSettings()` wird bei einem Klick auf einen Icon aufgerufen. Diese pusht dann _SettingsPage_ via NavController auf den Stack.
 
 Möchten wir nun von den Einstellungen zurück auf die Hauptseite, können wir mit `pop`
-```js
+
+```js 
 //settings.ts
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -84,3 +84,23 @@ export class PersonPage {
 	}
 }
 ```
+
+Bitte lies folgende Doku nochmals durch und stelle wenn nötig im Plenum fragen:
+https://ionicframework.com/docs/api/navigation/NavController/ 
+
+
+---
+
+## Übung
+
+![](/_allgemein/ralph_uebung.png)
+
+1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Rechner" 
+2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
+3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
+4. Der Rechner soll folgenden Funktionsumfang haben:
+   1. Nur ein Input-Feld \(Für Eingabe und auch Ausgabe des Resultats\)
+   2. Dein Rechner soll die folgenden Grundfunktionen anbieten \(Buttons verwenden\)
+      1. Addition \(+\) 
+      2. Subtraktion \(-\)
+
