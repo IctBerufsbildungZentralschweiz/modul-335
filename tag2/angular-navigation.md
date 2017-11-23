@@ -88,19 +88,3 @@ export class PersonPage {
 Bitte lies folgende Doku nochmals durch und stelle wenn nötig im Plenum fragen:
 https://ionicframework.com/docs/api/navigation/NavController/ 
 
-
----
-
-## Übung
-
-![](/_allgemein/ralph_uebung.png)
-
-1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Rechner" 
-2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
-3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
-4. Der Rechner soll folgenden Funktionsumfang haben:
-   1. Nur ein Input-Feld \(Für Eingabe und auch Ausgabe des Resultats\)
-   2. Dein Rechner soll die folgenden Grundfunktionen anbieten \(Buttons verwenden\)
-      1. Addition \(+\) 
-      2. Subtraktion \(-\)
-
