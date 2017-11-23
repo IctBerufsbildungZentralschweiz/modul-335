@@ -136,8 +136,8 @@ Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPictu
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Rechner" 
-2. Dein Auftrag wird es nun sein mit dem oben beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Rechner" 
+2. Dein Auftrag wird es nun sein mit dem zuvor beschrieben Möglichkeiten eine Rechner-App für Ralph zu erstellen.
 3. Mach vorher kurz eine Skizze \(Lo-Fi\) deiner Idee
 4. Der Rechner soll folgenden Funktionsumfang haben:
    1. Nur ein Input-Feld \(Für Eingabe und auch Ausgabe des Resultats\)
@@ -147,13 +147,13 @@ Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPictu
       3. Multiplikation \(x\)
       4. Division \(÷\)
    3. Ein Button zum zurücksetzen
-5. Teste dein App mittels Ionic Creator -App auf deinem Smartphone. Zufrieden?
+5. Teste dein App mittels Dev-App auf deinem Smartphone. Zufrieden?
 
 Wir schauen uns einigen Lösungen gemeinsamen an.
 
 ##### Zusatzaufgabe:
 
-1. Nimm dein Prototyp aus der Ionic: UI Übungen von heute Morgen. Vervollständige alle Listen mit ng-repeat und setze dazu ein paar fiktive Daten in deinem Controller.  
+1. Nimm dein Prototyp aus der Ionic: UI Übungen von heute Morgen. Vervollständige alle Listen mit `ngFor` und setze dazu ein paar fiktive Daten in deinem Code ein.  
 
 
 
