@@ -1,10 +1,7 @@
 # Ionic: API
 
 Ionic ist beides, ein CSS-Framework und eine Javascript UI Bibliothek. Um die App etwas dynamischer zu machen gibt es einige sehr zentrale Funktionen, welche in den folgenden Dokumentationen beschrieben werden:
-
-Ionic 1: [http://ionicframework.com/docs/api/](http://ionicframework.com/docs/api/)
-
-Ionic 2: [http://ionicframework.com/docs/v2/api/ ](http://ionicframework.com/docs/v2/api/)
+Ionic 2: [http://ionicframework.com/docs/api/ ](http://ionicframework.com/docs/api/)
 
 Hier einige Beispiele:
 
@@ -18,7 +15,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ![](/_allgemein/ion-spinner.png)
 
-### PopUp
+### Alerts
 
 ![](/_allgemein/ion-popup.png)
 
@@ -28,9 +25,9 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Nimm dein am Tag 1 in Creator erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "PopUp"
-2. Lies dir die Dokumentation zu Popup's durch.
-3. Wir wollen nun ein Popup anzeigen:
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Alerts"
+2. Lies dir die Dokumentation zu Alerts's durch.
+3. Wir wollen nun ein Alert anzeigen:
    1. Durch eine Klick auf den einen Button "Nickname erfassen" wir das Popup angezeigt
    2. Ich kann in diesem Popup in ein Textfeld mein Spitznamen eintragen
    3. Wird das Popup geschlossen, wird auf der Ansicht ein Text "Ich liebe es XXX genannt zu werden!" angezeigt, wobei XXX der zuvor im Popup eingegeben Nickname ist. 
