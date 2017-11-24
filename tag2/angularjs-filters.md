@@ -18,7 +18,6 @@ Beispiel:
 Output:
 `ICHBINEINCAMELCASETEXT`
 
----
 ## Kann ich auch eigene Pipes erstellen?
 Klar, genau das ist die Idee hinter Pipes. Z.B. wenn du ein Array speziell sortieren oder ein JSON-Objekt nach filtern möchtest.
 
@@ -45,6 +44,7 @@ Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nu
 
 
 
+---
 
 # Übung
 
