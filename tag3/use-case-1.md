@@ -1,6 +1,6 @@
 # Use Case 1 - Deine eigene App-Idee
 
-Du konntest nun schon einige Erfahrungen sammeln und siehst alle Möglichkeiten die wir zur App-Entwicklung mit Ionic Creator haben. Jetzt wird es an der Zeit dein Wissen in Taten umzuwandeln.
+Du konntest nun schon einige Erfahrungen sammeln und siehst immer mehr Möglichkeiten die wir zur App-Entwicklung mit Ionic haben. Jetzt wird es an der Zeit dein Wissen in Taten umzusetzen.
 
 ## Vorgehen:
 
@@ -9,7 +9,7 @@ Du konntest nun schon einige Erfahrungen sammeln und siehst alle Möglichkeiten 
 
 3. Besprich diesen Prototyp mit deinem Instruktor, ganz kurz im Stil eines [Elevator Pitches](https://de.wikipedia.org/wiki/Elevator_Pitch)
 
-4. Beginne deine App mit Ionic Creator zu bauen.
+4. Beginne ein neues Projekt z.B. "Max_Muster_UseCase1" und versuche das erlernte nun anzuwenden.
 
 ## Mindestanforderung:
 
