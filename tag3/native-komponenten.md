@@ -17,8 +17,13 @@ https://ionicframework.com/docs/pro/view.html#plugin-support
 ## Beispiel der Kamera
 
 ### Installation
-Wenn du nicht die DevApp verwendest
+Wenn du nicht die DevApp verwendest und deine App selber auf dein Smartphone resp. in den AppStore deployen möchtest:
+
+1) Installiere folgendes Plugin in deiner Projektordner (Gitbash)
 ```bash
 $ ionic cordova plugin add cordova-plugin-camera
 $ npm install --save @ionic-native/camera
 ```
+
+2) Füge das Plugin zu deinem app.module.ts hinzu:
+https://ionicframework.com/docs/native/#Add_Plugins_to_Your_App_Module 
