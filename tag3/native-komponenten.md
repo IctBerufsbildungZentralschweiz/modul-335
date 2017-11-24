@@ -1,85 +1,24 @@
 # Native Komponenten
+![](/_allgemein/ionic-native.png)
 
-Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann mittels Cordova auf diese Ressourcen zugegriffen werden. Drifty hat die Dokumentation bereits auf die neue Version umgeschrieben:
+Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann mittels Cordova auf diese Ressourcen zugegriffen werden. Ionic hat die Dokumentation bereits auf die neue Version umgeschrieben:
 
 [https://ionicframework.com/docs/v2/native/](https://ionicframework.com/docs/v2/native/)
 
-Weitere Beispiele resp. Anleitungen für Ionic 1 sind noch via Google zu finden...
 
-## Lokale Entwicklungsumgebung
+## Früher vs. heute
 
-Die Geräteressourcen können natürlich nicht in Creator getestet werden, daher müssen wir für dieses Kapitel auf die lokale Entwicklungsumgebung wechseln.  
-Eine aktuelle Anleitung zur Einrichtung ist wiederum bei Ionic zu finden:
+Die Geräteressourcen können natürlich nicht ohne Smartphone getestet werden. Mit Ionic 1 war spätestens hier der Zeitpunkt um auf die lokale Entwicklungsumgebung zu wechseln. Mühsam musste man die Smartphones für die Entwicklung konfigurieren und die App raufkopieren.
 
-[http://ionicframework.com/docs/guide/installation.html     
-](http://ionicframework.com/docs/guide/installation.html)
+Ionic sah dieses Problem und stellte die bereits verwendete DevApp zur Verfügung.
+Eine Liste der unterstützten Plugins findest du hier:
+https://ionicframework.com/docs/pro/view.html#plugin-support 
 
-### Voraussetzungen
+## Beispiel der Kamera
 
-* Windows: [Git Bash](https://git-for-windows.github.io/)
-* OSX: Terminal
-* [NodeJS](https://nodejs.org/en/) \(`node -v`\)
-* NPM \(`npm -v`\)
-
-Bevor das Ionic CLI installiert werden kann, müssen als Voraussetzung NodeJS, NPM, Cordova CLI und Git CLI vorhanden und eingerichtet sein.  
-Sind alle Voraussetzungen erfüllt, kann es losgehen. Unter Windows wird jetzt eine neue Git-Bash oder unter OSX ein neues Terminal geöffnet. Nun folgt die Eingabe des Installationsbefehls \(Windows\):
-
+### Installation
+Wenn du nicht die DevApp verwendest
 ```bash
-npm install -g cordova
-npm install -g ionic
+$ ionic cordova plugin add cordova-plugin-camera
+$ npm install --save @ionic-native/camera
 ```
-
-Unter Mac OSX und Linux-Betriebssystemen muss der Befehl mit root-Rechten ausgeführt werden, weshalb der Befehl wie folgt aussieht:
-
-```bash
-sudo npm install -g cordova
-sudo npm install -g ionic
-```
-
-Nun sollte das Ionic CLI global auf dem Rechner verfügbar sein. Zur Kontrolle kann auch hier die installierte Version, wie bei dem Cordova CLI, durch einen Befehl in der Eingabeaufforderung überprüft werden:
-
-```bash
-ionic -v
-```
-
-\(Sollte nun die installierte Version ausgeben\)
-
-Damit ist die Installation des CLI abgeschlossen und es kann mit dem Erstellen eines eigenen Ionic-Projekts begonnen werden.
-
-
-#### Ein lokales Projekt erstellen
-
-Du kannst mit folgendem Befehl ein Projekt erstellen. Wobei du einen Projektnamen geben, resp. als Typ ```blank```, ```sidemenu``` oder ```tabs``` wählen kannst.
-```bash
-ionic start PROJEKTNAME TYP
-ionic start RalphsFirstApp sidemenu
-```
-
-Wechsle nun in den Ordner
-```bash
-cd PROJEKTNAME
-cd RalphsFirstApp
-```
-
-wo du deine Projekt lokal im Browser (inkl. Live-Refresh bei Änderungen im Code) anzeigen kannst:
-```bash
-ionic serve
-```
-WICHTIG: Du musst dabei immer in deinem Projektordner sein.
-
-#### Cordova Plugin hinzufügen
-Du musst dazu im Projektordner (z.B RalphsFirstApp) sein:
-```bash
-ionic plugin add cordova-plugin-camera
-```
-
-#### Projekt hochladen
-Du kannst dein Projekt in die [Ionic Cloud](https://apps.ionic.io/apps/) hochladen und somit auch auf deinem Handy (Mit der [Ionic View App](http://view.ionic.io/)) anschauen. Führ dazu im Projektordner folgenden Befehl aus:
-```bash
-ionic upload
-```
-
-
-
-
-
