@@ -14,6 +14,11 @@ Folgende Services waren darin enthalten:
 * [Push](http://docs.ionic.io/services/push/)-Notifikationen über die Plattform an Benutzer senden
 * [Package](http://docs.ionic.io/services/package/) erstellen von Entwicklungs- resp. Produktions-Builds deiner App
 
+Aber Ionic hat sich auch hier was überlegt und bringt den direkten Nachfolger, ihr neues Flagschiff:
+# Ionic Pro
+
+
+
 ---
 
 ## Übung
