@@ -18,7 +18,7 @@ Filter können in AngularJS hinzugefügt werden um Daten zu formatieren. Anbei e
 ![](/_allgemein/ralph_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Filters" 
-2. Deine Aufgabe soll es nun sein die folgenden Filter in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [AngularJS Dokumentation](https://docs.angularjs.org) dienen.
+2. Deine Aufgabe soll es nun sein die folgenden Filter in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [AngularJS Dokumentation](https://angular.io/guide/pipes) dienen.
    1. `lowercase`
    2. `uppercase`
    3. `limitTo` \(Hier kannst du das Früchte-Array nehmen und damit etwas spielen\)
