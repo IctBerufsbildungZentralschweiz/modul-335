@@ -26,6 +26,23 @@ Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nu
 
 `ionic g pipe <PIPENAME>`
 
+{% youtube %}https://www.youtube.com/watch?time_continue=7&v=Z1g1iroNHK0
+ {% endyoutube %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
