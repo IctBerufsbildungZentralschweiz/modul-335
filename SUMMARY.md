@@ -23,7 +23,7 @@
 * [AngularJS: Data Binding](tag2/two-way-binding.md)
 * [AngularJS: Directives](tag2/angularjs-directives.md)
 * [AngularJS: Navigation](tag2/angular-navigation.md)
-* [AngularJS: Filters](tag2/angularjs-filters.md)
+* [AngularJS: Filters / Pipes](tag2/angularjs-filters.md)
 
 ## Tag 3
 
