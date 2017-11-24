@@ -9,13 +9,14 @@ Filter resp. auch Pipes genannt können in AngularJS hinzugefügt werden um Date
 * `uppercase` Formatiert ein String zu GROSSBUCHSTABEN.
 * `number` Formatiert eine Nummer zu einem String
 
+
+
 Beispiel:
 ```js
-{{ ichBinEinCamelCaseText | uppercase }}
+{{ ichBinEinCamelCaseText | uppercase }} 
 ```
-
 Output:
-
+`ICHBINEINCAMELCASETEXT`
 ---
 
 # Übung
