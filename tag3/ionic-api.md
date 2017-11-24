@@ -31,7 +31,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
    1. Durch eine Klick auf den einen Button "Nickname erfassen" wir das Popup angezeigt
    2. Ich kann in diesem Popup in ein Textfeld mein Spitznamen eintragen
    3. Wird das Popup geschlossen, wird auf der Ansicht ein Text "Ich liebe es XXX genannt zu werden!" angezeigt, wobei XXX der zuvor im Popup eingegeben Nickname ist. 
-4. Ein einfacher Klick reicht nicht immer aus. Manchmal muss man etwas fester drücken. Füge nun ein Button (150x150 Pixel, schwarz) hinzu und gib ihm die `press` Geste (siehe API Docs). Ein Paragraph darunter soll dabei wie ein Log dienen und pro Geste den Counter hochzählen und folgenden Texst ausgeben "Er wurde X mal gedrückt!".
+4. Ein einfacher Klick reicht nicht immer aus. Manchmal muss man etwas fester drücken. Füge nun ein Button (150x150 Pixel, schwarz) hinzu und gib ihm die `press` Geste (siehe API Docs). Ein Paragraph darunter soll dabei wie ein Log dienen und pro Geste den Counter hochzählen und folgenden Text ausgeben "Er wurde X mal gedrückt!".
 
 ##### Zusatzaufgabe:
 
