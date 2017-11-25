@@ -55,6 +55,8 @@ Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.m
 // AngularFire2 importieren
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
@@ -74,7 +76,8 @@ Möchtest du es trotzdem tun, gehe in die [Firebase Console Dashboard](https://c
 Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu: 
 ```js
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
 ```
 
 
@@ -94,6 +97,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // AngularFire2 importieren
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
@@ -115,7 +120,8 @@ export const firebaseConfig = {
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -140,50 +146,12 @@ export class AppModule {}
 
 Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor:
 1. Lies die Doku oben nochmals gut durch.
-2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben 
-
-
-
-2. Erstelle mit Ionic Generator eine neue Seite `Login`.
-3. Erstelle mit Ionic Generator eine neue Seite `Registrierung`.
-4. Setze in deinem `app.component.ts` das die `LoginPage` als deine `rootPage`. 
-5. Füge deiner `Login.html`-Datei mindestens die folgenden beiden Input-Felder hinzu:
-```html
-<ion-input type="email" [(ngModel)]="user.email"></ion-input>
-<ion-input type="password" [(ngModel)]="user.password"></ion-input>
-``` 
-6. Nun brauchen wir für den User ein Model, erstelle in deinem Ordner `src` einen Ordner Namens `models` und
-7. kopiere folgenden Inhalt in eine neue Datei `users.ts` darin:
-```js
-export interface User {
-    email: string;
-    password: string;
-}
-```
-8. Wir möchten das erstelle Model nun im `Login.html` verwenden. Dazu initialisieren wir einen neuen User gleich unterhalb von _export class LoginPage {_ :
-```js
-  user = {} as User; 
-```
-und fügen den fehlenden Import noch ein `import { User } from '../../models/user'; `
-
- 
-
-
-     
-      
-       
-1. Mach dich mit der Dokumention zu Ionic Cloud vertraut
-2. Falls du noch keinen Account hast, erstell dir [Hier](https://apps.ionic.io/signup) einen
-3. Erstell dir unter apps.ionic.io deine eigene App und benenn Sie nach deiner App-Idee aus Use Case 1, du sollst nun mit deiner Use-Case Idee arbeiten... 
-4. Versuch nun mit Hilfe dieser  [Doku ](https://docs.ionic.io/services/auth/) ein einfaches Login inkl. Profil zu erstellen
-   1. Benutzer sollen sich Registrieren können
-   2. Benutzer sollen sich einloggen können und dann in die App kommen
-   3. Der Inhalt der App soll nur angezeigt werden wenn ein Benutzer eingeloggt ist
-   4. Ein Logout soll natürlich auch möglich sein. Erstelle dazu  ein Logout-Button in den Einstellungen oder im Menu.
-   5. Unter Einstellungen soll der Benutzer sein Profil \(z.B. Name, Vorname\) ändern können
-   6. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
-   7. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
-   8. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein, evt. kannst du hier mit Gravatar arbeiten.
+2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 
+3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.  {% youtube %} https://www.youtube.com/watch?v=aNW444SpFNs {% endyoutube %}
+4. Zusatz: Füge ein Logout in deine App ein.
+5. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
+6. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
+8. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein, evt. kannst du hier mit Gravatar arbeiten.
 
 
 
