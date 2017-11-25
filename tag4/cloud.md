@@ -66,7 +66,7 @@ export const firebaseConfig = {
   messagingSenderId: "535601451759"
 };
 
-``
+```
 
 Die Verbindungsdaten der `firebaseConfig` sind für diesen Kurs hier gegeben. Du brauchst also nicht extra eine eigene App zu erfassen.
 Möchtest du es trotzdem tun, gehe in die [Firebase Console Dashboard](https://console.firebase.google.com). Du solltest dort direkt nach dem erstellen einer App ein grossen violetten Knopf sehen mit _Firebase zu meiner Web-App hinzufügen_. Thats it, so weiter im Kontext...
@@ -132,35 +132,43 @@ export const firebaseConfig = {
 export class AppModule {}
 ```
 
-
-## Clone unser Starter-Projekt
-
-
-
-
-```js
-  // M335-Auth: Firebase
-  var config = {
-    apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
-    authDomain: "m335-auth.firebaseapp.com",
-    databaseURL: "https://m335-auth.firebaseio.com",
-    projectId: "m335-auth",
-    storageBucket: "m335-auth.appspot.com",
-    messagingSenderId: "535601451759"
-  };
-```
-
-
- 
- 
-
-
 ---
 
 ## Übung
 
 ![](/_allgemein/ralph_uebung.png)
 
+Wir möchten nun für deine App-Idee aus Use-Case 1 durch ein einfaches Login inkl. Profil schützen. Gehe dazu wie folgt vor:
+1. Navigiere in deinen Projektordner deiner eigenen App.
+2. Erstelle mit Ionic Generator eine neue Seite `Login`.
+3. Erstelle mit Ionic Generator eine neue Seite `Registrierung`.
+4. Setze in deinem `app.component.ts` das die `LoginPage` als deine `rootPage`. 
+5. Füge deiner `Login.html`-Datei mindestens die folgenden beiden Input-Felder hinzu:
+```html
+<ion-input type="email" [(ngModel)]="user.email"></ion-input>
+<ion-input type="password" [(ngModel)]="user.password"></ion-input>
+``` 
+6. Nun brauchen wir für den User ein Model, erstelle in deinem Ordner `src` einen Ordner Namens `models` und
+7. kopiere folgenden Inhalt in eine neue Datei `users.ts` darin:
+```js
+export interface User {
+    email: string;
+    password: string;
+}
+```
+8. Wir möchten das erstelle Model nun im `Login.html` verwenden. Dazu initialisieren wir einen neuen User gleich unterhalb von _export class LoginPage {_ :
+```js
+  user = {} as User; 
+```
+und fügen den fehlenden Import noch ein `import { User } from '../../models/user'; `
+
+ 
+  
+   
+    
+     
+      
+       
 1. Mach dich mit der Dokumention zu Ionic Cloud vertraut
 2. Falls du noch keinen Account hast, erstell dir [Hier](https://apps.ionic.io/signup) einen
 3. Erstell dir unter apps.ionic.io deine eigene App und benenn Sie nach deiner App-Idee aus Use Case 1, du sollst nun mit deiner Use-Case Idee arbeiten... 
