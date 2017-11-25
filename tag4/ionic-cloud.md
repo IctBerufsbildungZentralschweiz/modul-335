@@ -50,16 +50,87 @@ Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, ge
 npm install angularfire2 firebase
 ```
 
-Jetzt können wir Firebase initialisieren gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
+Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
 ```js
+// AngularFire2 importieren
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
-
-
+// Firebase Einstellungen 
+export const firebaseConfig = {
+  apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
+  authDomain: "m335-auth.firebaseapp.com",
+  databaseURL: "https://m335-auth.firebaseio.com",
+  projectId: "m335-auth",
+  storageBucket: "m335-auth.appspot.com",
+  messagingSenderId: "535601451759"
+};
 
 ``
 
-You can open your app.module.ts and import everything we’ll be using, this is the only time you’ll see this file 🙂
+Die Verbindungsdaten der `firebaseConfig` sind für diesen Kurs hier gegeben. Du brauchst also nicht extra eine eigene App zu erfassen.
+Möchtest du es trotzdem tun, gehe in die [Firebase Console Dashboard](https://console.firebase.google.com). Du solltest dort direkt nach dem erstellen einer App ein grossen violetten Knopf sehen mit _Firebase zu meiner Web-App hinzufügen_. Thats it, so weiter im Kontext...
 
+Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu: 
+```js
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
+```
+
+
+Deine `app.module.ts`-Datei sollte etwa so aussehen:
+```js
+import { BrowserModule } from '@angular/platform-browser';
+import { ErrorHandler, NgModule } from '@angular/core';
+import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+
+import { MyApp } from './app.component';
+import { HomePage } from '../pages/home/home';
+import { ListPage } from '../pages/list/list';
+
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
+// AngularFire2 importieren
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+// Firebase Einstellungen 
+export const firebaseConfig = {
+  apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
+  authDomain: "m335-auth.firebaseapp.com",
+  databaseURL: "https://m335-auth.firebaseio.com",
+  projectId: "m335-auth",
+  storageBucket: "m335-auth.appspot.com",
+  messagingSenderId: "535601451759"
+};
+
+@NgModule({
+  declarations: [
+    MyApp,
+    HomePage,
+    ListPage
+  ],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule
+  ],
+  bootstrap: [IonicApp],
+  entryComponents: [
+    MyApp,
+    HomePage,
+    ListPage
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
+})
+export class AppModule {}
+```
 
 
 ## Clone unser Starter-Projekt

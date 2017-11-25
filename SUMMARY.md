@@ -34,7 +34,7 @@
 
 ## Tag 4
 
-* [Ionic Pro](tag4/ionic-cloud.md)
+* [Ionic Pro / Firebase](tag4/ionic-cloud.md)
 * [Datenanbindung](tag4/datenanbindung.md)
 * [Social Logins](tag4/social-logins.md)
 * [iOS, Android Entwicklung](tag4/ios--android.md)
