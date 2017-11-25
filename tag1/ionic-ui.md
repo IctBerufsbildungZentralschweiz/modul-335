@@ -26,5 +26,6 @@ Hey, du hast am Tag 1 für meine WG-Partys auf Papier einen Prototypen gezeichne
 
 1. Erstelle ein neues Projekt in der Ionic CLI. Wähle dabei doch ein Tabs-Projekt und nenne es z.B. _Uebung_UI_WGParty_
 2. Versuche die einzelnen Screens, inkl. UI-Elemente nachzubilden, die UI Elemente findest du in der Ionic Doku. Kümmere dich vorerst mal ums HTML und erst in einem zweiten Schritt ums Styling (SCSS)
+3. Zusatz: Wenn du schon sehr weit bist, suche doch in den Ionic Docs nach der Navigation. Wir schauen uns später heute noch an wie das geht. 
 
 

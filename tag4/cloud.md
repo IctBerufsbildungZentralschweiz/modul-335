@@ -138,8 +138,12 @@ export class AppModule {}
 
 ![](/_allgemein/ralph_uebung.png)
 
-Wir möchten nun für deine App-Idee aus Use-Case 1 durch ein einfaches Login inkl. Profil schützen. Gehe dazu wie folgt vor:
-1. Navigiere in deinen Projektordner deiner eigenen App.
+Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor:
+1. Lies die Doku oben nochmals gut durch.
+2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben 
+
+
+
 2. Erstelle mit Ionic Generator eine neue Seite `Login`.
 3. Erstelle mit Ionic Generator eine neue Seite `Registrierung`.
 4. Setze in deinem `app.component.ts` das die `LoginPage` als deine `rootPage`. 
@@ -163,9 +167,8 @@ export interface User {
 und fügen den fehlenden Import noch ein `import { User } from '../../models/user'; `
 
  
-  
-   
-    
+
+
      
       
        
