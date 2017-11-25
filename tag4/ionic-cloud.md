@@ -7,16 +7,45 @@ Die [Dokumentation für Ionic Cloud](http://docs.ionic.io/) war jeweils mit beid
 
 ## Services
 
-Folgende Services waren darin enthalten:
+Folgende Services waren darin enthalten und sind jetzt nicht mehr im neuen Produkt drin:
 * [Auth](http://docs.ionic.io/services/auth/) eine Benutzerverwaltung inkl. Social Logins
 * [Ionic DB](http://docs.ionic.io/services/database/) eine einfache Echzeit-Datenbank
-* [Deploy](http://docs.ionic.io/services/deploy/) von Code ohne über den App-Store zu gehen
 * [Push](http://docs.ionic.io/services/push/)-Notifikationen über die Plattform an Benutzer senden
-* [Package](http://docs.ionic.io/services/package/) erstellen von Entwicklungs- resp. Produktions-Builds deiner App
 
-Aber Ionic hat sich auch hier was überlegt und bringt den direkten Nachfolger, ihr neues Flagschiff:
+Ionic möchte sich auf die Entwicklung fokussieren und nicht anderen Cloud-Grössen wie Amazon, Google, Heroku, usw. Konkurrenz machen. 
+
+---
+
 # Ionic Pro
+**(Ihr neues Flagschiff)**
 
+Ionic Pro ist eine powervolle Sammlung von Services und Features, welche das Ionic Framework erweitert. Es bringt die App Entwicklung für Entwicklungsteams auf total neues Level.
+
+Ionic Pro hat diverse Services, welche dich durch den gesamten App Lifecyle beschäftigen:
+
+* **[Deploy](https://ionicframework.com/docs/pro/deploy/):** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
+
+* **[View](https://ionicframework.com/docs/pro/view/):** Teste dein App mit Testen und erhalten umgehend Feedback ohne komplizierte Geräte- & Profilverwaltung.
+
+* **[Package](https://ionicframework.com/docs/pro/package/):** Builde App-Binaries in the Cloud für iOS und Android.
+
+* **[Monitoring](https://ionicframework.com/docs/pro/monitoring/):** Fange Laufzeitfehler deiner App in Produktion ab und schliesse Sie auf deine Zeile Code zurück.
+
+Alle diese Services basieren auf einem einfachen GIT-Workflow, welchem dir als Entwickler bekannt sein sollten.
+
+---
+# Google Firebase
+Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
+{% youtube %} https://www.youtube.com/watch?v=O17OWyx08Cg {% endyoutube %}
+
+## Clone unser Starter-Projekt
+
+
+
+
+
+ 
+ 
 
 
 ---
