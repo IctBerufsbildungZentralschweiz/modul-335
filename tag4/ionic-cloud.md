@@ -33,15 +33,51 @@ Ionic Pro hat diverse Services, welche dich durch den gesamten App Lifecyle besc
 
 Alle diese Services basieren auf einem einfachen GIT-Workflow, welchem dir als Entwickler bekannt sein sollten.
 
+## Du möchtest, resp. hast Ionic Pro bereits verwendet
+Zu Beginn dieses Kurses habe wir dich darum gebeten einen Account auf folgender Website zu machen:
+https://dashboard.ionicjs.com/apps 
+Ja genau, bereits auf Ionic Pro. Zudem hast du sicher die DevApp auf deinem Gerät installiert, auch diese gehört bereits zur Ionic Pro Produktepalette.
+
+
 ---
 # Google Firebase
 Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 {% youtube %} https://www.youtube.com/watch?v=O17OWyx08Cg {% endyoutube %}
 
+## Wie füge ich Firebase deinem Projekt hinzu?
+Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
+```bash
+npm install angularfire2 firebase
+```
+
+Jetzt können wir Firebase initialisieren gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
+```js
+
+
+
+
+``
+
+You can open your app.module.ts and import everything we’ll be using, this is the only time you’ll see this file 🙂
+
+
+
 ## Clone unser Starter-Projekt
 
 
 
+
+```js
+  // M335-Auth: Firebase
+  var config = {
+    apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
+    authDomain: "m335-auth.firebaseapp.com",
+    databaseURL: "https://m335-auth.firebaseio.com",
+    projectId: "m335-auth",
+    storageBucket: "m335-auth.appspot.com",
+    messagingSenderId: "535601451759"
+  };
+```
 
 
  
