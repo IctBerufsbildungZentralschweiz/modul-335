@@ -140,10 +140,180 @@ import { HttpModule } from '@angular/http';
 ``` 
 
 11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch in zu verstehen:
+```
+import { Injectable } from '@angular/core';
+import { Http, Headers, RequestOptions } from '@angular/http';
+import 'rxjs/add/operator/map';
+
+@Injectable()
+export class ChatServiceProvider {
+
+  public sheetsuAPI = {
+    url: "https://sheetsu.com/apis/v1.0bu/6d08e3b8df99",
+    apiKey: "13ekDLnGt7m3KyWhs9B1",
+    apiSecret: "nrxTg4msyGqYeVzxJzsCUowvKvjGA4daF5RNFNxu",
+    currentUser: "Max" // TODO: Namen anpassen
+  }
+
+
+  constructor(public http: Http) {
+  }
+
+  searchMovies(movieName) {
+    var url = 'http://api.themoviedb.org/3/search/movie?query=&query=' + encodeURI(movieName) + '&api_key=5fbddf6b517048e25bc3ac1bbeafb919';
+    var response = this.http.get(url).map(res => res.json());
+    return response;
+  }
+
+  getChatList() {
+    console.log("Getting chats from:" + this.sheetsuAPI.url);
+    let headers = new Headers({ 'Authorization': 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret) });
+    let options = new RequestOptions({ headers: headers });
+
+    return this.http.get(this.sheetsuAPI.url, options).map(res => res.json());
+  }
+
+  postChatMessage(message: any) {
+    console.log("Posting message to:" + this.sheetsuAPI.url);
+    let headers = new Headers({
+      'Authorization': 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret),
+      'Content-Type': 'application/json'
+    });
+    let options = new RequestOptions({ headers: headers });
+    let formattedDate = new Date().toLocaleString();
+    let body = { 'username': this.sheetsuAPI.currentUser, 'text': message, 'date': formattedDate };
+
+    return this.http.post(this.sheetsuAPI.url, body, options).map(res => res.json());
+  }
+}
+``` 
 
 12. Ändere im `chat-service.ts` auf Zeile 13 den Namen auf deinen eigenen.
 
 13. Nun gehts ans eigentliche Programmieren, dein `chat.ts`. Wir stellen dir auch hier eine kleine Hilfe zur Verfügung:
+```
+// chat.ts
+import { Component,ViewChild,AfterViewChecked, ElementRef, OnInit } from '@angular/core';
+import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
+import { ChatServiceProvider } from '../../providers/chat-service/chat-service';
+import { AlertController } from 'ionic-angular/components/alert/alert-controller';
+
+@IonicPage()
+@Component({
+  selector: 'page-chat',
+  templateUrl: 'chat.html',
+})
+
+export class ChatPage implements OnInit, AfterViewChecked{
+  @ViewChild('scrollMe') private myScrollContainer: ElementRef;
+
+  message: string;
+  chats: any[];
+  showSpinnerIcon: boolean = false;
+  showDates: boolean = false;
+ 
+  constructor(public navCtrl: NavController, private chatService: ChatServiceProvider, private alertCtrl: AlertController) {
+    // TODO: Beim Laden der Seite sollen die Chats geladen werden
+
+  }
+  
+  ngOnInit() { 
+    this.scrollToBottom();
+
+  }
+
+  ngAfterViewChecked() {        
+     this.scrollToBottom();        
+  } 
+
+  scrollToBottom(): void {
+      try {
+          this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+      } catch(err) { }                 
+  }
+  swipeEvent(swipe) {
+    // Mit swipe.direction erhälst du die Richtung in welcher der User in den Nachrichten gewischt hat
+    // 2  = Swipe von Rechts nach Links
+    // 4  = Swipe von Links nach Rechts
+    
+    // TODO: Sofern die Richtung Links oder Rechts ist, sollen die Daten angezeigt werden (schau im chat.html) nach was gesetzt werden muss.
+  }
+
+  loadChats() {
+    this.chatService.getChatList().subscribe(
+      data => {
+          // TODO: In Data erhälst du ein JSON-Objekt mit deinen Daten zurück, sofern data nicht null ist soll es deinem Chat-Array zugewiesen werden
+         
+      },
+      err => {
+          console.error(err);
+          // TODO: Übergib den error.status Code an die unten vergesehen Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
+      });
+  }
+
+  sendMessage(e) {
+    // TODO: Prüfe ob eine Nachricht eingeben wurden, falls nicht sollen die Daten nicht gesendet werden. 
+
+    this.showSpinnerIcon = true;
+    
+    this.chatService.postChatMessage(this.message).subscribe(
+      data => {
+        if(data) {
+
+          // TODO: Füge das erhalten data Objekt deinem Array hinzu. Tipp: Such nach push in der Doku.
+
+          // TODO: Dein Nachrichten-Input soll geleert werden     
+
+          // TODO: Schalte den Spinner wieder ab.
+        }
+      },
+      err => {
+          console.error(err);
+        // TODO: Hier nochmals. Übergib den error.status Code an die unten vergesehen Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
+      });
+    
+  }
+
+
+  handleHTTPError(errorCode: number) {
+    let errorMsg: string;
+    switch(errorCode) {
+      case 400: {
+        errorMsg = "Fehler beim Einfügen/Ändern von Daten!";
+        break;
+      }
+      case 401: {
+        errorMsg = "Um die API zu brauchen musst man angemeldet sein!";
+        break;
+      }
+      case 402: {
+        errorMsg = "Oops, da hat wohl einer seine Rechnung bei Sheetsu nicht bezahlt!";
+        break;
+      }
+      case 403: {
+        errorMsg = "Diese Aktion wurde vom Sheets-Admin für diese API unterbunden";
+        break;
+      }
+      case 429: {
+        errorMsg = "Dein Quoata wurde aufgebraucht, versuche es später erneut.";
+        break;
+      }
+      case 500: {
+        errorMsg = "Ein unbekannter Server-Fehler ist aufgetreten.";
+        break;
+      }
+      default: {
+        errorMsg = "Ein unbekannter Fehler ist aufgetreten!";
+        break; 
+      }
+    }
+    
+    // TODO: Zeig die errorMsg in einem Alert mit Titel "Error" und button "OK" an:
+
+  }
+}
+
+``` 
 
 14. Wir haben dir die weiteren Aufgaben direkt im Code mit _// TODO:_ gestellt.
 
