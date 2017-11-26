@@ -140,6 +140,7 @@ import { HttpModule } from '@angular/http';
 ``` 
 
 11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch in zu verstehen:
+
 ```js
 import { Injectable } from '@angular/core';
 import { Http, Headers, RequestOptions } from '@angular/http';
@@ -191,6 +192,7 @@ export class ChatServiceProvider {
 12. Ändere im `chat-service.ts` auf Zeile 13 den Namen auf deinen eigenen.
 
 13. Nun gehts ans eigentliche Programmieren, dein `chat.ts`. Wir stellen dir auch hier eine kleine Hilfe zur Verfügung:
+
 ```js
 // chat.ts
 import { Component,ViewChild,AfterViewChecked, ElementRef, OnInit } from '@angular/core';
@@ -314,8 +316,8 @@ export class ChatPage implements OnInit, AfterViewChecked{
 }
 
 ``` 
+## Zusatz
 
-14. Wir haben dir die weiteren Aufgaben direkt im Code mit _// TODO:_ gestellt.
 
 15. Zusatz: Füge in der Navigationsleiste (oben rechts) einen Button ein, um die Chats neu zu laden
 
