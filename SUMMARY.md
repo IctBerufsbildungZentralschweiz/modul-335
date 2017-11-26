@@ -39,7 +39,6 @@
 * [Übung](tag4/uebeung-chat.md)
 * [Social Logins](tag4/social-logins.md)
 * [iOS, Android Entwicklung](tag4/ios--android.md)
-* [Projekt exportieren](tag4/projekt-exportieren.md)
 
 ## Tag 5
 
