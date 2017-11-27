@@ -29,15 +29,17 @@ Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 | Grafik | HTML5, CSS3 PNGs SVGs Sehr scharf auch auf Retina-Displays | HTML5, CSS3 PNGs SVGs Sehr scharf auch auf Retina-Displays | Native API Sehr scharf auch auf Retina-Displays |
 | Design | Bei mobilen Browsern ist oft die Adressleiste etwas störend und kann nicht immer ausgeblendet werden. Ansonsten kann eine ähnliche Optik und Haptik wie mit einer nativen App erstellt werden. | Ähnliche Optik und Haptik wie mit einer nativen App kann erstellt werden. | Am meisten Design Optionen. |
 | Zugriff |  |  |  |
-| Kamera | Nein, nur indirekt über Datei-Upload | Ja | Ja |
+| Kamera | Ja | Ja | Ja |
 | GPS Standort | Ja | Ja | Ja |
-| Benachrichtigungen \(Notifications\) | Nein, nur indirekt via SMS oder E-Mail | Ja | Ja |
+| Benachrichtigungen \(Notifications\) | Ja | Ja | Ja |
 | Kontakte und Kalender | Nein | Ja | Ja |
 | Gesten | Ja | Ja | Ja |
 | Lokaler Speicher | HTML5 Cache, SQLite | Lokaler Datenspeicher, HTML5 Cache, SQLite | Lokaler Datenspeicher |
 | Verlinkung von Apps \(Deep Linking\) | Ja | Ja | Ja |
 | Suche | Ja, Indexierung läuft auf Webserver. | Ja, Indexierung läuft auf Webserver. | Über Datenbank, wenn indexiert, oder via Suche über Webserver, falls angebunden. |
 | Monetarisierung der App | Gleich wie auf Internetseiten. Pay-Per-Use, Abonnement, Werbung, Zugang nur gegen Bezahlung, usw. | Beim Kauf der App sowie In-App Käufe möglich | Beim Kauf der App sowie In-App Käufe möglich |
+
+Die neuesten Daten sind auch unter https://whatwebcando.today/ ersichtlich.
 
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 
