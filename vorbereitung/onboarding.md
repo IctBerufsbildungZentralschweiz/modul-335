@@ -77,7 +77,3 @@ Das war schon fast, um die Installation abzuschliessen bitte wird dich die folge
 ```bash
 bash <(curl -s -L https://enz.lu/m335-checkenvironment)
 ```
-
-> Was passiert damit? Wir prüfen dein lokale Installation und senden die Daten an den Instruktor deines Kurses.
-
-
