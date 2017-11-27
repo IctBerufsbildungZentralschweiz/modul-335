@@ -30,7 +30,7 @@ function gatherInformationFromSystem {
         CLI_UTILS_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'cli-utils' | cut -d':' -f2 | sed 's/ //g')"
         IONIC_CLI_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'Ionic CLI' | cut -d':' -f2 | sed 's/ //g')"
         NODE_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'Node'  | cut -d':' -f2 | sed 's/ //g' )"
-        NPM_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'npm'  | cut -d':' -f2)"
+        NPM_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'npm' | grep -v 'cli' | cut -d':' -f2)"
         OS_VERSION="$(cat ${TMP_IONIC_VERSION_FILE} | grep 'OS'  | cut -d':' -f2)"
     else
         echo "${RED}ERROR: Ionic ist nicht korrekt installiert. Bitte versuche es mit der Anleitung erneut oder wende dich am 1. Kurstag an deinen Instruktor.${NC}"
