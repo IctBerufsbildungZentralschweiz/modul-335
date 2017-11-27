@@ -11,7 +11,7 @@
 Ionic ist unter folgender Website zu finden:  
 [http://ionicframework.com/](http://ionicframework.com/)
 
-### Welche Apps wurde mit Ionic erstellt?
+### Welche Apps wurden mit Ionic erstellt?
 
 Das Framework wird immer beliebter, im Showcase \(deutsch. Schaufenster\) sind einige coole Apps zu sehen:
 
