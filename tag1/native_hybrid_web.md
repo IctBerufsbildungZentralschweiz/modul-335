@@ -18,26 +18,28 @@ Hybrid ist eine Mischform. Es werden sowohl Native-, wie auch Web-Komponenten zu
 
 ## Übersicht der Eigenschaften
 
-Anbei eine gegebüberstellung der wichtigsten Eigenschaften:
+Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 
 |  | Web App | Hybrid App | Native App |
 | --- | --- | --- | --- |
 | Installation | Zugang mit Web Browser und URL | Download via App-Stores | Download via App-Stores |
 | Verbindung und Offline Zugriff | Zugriff nur bei Internetverbindung, einzelne Ansichten können aus dem Cache geladen werden. | Anwendung kann starten, braucht jedoch Internetverbindung um Daten abzurufen | Läuft offline, sobald Daten zu einem Server gesendet oder abgerufen werden müssen, benötigt es ebenfalls eine Internetverbindung |
 | Aktualisierungen | Die App wird zentral aktualisiert und alle Geräte haben sofort die neuste Version | Neue Versionen der App müssen jedesmal neu installiert werden. Ist ein Update nur auf ein HTML Element relevant, kann dies zentral aktualisiert werden | App muss immer über den App Store aktualisiert werden. Dies geschieht oft automatisch im Hintergrund. |
-| Geschwindigkeit | Performance Probleme, bei langsamer Internet Verbdingung. Ansonsten ist bei modernen Smartphones kaum eine Verzögerung spürbar. | Schneller als eine Web Anwendung, da mehr zwischengespeichert wird. Ansonsten ist bei modernen Smartphones kaum eine Verzögerung spürbar. | Schnell |
+| Geschwindigkeit | Performance Probleme, bei langsamer Internet Verbindung. Ansonsten ist bei modernen Smartphones kaum eine Verzögerung spürbar. | Schneller als eine Web Anwendung, da mehr zwischengespeichert wird. Ansonsten ist bei modernen Smartphones kaum eine Verzögerung spürbar. | Schnell |
 | Grafik | HTML5, CSS3 PNGs SVGs Sehr scharf auch auf Retina-Displays | HTML5, CSS3 PNGs SVGs Sehr scharf auch auf Retina-Displays | Native API Sehr scharf auch auf Retina-Displays |
 | Design | Bei mobilen Browsern ist oft die Adressleiste etwas störend und kann nicht immer ausgeblendet werden. Ansonsten kann eine ähnliche Optik und Haptik wie mit einer nativen App erstellt werden. | Ähnliche Optik und Haptik wie mit einer nativen App kann erstellt werden. | Am meisten Design Optionen. |
 | Zugriff |  |  |  |
-| Kamera | Nein, nur indirekt über Datei-Upload | Ja | Ja |
+| Kamera | Ja | Ja | Ja |
 | GPS Standort | Ja | Ja | Ja |
-| Benachrichtigungen \(Notifications\) | Nein, nur indirekt via SMS oder E-Mail | Ja | Ja |
+| Benachrichtigungen \(Notifications\) | Ja | Ja | Ja |
 | Kontakte und Kalender | Nein | Ja | Ja |
 | Gesten | Ja | Ja | Ja |
 | Lokaler Speicher | HTML5 Cache, SQLite | Lokaler Datenspeicher, HTML5 Cache, SQLite | Lokaler Datenspeicher |
 | Verlinkung von Apps \(Deep Linking\) | Ja | Ja | Ja |
 | Suche | Ja, Indexierung läuft auf Webserver. | Ja, Indexierung läuft auf Webserver. | Über Datenbank, wenn indexiert, oder via Suche über Webserver, falls angebunden. |
 | Monetarisierung der App | Gleich wie auf Internetseiten. Pay-Per-Use, Abonnement, Werbung, Zugang nur gegen Bezahlung, usw. | Beim Kauf der App sowie In-App Käufe möglich | Beim Kauf der App sowie In-App Käufe möglich |
+
+Die neuesten Daten sind auch unter https://whatwebcando.today/ ersichtlich.
 
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 
@@ -53,7 +55,7 @@ Wir fokussieren uns in diesem Kurs auf Hybride Apps. Folgende Gründe sprechen d
 
 ## Gruppenübung
 
-Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
 1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
 2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag1/Teil3\_NativeHybridWeb"_ und öffne die Datei online.
