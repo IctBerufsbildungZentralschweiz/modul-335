@@ -4,7 +4,7 @@ Betrachten wir uns nun den Syntax von AngularJS etwas genauer. AngularJS bindet 
 
 ## Expressions
 
-In AngularJS schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. Eine AngularJS Expression kann auch innerhalb einer direktive geschrieben werden mit:`ng-bind="expression"`  
+In AngularJS schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. 
 AngularJS löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
 
 ### Beispiel
@@ -182,7 +182,7 @@ Das Dritte Resultat ist 19
 
 4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deiner Component stammt. Füge dazu folgenden Variable in deiner Klasse hinzu und versuche es mit Expressions zu lösen:
 
-   ```js 
+   ```
    myString: string = 'Welt!';
    ``` 
    
