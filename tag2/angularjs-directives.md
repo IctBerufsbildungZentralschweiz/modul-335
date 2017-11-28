@@ -13,7 +13,7 @@ Eine Direktive erlaubt es uns nun, ein Stück HTML Code um zusätzliche Informat
 Wir dieser um einige mächtigen wenn wir ihn so schreiben:
 
 ```html
-<ion-item *ngFor="let item in items">{{item.name}}</ion-item>.
+<ion-item *ngFor="let item of items">{{item.name}}</ion-item>.
 ```
 
 Ein einfaches `*ngFor` hat es uns nun erlaubt über die komplette Liste von Elementen zu iterieren.
@@ -52,11 +52,11 @@ Das Resultat ist, dass das Listen-Element 5 mal dupliziert wird und die ID zusam
 
 Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man direkt in `ngFor` ein Filter setzen. Möchte man z.B. hier eine umgekehrte Ausgabe wäre dies mit Pipes zu lösen, dazu später mehr.
 
-### (keyup) - Event
+### (input) - Event
 
 Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfacher Variante.
 
-Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine doofe Idee - erfüllt aber in diesem Beispiel den Zweck.
+Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine suboptimale Idee - erfüllt aber in diesem Beispiel den Zweck.
 
 ```js
 // keyupExample.ts
@@ -73,11 +73,11 @@ Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Bind
 <!-- keyupExample.html -->
 <ion-item>
   <ion-label fixed>Name</ion-label>
-  <ion-input type="text" [value]="data.name" (keyup)="nameChanged()"></ion-input>
+  <ion-input type="text" [value]="data.name" (input)="nameChanged()"></ion-input>
 </ion-item>
 
 ```
-Achtung: hier wird `(keyup)` als Event verwendet. Das heisst nach jedem Tastaturanschlag wir ein `alert()` ausgelöst, natürlich unschön. Eine saubere Lösung würde man mit Observables implementieren, sprengt aber den aktuellen Rahmen hier. 
+Achtung: hier wird `(input)` als Event verwendet. Das heisst nach jedem Tastaturanschlag wir ein `alert()` ausgelöst, natürlich unschön. Eine saubere Lösung würde man mit Observables implementieren, sprengt aber den aktuellen Rahmen hier. 
 
 
 ### (click) - Event
