@@ -15,7 +15,7 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 
 > Wilst du Icons in deiner App verwenden? Bilder abspeichern ist dir zu mühsam resp. eine externe Bibliothek wie [FontAwesome](http://fontawesome.io/)  ist dir zu mächtig?
 >
-> Ionic hat ihre eigene Icon-Sammlung zusammengestellt, sie nennen Sie [Ionicons](http://ionicons.com/) und ich kann Sie dir empfehlen!
+> Ionic hat ihre eigene Icon-Sammlung zusammengestellt, sie nennen Sie [Ionicons](https://ionicframework.com/docs/ionicons/) und ich kann Sie dir empfehlen!
 
 ## Übung
 
