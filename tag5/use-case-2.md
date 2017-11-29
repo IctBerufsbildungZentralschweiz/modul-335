@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechende Screens solltest du auf Papier erhalten haben. Ich bin gespannt auf dein Ergebnis.
+Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechende Screens solltest du auf Papier erhalten haben. Ich bin gespannt auf dein Ergebnis.
 
 #### Verbindungsparameter für Firebase Auth ```app.module.ts ```
 
@@ -33,15 +33,6 @@ Blau:        #3939D9
 Violett:     #2B0B2F
 ```
 
-#### Einstellungen Firebase ```firebase.init.js ```
-
-```js
-apiKey: "AIzaSyDMfTpxjOIslKfKCxKjh0dg47up1jpOIKY",
-authDomain: "m335-usecase2.firebaseapp.com",
-databaseURL: "https://m335-usecase2.firebaseio.com",
-storageBucket: "m335-usecase2.appspot.com",
-messagingSenderId: "327137245327"
-```
 
 #### Struktur der Daten
 ```json
