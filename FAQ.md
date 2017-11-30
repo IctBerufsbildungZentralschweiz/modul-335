@@ -57,3 +57,15 @@ Oft generiert man sich dynamisch z.B. aus einer Datenbank eine Liste. Möchte ma
 In Ionic funktioniert das mit sogenannten [Nav Params](https://ionicframework.com/docs/api/navigation/NavParams/).
 
 
+#### Runtime Error - Cannot find module
+Wir dir folgende Meldung als Error angezeigt:
+```
+Error: Cannot find module "angularfire2/auth"
+
+```
+
+Dann fehlt angularfire2 in deinen `node_modules`. Gehe dazu in deinen Projektordner und gib folgendes ein:
+````
+npm install angularfire2 firebase --save 
+```
+
