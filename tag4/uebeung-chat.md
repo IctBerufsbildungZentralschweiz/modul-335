@@ -110,7 +110,7 @@
 ```html
     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
         <ion-list>
-            <div class="messages" *ngFor="let chat of chats" [ngClass]="{other: chat.username == this.sheetsuAPI.currentUser}">
+            <div class="messages" *ngFor="let chat of chats" [ngClass]="{other: chat.username == this.chatService.sheetsuAPI.currentUser}">
                 <div class="message">
                     <span>
                         <h3 *ngIf="chat.username">{{chat.username}} </h3>                                                    
@@ -160,11 +160,6 @@ export class ChatServiceProvider {
   constructor(public http: Http) {
   }
 
-  searchMovies(movieName) {
-    var url = 'http://api.themoviedb.org/3/search/movie?query=&query=' + encodeURI(movieName) + '&api_key=5fbddf6b517048e25bc3ac1bbeafb919';
-    var response = this.http.get(url).map(res => res.json());
-    return response;
-  }
 
   getChatList() {
     console.log("Getting chats from:" + this.sheetsuAPI.url);

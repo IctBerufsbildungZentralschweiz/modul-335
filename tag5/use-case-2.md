@@ -71,6 +71,13 @@ Violett:     #2B0B2F
 }
 
 ```
+public sheetsuAPI = {
+    url: "https://sheetsu.com/apis/v1.0bu/6d08e3b8df99",
+    apiKey: "13ekDLnGt7m3KyWhs9B1",
+    apiSecret: "nrxTg4msyGqYeVzxJzsCUowvKvjGA4daF5RNFNxu",
+    currentUser: "Max" // TODO: Namen anpassen
+  }
+```
 
 ## Detailbeschreibung
 
