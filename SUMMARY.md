@@ -44,5 +44,6 @@
 
 * [App Store](tag5/app-store.md)
 * [Testing](tag5/testing.md)
+* [Use Case 2](tag5/use-case-2.md)
 * [Veröffentlichung, Ausblick](tag5/veröffentlichung.md)
 
