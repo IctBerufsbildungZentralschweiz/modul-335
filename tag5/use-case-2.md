@@ -30,6 +30,8 @@ Die folgenden Farbcodes sollen in der App verwendet werden.
 ```
 Blau:        #3939D9
 Violett:     #2B0B2F
+Grau:        #CCCCCC
+White:       #FFFFFF
 ```
 
 
