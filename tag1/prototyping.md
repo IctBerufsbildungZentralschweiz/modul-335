@@ -79,7 +79,7 @@ Wir besprechen deine Ergebnisse gemeinsam.
 
 ![](/_allgemein/ralph_uebung.png)
 
-Schnapp dir einen Stift, Papier \(evt. eine Vorlage\) und beginne mit der folgenden Übung. Ralph ist dein Auftraggeber und hatte eine coole Idee für ein App, er hat sie dir hier textuell beschrieben. Erstelle einen Lo-Fi Prototypen und halte dich an die gängigen UI-Standarts. Versuch auch dein Wissen aus den "Laws of Gestalt" anzuwenden. 
+Schnapp dir einen Stift, Papier \(evt. eine Vorlage\) und beginne mit der folgenden Übung. Ralph ist dein Auftraggeber und hatte eine coole Idee für ein App, er hat sie dir hier textuell beschrieben. Erstelle einen Lo-Fi Prototypen und halte dich an die gängigen UI-Standards. Versuch auch dein Wissen aus den "Laws of Gestalt" anzuwenden. 
 
 #### Ausgangslage:
 
