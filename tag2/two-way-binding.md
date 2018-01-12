@@ -16,7 +16,7 @@ Genau hier hat Angular seinen Vorteil. Das Data Binding in Angular synchronisier
 <ion-content padding>
     <h1>Hello World</h1>
     Hello {{ username }}
-    <input type="text" value="username (input)="changeUsername($event)">
+    <input type="text" value="username" (input)="changeUsername($event)">
 </ion-content>
 ```
 
