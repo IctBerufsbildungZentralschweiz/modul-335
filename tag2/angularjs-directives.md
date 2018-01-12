@@ -101,6 +101,10 @@ buttonClicked(){
 ```
 Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
 
+Weitere Events findest du z.B. hier:
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+
 ## [hidden] / ngIf
 
 Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable  true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
