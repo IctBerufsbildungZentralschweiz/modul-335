@@ -53,7 +53,7 @@ Hier weitere wichtige Vorteile von 2.0:
 | Komponenten basierte Programmierung |
 | Ist ein Framework |
 | Verwendet TypeScript |
-| Verwendetet component und directives |
+| Verwendet component und directives |
 | Etwas kompliziertes mit Aufwand verbundenes Setup, da Abhängigkeiten zu Bibliotheken bestehen |
 | Verwendet camelCase, z.B. ngModel |
 
