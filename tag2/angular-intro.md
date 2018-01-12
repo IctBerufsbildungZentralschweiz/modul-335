@@ -10,26 +10,26 @@ In AngularJS werden mit HTML-Code deklarativ die Oberflächen gestaltet. Ein wic
 Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von AngularJS. Der HTML Code ist einfach zu verstehen, enthält jedoch keine Logik. Durch das von AngularJS kontrollierte Binding ändert sich die Anzeige in Zeile 6, sobald in Zeile 5 ein Wert geändert wird. Der vergleichbare jQuery Code wäre deutlich länger!
 
 ```html
-<body ng-app="myModule" ng-controller="MyCtrl">
+<ion-content>
   <span>Anzahl Elemente: {{list.length}} </span>
   <ul>
-    <li ng-repeat="element in list">
-      <input type="text" ng-model="element.text">
+    <li *ngFor="let element of list">
+      <input type="text" [(ngModel)]="element.text">
       <span>{{element.text}}</span>
     </li>
   </ul>
-</body>
+</ion-content>
 ```
 
 Und hier noch der dazugehörige Controller:
 
 ```js
-angular.module('myModule', [])
-.controller("MyCtrl", function($scope) {
-  $scope.list = [
+export class ElementComponent {
+    list: any[] = [
     {text:'angluarjs'},
     {text:'jQuery'}];
-});
+
+}
 ```
 
 ## Ablauf einer Anfrage
