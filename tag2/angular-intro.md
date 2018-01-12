@@ -2,7 +2,7 @@
 
 ## Was ist AngularJS?
 
-![](http://html5-mobile.de/wp-content/uploads/2012/05/angular-js-mvc-framework.png)
+![](http://html5-mobile.de/wp-content/uploads/2012/05/angular-js-mvc-framework.png) 
 
 [AngularJS](https://angularjs.org/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
