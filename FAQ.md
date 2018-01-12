@@ -83,7 +83,7 @@ Du hast wohl vergessen `ErsteSeitePage` unter `entryComponents` in deinem `app.m
 ---
 #### Mein Code wird nicht angezeigt
 Wird z.B. dein neuer Code nicht angezeigt:
-```
+```html
 <!-- welt.html
 <ion-header>
 
@@ -99,7 +99,7 @@ Wird z.B. dein neuer Code nicht angezeigt:
 </ion-content>
 ```
 
-In diesem Fall befindet sich das `<h1>`-Tage ausserhalb von `ion-content` oder `ion-header`, daher wird dies von Ionic nicht interpretiert.
+In diesem Fall befindet sich das `<h1>`-Tag ausserhalb von `ion-content` oder `ion-header`, daher wird dies von Ionic nicht interpretiert.
 
 Generell empfiehlt sich folgendes zu prüfen:
 1) Hast du deine Änderung gespeichert?
