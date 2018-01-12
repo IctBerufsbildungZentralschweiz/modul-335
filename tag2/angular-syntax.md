@@ -174,7 +174,7 @@ Das Dritte Resultat ist 19
 ![](/_allgemein/ralph_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung"
-2. Erstelle für jedes der folgenden Themen eine eigene Seite inkl. Link im Menu: Zahlen, String, Objekte, Array.  \(Verwende doch gleich `ionic g` - den Generator\)
+2. Erstelle für jedes der folgenden Themen eine eigene Seite inkl. Link im Menu: Zahlen, String, Objekte, Array.  \(Verwende doch gleich `ionic g` - den Generator\) 
 3. Auf der Seite _Zahlen_, füge einen neuen Paragraph hinzu und versuche die folgenden Rechnungen direkt mit Expressions aufzulösen:  
    5 + 7 =  
    25 / 5 =  
