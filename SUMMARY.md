@@ -18,12 +18,12 @@
 ## Tag 2
 
 * [Ionic: UI](tag1/ionic-ui.md)
-* [AngularJS: Intro](tag2/angular-intro.md)
-* [AngularJS: Syntax](tag2/angular-syntax.md)
-* [AngularJS: Data Binding](tag2/two-way-binding.md)
-* [AngularJS: Directives](tag2/angularjs-directives.md)
-* [AngularJS: Navigation](tag2/angular-navigation.md)
-* [AngularJS: Filters / Pipes](tag2/angularjs-filters.md)
+* [Angular: Intro](tag2/angular-intro.md)
+* [Angular: Syntax](tag2/angular-syntax.md)
+* [Angular: Data Binding](tag2/two-way-binding.md)
+* [Angular: Directives](tag2/angularjs-directives.md)
+* [Angular: Navigation](tag2/angular-navigation.md)
+* [Angular: Filters / Pipes](tag2/angularjs-filters.md)
 
 ## Tag 3
 

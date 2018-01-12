@@ -1,6 +1,6 @@
-# AngularJS: Filters / Pipes
+# Angular: Filters / Pipes
 
-Filter resp. auch Pipes genannt können in AngularJS hinzugefügt werden um Daten zu formatieren oder sortieren. Anbei eine Auflistung der wichtigsten Filtermöglichkeiten welche Euch Angular bereits mitbringt:
+Filter resp. auch Pipes genannt können in Angular hinzugefügt werden um Daten zu formatieren oder sortieren. Anbei eine Auflistung der wichtigsten Filtermöglichkeiten welche Euch Angular bereits mitbringt:
 
 * `currency` Formatiert eine Nummer zu einem Währungs-Format
 * `date` Formatiert ein Datum zu ein speziellen Format
@@ -51,7 +51,7 @@ Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nu
 ![](/_allgemein/ralph_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Filters" 
-2. Deine Aufgabe soll es nun sein die folgenden Filter/Pipes in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [AngularJS Dokumentation](https://angular.io/guide/pipes) dienen.
+2. Deine Aufgabe soll es nun sein die folgenden Filter/Pipes in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [Angular Dokumentation](https://angular.io/guide/pipes) dienen.
    1. `lowercase`
    2. `uppercase`
    3. `date` \(Formatiere doch ein Datum um\)

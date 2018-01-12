@@ -1,11 +1,11 @@
-# AngularJS: Syntax
+# Angular: Syntax
 
-Betrachten wir uns nun den Syntax von AngularJS etwas genauer. AngularJS bindet Daten ans HTML mit sogenannten Expressions.
+Betrachten wir uns nun den Syntax von Angular etwas genauer. Angular bindet Daten ans HTML mit sogenannten Expressions.
 
 ## Expressions
 
-In AngularJS schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. 
-AngularJS löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
+In Angular schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. 
+Angular löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
 
 ### Beispiel
 
@@ -62,7 +62,7 @@ Total in CHF: 15.-
 
 ## Strings
 
-Strings in AngularJS sind wie in Javascript:
+Strings in Angular sind wie in Javascript:
 
 ```js
 // zeichenketten.ts

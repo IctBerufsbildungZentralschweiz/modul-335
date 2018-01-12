@@ -1,13 +1,13 @@
-# AngularJS: Intro
+# Angular: Intro
 
-## Was ist AngularJS?
+## Was ist Angular?
 
 ![](http://html5-mobile.de/wp-content/uploads/2012/05/angular-js-mvc-framework.png) 
 
-[AngularJS](https://angularjs.org/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
+[Angular](https://angular.io/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
-In AngularJS werden mit HTML-Code deklarativ die Oberflächen gestaltet. Ein wichtiger Aspekt ist, dass Anwendungslogik nur in den JavaScript-Dateien definiert wird. Dieser sollte weitmöglichst unabhängig von der Oberfläche sein. Im Gegensatz zu manch anderen MVC-Frameworks erweitert AngularJS den HTML-Code aber nur, anstatt ihn zu abstrahieren.  
-Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von AngularJS. Der HTML Code ist einfach zu verstehen, enthält jedoch keine Logik. Durch das von AngularJS kontrollierte Binding ändert sich die Anzeige in Zeile 6, sobald in Zeile 5 ein Wert geändert wird. Der vergleichbare jQuery Code wäre deutlich länger!
+In Angular werden mit HTML-Code deklarativ die Oberflächen gestaltet. Ein wichtiger Aspekt ist, dass Anwendungslogik nur in den JavaScript-Dateien definiert wird. Dieser sollte weitmöglichst unabhängig von der Oberfläche sein. Im Gegensatz zu manch anderen MVC-Frameworks erweitert Angular den HTML-Code aber nur, anstatt ihn zu abstrahieren.  
+Schon an diesem simplen Beispiel zeigt sich die Leichtigkeit von Angular. Der HTML Code ist einfach zu verstehen, enthält jedoch keine Logik. Durch das von Angular kontrollierte Binding ändert sich die Anzeige in Zeile 6, sobald in Zeile 5 ein Wert geändert wird. Der vergleichbare jQuery Code wäre deutlich länger!
 
 ```html
 <ion-content>
@@ -78,7 +78,7 @@ export class ProductComponent {
 
 ![](/_allgemein/ralph_uebung.png)
 
-Lass uns in ein paar Google Slides einige AngularJS Applikationen zusammentragen:
+Lass uns in ein paar Google Slides einige Angular Applikationen zusammentragen:
 
 1. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag2/Teil22\_AngularApps"_ und öffne die Datei online.
 2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation \(auch Beispiel Apps\) welche mit Angular 2 erstellt werden. \(Alternativ auch mit Angular 1\) 
