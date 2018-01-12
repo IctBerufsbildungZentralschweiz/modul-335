@@ -45,7 +45,7 @@ export class ElementComponent {
 
 ## Kurze Geschichte von Angular
 
-Angular 1.x wurde nicht für den mobilen Einsatz gebaut, Angular 2.0 hingegen schon. Angular 2 ist durch eine hirarchische Dependency Injection um einiges schneller als Angular 1.x. und ist grosses Update.  
+Angular 1.x wurde nicht für den mobilen Einsatz gebaut, Angular 2.0 hingegen schon. Angular 2 ist durch eine hierarchische Dependency Injection um einiges schneller als Angular 1.x. und ein grosses Update.  
 Hier weitere wichtige Vorteile von 2.0:
 
 | Vorteile Angular 2.0 |
