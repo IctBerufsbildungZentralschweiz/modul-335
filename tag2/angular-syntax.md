@@ -181,11 +181,8 @@ Das Dritte Resultat ist 19
    100 - 1 =
 
 4. Auf der Seite _String_ soll das Ziel sein das du in der Ausgabe "Hallo Welt!" in einem roten H1-Titel erhältst, wobei "Welt" aus deiner Component stammt. Füge dazu folgenden Variable in deiner Klasse hinzu und versuche es mit Expressions zu lösen:
-
-   ```
-   myString: string = 'Welt!';
-   ``` 
-   
+```
+myString: string = 'Welt!'; ```
 
 5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von deiner Component stammen. Füge dazu in deiner Klasse folgende Zeile hinzu:  
    ```js   
