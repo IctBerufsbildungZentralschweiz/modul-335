@@ -1,4 +1,4 @@
-# Prototyping
+#of Prototyping
 
 ![](https://www.boardofinnovation.com/wp-content/uploads/2013/04/paperprotoyping.jpg)
 
@@ -35,7 +35,7 @@
 
 ## Arten von Prototypen
 
-Bei Prototypen wird of von der "fidelity" \(deutsch: Wiedergabetreue\) gesprochen. Dabei unterscheidet man zwischen einem Lo-Fi resp. Hi-Fi Prototypen. Lo-Fi ist eher eine Skizze, wobei Hi-Fi ein sehr durchgedachter, designter Prototyp ist.
+Bei Prototypen wird oft von der "fidelity" \(deutsch: Wiedergabetreue\) gesprochen. Dabei unterscheidet man zwischen einem Lo-Fi resp. Hi-Fi Prototypen. Lo-Fi ist eher eine Skizze, wobei Hi-Fi ein sehr durchgedachter, designter Prototyp ist.
 
 ![](/_allgemein/prototyp-arten.png)
 
