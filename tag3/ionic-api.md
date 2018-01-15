@@ -25,7 +25,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Alerts"
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite namens "Alerts"
 2. Lies dir die Dokumentation zu Alerts's durch.
 3. Wir wollen nun ein Alert anzeigen:
    1. Durch eine Klick auf den einen Button "Nickname erfassen" wir das Popup angezeigt
