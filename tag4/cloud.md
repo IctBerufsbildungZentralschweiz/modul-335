@@ -31,7 +31,7 @@ Ionic Pro hat diverse Services, welche dich durch den gesamten App Lifecyle besc
 
 * **[Monitoring](https://ionicframework.com/docs/pro/monitoring/):** Fange Laufzeitfehler deiner App in Produktion ab und schliesse Sie auf deine Zeile Code zurück.
 
-Alle diese Services basieren auf einem einfachen GIT-Workflow, welchem dir als Entwickler bekannt sein sollten.
+Alle diese Services basieren auf einem einfachen GIT-Workflow, welcher dir als Entwickler bekannt sein sollten.
 
 ## Du möchtest, resp. hast Ionic Pro bereits verwendet
 Zu Beginn dieses Kurses habe wir dich darum gebeten einen Account auf folgender Website zu machen:
