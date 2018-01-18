@@ -139,7 +139,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http'; 
 ``` 
 
-11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch in zu verstehen:
+11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch ihn zu verstehen:
 
 ```js
 import { Injectable } from '@angular/core';
@@ -318,4 +318,4 @@ export class ChatPage implements OnInit, AfterViewChecked{
 
 16. Zusatz: Es dauert eine Moment bist die Chat-Liste beim Start geladen wird. Erstelle im HTML einen weiteren Spinner der das Laden der Daten anzeigt.
 
-15. Zusatz: Integriere dein Firebase-Auth und verknüpfe den Benutzername im `chat-service.ts` mit der eingeloggten Person.
+15. Zusatz: Integriere dein Firebase-Auth und verknüpfe den Benutzernamen im `chat-service.ts` mit der eingeloggten Person.
