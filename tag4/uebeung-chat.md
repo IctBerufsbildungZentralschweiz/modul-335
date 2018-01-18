@@ -316,6 +316,6 @@ export class ChatPage implements OnInit, AfterViewChecked{
 
 15. Zusatz: Füge in der Navigationsleiste (oben rechts) einen Button ein, um die Chats neu zu laden
 
-16. Zusatz: Es dauert eine Moment bist die Chat-Liste beim Start geladen wird. Erstelle im HTML einen weiteren Spinner der das Laden der Daten anzeigt.
+16. Zusatz: Es dauert einen Moment bist die Chat-Liste beim Start geladen wird. Erstelle im HTML einen weiteren Spinner der das Laden der Daten anzeigt.
 
 15. Zusatz: Integriere dein Firebase-Auth und verknüpfe den Benutzernamen im `chat-service.ts` mit der eingeloggten Person.
