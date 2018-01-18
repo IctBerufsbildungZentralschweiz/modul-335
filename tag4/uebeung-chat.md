@@ -125,7 +125,7 @@
 
 7. Unterhalb dieses divs fügst du ein `form` mit der CSS-Klasse `chat-eingabe` darunter ein. Dieses Form wird unsere Eingabe sein.
 
-8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren (Tipp: `col-10` / `col-2` sehen sind nicht schlecht aus). 
+8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren (Tipp: `col-10` / `col-2` sehen nicht schlecht aus). 
 
 9. Den Button möchten wir mit einem Icon lösen, dazu kannst du folgenden Code verwenden:
 ```html
