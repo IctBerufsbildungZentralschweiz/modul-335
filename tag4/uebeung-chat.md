@@ -266,7 +266,7 @@ export class ChatPage implements OnInit, AfterViewChecked{
       },
       err => {
           console.error(err);
-        // TODO: Hier nochmals. Übergib den error.status Code an die unten vergesehen Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
+        // TODO: Hier nochmals. Übergib den error.status Code an die unten vorgesehene Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
       });
     
   }
