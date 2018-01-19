@@ -41,7 +41,7 @@ Ferienorte:
 - id
 - name
 
-Gallerie:
+Galerie:
 - id
 - imgurl
 ```
@@ -55,7 +55,7 @@ Gallerie:
 
 #### Navigation
 
-* Das Menu soll die im Prototyp ersichtlichen Menupunkte \(Gallerie, Ferienorte\) haben
+* Das Menu soll die im Prototyp ersichtlichen Menupunkte \(Galerie, Ferienorte\) haben
 * Der Benutzername des Benutzer soll im Menu angezeigt werden 
 * Am unteren Ende des Menus soll ein Button fürs Logout ersichtlich sein 
 * Klickt ein Benutzer Logout, wird er ausgeloggt und zum Login gesendet 
@@ -83,9 +83,9 @@ Gallerie:
 * Oberhalb des Registrierungs-Buttons gibt es einen Button zurück zum Login
 * Gibt es ein Fehler beim Login, soll dieser mittels `AlertController`  angezeigt werden
 
-#### Gallerie
+#### Galerie
 
-* Die Gallerie zeigt Bilder an
+* Die Galerie zeigt Bilder an
 * Die Bild-URL soll dabei von der Sheetsu-API geladen werden
 
 #### Ferienorte
