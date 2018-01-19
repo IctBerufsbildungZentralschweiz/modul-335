@@ -44,7 +44,7 @@ Ja genau, bereits auf Ionic Pro. Zudem hast du sicher die DevApp auf deinem Ger�
 Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 {% youtube %} https://www.youtube.com/watch?v=O17OWyx08Cg {% endyoutube %}
 
-## Wie füge ich Firebase deinem Projekt hinzu?
+## Wie füge ich Firebase zu meinem Projekt hinzu?
 Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
 ```bash
 npm install angularfire2 firebase
