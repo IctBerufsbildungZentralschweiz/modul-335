@@ -64,7 +64,7 @@ Es gibt zwei Arten eines Wireframes:
 
 ## Gruppenübung
 
-Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
 1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
 2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner_ "Tag1/Teil10\_PrototypingTools"_ und öffne die Datei online.
