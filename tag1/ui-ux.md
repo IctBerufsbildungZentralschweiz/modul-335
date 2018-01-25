@@ -71,7 +71,7 @@ Im Zusammenhang mit Usabilty werden die folgenden 5 E's oft verwendet:
 
 
 * **Effective**: 
-  How completely and accurately the work or experience is completed or goals reached
+  How completely and accurately the work or experience is completed or goals are reached
 * **Efficient**: 
 How quickly this work can be completed
 * **Engaging**: 
