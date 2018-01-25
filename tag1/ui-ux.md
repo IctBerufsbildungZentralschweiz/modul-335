@@ -78,7 +78,7 @@ How quickly this work can be completed
 How well the interface draws the user into the interaction and how pleasant and satisfying it is to use
 * **Error Tolerant**: 
 How well the product prevents errors and can help the user recover from mistakes that do occur
-* **Easy to Learn**: How well the product supports both the initial orientation and continued learning throughout the complete lifetime of use
+* **Easy to Learn**: How well the product supports both the initial orientation and continuous learning throughout its complete lifetime of use
 
 
 
