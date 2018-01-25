@@ -28,7 +28,7 @@ Ionic basiert und verwendet:
 * [HTML5](https://de.wikipedia.org/wiki/HTML5)
 * [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [SASS](http://sass-lang.com/)
-* [Angular JS](https://angularjs.org/) \(Typescript\)
+* [Angular](https://angularjs.org/) \(Typescript\)
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
