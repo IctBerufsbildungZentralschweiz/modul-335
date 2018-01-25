@@ -44,8 +44,9 @@ Bei Prototypen wird oft von der "fidelity" \(deutsch: Wiedergabetreue\) gesproch
 Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei.    Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
 ![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
 
-Mögliche Vorlagen gibt es z.B. hier:  
-[https://www.interfacesketch.com/iPhone-5-template-A4.pdf](https://www.interfacesketch.com/iPhone-5-template-A4.pdf)
+Mögliche Vorlagen gibt es z.B. hier:
+
+[https://www.sketchappsources.com/category/mobile.html](https://www.sketchappsources.com/category/mobile.html)
 
 ### 
 
