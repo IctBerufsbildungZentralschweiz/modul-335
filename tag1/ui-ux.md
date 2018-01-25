@@ -10,7 +10,7 @@ d# UI / UX / Usability
 
 ## Gestaltprinzip
 
-Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise überschneiden. Insofern beschränke ich mich exemplarisch auf die wichtigsten:
+Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise überschneiden. Insofern beschränke ich mich exemplarisch auf die Wichtigsten:
 
 #### Prinzip der Ähnlichkeit
 ![](http://www.stroopr.de/wp-content/uploads/2014/03/gestaltprinzip_aehnlichkeit-300x300.gif) 
