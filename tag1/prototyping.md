@@ -124,7 +124,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
    2. Es gibt ein Logout-Button
 
-   3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt ob die Mail-App geöffnet werden soll
+   3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt, ob die Mail-App geöffnet werden soll
 
 ##### Zusatzaufgaben
 
