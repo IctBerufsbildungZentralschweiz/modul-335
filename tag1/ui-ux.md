@@ -51,7 +51,7 @@ Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehöri
 Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt.
 
 ## Begriffe
->„The difference lies in whether people are regarded as extentions of the machine or the machine is designed as an extention of people.“ Czaja (1987)
+>„The difference lies in whether people are regarded as extensions of the machine or the machine is designed as an extension of people.“ Czaja (1987)
 
 
 ### Usability
