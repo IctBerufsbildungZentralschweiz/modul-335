@@ -56,7 +56,6 @@ Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nu
    2. `uppercase`
    3. `date` \(Formatiere doch ein Datum um\)
 
-   
-
+  
 
 
