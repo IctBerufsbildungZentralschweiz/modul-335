@@ -21,7 +21,7 @@ Output:
 ## Kann ich auch eigene Pipes erstellen?
 Klar, genau das ist die Idee hinter Pipes. Z.B. wenn du ein Array speziell sortieren oder ein JSON-Objekt nach etwas filtern möchtest.
 
-Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nur Seiten anlegen, sondern eben auch eigene Pipes.
+Wie du sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nur Seiten anlegen, sondern eben auch eigene Pipes.
 
 `ionic g pipe <PIPENAME>`
 
