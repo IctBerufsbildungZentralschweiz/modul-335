@@ -10,7 +10,7 @@
 * [Native, Hybrid, Web](tag1/native_hybrid_web.md)
 * [Frameworks](tag1/frameworks.md)
 * [Ionic: Intro](tag1/ionic_intro.md)
-* [UI, UX, Usabilty](tag1/ui-ux.md)
+* [UI, UX, Usability](tag1/ui-ux.md)
 * [Prototyping](tag1/prototyping.md)
 * [SASS](tag1/sass.md)
 * [Ionic: Architektur](tag1/ionic-archtiektur.md)
