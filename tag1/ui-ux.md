@@ -1,4 +1,4 @@
-d# UI / UX / Usability
+UI / UX / Usability
 
 ## Standard EN-9241-110
 
