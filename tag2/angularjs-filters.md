@@ -56,11 +56,6 @@ Wie sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht nu
    2. `uppercase`
    3. `date` \(Formatiere doch ein Datum um\)
 
-Zusatzaufgabe:
-1. Erstell einen eigenen Pipe mit Ionic Generator. Sortiere dabei das Früchte-Array aus der Übungen "Array" umgekehrt nach Alphabet (also: Z-A)
-
-
-
    
 
 
