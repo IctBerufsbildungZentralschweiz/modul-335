@@ -26,7 +26,7 @@ Dies ist das Hauptunterscheidungsmerkmal von allen weiteren Architekturstilen. D
 
 #### Adressierbarkeit von Ressourcen
 
-Jede Information, die über einen URI kenntlich gemacht wurde, wird als Ressource gekennzeichnet. Jeder REST-konforme Dienst hat eine eindeutige Adresse, den Uniform Resource Locator . Diese „Strasse und Hausnummer im Netz“ standardisiert den Zugriffsweg zum Angebot eines Webservices für eine Vielzahl von Anwendungen \(Clients\). Eine konsistente Adressierbarkeit erleichtert es außerdem, einen Webservice als Teil eines \[Mashups\]\([https://de.wikipedia.org/wiki/Mashup\_\(Internet\)](https://de.wikipedia.org/wiki/Mashup_%28Internet%29)\) weiterzuverwenden.
+Jede Information, die über einen URI kenntlich gemacht wurde, wird als Ressource gekennzeichnet. Jeder REST-konforme Dienst hat eine eindeutige Adresse, den Uniform Resource Locator . Diese „Strasse und Hausnummer im Netz“ standardisiert den Zugriffsweg zum Angebot eines Webservices für eine Vielzahl von Anwendungen \(Clients\). Eine konsistente Adressierbarkeit erleichtert es ausserdem, einen Webservice als Teil eines \[Mashups\]\([https://de.wikipedia.org/wiki/Mashup\_\(Internet\)](https://de.wikipedia.org/wiki/Mashup_%28Internet%29)\) weiterzuverwenden.
 
 #### Repräsentationen zur Veränderung von Ressourcen
 
