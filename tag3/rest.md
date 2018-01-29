@@ -26,7 +26,7 @@ Dies ist das Hauptunterscheidungsmerkmal von allen weiteren Architekturstilen. D
 
 #### Adressierbarkeit von Ressourcen
 
-Jede Information, die über einen URI kenntlich gemacht wurde, wird als Ressource gekennzeichnet. Jeder REST-konforme Dienst hat eine eindeutige Adresse, den Uniform Resource Locator . Diese „Straße und Hausnummer im Netz“ standardisiert den Zugriffsweg zum Angebot eines Webservices für eine Vielzahl von Anwendungen \(Clients\). Eine konsistente Adressierbarkeit erleichtert es außerdem, einen Webservice als Teil eines [Mashups](https://de.wikipedia.org/wiki/Mashup_(Internet) weiterzuverwenden.
+Jede Information, die über einen URI kenntlich gemacht wurde, wird als Ressource gekennzeichnet. Jeder REST-konforme Dienst hat eine eindeutige Adresse, den Uniform Resource Locator . Diese „Straße und Hausnummer im Netz“ standardisiert den Zugriffsweg zum Angebot eines Webservices für eine Vielzahl von Anwendungen \(Clients\). Eine konsistente Adressierbarkeit erleichtert es außerdem, einen Webservice als Teil eines \[Mashups\]\([https://de.wikipedia.org/wiki/Mashup\_\(Internet\)](https://de.wikipedia.org/wiki/Mashup_%28Internet%29)\) weiterzuverwenden.
 
 #### Repräsentationen zur Veränderung von Ressourcen
 
@@ -75,6 +75,7 @@ Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderun
 Wir besprechen deine Ergebnisse gemeinsam.
 
 ---
+
 # CRUD
 
 Das Akronym CRUD umfasst die grundlegenden Datenbankoperationen:
@@ -88,11 +89,9 @@ Das Akronym CRUD umfasst die grundlegenden Datenbankoperationen:
 
 Vergleich herkömmliches Framework \(links\) versus CRUD-Framework \(rechts\) am Beispiel von:
 
-
-Der Hauptvorteil eines CRUD-Frameworks ist der folgenden Grafik zu entnehmen. Eine Anfrage geht direkt von der Präsentationsschicht bis runter in die Datenbank. Es werden keine zusätzlichen Verzweigungen und Verschachtelungen gebaut. 
+Der Hauptvorteil eines CRUD-Frameworks ist der folgenden Grafik zu entnehmen. Eine Anfrage geht direkt von der Präsentationsschicht bis runter in die Datenbank. Es werden keine zusätzlichen Verzweigungen und Verschachtelungen gebaut.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Nakedobjects.png/500px-Nakedobjects.png)
 
 _Quelle: _[_Wikipedia - CRUD _](https://de.wikipedia.org/wiki/CRUD)
-
 
