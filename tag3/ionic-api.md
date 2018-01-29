@@ -35,5 +35,5 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
 
 ##### Zusatzaufgabe:
 
-Ergänze unsere Früchte-Liste aus Tag 2 mit neuen Früchten, dabei soll ein Popup erscheinen wo ich eine neu Frucht erfassen kann. Die Liste soll auch sortierbar sein, resp. ich möchte einzelne Einträge wieder löschen können. \(Hinweis: Auch hier gibt es in der Doku ein Beispiel\).
+Ergänze unsere Früchte-Liste aus Tag 2 mit neuen Früchten, dabei soll ein Popup erscheinen, in dem ich eine neue Frucht erfassen kann. Die Liste soll auch sortierbar sein, resp. ich möchte einzelne Einträge wieder löschen können. \(Hinweis: Auch hier gibt es in der Doku ein Beispiel\).
 
