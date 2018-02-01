@@ -25,7 +25,7 @@ Ionic Pro hat diverse Services, welche dich durch den gesamten App Lifecyle besc
 
 * **[Deploy](https://ionicframework.com/docs/pro/deploy/):** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
 
-* **[View](https://ionicframework.com/docs/pro/view/):** Teste dein App mit Testen und erhalten umgehend Feedback ohne komplizierte Geräte- & Profilverwaltung.
+* **[View](https://ionicframework.com/docs/pro/view/):** Teste deine App mit Testern und erhalte umgehend Feedback ohne komplizierte Geräte- & Profilverwaltung.
 
 * **[Package](https://ionicframework.com/docs/pro/package/):** Builde App-Binaries in the Cloud für iOS und Android.
 
