@@ -27,7 +27,7 @@ Ionic Pro hat diverse Services, welche dich durch den gesamten App Lifecyle besc
 
 * **[View](https://ionicframework.com/docs/pro/view/):** Teste deine App mit Testern und erhalte umgehend Feedback ohne komplizierte Geräte- & Profilverwaltung.
 
-* **[Package](https://ionicframework.com/docs/pro/package/):** Builde App-Binaries in the Cloud für iOS und Android.
+* **[Package](https://ionicframework.com/docs/pro/package/):** Builde App-Binaries in der Cloud für iOS und Android.
 
 * **[Monitoring](https://ionicframework.com/docs/pro/monitoring/):** Fange Laufzeitfehler deiner App in Produktion ab und schliesse Sie auf deine Zeile Code zurück.
 
