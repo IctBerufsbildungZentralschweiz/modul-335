@@ -72,7 +72,7 @@ export const firebaseConfig = {
 
 Die Verbindungsdaten der `firebaseConfig` sind für diesen Kurs hier gegeben. Du brauchst also nicht extra eine eigene App zu erfassen.
 Möchtest du es trotzdem tun, gehe in das [Firebase Console Dashboard](https://console.firebase.google.com). Du solltest dort direkt nach dem 
-Erstellen einer App ein grossen violetten Knopf sehen mit _Firebase zu meiner Web-App hinzufügen_. Thats it, so weiter im Kontext...
+Erstellen einer App ein grossen violetten Knopf sehen mit _Firebase zu meiner Web-App hinzufügen_. That's it, so weiter im Kontext...
 
 Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu: 
 ```js
