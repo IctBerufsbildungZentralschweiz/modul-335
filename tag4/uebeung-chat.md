@@ -2,7 +2,7 @@
 
 ![](/_allgemein/ralph_uebung.png)
 
-1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:   
+1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:  
    ![](/_allgemein/chat.png)
 
 2. Du nimmst wiederum deine Übung von Tag 1 "GX\_NachnameVorname\_Übung" und erstellst dort eine neue Seite "Chat".
@@ -188,7 +188,7 @@ export class ChatServiceProvider {
 }
 ```
 
-1. Ändere im `chat-service.ts` auf Zeile 13 den Namen auf deinen eigenen.
+1. Ändere im `chat-service.ts` auf Zeile 12 den Namen auf deinen eigenen.
 
 2. Nun gehts ans eigentliche Programmieren, dein `chat.ts`. Wir stellen dir auch hier eine kleine Hilfe zur Verfügung:
 
