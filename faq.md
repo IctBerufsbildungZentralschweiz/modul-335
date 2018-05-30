@@ -6,7 +6,7 @@ Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 
 Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
 
-{% embed data="{\"url\":\"https://modul-335.enz.lu/tag1/ionic-archtiektur.html\#wie-debugge-ich-meine-app\",\"type\":\"link\",\"title\":\"Ionic: Architektur - ICT-BZ: Modul 335 - Mobile-Applikation realisieren \",\"icon\":{\"type\":\"icon\",\"url\":\"https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LB2Pij5al0zyqCKEUsZ%2Favatar.png?generation=1524770732531033&alt=media\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.gitbook.com/share/space/thumbnail/-LB2Pij5al0zyqCKEUsZ.png\",\"width\":1200,\"height\":630,\"aspectRatio\":0.525},\"caption\":\"Wie debugge ich meine App?\"}" %}
+{% embed data="{\"url\":\"https://modul-335.enz.lu/tag1/ionic-archtiektur.html\#wie-debugge-ich-meine-app\",\"type\":\"link\",\"title\":\"Ionic: Architektur - Wie debugge ich meine App?\",\"icon\":{\"type\":\"icon\",\"url\":\"https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LB2Pij5al0zyqCKEUsZ%2Favatar.png?generation=1524770732531033&alt=media\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://www.gitbook.com/share/space/thumbnail/-LB2Pij5al0zyqCKEUsZ.png\",\"width\":1200,\"height\":630,\"aspectRatio\":0.525},}" %}
 
 
 
@@ -29,7 +29,7 @@ export class MyArrayPage {
 
 Verwende dazu mehrere `<div>`'s und ein wenig CSS.
 
-```markup
+```html
 <ion-content no-scroll no-padding>
         <ion-grid>
             <ion-row>
@@ -85,11 +85,33 @@ Error: No component factory found for ErsteSeitePage. Did you add it to @NgModul
 
 Du hast wohl vergessen `ErsteSeitePage` unter `entryComponents` in deinem `app.module.ts` hinzuzufügen.
 
+## Runtime Error - Cannot read property ‘xyz’ of undefined
+Ein klassischer Fehler welcher oft mit Objekten auftritt, aber nicht immer einfach zu finden ist. Dein Code sieht etwa so aus:
+```javascript
+// Inside your class
+item: string;
+ 
+// Inside your view
+{{ item.myValue }}
+```
+Das Property selber ist nicht das Problem, jedoch das Objekt selber. Es wird versucht ein Property ```myValue``` des nicht vorhanden oder null Objekts ```item``` aufzurufen.
+Prüfe die initialiserung des Objekts oder verwende folgenden Code:
+```javascript
+// ? operator prevents crashing here!
+{{ item?.myValue }}
+```
+## Runtime Error - Uncaught (in promise): invalid link: MyPage
+Dieser Fehler tritt auf wenn du versuchst auf eine Seite MyPage zu navigieren, die nicht existiert. 
+Hast du den Name richtig geschrieben?
+
+## Runtime Error - _co.myFunction is not a function
+Dieser Fehler ist relativ einfach zu finden. Du rufst in deinem Template eine nicht definierte Funktion myFunction auf (z.B. beim Klick eines Buttons). Stelle sicher das in deiner Component die entsprechende Funktion auch definiert ist. 
+
 ## Mein Code wird nicht angezeigt
 
 Wird z.B. dein neuer Code nicht angezeigt:
 
-```markup
+```html
 <!-- welt.html
 <ion-header>
 
