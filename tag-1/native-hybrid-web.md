@@ -39,7 +39,11 @@ Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 | Suche | Ja, Indexierung läuft auf Webserver. | Ja, Indexierung läuft auf Webserver. | Über Datenbank, wenn indexiert, oder via Suche über Webserver, falls angebunden. |
 | Monetarisierung der App | Gleich wie auf Internetseiten. Pay-Per-Use, Abonnement, Werbung, Zugang nur gegen Bezahlung, usw. | Beim Kauf der App sowie In-App Käufe möglich | Beim Kauf der App sowie In-App Käufe möglich |
 
-Die neuesten Daten sind auch unter [https://whatwebcando.today/](https://whatwebcando.today/) ersichtlich.
+Die neuesten Daten sind auch hier ersichtlich:
+
+{% embed data="{\"url\":\"https://whatwebcando.today/\",\"type\":\"link\",\"title\":\"What Web Can Do Today\",\"description\":\"Can I rely on the Web Platform features to build my app? An overview of the device integration HTML5 APIs.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://whatwebcando.today/icon-120x120.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://whatwebcando.today/icon-120x120.png\",\"aspectRatio\":0}}" %}
+
+
 
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 
