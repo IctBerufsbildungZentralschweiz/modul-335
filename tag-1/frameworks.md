@@ -8,7 +8,7 @@
 
 Android ist ein von Google zu Verfügung gestelltes mobiles Betriebssystem. Mehr dazu gibts hier:
 
-[https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\)](https://de.wikipedia.org/wiki/Android_%28Betriebssystem%29])
+[https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\)](https://de.wikipedia.org/wiki/Android_%28Betriebssystem%29)
 
 ### iOS
 
