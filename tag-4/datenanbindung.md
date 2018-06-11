@@ -18,7 +18,7 @@ Sind die App-Daten nur für einen Benutzer gedacht oder sollen mehrere damit arb
 
 Es ist von zentraler Bedeutung, dass du als Entwickler dir solchen Fragen stellst und diese vor Go-Live deiner App annimmst.
 
-![](http://orgmonkey.marie-kennedy.com/wp-content/uploads/2009/10/how-to-use-this-database.png)
+![](../_allgemein/how-to-use-this-database.png)
 
 ## Gruppenübung
 

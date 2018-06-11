@@ -7,7 +7,7 @@ Ist deine App fertig programmiert heisst das noch lange nicht, dass Sie bereits 
 ### Approval
 
 Anbei ist der Apple Approval Prozess beschrieben:  
-![](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/Art/1_administration_tasks_2x.png)
+![](../_allgemein/apple-approval-prozess.png)
 
 Die Website von [http://appreviewtimes.com/](http://appreviewtimes.com/) zeigt dir die aktuellen Wartezeiten von einem Apple Approval. Bei Releases von neuen Software-Versionen oder Feiertagen arbeiten auch nicht alle Mitarbeiter bei Apple/Google - was eine längere Wartezeit mit sich bringen kann.
 

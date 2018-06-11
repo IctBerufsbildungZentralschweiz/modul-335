@@ -2,7 +2,7 @@
 
 Social Logins sind in praktisch jeder App zu finden. Immer öfter machen es sich Entwickler einfach und implementieren gar keine eigene Logins mehr.
 
-![](http://st1.vchensubeswogfpjoq.netdna-cdn.com/wp-content/uploads/2015/01/Social-Login-Page.png)
+![](../_allgemein/Social-Login-Page.png)
 
 Die grossen Sozialen Netzwerke unterscheiden sich dabei nicht gross. Dem Benutzer soll das Login resp. die Registrierung mit Hilfe dieses Buttons massiv vereinfacht werden. Auch mit Ionic resp. Ionic Cloud lassen sich Social Logins exzellent in eine hybride App einbauen. Die jeweiligen Anleitungen der drei grossen Player findest du hier:
 
@@ -14,7 +14,7 @@ Die grossen Sozialen Netzwerke unterscheiden sich dabei nicht gross. Dem Benutze
 
 Anbei eine grafische Übersicht des Authentisierungs-Prozesses:
 
-![](http://www.w3programmers.com/wp-content/uploads/2013/05/how-it_happens.jpg)
+![](../_allgemein/how-it_happens.jpg)
 
 1. User besucht die Seite/app und klickt auf "Login mit Facebook"
 2. Benutzer wird via App zum Facebook Auth-Dialog weitergeleitet \(Gibt Email/Passwort ein\)
