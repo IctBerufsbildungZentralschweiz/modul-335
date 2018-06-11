@@ -5,7 +5,7 @@ Auf eine Art ist der Navigation Controller eine Art _"Array von Seiten"_, welche
 Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History.
 
 Die aktuelle Seite ist die letzte im Array, oder zuoberst im Stapel \(wenn du so denkst\). Eine neue Seite kann mittels `push` nun auf den Stapel hinzugefügt werden. Eine Seite wird mittels `pop` vom Stapel entfernt und die letzte Seite wird wieder angezeigt. Beide Vorgänge können animiert passieren.  
-![](http://mcgivery.com/wp-content/uploads/2015/12/stack.png)
+![](../_allgemein/stack.png)
 
 ## Wie kann ich zu einer Seite resp. zurück navigieren?
 

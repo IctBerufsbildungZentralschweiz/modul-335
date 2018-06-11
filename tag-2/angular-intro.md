@@ -2,7 +2,7 @@
 
 ## Was ist Angular?
 
-![](http://html5-mobile.de/wp-content/uploads/2012/05/angular-js-mvc-framework.png)
+![](../_allgemein/angular-versions.jpeg)
 
 [Angular](https://angular.io/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
@@ -34,7 +34,7 @@ export class ElementComponent {
 
 ## Ablauf einer Anfrage
 
-![](http://www.innotix.com/files/2914/5631/4175/SinglePage_Lifecycle.png)
+![](../_allgemein/SinglePage_Lifecycle.png)
 
 ### Vorteil einer Single Page Applikation
 
