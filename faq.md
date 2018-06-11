@@ -15,7 +15,7 @@ Dies kann mittels `push` erreicht werden:
 ```javascript
 export class MyArrayPage {
   myArr: any[];
-  constructor(public navCtrl: NavController {
+  constructor(public navCtrl: NavController) {
       this.myArr.push({id: 1, name: "Zwei"});
   }
 }
