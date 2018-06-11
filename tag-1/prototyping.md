@@ -1,6 +1,6 @@
 # Prototyping
 
-![](https://www.boardofinnovation.com/wp-content/uploads/2013/04/paperprotoyping.jpg)
+![](../_allgemein/paperprotoyping.jpg)
 
 ## Definition Protoyping
 
@@ -44,7 +44,7 @@ Bei Prototypen wird oft von der "fidelity" \(deutsch: Wiedergabetreue\) gesproch
 ### Pen & Paper
 
 Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei. Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
-![](http://desarrolloweb.dlsi.ua.es/cursos/2015/hci/images/paper-prototype-03.jpg)
+![](../_allgemein/paper-prototype-03.jpg)
 
 Mögliche Vorlagen gibt es z.B. hier:
 

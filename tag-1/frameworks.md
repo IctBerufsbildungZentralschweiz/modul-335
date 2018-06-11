@@ -2,13 +2,13 @@
 
 ## Mobile Betriebssysteme
 
-![enter image description here](https://infographic.statista.com/normal/chartoftheday_4431_smartphone_operating_system_market_share_n.jpg)
+![](../_allgemein/chartoftheday_4431_smartphone_operating_system_market_share_n.jpg)
 
 ### Android
 
 Android ist ein von Google zu Verfügung gestelltes mobiles Betriebssystem. Mehr dazu gibts hier:
 
-\[[https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\)\]\(https://de.wikipedia.org/wiki/Android\_\(Betriebssystem](https://de.wikipedia.org/wiki/Android_%28Betriebssystem%29]%28https://de.wikipedia.org/wiki/Android_%28Betriebssystem)\) "Wikipedia-Artikel"\)
+[https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\)](https://de.wikipedia.org/wiki/Android_%28Betriebssystem%29])
 
 ### iOS
 

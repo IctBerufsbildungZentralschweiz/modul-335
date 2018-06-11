@@ -4,7 +4,7 @@
 
 [Wikipedia - Ionic Framework](https://enz.lu/7t)
 
-![](https://camo.githubusercontent.com/37a6df450ce824e202f7e1df124bafc3a3156a1d/687474703a2f2f646e6469676974616c2e6e65742f77702d636f6e74656e742f75706c6f6164732f323031352f30332f696f6e69632d6c6f676f2d626c6f672d373637783335352e706e67)
+![](../_allgemein/ionic-logo.png)
 
 ## Website
 
@@ -34,12 +34,12 @@ Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
 ## Ionic 1 oder 2 ?
 
-[Ionic 1.x](http://ionicframework.com/docs/v1/) war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated \(wird nicht weiterentwickelt\) und somit sind Ionic 2 resp. 3 die direkte Nachfolger.
+Ionic 1.x war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated \(wird nicht weiterentwickelt\) und somit sind Ionic 2 resp. 3 die direkte Nachfolger.
 
 ## Dokumentation
 
 Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Richtig, daher ist die Ionic Doku auch elektronisch und hier zu finden:  
-[https://ionicframework.com/docs/](http://ionicframework.com/docs/v2/faq/)
+[https://ionicframework.com/docs/](https://ionicframework.com/docs/v2/faq/)
 
 Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
 

@@ -14,7 +14,7 @@ CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer
 Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche. Im Beispiel unten ist zu sehen, dass SASS Tabulatoren verwendet, SCSS jedoch Klammern. In der Fachliteratur wird daher oft SASS synonym mit SCSS beschrieben.
 
-_Codebeispiel:_ ![](https://futurestud.io/blog/content/images/2014/Jun/sass-vs-scss.png)
+_Codebeispiel:_ ![](../_allgemein/sass-vs-scss.png)
 
 ## Variablen
 
@@ -68,7 +68,7 @@ h2 {
 }
 ```
 
-[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
+[Auf Sassmeister ansehen](https://www.sassmeister.com/gist/e4a777cd959c035502658c0bded5f66b)
 
 ## Nesting
 
@@ -109,7 +109,7 @@ h1 {
 }
 ```
 
-[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/2fdb11998adcf5b390d053c006d56e11)
+[Auf Sassmeister ansehen](https://www.sassmeister.com/gist/2fdb11998adcf5b390d053c006d56e11)
 
 ## Operatoren
 
@@ -152,7 +152,7 @@ h1 {
 }
 ```
 
-[Auf Sassmeister ansehen](http://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
+[Auf Sassmeister ansehen](https://www.sassmeister.com/gist/855910db908128842a9eb6936d7516be)
 
 ## SCSS in Ionic
 
