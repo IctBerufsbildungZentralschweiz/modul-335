@@ -58,7 +58,7 @@ Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehöri
 
 #### Prinzip der Bedeutung
 
-![](../_allgemein/gestaltprinzip_bedeutung.gif)
+![](../_allgemein/gestaltprinzip_bedeutung.gif) 
 
 Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt.
 
