@@ -6,7 +6,7 @@ Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 
 Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
 
-> [Ionic: Architektur - Wie debugge ich meine App](https://modul-335.enz.lu/tag-1/ionic-architektur#wie-debugge-ich-meine-app)
+> [Ionic: Architektur - Wie debugge ich meine App](https://m335.ict-bz.ch/tag-1/ionic-architektur#wie-debugge-ich-meine-app)
 
 ## Wie kann ich ein Objekt zu einem Array hinzufügen?
 
