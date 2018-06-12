@@ -65,16 +65,15 @@ Ein Link für gute AGB's gibt's hier:
 ### PWA
 
 ### Ionic 4
-https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/
+- Änderungen von NavController zum [Angular Routing](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
+- [und vieles mehr ...](https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/)
 
 ### Angular 6
-- Verbesserungen für Entwickler
+- Mehrheitlich Verbesserungen für Entwickler
 - Angular Material Starter Components
-
-{% gist id="https://gist.githubusercontent.com/StephenFluin/7604a06ca709896f7636baa977077ae5/raw/3b80ba96bb5feeb62d6cdd2460204512ff346935/my-service.ts" %}{% endgist %}
-
-
-[Mehr Infos zu den Änderungen gibts hier](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+- Service muss nicht mehr im ```app.module.ts``` registriert werden [(Dependency Injection)](https://angular.io/guide/dependency-injection)
+- Längerer LTS-Support
+- [und vieles mehr...](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
 
 ### Capacitor
 ![](../_allgemein/capacitor-hero.jpg)
@@ -86,3 +85,7 @@ https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/
 - Die Icons kommen neu als Web-Components daher
 - Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden (super lazy) 
 - Man kann ein einges SVG zu Ionicons hinzufügen
+
+
+### Apple WWDC18
+Apple hat an der WWDC 2018 vorgestellt, dass Web-Inhalt nun auch auf der Apple Watch (mit watchOS 5) kommen wir. Wir sind gespannt in welche Richtung das gehen wird... 

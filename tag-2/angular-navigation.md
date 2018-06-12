@@ -91,3 +91,6 @@ export class PersonPage {
 Bitte lies folgende Doku nochmals durch und stelle wenn nötig im Plenum fragen:  
 [https://ionicframework.com/docs/api/navigation/NavController/](https://ionicframework.com/docs/api/navigation/NavController/)
 
+
+Mit Ionic 4 wird empfohlen das Routing über den Angular-Router zu machen:
+[https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
