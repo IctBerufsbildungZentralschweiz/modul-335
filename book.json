@@ -9,7 +9,8 @@
         "gist",
         "responsive-iframes",
         "nocache",
-        "downloadpdf"
+        "downloadpdf",
+        "gist"
     ],
     "pluginsConfig": {
         "download-pdf": {

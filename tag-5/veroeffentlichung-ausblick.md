@@ -65,12 +65,23 @@ Ein Link für gute AGB's gibt's hier:
 ### PWA
 
 ### Ionic 4
+https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/
 
-#### Angular 6
+### Angular 6
+- Verbesserungen für Entwickler
+- Angular Material Starter Components
 
-#### Capacitor
+{% gist id="https://gist.githubusercontent.com/StephenFluin/7604a06ca709896f7636baa977077ae5/raw/3b80ba96bb5feeb62d6cdd2460204512ff346935/my-service.ts" %}{% endgist %}
 
-#### Ionicons v4
+
+[Mehr Infos zu den Änderungen gibts hier](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+
+### Capacitor
+![](../_allgemein/capacitor-hero.jpg)
+[https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
+
+
+### Ionicons v4
 
 - Die Icons kommen neu als Web-Components daher
 - Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden (super lazy) 
