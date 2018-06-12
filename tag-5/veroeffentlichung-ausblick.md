@@ -62,3 +62,16 @@ Ein Link für gute AGB's gibt's hier:
 
 ## Ausblick
 
+### PWA
+
+### Ionic 4
+
+#### Angular 6
+
+#### Capacitor
+
+#### Ionicons v4
+
+- Die Icons kommen neu als Web-Components daher
+- Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden (super lazy) 
+- Man kann ein einges SVG zu Ionicons hinzufügen

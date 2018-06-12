@@ -17,6 +17,12 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 >
 > Ionic hat ihre eigene Icon-Sammlung zusammengestellt, sie nennen Sie [Ionicons](https://ionicframework.com/docs/ionicons/) und ich kann Sie dir empfehlen!
 
+### Neu mit Ionicons v4
+![](../_allgemein/ionicons-4-header-img.png) 
+- Die Icons kommen neu als Web-Components daher
+- Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden (super lazy) 
+- Man kann ein einges SVG zu Ionicons hinzufügen
+
 ## Übung
 
 ![](../.gitbook/assets/ralph_uebung.png)
