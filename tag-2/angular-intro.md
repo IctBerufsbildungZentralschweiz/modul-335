@@ -43,6 +43,13 @@ export class ElementComponent {
 * App-Feeling durch schnelle dynamische Inhaltsanpassungen
 * Tiefes zu übertragendes Datenvolumen, mit einhergehendem Performance-Vorteil bei Mobile-Webapplikationen.
 
+### Wohin geht die Zukunft?
+Sicherlich ist ein weiterer Trend die Aufteilung einer Single Page Application in einzelne sogenannte [Web-Compontents](http://webcomponents.org/) und die Unterteilung der Architektur in Micro-Services.
+
+ ![](../_allgemein/fe-monolith.png)
+
+ ![](../_allgemein/microservices.png)
+
 ## Kurze Geschichte von Angular
 
 Angular 1.x wurde nicht für den mobilen Einsatz gebaut, Angular 2.0 hingegen schon. Angular 2 ist durch eine hierarchische Dependency Injection um einiges schneller als Angular 1.x. und ein grosses Update.  
