@@ -133,51 +133,50 @@
 
     ```text
     import { HttpClientModule } from '@angular/common/http';
-    import { HttpModule } from '@angular/http';
     ```
 
 11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch ihn zu verstehen:
 
 ```javascript
-import { Injectable } from '@angular/core';
-import { Http, Headers, RequestOptions } from '@angular/http';
-import 'rxjs/add/operator/map';
+import {Injectable} from '@angular/core';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+
 
 @Injectable()
 export class ChatServiceProvider {
 
   public sheetsuAPI = {
-    url: "https://sheetsu.com/apis/v1.0bu/6d08e3b8df99",
-    apiKey: "13ekDLnGt7m3KyWhs9B1",
-    apiSecret: "nrxTg4msyGqYeVzxJzsCUowvKvjGA4daF5RNFNxu",
-    currentUser: "Max" // TODO: Namen anpassen
-  }
+    url: 'https://sheetsu.com/apis/v1.0bu/6d08e3b8df99',
+    apiKey: '13ekDLnGt7m3KyWhs9B1',
+    apiSecret: 'nrxTg4msyGqYeVzxJzsCUowvKvjGA4daF5RNFNxu',
+    currentUser: 'Max' // TODO: Namen anpassen
+  };
 
-
-  constructor(public http: Http) {
+  constructor(public http: HttpClient) {
   }
 
 
   getChatList() {
-    console.log("Getting chats from:" + this.sheetsuAPI.url);
-    let headers = new Headers({ 'Authorization': 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret) });
-    let options = new RequestOptions({ headers: headers });
+    console.log('Getting chats from:' + this.sheetsuAPI.url);
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret));
 
-    return this.http.get(this.sheetsuAPI.url, options).map(res => res.json());
+    return this.http.get(this.sheetsuAPI.url, {headers});
   }
 
   postChatMessage(message: any) {
-    console.log("Posting message to:" + this.sheetsuAPI.url);
-    let headers = new Headers({
-      'Authorization': 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret),
-      'Content-Type': 'application/json'
-    });
-    let options = new RequestOptions({ headers: headers });
-    let formattedDate = new Date().toLocaleString();
-    let body = { 'username': this.sheetsuAPI.currentUser, 'text': message, 'date': formattedDate };
+    console.log('Posting message to:' + this.sheetsuAPI.url);
 
-    return this.http.post(this.sheetsuAPI.url, body, options).map(res => res.json());
+    const headers = new HttpHeaders()
+      .set('Authorization', 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret))
+      .set('Content-Type', 'application/json');
+
+    let formattedDate = new Date().toLocaleString();
+    let body = {'username': this.sheetsuAPI.currentUser, 'text': message, 'date': formattedDate};
+
+    return this.http.post(this.sheetsuAPI.url, body, {headers})
   }
+
 }
 ```
 
