@@ -4,7 +4,7 @@
 
 Representational State Transfer \(abgekürzt REST, seltener auch ReST\) bezeichnet ein Programmierparadigma für verteilte Systeme, insbesondere für Webservices. REST ist eine Abstraktion der Struktur und des Verhaltens des World Wide Web. REST hat das Ziel, einen Architekturstil zu schaffen, der die Anforderungen des modernen Web besser darstellt. Dabei unterscheidet sich REST vor allem in der Forderung nach einer einheitlichen Schnittstelle \(siehe Abschnitt Prinzipien\) von anderen Architekturstilen.
 
-![](../_allgemein/representational-state-transfer-rest-api-300x213.jpg)
+![](../.gitbook/assets/representational-state-transfer-rest-api-300x213.jpg)
 
 ### 6 Eigenschaften der Architektur:
 
@@ -89,7 +89,7 @@ Vergleich herkömmliches Framework \(links\) versus CRUD-Framework \(rechts\) am
 
 Der Hauptvorteil eines CRUD-Frameworks ist der folgenden Grafik zu entnehmen. Eine Anfrage geht direkt von der Präsentationsschicht bis runter in die Datenbank. Es werden keine zusätzlichen Verzweigungen und Verschachtelungen gebaut.
 
-![](../_allgemein/500px-Nakedobjects.png)
+![](https://github.com/IctBerufsbildungZentralschweiz/modul-335/tree/900158d28ee4dcc04d5a664e53ea16294cc9f8aa/_allgemein/500px-Nakedobjects.png)
 
 _Quelle:_ [_Wikipedia - CRUD_ ](https://de.wikipedia.org/wiki/CRUD)
 

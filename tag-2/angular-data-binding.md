@@ -1,7 +1,7 @@
 # Angular: Data Binding
 
 Das Data Binding mit Angular ist eines der Hauptvorteile des Frameworks:  
-![](../_allgemein/q1_2015_img1.png)
+![](../.gitbook/assets/q1_2015_img1.png)
 
 ## One-Way Data Binding
 
@@ -84,12 +84,9 @@ Dieses TwoWay-Binding machen wir uns in der Ausgabe gleich wieder zu Nutze. Und 
    2. Input: Vorname - Text
    3. Input: Alter - Number
 4. Verknüpfe nun die jeweiligen Input-Felder mit deiner Component mit Hilfe der oben beschriebene Methode `ngModel`.
-5. Füge nun unter deine Inputs ein Paragraph hinzu und gib einen Satz in folgendem Stil \(je nach Eingaben\) aus:  
+5. Füge nun unter deine Inputs ein Paragraph hinzu und gib einen Satz in folgendem Stil \(je nach Eingaben\) aus:
 
    `Mein Name ist Max Muster und ich bin 23 Jahre alt!`
 
-6. Teste deine App  
-   1. Funktioniert Sie wie erwartet?  
-   2. Hast du die richtigen Input-Typen gewählt? 
-   3. Kannst du bei deinem Alter auch wirklich nur eine Zahl eingeben?
+6. Teste deine App 1. Funktioniert Sie wie erwartet? 2. Hast du die richtigen Input-Typen gewählt? 3. Kannst du bei deinem Alter auch wirklich nur eine Zahl eingeben?
 

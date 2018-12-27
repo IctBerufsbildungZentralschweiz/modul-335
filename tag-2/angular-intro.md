@@ -2,7 +2,7 @@
 
 ## Was ist Angular?
 
-![](../_allgemein/angular-versions.jpeg)
+![](../.gitbook/assets/angular-versions.jpeg)
 
 [Angular](https://angular.io/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
@@ -34,7 +34,7 @@ export class ElementComponent {
 
 ## Ablauf einer Anfrage
 
-![](../_allgemein/SinglePage_Lifecycle.png)
+![](../.gitbook/assets/singlepage_lifecycle.png)
 
 ### Vorteil einer Single Page Applikation
 
@@ -43,12 +43,13 @@ export class ElementComponent {
 * App-Feeling durch schnelle dynamische Inhaltsanpassungen
 * Tiefes zu übertragendes Datenvolumen, mit einhergehendem Performance-Vorteil bei Mobile-Webapplikationen.
 
-### Wohin geht die Zukunft?
+### Wohin geht die Zukunft?
+
 Sicherlich ist ein weiterer Trend die Aufteilung einer Single Page Application in einzelne sogenannte [Web-Compontents](http://webcomponents.org/) und die Unterteilung der Architektur in Micro-Services.
 
- ![](../_allgemein/fe-monolith.png)
+![](../.gitbook/assets/fe-monolith.png)
 
- ![](../_allgemein/microservices.png)
+![](../.gitbook/assets/microservices.png)
 
 ## Kurze Geschichte von Angular
 

@@ -4,7 +4,7 @@
 
 _Quelle:_ [_https://de.wikipedia.org/wiki/App\_Store_](https://de.wikipedia.org/wiki/App_Store)
 
-![](../_allgemein/og.png)
+![](../.gitbook/assets/og.png)
 
 ## Die wichtigsten Links
 
@@ -20,5 +20,5 @@ Um eine App zu veröffentlichen, sollte man die folgenden \(ausgedruckt mehrere 
 
 ## In-App-Käufe
 
-![](../_allgemein/InAppPurchases.jpg) Als In-App-Käufe werden Käufe bezeichnet, die innerhalb einer App, bzw. für eine App, getätigt werden. Gegenstand solcher In-App-Käufe sind meist Erweiterungen für die App oder andere Zusatzinhalte, wie bspw. die Freischaltung von zusätzlichen Funktionen, virtuelles Geld oder das Freischalten bestimmter Elemente in einem Spiel. Solche Käufe können i.d.R. über einen App Store getätigt werden, oder alternativ über eine eigene Funktion des App-Erstellers.
+![](../.gitbook/assets/inapppurchases.jpg) Als In-App-Käufe werden Käufe bezeichnet, die innerhalb einer App, bzw. für eine App, getätigt werden. Gegenstand solcher In-App-Käufe sind meist Erweiterungen für die App oder andere Zusatzinhalte, wie bspw. die Freischaltung von zusätzlichen Funktionen, virtuelles Geld oder das Freischalten bestimmter Elemente in einem Spiel. Solche Käufe können i.d.R. über einen App Store getätigt werden, oder alternativ über eine eigene Funktion des App-Erstellers.
 

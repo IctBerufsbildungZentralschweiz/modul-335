@@ -7,7 +7,7 @@ Ist deine App fertig programmiert heisst das noch lange nicht, dass Sie bereits 
 ### Approval
 
 Anbei ist der Apple Approval Prozess beschrieben:  
-![](../_allgemein/apple-approval-prozess.png)
+![](../.gitbook/assets/apple-approval-prozess.png)
 
 Die Website von [http://appreviewtimes.com/](http://appreviewtimes.com/) zeigt dir die aktuellen Wartezeiten von einem Apple Approval. Bei Releases von neuen Software-Versionen oder Feiertagen arbeiten auch nicht alle Mitarbeiter bei Apple/Google - was eine längere Wartezeit mit sich bringen kann.
 
@@ -52,7 +52,7 @@ Ein Link für gute AGB's gibt's hier:
 
 1. Erstell nun einige Screenshots deiner eigenen \(UseCase 1\) App-Idee. 
 2. Verwende die Screenshots um nun mit dem Service [Mockdrop.io](http://mockdrop.io/) ein cooles Bild deiner App zu erzeugen. Zusatz: Such dir ein passendes Screenshot-Template wie launchkit.io resp. ein passendes App-Icon 
-3. Geh via [Moodle](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#)  -&gt;  Nützliche Links auf den entsprechenden Ordner _"Tag5/Teil66\_Veröffentlichung"_
+3. Geh via [Moodle](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag5/Teil66\_Veröffentlichung"_
 
    und öffne die Datei online.
 
@@ -65,27 +65,29 @@ Ein Link für gute AGB's gibt's hier:
 ### PWA
 
 ### Ionic 4
-- Änderungen von NavController zum [Angular Routing](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
-- [und vieles mehr ...](https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/)
+
+* Änderungen von NavController zum [Angular Routing](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
+* [und vieles mehr ...](https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/)
 
 ### Angular 6
-- Mehrheitlich Verbesserungen für Entwickler
-- Angular Material Starter Components
-- Service muss nicht mehr im ```app.module.ts``` registriert werden [(Dependency Injection)](https://angular.io/guide/dependency-injection)
-- Längerer LTS-Support
-- [und vieles mehr...](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+
+* Mehrheitlich Verbesserungen für Entwickler
+* Angular Material Starter Components
+* Service muss nicht mehr im `app.module.ts` registriert werden [\(Dependency Injection\)](https://angular.io/guide/dependency-injection)
+* Längerer LTS-Support
+* [und vieles mehr...](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
 
 ### Capacitor
-![](../_allgemein/capacitor-hero.jpg)
-[https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
 
+![](../.gitbook/assets/capacitor-hero.jpg) [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
 
 ### Ionicons v4
 
-- Die Icons kommen neu als Web-Components daher
-- Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden (super lazy) 
-- Man kann ein einges SVG zu Ionicons hinzufügen
-
+* Die Icons kommen neu als Web-Components daher
+* Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden \(super lazy\) 
+* Man kann ein einges SVG zu Ionicons hinzufügen
 
 ### Apple WWDC18
-Apple hat an der WWDC 2018 vorgestellt, dass Web-Inhalt nun auch auf der Apple Watch (mit watchOS 5) kommen wir. Wir sind gespannt in welche Richtung das gehen wird... 
+
+Apple hat an der WWDC 2018 vorgestellt, dass Web-Inhalt nun auch auf der Apple Watch \(mit watchOS 5\) kommen wir. Wir sind gespannt in welche Richtung das gehen wird...
+

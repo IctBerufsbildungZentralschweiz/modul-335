@@ -1,6 +1,6 @@
 # Prototyping
 
-![](../_allgemein/paperprotoyping.jpg)
+![](../.gitbook/assets/paperprotoyping.jpg)
 
 ## Definition Protoyping
 
@@ -44,7 +44,7 @@ Bei Prototypen wird oft von der "fidelity" \(deutsch: Wiedergabetreue\) gesproch
 ### Pen & Paper
 
 Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei. Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
-![](../_allgemein/paper-prototype-03.jpg)
+![](../.gitbook/assets/paper-prototype-03.jpg)
 
 Mögliche Vorlagen gibt es z.B. hier:
 
@@ -56,11 +56,11 @@ Anders als ein „Mock-up“ ‒ ein visueller Prototyp ‒ wird der Begriff Wir
 
 Es gibt zwei Arten eines Wireframes:
 
-* Zum einen statische Wireframes: 
+* Zum einen statische Wireframes:
 
   Dies ist eine schematische Darstellung einer einzelnen Seitenvorlage. Hier werden die grundlegenden Elemente der Seite festgehalten. Ein konzeptionelles Layout sollte erkennbar sein. Ein vollendetes Design ist nicht notwendig.
 
-* Des Weiteren gibt es auch dynamische Wireframes. 
+* Des Weiteren gibt es auch dynamische Wireframes.
 
   Diese bestehen aus mehreren Seiten, die als funktioneller Prototyp interaktiv miteinander verknüpft sind. So ist eine Navigation von einer zur anderen Seite möglich. Dynamische Wireframes werden häufig durch einen beiliegenden Navigationsbaum oder ein Flussdiagramm ergänzt, welche beide die Struktur abstrahieren und leichter verständlich machen.
 

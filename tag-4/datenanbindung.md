@@ -18,7 +18,7 @@ Sind die App-Daten nur für einen Benutzer gedacht oder sollen mehrere damit arb
 
 Es ist von zentraler Bedeutung, dass du als Entwickler dir solchen Fragen stellst und diese vor Go-Live deiner App annimmst.
 
-![](../_allgemein/how-to-use-this-database.png)
+![](../.gitbook/assets/how-to-use-this-database.png)
 
 ## Gruppenübung
 
@@ -27,7 +27,7 @@ Es ist von zentraler Bedeutung, dass du als Entwickler dir solchen Fragen stells
 Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
 1. Begib dich in eine der Gruppen
-2. Geh via [Moodle](https://kurse.ict-bz.ch)  -&gt;  Nützliche Links auf den entsprechenden Ordner _"Tag4/Teil49\_Datenanbindung"_
+2. Geh via [Moodle](https://kurse.ict-bz.ch) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag4/Teil49\_Datenanbindung"_
 
    und öffne die Datei online.
 
@@ -108,11 +108,11 @@ Wir haben in der Gruppenübung zuvor einige Online-Tools kennengelernt. Bevor wi
 
 Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 
-{% embed data="{\"url\":\"https://www.youtube.com/watch?v=U5aeM5dvUpA\",\"type\":\"video\",\"title\":\"\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.youtube.com/yts/img/favicon\_144-vfliLAfaB.png\",\"width\":144,\"height\":144,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://i.ytimg.com/vi/U5aeM5dvUpA/maxresdefault.jpg\",\"width\":1280,\"height\":720,\"aspectRatio\":0.5625},\"embed\":{\"type\":\"player\",\"url\":\"https://www.youtube.com/embed/U5aeM5dvUpA?rel=0&showinfo=0\",\"html\":\"<div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"https://www.youtube.com/embed/U5aeM5dvUpA?rel=0&amp;showinfo=0\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"></iframe></div>\",\"aspectRatio\":1.7778}}" %}
+{% embed url="https://www.youtube.com/watch?v=U5aeM5dvUpA" %}
 
 ### Eigenes Backend vs. Backend as a Service
 
-_Quelle:_ [_http://www.app-entwicklung.info/2015/01/eigenes-backend-vs-backend-as-a-service/_](http://www.app-entwicklung.info/2015/01/eigenes-backend-vs-backend-as-a-service/) __
+_Quelle:_ [_http://www.app-entwicklung.info/2015/01/eigenes-backend-vs-backend-as-a-service/_](http://www.app-entwicklung.info/2015/01/eigenes-backend-vs-backend-as-a-service/) \_\_
 
 Während man in der Vergangenheit das Backend einer Anwendung meist eigens implementiert und auf einen Dedizierten Server installiert hat, so geht der neueste Trend in Richtung „Backend as a Service“. Wo früher eigene Entwickler nötig waren, reichen nun wenige Klicks des Frontend-Entwicklers selbst, um einen fix fertigen Server zu haben, den man mittels bereitgestellter APIs oder einer automatisch generierten REST-Schnittstelle ansprechen kann. Solch ein „Backend as a Service“ erscheint im ersten Moment wie eine eierlegende Wollmilchsau, doch sind diese Backends wirklich so gut oder gibt es auch Nachteile bei diesen Services?
 

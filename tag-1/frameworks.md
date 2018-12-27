@@ -2,7 +2,7 @@
 
 ## Mobile Betriebssysteme
 
-![](../_allgemein/chartoftheday_4431_smartphone_operating_system_market_share_n.jpg)
+![](../.gitbook/assets/chartoftheday_4431_smartphone_operating_system_market_share_n.jpg)
 
 ### Android
 

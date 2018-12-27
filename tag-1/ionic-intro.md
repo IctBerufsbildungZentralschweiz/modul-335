@@ -4,7 +4,7 @@
 
 [Wikipedia - Ionic Framework](https://enz.lu/7t)
 
-![](../_allgemein/ionic-logo.png)
+![](https://github.com/IctBerufsbildungZentralschweiz/modul-335/tree/4fd708292f5edca996163bd7205d0ebb1762778c/_allgemein/ionic-logo.png)
 
 ## Website
 

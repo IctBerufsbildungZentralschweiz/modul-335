@@ -2,7 +2,7 @@
 
 Wir werden in den kommenden Tagen viel über die drei Hauptbegriffe Native, Hybrid, Web und deren Vor-/Nachteile sprechen. In diesem Kapitel lernst du die genannten drei Hauptbegriffe kennen und verschaffst dir einen Überblick in die mobile App Entwicklung.
 
-![](../_allgemein/ibm-worklight-application-types.png)
+![](../.gitbook/assets/ibm-worklight-application-types.png)
 
 ### Native
 
@@ -21,7 +21,7 @@ Hybrid ist eine Mischform. Es werden sowohl Native-, wie auch Web-Komponenten zu
 Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 
 |  | Web App | Hybrid App | Native App |
-| --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | Installation | Zugang mit Web Browser und URL | Download via App-Stores | Download via App-Stores |
 | Verbindung und Offline Zugriff | Zugriff nur bei Internetverbindung, einzelne Ansichten können aus dem Cache geladen werden. | Anwendung kann starten, braucht jedoch Internetverbindung um Daten abzurufen | Läuft offline, sobald Daten zu einem Server gesendet oder abgerufen werden müssen, benötigt es ebenfalls eine Internetverbindung |
 | Aktualisierungen | Die App wird zentral aktualisiert und alle Geräte haben sofort die neuste Version | Neue Versionen der App müssen jedesmal neu installiert werden. Ist ein Update nur auf ein HTML Element relevant, kann dies zentral aktualisiert werden | App muss immer über den App Store aktualisiert werden. Dies geschieht oft automatisch im Hintergrund. |
@@ -41,9 +41,7 @@ Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 
 Die neuesten Daten sind auch hier ersichtlich:
 
-{% embed data="{\"url\":\"https://whatwebcando.today/\",\"type\":\"link\",\"title\":\"What Web Can Do Today\",\"description\":\"Can I rely on the Web Platform features to build my app? An overview of the device integration HTML5 APIs.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://whatwebcando.today/icon-120x120.png\",\"aspectRatio\":0},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://whatwebcando.today/icon-120x120.png\",\"aspectRatio\":0}}" %}
-
-
+{% embed url="https://whatwebcando.today/" %}
 
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 
