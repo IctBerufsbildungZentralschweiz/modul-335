@@ -2,7 +2,7 @@
 
 Herzliche Gratulation,
 
-das du dich zu diesem ÜK angemeldet hast. Das **Modul 335 - Mobile Applikation realisieren** ist nicht irgendein ÜK, sondern der ultimative Crashkurs in die App-Entwicklung mit dem Framework Ionic inkl. AngularJS. Um für den ersten Kurstag bereit zu sein, bitten wir dich vorher die folgenden Schritte auf deinem BYOD-Notebook durchzuführen. Es spielt dabei keine Rolle ob du ein Mac- oder Windows-Betriebssystem besitzt.
+das du dich zu diesem ÜK angemeldet hast. Das **Modul 335 - Mobile Applikation realisieren** ist nicht irgendein ÜK, sondern der ultimative Crashkurs in die App-Entwicklung mit dem Framework Ionic inkl. Angular. Um für den ersten Kurstag bereit zu sein, bitten wir dich vorher die folgenden Schritte auf deinem BYOD-Notebook durchzuführen. Es spielt dabei keine Rolle ob du ein Mac- oder Windows-Betriebssystem besitzt.
 
 ## Terminal
 
@@ -18,8 +18,8 @@ Ionic basiert auf Node.js resp. dem Node Package Manager kurz npm. Geh dazu auf 
 
 Wie Schuhe nicht jedem passen, machen wir hier keine Vorgaben mit welcher "IDE" du persönlich am besten zu Recht kommst. Wir können aus Erfahrung aber folgende Open-Source Programme empfehlen:
 
+* [Visual Studio Code (unsere Empfehlung)](https://code.visualstudio.com/download)
 * [Atom](https://atom.io/)
-* [Visual Studio Code](https://code.visualstudio.com/download)
 
 Beide sind sehr gut für die Entwicklung mit AngularJS \(Typescript\) und bieten nebst Plugins mit Auto-Completion und Syntax Highlighting auch direkte Git-Intergration. Wirklich cool.
 
@@ -73,7 +73,4 @@ MBPro:modul-335 ralph$ ionic login
 [OK] You are logged in!
 ```
 
-Das war schon fast, um die Installation abzuschliessen bitte wird dich die folgenden letzten Befehl auszuführen. Beantworte die paar Fragen für uns:
-```bash
-bash <(curl -s -L https://enz.lu/m335-checkenvironment)
-```
+Das war schon, die weiteren Details erfährst du am 1. Kurstag von deinem Instruktor.
