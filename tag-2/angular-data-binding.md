@@ -1,7 +1,8 @@
 # Angular: Data Binding
 
-Das Data Binding mit Angular ist eines der Hauptvorteile des Frameworks:  
-![](../.gitbook/assets/q1_2015_img1.png)
+Das Data Binding mit Angular ist eines der Hauptvorteile des Frameworks:
+
+![](../.gitbook/assets/bildschirmfoto-2018-12-27-um-13.47.01.png)
 
 ## One-Way Data Binding
 
@@ -12,7 +13,7 @@ Bei einer einfachen Applikation hat man Daten im Model \(blau\) und meist ein Te
 Genau hier hat Angular seinen Vorteil. Das Data Binding in Angular synchronisiert das Model mit der View und umgekehrt. So kann ein Wert in der View geändert werden und gleichzeitig wird der Wert im Model auch angepasst. Umgekehrt natürlich auch, siehe Grafik rechts. Diese ständige Zweiweg-Synchronisation nennt man Two-Way Data Binding.
 
 ```markup
-<!-- DataBindingExample.html -->
+<!-- TwoWayBindingExample.page.html -->
 <ion-content padding>
     <h1>Hello World</h1>
     Hello {{ username }}
@@ -21,12 +22,13 @@ Genau hier hat Angular seinen Vorteil. Das Data Binding in Angular synchronisier
 ```
 
 ```javascript
-// DataBindingExample.ts
+// TwoWayBindingExample.page.ts
 ...
-export class TwoWayBindingExample {
+export class TwoWayBindingExamplePage implements OnInit {
 
   username: any = "default";
-
+  ngOnInit() {
+  }
   changeUsername(ev) {
     this.username = ev.target.value;
   }

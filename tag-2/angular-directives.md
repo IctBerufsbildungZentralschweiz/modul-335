@@ -37,7 +37,7 @@ items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 <!-- ngForExample.ts -->
 <ion-content padding>
     <ion-list>
-        <ion-item *ngFor="let item of items"r>Item {{item.id}}</ion-item>
+        <ion-item *ngFor="let item of items">Item {{item.id}}</ion-item>
     </ion-list>
 </ion-content>
 ```
