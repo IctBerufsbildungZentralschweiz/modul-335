@@ -7,96 +7,97 @@
 3. Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
 
    ```css
-   // chat.scss
-   page-chat {
-    .chat-nachrichten {
-        height: calc(100% - 40px);
-        overflow: scroll;
-        background-color: color($colors, light);
-        span {
-            background-color: #C7C7CC !important;
-            display: inline-block !important;
-            color: color($colors, dark) !important;
-            padding: 10px !important;
-            border-radius: 10px !important;
-            text-align: left !important;
-            max-width: 240px !important;
-        }
-    }
-    .chat-eingabe {
-        position: absolute;
-        bottom: 0px;
-        display: block;
-        width: 100%;
-        background-color: white;
-        button {
-            margin: 0px !important;
-        }
-        ion-spinner {
-            width: 12px;
-            height: 12px;
-        }
-        ion-spinner * {
-            stroke: color($colors, light);
-            fill: white;
-            margin: 0px !important;
-        }
-    }
-    .messages {
-        display: -webkit-box !important;
-        display: -moz-box !important;
-        display: -ms-flexbox !important;
-        display: -webkit-flex !important;
-        display: flex !important;
-        -webkit-align-content: center !important;
-        -ms-flex-line-pack: center !important;
-        align-content: center !important;
-        -webkit-box-align: center !important;
-        -moz-box-align: center !important;
-        -webkit-align-items: center !important;
-        -ms-flex-align: center !important;
-        align-items: center !important;
-        margin-bottom: 5px !important;
-        h3 {
-            font-size: 12px;
-            margin: 0px;
-            padding-bottom: 10px;
-        }
-        p {
-            margin: 0px;
-        }
-        .time {
-            font-size: 10px;
-            color: rgb(180, 179, 179);
-        }
-        .message {
-            -webkit-box-flex: 1 !important;
-            -moz-box-flex: 1 !important;
-            -webkit-flex: 1 1 auto !important;
-            -ms-flex: 1 1 auto !important;
-            flex: 1 1 auto !important;
-            padding: 5px !important;
-            -webkit-transition: all 250ms ease-in-out !important;
-            transition: all 250ms ease-in-out !important;
-            overflow: hidden !important;
-            text-align: left !important;
-            -webkit-transform: translate3d(0, 0, 0) !important;
-            -moz-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important;
-        }
-    }
-    .messages.other {
-        .message {
-            -webkit-transform: translate3d(0, 0, 0) !important;
-            -moz-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important;
-            text-align: right !important;
-        }
-        span {
-            color: color($colors, light) !important;
-            background: color($colors, secondary) !important;
-        }
-    }
+   // chat.page.scss
+   .chat-nachrichten {
+       height: calc(100% - 40px);
+       overflow: scroll;
+       background-color: var(--ion-color-light-shade);
+       span {
+           background-color: var(--ion-color-light-shade) !important;
+           display: inline-block !important;
+           color: var(--ion-color-dark) !important;
+           padding: 10px !important;
+           border-radius: 10px !important;
+           text-align: left !important;
+           max-width: 240px !important;
+       }
+   }
+   .chat-eingabe {
+       position: absolute;
+       bottom: 0px;
+       display: block;
+       width: 100%;
+       background-color: white;
+       -webkit-box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
+       -moz-box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
+       box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
+       button {
+           margin: 0px !important;
+       }
+       ion-spinner {
+           width: 12px;
+           height: 12px;
+       }
+       ion-spinner * {
+           stroke: var(--ion-color-light);
+           fill: white;
+           margin: 0px !important;
+       }
+   }
+   .messages {
+       display: -webkit-box !important;
+       display: -moz-box !important;
+       display: -ms-flexbox !important;
+       display: -webkit-flex !important;
+       display: flex !important;
+       -webkit-align-content: center !important;
+       -ms-flex-line-pack: center !important;
+       align-content: center !important;
+       -webkit-box-align: center !important;
+       -moz-box-align: center !important;
+       -webkit-align-items: center !important;
+       -ms-flex-align: center !important;
+       align-items: center !important;
+       margin-bottom: 5px !important;
+       h3 {
+           font-size: 12px;
+           margin: 0px;
+           padding-bottom: 10px;
+       }
+       p {
+           margin: 0px;
+       }
+       .time {
+           font-size: 10px;
+           color: rgb(180, 179, 179);
+       }
+       .message {
+           -webkit-box-flex: 1 !important;
+           -moz-box-flex: 1 !important;
+           -webkit-flex: 1 1 auto !important;
+           -ms-flex: 1 1 auto !important;
+           flex: 1 1 auto !important;
+           padding: 5px !important;
+           -webkit-transition: all 250ms ease-in-out !important;
+           transition: all 250ms ease-in-out !important;
+           overflow: hidden !important;
+           text-align: left !important;
+           -webkit-transform: translate3d(0, 0, 0) !important;
+           -moz-transform: translate3d(0, 0, 0) !important;
+           transform: translate3d(0, 0, 0) !important;
+       }
+   }
+   .messages.other {
+       .message {
+           -webkit-transform: translate3d(0, 0, 0) !important;
+           -moz-transform: translate3d(0, 0, 0) !important;
+           transform: translate3d(0, 0, 0) !important;
+           text-align: right !important;
+       }
+       span {
+           color: var(--ion-color-light) !important;
+           background: var(--ion-color-primary) !important;
+       }
    }
    ```
 
@@ -106,22 +107,22 @@
 
    ```markup
     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
-        <ion-list>
-            <div class="messages" *ngFor="let chat of chats" [ngClass]="{other: chat.username == this.chatService.sheetsuAPI.currentUser}">
-                <div class="message">
-                    <span>
-                        <h3 *ngIf="chat.username">{{chat.username}} </h3>                                                    
-                        <p *ngIf="chat.text">{{chat.text}}</p>
-                     </span>
-                    <div class="time" *ngIf="showDates">{{chat.date}}</div>
-                </div>
-            </div>
-        </ion-list>
-    </div>
+           <ion-list>
+               <div class="messages" [ngClass]="{other: chat.username == this.currentUser}">
+                   <div class="message">
+                       <span>
+                           <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
+                           <p *ngIf="chat.text">{{chat.text}}</p>
+                        </span>
+                       <div class="time" *ngIf="showDates">{{chat.date}}</div>
+                   </div>
+               </div>
+           </ion-list>
+       </div>
    ```
 
 7. Unterhalb dieses divs fügst du ein `form` mit der CSS-Klasse `chat-eingabe` darunter ein. Dieses Form wird unsere Eingabe sein.
-8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren \(Tipp: `col-10` / `col-2` sehen nicht schlecht aus\).
+8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren \(Tipp: `size="10"` / `size="2"` sehen nicht schlecht aus\).
 9. Den Button möchten wir mit einem Icon lösen, dazu kannst du folgenden Code verwenden:
 
    ```markup
@@ -129,186 +130,190 @@
    <ion-spinner *ngIf="showSpinnerIcon" name="bubbles"></ion-spinner>
    ```
 
-10. Nun fügst du in dein `app.module.ts` folgende beide Zeilen ein und fügst Sie zu deinen imports unten hinzu:
-
-    ```text
-    import { HttpClientModule } from '@angular/common/http';
+10. Nun musst du deinem Projekt Angularfire2 und Firebase hinzufügen
+11. ```bash
+    npm install angularfire2 firebase --save
     ```
-
-11. Um mit unserer Chat-API zu kommunizieren, brauchen wir einen Service. Erstelle in deinem Terminal einen neuen provider mit `ionic g provider ChatService` und füge darin folgenden Code ein, versuch ihn zu verstehen:
-
-```javascript
-import {Injectable} from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:   
 
 
-@Injectable()
-export class ChatServiceProvider {
-
-  public sheetsuAPI = {
-    url: 'https://sheetsu.com/apis/v1.0bu/6d08e3b8df99',
-    apiKey: '13ekDLnGt7m3KyWhs9B1',
-    apiSecret: 'nrxTg4msyGqYeVzxJzsCUowvKvjGA4daF5RNFNxu',
-    currentUser: 'Max' // TODO: Namen anpassen
-  };
-
-  constructor(public http: HttpClient) {
-  }
+    1. Wir müssen die Angularfire2Module importieren:  
 
 
-  getChatList() {
-    console.log('Getting chats from:' + this.sheetsuAPI.url);
-    const headers = new HttpHeaders()
-      .set('Authorization', 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret));
+       ```javascript
+       // AngularFire2 importieren
+       import { AngularFireModule } from 'angularfire2';
+       import { AngularFireDatabaseModule } from 'angularfire2/database';
+       import { AngularFireAuthModule } from 'angularfire2/auth';
+       ```
 
-    return this.http.get(this.sheetsuAPI.url, {headers});
-  }
+    2. Wir setzen die Firebase-Konfiguration für diese Übung  
 
-  postChatMessage(message: any) {
-    console.log('Posting message to:' + this.sheetsuAPI.url);
 
-    const headers = new HttpHeaders()
-      .set('Authorization', 'Basic ' + btoa(this.sheetsuAPI.apiKey + ':' + this.sheetsuAPI.apiSecret))
-      .set('Content-Type', 'application/json');
+       ```javascript
+       // Firebase Einstellungen 
+       export const firebaseConfig = {
+         apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
+         authDomain: "m335-chat.firebaseapp.com",
+         databaseURL: "https://m335-chat.firebaseio.com",
+         projectId: "m335-chat",
+         storageBucket: "m335-chat.appspot.com",
+         messagingSenderId: "477777194250"
+       };
+       ```
 
-    let formattedDate = new Date().toLocaleString();
-    let body = {'username': this.sheetsuAPI.currentUser, 'text': message, 'date': formattedDate};
+    3. Wir fügen die Angularfire in den `imports` hinzu:  
 
-    return this.http.post(this.sheetsuAPI.url, body, {headers})
-  }
 
-}
-```
+       ```javascript
+        AngularFireModule.initializeApp(firebaseConfig),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule
+       ```
 
-1. Ändere im `chat-service.ts` auf Zeile 12 den Namen auf deinen eigenen.
-2. Nun gehts ans eigentliche Programmieren, dein `chat.ts`. Wir stellen dir auch hier eine kleine Hilfe zur Verfügung:
+    Hier die komplette Datei:
 
-```javascript
-// chat.ts
-import { Component,ViewChild,AfterViewChecked, ElementRef, OnInit } from '@angular/core';
-import { IonicPage, NavController, NavParams, Content } from 'ionic-angular';
-import { ChatServiceProvider } from '../../providers/chat-service/chat-service';
-import { AlertController } from 'ionic-angular/components/alert/alert-controller';
+    {% code-tabs %}
+    {% code-tabs-item title="app.module.ts" %}
+    ```javascript
 
-@IonicPage()
-@Component({
-  selector: 'page-chat',
-  templateUrl: 'chat.html',
-})
+     { NgModule } from '@angular/core';
+    import { BrowserModule } from '@angular/platform-browser';
+    import { RouteReuseStrategy } from '@angular/router';
 
-export class ChatPage implements OnInit, AfterViewChecked{
-  @ViewChild('scrollMe') private myScrollContainer: ElementRef;
+    import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+    import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+    import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-  message: string;
-  chats: any[];
-  showSpinnerIcon: boolean = false;
-  showDates: boolean = false;
+    import { AppComponent } from './app.component';
+    import { AppRoutingModule } from './app-routing.module';
+    import { IonicStorageModule } from '@ionic/storage';
 
-  constructor(public navCtrl: NavController, private chatService: ChatServiceProvider, private alertCtrl: AlertController) {
-    // TODO: Beim Laden der Seite sollen die Chats geladen werden
+    // AngularFire2 importieren
+    import { AngularFireModule } from 'angularfire2';
+    import { AngularFireDatabaseModule } from 'angularfire2/database';
+    import { AngularFireAuthModule } from 'angularfire2/auth';
+    ​
+    ​
+    // Firebase Einstellungen 
+    export const firebaseConfig = {
+      apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
+      authDomain: "m335-chat.firebaseapp.com",
+      databaseURL: "https://m335-chat.firebaseio.com",
+      projectId: "m335-chat",
+      storageBucket: "m335-chat.appspot.com",
+      messagingSenderId: "477777194250"
+    };
+    @NgModule({
+      declarations: [AppComponent],
+      entryComponents: [],
+      imports: [
+        BrowserModule,
+        IonicModule.forRoot(),
+        AppRoutingModule,
+        IonicStorageModule.forRoot(),
+        AngularFireModule.initializeApp(firebaseConfig),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule
+      ],
+      providers: [
+        StatusBar,
+        SplashScreen,
+        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+      ],
+      bootstrap: [AppComponent]
+    })
+    export class AppModule {}
 
-  }
+    ```
+    {% endcode-tabs-item %}
+    {% endcode-tabs %}
 
-  ngOnInit() { 
-    this.scrollToBottom();
+13. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich:  
 
-  }
 
-  ngAfterViewChecked() {        
-     this.scrollToBottom();        
-  } 
+    {% code-tabs %}
+    {% code-tabs-item title="chat.page.ts" %}
+    ```typescript
+    import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+    import { AlertController } from '@ionic/angular';
+    import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+    import { Observable } from 'rxjs';
 
-  scrollToBottom(): void {
-      try {
-          this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
-      } catch(err) { }                 
-  }
-  swipeEvent(swipe) {
-    // Mit swipe.direction erhälst du die Richtung in welcher der User in den Nachrichten gewischt hat
-    // 2  = Swipe von Rechts nach Links
-    // 4  = Swipe von Links nach Rechts
+    @Component({
+      selector: 'app-chat',
+      templateUrl: './chat.page.html',
+      styleUrls: ['./chat.page.scss'],
+    })
+    export class ChatPage implements OnInit {
+      // TODO: In der Angular Doku nachlesen, was ViewChild macht und basierend auf deinem HTML XXXXX ersetzen 
+      @ViewChild('XXXXX') private myScrollContainer: ElementRef;
 
-    // TODO: Sofern die Richtung Links oder Rechts ist, sollen die Daten angezeigt werden (schau im chat.html) nach was gesetzt werden muss.
-  }
+      message: string;
+      showSpinnerIcon: boolean = false;
+      showDates: boolean = false;
+      chatList: Observable<ChatMessage[]>;
+      chatListRef: AngularFireList<ChatMessage>;
+      // TODO: Passe deine Gruppennummer und deinen Namen an
+      groupNumber: string =  "G0"; // Bsp. G1
+      currentUser: string =  "Roomies Ralph"; // Bsp. Ralph
+  
+      constructor(private alertCtrl: AlertController, afDb: AngularFireDatabase) {
+        this.chatListRef = afDb.list('/chats/'+this.groupNumber);
+        this.chatList = this.chatListRef.valueChanges();
+      }
+  
+      ngOnInit() { 
+        // TODO: An das Ende scrollen
+      }
 
-  loadChats() {
-    this.chatService.getChatList().subscribe(
-      data => {
-          // TODO: In Data erhälst du ein JSON-Objekt mit deinen Daten zurück, sofern data nicht null ist soll es deinem Chat-Array zugewiesen werden
+      ngAfterViewChecked() {        
+        // TODO: An das Ende scrollen
+      } 
 
-      },
-      err => {
-          console.error(err);
-          // TODO: Übergib den error.status Code an die unten vorgesehene Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
-      });
-  }
-
-  sendMessage(e) {
-    // TODO: Prüfe ob eine Nachricht eingeben wurde, falls nicht sollen die Daten nicht gesendet werden. 
-
-    this.showSpinnerIcon = true;
-
-    this.chatService.postChatMessage(this.message).subscribe(
-      data => {
-        if(data) {
-
-          // TODO: Füge das erhaltene data Objekt deinem Array hinzu. Tipp: Such nach push in der Doku.
-
-          // TODO: Dein Nachrichten-Input soll geleert werden     
-
-          // TODO: Schalte den Spinner wieder ab.
+      scrollToBottom(): void {
+          try {
+              this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+          } catch(err) { }                 
+      }
+      swipeEvent(swipe) {
+        // 2  = Right to left swipe
+        // 4  = Left to right swipe
+        if(swipe.direction == 2 || swipe.direction == 4) {
+          // TODO: Datum ein resp. ausblenden
         }
-      },
-      err => {
-          console.error(err);
-        // TODO: Hier nochmals. Übergib den error.status Code an die unten vorgesehene Funktion. Testen kannst du es, indem du im chat-service.ts z.B. einen falschen API-Token wählst
-      });
+      }
+      sendMessage(e) {
+        if(this.message != '') {
+        // TODO: Spinner anzeigen
+        let formattedDate = new Date().toLocaleString();  
+    
+        // TODO: Mittels push()) die Nachricht an Firebase senden 
+        // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
 
-  }
-
-
-  handleHTTPError(errorCode: number) {
-    let errorMsg: string;
-    switch(errorCode) {
-      case 400: {
-        errorMsg = "Fehler beim Einfügen/Ändern von Daten!";
-        break;
-      }
-      case 401: {
-        errorMsg = "Um die API zu brauchen musst man angemeldet sein!";
-        break;
-      }
-      case 402: {
-        errorMsg = "Oops, da hat wohl einer seine Rechnung bei Sheetsu nicht bezahlt!";
-        break;
-      }
-      case 403: {
-        errorMsg = "Diese Aktion wurde vom Sheets-Admin für diese API unterbunden";
-        break;
-      }
-      case 429: {
-        errorMsg = "Dein Quoata wurde aufgebraucht, versuche es später erneut.";
-        break;
-      }
-      case 500: {
-        errorMsg = "Ein unbekannter Server-Fehler ist aufgetreten.";
-        break;
-      }
-      default: {
-        errorMsg = "Ein unbekannter Fehler ist aufgetreten!";
-        break; 
+        // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
+        }
       }
     }
+    interface ChatMessage {
+      username: String;
+      text: String;    
+      date: any;
+    }
 
-    // TODO: Zeig die errorMsg in einem Alert mit Titel "Error" und button "OK" an:
+    ```
+    {% endcode-tabs-item %}
+    {% endcode-tabs %}
 
-  }
-}
-```
+14. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gebe mittel `*ngFor` die Nachrichten in deinem Template aus.
+
+
 
 ## Zusatz
 
-1. Zusatz: Füge in der Navigationsleiste \(oben rechts\) einen Button ein, um die Chats neu zu laden
-2. Zusatz: Es dauert einen Moment bist die Chat-Liste beim Start geladen wird. Erstelle im HTML einen weiteren Spinner der das Laden der Daten anzeigt.
-3. Zusatz: Integriere dein Firebase-Auth und verknüpfe den Benutzernamen im `chat-service.ts` mit der eingeloggten Person.
+1. Zusatz: Füge eine Funktion hinzu, dass wie bei Whatsapp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir ngStyle in der Angular Doku an.
+2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
+3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
+
+
 
