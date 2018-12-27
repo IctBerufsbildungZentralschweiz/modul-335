@@ -3,7 +3,7 @@
 ![](../.gitbook/assets/ionic-ui.jpeg)  
 Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige Duplikationen zu vermeiden verweisen ich hier auf folgende Links:
 
-[Dokumentation ab Ionic 2.x](http://ionicframework.com/docs/v2/components/)
+[Dokumentation ab Ionic 4](http://ionicframework.com/docs/v2/components/)
 
 Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber später mehr...
 
@@ -24,6 +24,7 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 * Die Icons kommen neu als Web-Components daher
 * Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden \(super lazy\) 
 * Man kann ein einges SVG zu Ionicons hinzufügen
+* Ionicons können Plattformunabhängig eingebunden werden, [siehe hier](https://ionicons.com/usage)
 
 ## Übung
 

@@ -2,7 +2,7 @@
 
 ## Was ist Angular?
 
-![](../.gitbook/assets/angular-versions.jpeg)
+![](../.gitbook/assets/angular-web-framework.jpg)
 
 [Angular](https://angular.io/) ist ein Open-Source-Framework welches von Google gesponsert und verwendet wird.
 
@@ -53,10 +53,10 @@ Sicherlich ist ein weiterer Trend die Aufteilung einer Single Page Application i
 
 ## Kurze Geschichte von Angular
 
-Angular 1.x wurde nicht für den mobilen Einsatz gebaut, Angular 2.0 hingegen schon. Angular 2 ist durch eine hierarchische Dependency Injection um einiges schneller als Angular 1.x. und ein grosses Update.  
-Hier weitere wichtige Vorteile von 2.0:
+AngularJS  v1.x wurde nicht für den mobilen Einsatz gebaut, Angular \(&gt; v2\) hingegen schon. Angular ist durch eine hierarchische Dependency Injection um einiges schneller als AngularJS und ein grosses Update.  
+Hier weitere wichtige Vorteile von Version &gt; 2.0:
 
-| Vorteile Angular 2.0 |
+| Vorteile Angular |
 | :--- |
 | Komponenten basierte Programmierung |
 | Ist ein Framework |
@@ -65,7 +65,7 @@ Hier weitere wichtige Vorteile von 2.0:
 | Etwas kompliziertes mit Aufwand verbundenes Setup, da Abhängigkeiten zu Bibliotheken bestehen |
 | Verwendet camelCase, z.B. ngModel |
 
-### Codebeispiel Angular 2.0
+### Codebeispiel Angular
 
 ```javascript
 import { Component } from '@angular/core';
@@ -87,7 +87,7 @@ export class ProductComponent {
 Lass uns in ein paar Google Slides einige Angular Applikationen zusammentragen:
 
 1. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag2/Teil22\_AngularApps"_ und öffne die Datei online.
-2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation \(auch Beispiel Apps\) welche mit Angular 2 erstellt werden. \(Alternativ auch mit Angular 1\) 
+2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation \(auch Beispiel Apps\) welche mit Angular erstellt werden. \(Alternativ auch mit AngularJS \) 
 3. Ergänze deine Slides mit Bildern oder Code-Beispielen.
 
 Wir besprechen die Ergebnisse in Rund 15min gemeinsam gemeinsam.
