@@ -1,7 +1,7 @@
 # Ionic: API
 
 Ionic ist beides, ein CSS-Framework und eine Javascript UI Bibliothek. Um die App etwas dynamischer zu machen gibt es einige sehr zentrale Funktionen, welche in den folgenden Dokumentationen beschrieben werden:  
-Ionic 2: [http://ionicframework.com/docs/api/ ](http://ionicframework.com/docs/api/)
+Ionic 4: [https://beta.ionicframework.com/docs/api](https://beta.ionicframework.com/docs/api)
 
 Hier einige Beispiele:
 
@@ -29,7 +29,7 @@ _The Action Sheet is a slide-up panel that lets the user choose from a set of op
    1. Durch einen Klick auf den einen Button "Nickname erfassen" wird das Popup angezeigt
    2. Ich kann in diesem Popup in ein Textfeld mein Spitznamen eintragen
    3. Wird das Popup geschlossen, wird auf der Ansicht ein Text "Ich liebe es XXX genannt zu werden!" angezeigt, wobei XXX der zuvor im Popup eingegebene Nickname ist. 
-4. Ein einfacher Klick reicht nicht immer aus. Manchmal muss man etwas fester drücken. Füge nun ein Button \(150x150 Pixel, schwarz\) hinzu und gib ihm die `press` Geste \(siehe API Docs\). Ein Paragraph darunter soll dabei wie ein Log dienen und pro Geste den Counter hochzählen und folgenden Text ausgeben "Er wurde X mal gedrückt!".
+4. Ein einfacher Klick reicht nicht immer aus. Manchmal muss man etwas fester drücken. Füge nun ein Button \(150x150 Pixel, schwarz\) hinzu und gib ihm die `press` Geste. \(Achtung: Ab Ionic 4 gibt es für diese Geste kein eigenes Event mehr, versuche es mit Google resp. Hammerjs\). Ein Paragraph darunter soll dabei wie ein Log dienen und pro Geste den Counter hochzählen und folgenden Text ausgeben "Er wurde X mal gedrückt!".
 
 #### Zusatzaufgabe:
 
