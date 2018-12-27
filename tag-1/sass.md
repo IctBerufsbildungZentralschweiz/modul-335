@@ -159,13 +159,14 @@ h1 {
 Ionic setzt voll und ganz auf SCSS. Du kannst so deine App bis ins letzte Detail stylen. Dazu wurde in der Doku ein eigenes Kapitel gewidmet: [https://beta.ionicframework.com/docs/theming/basics](https://beta.ionicframework.com/docs/theming/basics)
 
 ### Theming Beispiel auf Stackblitz
-{% embed url="https://stackblitz.com/edit/ionic4-theming-example?embed=1&file=src/global.scss&hideExplorer=1" %}
+
+{% embed url="https://stackblitz.com/edit/ionic4-theming-example?embed=1&file=src/global.scss&hideExplorer=1" caption="" %}
 
 ### Color Generator
-Ionic hat in ihrer neuen Doku einen Color Generator mit einem direkt Showcase eingebaut, dieser kann im Verlauf des Kurs sicher einige Male gebraucht werden: 
-[https://beta.ionicframework.com/docs/theming/color-generator](https://beta.ionicframework.com/docs/theming/color-generator)
 
+Ionic hat in ihrer neuen Doku einen Color Generator mit einem direkt Showcase eingebaut, dieser kann im Verlauf des Kurs sicher einige Male gebraucht werden: [https://beta.ionicframework.com/docs/theming/color-generator](https://beta.ionicframework.com/docs/theming/color-generator)
 
-Noch ein etwas älteres Ionic 2 Video für die Lachmuskeln :smirk:
-{% embed url="https://www.youtube.com/watch?v=1cgr0z9TXnQ" %}
+Noch ein etwas älteres Ionic 2 Video für die Lachmuskeln 😂 
+
+{% embed url="https://www.youtube.com/watch?v=1cgr0z9TXnQ" caption="" %}
 
