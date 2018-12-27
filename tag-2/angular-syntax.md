@@ -4,7 +4,7 @@ Betrachten wir uns nun den Syntax von Angular etwas genauer. Angular bindet Date
 
 ## Expressions
 
-In Angular schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiten klammern:`{{expression}}`. Angular löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
+In Angular schreibt man Expressions \(Ausdrücke\) mit doppelt geschweiften Klammern:`{{expression}}`. Angular löst diese Expression auf und gibt das Resultat am entsprechenden Ort zurück.
 
 ### Beispiel
 
@@ -27,27 +27,27 @@ Mein erster Ausdruck: 12
 In Expressions kann man sehr eifach mit Zahlen und den gängigen Operatoren rechnen:
 
 ```javascript
-// zahlen.ts
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// zahlen.page.ts
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'page-zahlen',
-  templateUrl: 'zahlen.html'
+  selector: 'app-zahlen',
+  templateUrl: './zahlen.page.html',
+  styleUrls: ['./zahlen.page.scss'],
 })
-
-export class ZahlenPage {
+export class ZahlenPage implements OnInit {
   anzahl: any = 3;
   kosten: any = 5;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor() {
+  }
+  ngOnInit() {
   }
 }
 ```
 
 ```markup
-<!-- zahlen.html -->
+<!-- zahlen.page.html -->
 <p>
 Total in CHF: {{ anzahl * kosten }}.-
 </p>
@@ -64,27 +64,28 @@ Total in CHF: 15.-
 Strings in Angular sind wie in Javascript:
 
 ```javascript
-// zeichenketten.ts
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// zeichenketten.page.ts
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'page-zeichenketten',
-  templateUrl: 'zeichenketten.html'
+  selector: 'app-zeichenketten',
+  templateUrl: './zeichenketten.page.html',
+  styleUrls: ['./zeichenketten.page.scss'],
 })
 
-export class ZeichenkettenPage {
+export class ZeichenkettenPage implements OnInit {
   vorname: string = 'Max';
   nachname: string = 'Muster';
 
-  constructor(public navCtrl: NavController) {
-
+  constructor() {
+  }
+  ngOnInit() {
   }
 }
 ```
 
 ```markup
-<!-- zeichenkette.html -->
+<!-- zeichenkette.page.html -->
 <p>
 Mein Name ist {{ vorname + " " + nachname }}.
 </p>
@@ -101,26 +102,27 @@ Mein Name ist Max Muster.
 Auch Objekte funktionieren wie in JS:
 
 ```javascript
-// objekte.ts
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// objekte.page.ts
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'page-objekte',
-  templateUrl: 'objekte.html'
+  selector: 'app-objekte',
+  templateUrl: './objekte.page.html',
+  styleUrls: ['./objekte.page.scss'],
 })
 
-export class ObjektePage {
+export class ObjektePage implements OnInit {
   person: any = { vorname: 'Max', nachname: 'Muster'};
 
-  constructor(public navCtrl: NavController) {
-
+  constructor() {
+  }
+  ngOnInit() {
   }
 }
 ```
 
 ```markup
-<!-- objekte.html -->
+<!-- objekte.page.html -->
 <p>
 Sein Nachname lautet {{ person.nachname }}!
 </p>
@@ -135,26 +137,27 @@ Sein Nachname lautet Muster!
 ## Arrays
 
 ```javascript
-// arrays.ts
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+// arrays.page.ts
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'page-arrays',
-  templateUrl: 'arrays.html'
+  selector: 'app-arrays',
+  templateUrl: './arrays.page.html',
+  styleUrls: ['./arrays.page.scss'],
 })
 
-export class ArraysPage {
+export class ObjektePage implements OnInit {
   punkte: any = [1,15,19,2,40];
 
-  constructor(public navCtrl: NavController) {
-
+  constructor() {
+  }
+  ngOnInit() {
   }
 }
 ```
 
 ```markup
-<!-- arrays.html -->
+<!-- arrays.page.html -->
 <p>
 Das Dritte Resultat ist {{ punkte[2] }}
 </p>
