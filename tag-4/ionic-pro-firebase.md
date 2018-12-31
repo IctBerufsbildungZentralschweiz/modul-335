@@ -48,7 +48,7 @@ Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.googl
 Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
 
 ```bash
-npm install angularfire2 firebase
+npm install angularfire2 firebase --save
 ```
 
 Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
