@@ -1,95 +1,213 @@
-# Angular: Navigation
+# Angular: Navigation I
 
-NavController ist die Basisklasse für Navigation Controller Komponenten wie _Nav_ und _Tab_. Wir brauchen den Navigation Controller um in Seiten deiner App zu navigieren.  
-Auf eine Art ist der Navigation Controller eine Art _"Array von Seiten"_, welche ein bestimmte Reihenfolge \(so wie auch History\) darstellt.  
-Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History.
+Bis und mit Ionic 3 war die Navigation über den sogenannten NavController möglich und basierte auf einem "Array von Seiten". Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History. Hier ein ein Beispiel:  
 
-Die aktuelle Seite ist die letzte im Array, oder zuoberst im Stapel \(wenn du so denkst\). Eine neue Seite kann mittels `push` nun auf den Stapel hinzugefügt werden. Eine Seite wird mittels `pop` vom Stapel entfernt und die letzte Seite wird wieder angezeigt. Beide Vorgänge können animiert passieren.  
+
 ![](../.gitbook/assets/stack.png)
+
+Mit Ionic 4 wird die Navigation neu über das [**Angular Routing**](https://angular.io/guide/router) gemacht. Angular Routing basiert mehr auf dem in der URL ersichtlichen Pfad \(z.B. `http://localhost:8100/home`\).   
+In deiner Applikation findest du eine zentrale Datei um das Routing zu steuern:
+
+{% code-tabs %}
+{% code-tabs-item title="app-routing.module.ts" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginPage } from './login/login.page';
+import { DetailPage } from './datail/datail.page';
+  
+const routes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginPage },
+  { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
+  { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
+  { path: 'detail/:id', component: DetailPage },
+];
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {
+ 
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Was sehen wir hier:
+
+* Wird kein Pfad aufgerufen, wird eine Weiterleitung/Redirect auf `/home` gemacht
+* Die `LoginPage` wird als `component` direkt eingebunden
+* `/home` und `/about` werden mittels Lazy Loading eingebunden \(mehr dazu weiter unten\)
+* Nach der Route von `/detail` kann noch eine ID mitgegeben werden, so können wir z.B. Details in einer Liste anzeigen \(mehr dazu weiter unten\)
+* Die definierten `routes` werden im `RouterModule forRoot()` registriert
+
+## Was versteht man unter Lazy Loading mit Angular Routing in Ionic?
+
+Lazy loading mit Angular Router ist nicht viel anders als das normale Routing. Unsere Routes sehen jedoch in etwas so aus:
+
+```typescript
+const routes: Routes = [
+  { path: 'login', loadChildren: './pages/login/login.module#LoginModule' },
+  { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
+  { path: 'detail/:id', loadChildren: './pages/detail/detail.module#DetailModule' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+];
+```
+
+Anstatt nun eine `component` für eine Route angegeben wird, machen wir Gebrauch vom `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.   
+Nehmen wir die `/home` Route als Beispiel. Der Router weiss das er die Datei `home.module.ts` öffnen muss und schaut nach `HomeModule` darin.
+
+{% code-tabs %}
+{% code-tabs-item title="home.module.ts" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+ 
+import { HomePage } from './home.page';
+import { HomePageRoutingModule } from './home-routing.module';
+ 
+@NgModule({
+  imports: [
+    CommonModule,
+    IonicModule,
+    HomePageRoutingModule
+  ],
+  declarations: [HomePage],
+  entryComponents: [],
+  bootstrap: [HomePage],
+})
+export class HomeModule {}
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+In der Datei `home.module.ts` sehen wir das die Routes in einer separaten Datei gehalten werden, welche in etwa so aussehen wird:
+
+{% code-tabs %}
+{% code-tabs-item title="home-routing.module.ts" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+ 
+import { HomePage } from './home.page';
+import { SomethingPage } from './something/something.page';
+ 
+const routes: Routes = [
+  { path: '', component: HomePage },
+  { path: 'something', component: SomethingPage }
+];
+ 
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class HomePageRoutingModule { }
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Hier wird nun wiederum die Zuordnung auf die jeweilige Component `HomePage` gemacht. Es können natürlich noch weitere routes definiert werden. 
 
 ## Wie kann ich zu einer Seite resp. zurück navigieren?
 
-Wir möchten von unserer Hauptseite zu den Einstellungen navigieren:
+Die Navigation ist basierend auf welcher URL wir gerade haben resp. welcher Route dazu passt. Wenn die URL gewechselt wird, ändert die aktuelle Seite. Aber wir haben einige weitere Optionen um zu navigieren:
 
-```javascript
-// home.ts
-import { Component } from '@angular/core';
-import { LoadingController, NavController } from 'ionic-angular';
-import { SettingsPage } from '../../pages/settings/settings';
+Man kann mittels normalen Angular Router **href** verwenden um auf eine andere Seite zu navigieren:
 
+```markup
+<ion-item [href]="'/detail/' + item.id">
+```
 
-@Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
-})
-export class HomePage {
-  constructor(public navCtrl: NavController) {
+oder auch im Code:
 
-  }
+```typescript
+navigateToLogin() {
+    this.router.navigateByUrl('/login');
+}
 
-  goToSettings() {
-    this.navCtrl.push(SettingsPage);
-  }
-
+navigateToDetail() {
+    this.router.navigate(['/detail', { id: itemId }]);
 }
 ```
 
-Die Funktion `goToSettings()` wird bei einem Klick auf einen Icon aufgerufen. Diese pusht dann _SettingsPage_ via NavController auf den Stack.
+Jedoch ist der **beste Weg** in einer Ionic/Angular Applikation zu navigieren, wenn mann den `NavController` von `@ionic/angular` verwendet:
 
-Möchten wir nun von den Einstellungen zurück auf die Hauptseite, können wir mit `pop`
+```typescript
+navigateTo() {
+    this.navCtrl.navigateForward('/detail');
+}
 
-```javascript
-//settings.ts
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+navigateBack() {
+    this.navCtrl.navigateBack('/home');
+}
 
-@IonicPage()
-@Component({
-  selector: 'page-settings',
-  templateUrl: 'settings.html',
-})
-export class SettingsPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
-  }
-  goBack() {
-    this.navCtrl.pop();
-  }
+makeRoot() {
+    this.navCtrl.navigateRoot('/login');
 }
 ```
+
+Mit `NavController` sind wir wieder sehr nahe bei Routing von Ionic 3. Wir können die Richtung der Navigation \(nach vorne resp. zurück\) bestimmen und so Ionic's `<ion-router-outlet>` mitteilen wie die Page Transition funktionieren soll.
 
 ## Wie übergebe ich Werte zwischen zwei Seiten?
 
-In vielen Szenarien haben wir Daten in einer View und möchten diese an eine andere übergeben. Glücklicherweise bietet `push` einen weiteren Parameter an um Daten zu übergeben:
+Der `navigateForward` Funktion des Ionic `NavController` kann mann auch Parameter resp. ganze Objekte mitgeben. Beispiel hier eine Personen-ID:
 
 ```javascript
-this.nav.push(PersonPage,{
-    vorname: "Max",
-    name: "Muster",
-    spielMusik: true
-});
-```
-
-Die Daten sind in der Personen-Seite nun über die `NavParams` zu holen:
-
-```javascript
-import {Page, NavParams} from 'ionic-angular';
-
-@Page({
-    templateUrl: 'build/pages/Person/Person.html',
-})
-export class PersonPage {
-    constructor(navParams: NavParams){
-        this.vorname = navParams.get("vorname"); // "Max"
-        this.name = navParams.get("name"); // "Muster"
-        this.spieltMusik = navParams.get("spielMusik"); // true
-    }
+navToPersonPageWithParameters(){
+  this.navCtrl.navigateForward(['/person', { id: 3 }]);
 }
 ```
 
-Bitte lies folgende Doku nochmals durch und stelle wenn nötig im Plenum fragen:  
-[https://ionicframework.com/docs/api/navigation/NavController/](https://ionicframework.com/docs/api/navigation/NavController/)
+Die Daten sind in der `PersonDetail`-Seite nun über die `ActivatedRoute`  mit über `paramMap`zu holen:
 
-Mit Ionic 4 wird empfohlen das Routing über den Angular-Router zu machen: [https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
+{% code-tabs %}
+{% code-tabs-item title="person-detail.page.ts" %}
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-person-detail',
+  templateUrl: './person-detail.page.html',
+  styleUrls: ['./person-detail.page.scss'],
+})
+export class PersonDetailPage implements OnInit {
+  private personID: number;
+  
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.personID = this.route.snapshot.paramMap.get('id');
+  }
+
+}
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+Mehr dazu findest du auch in folgendem Tutorial:
+
+{% embed url="https://www.joshmorony.com/implementing-a-master-detail-pattern-in-ionic-4-with-angular-routing/" %}
+
+
+
+
+
+
+
+## Übung
+
+![](../.gitbook/assets/ralph_uebung.png)
+
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin mit dem Generator zwei neue Seiten Namens "Navigation" und "NavigationDetail"
+2. Füge die Seiten in deiner Seiten-Navigation mit einem passenden Ionicon-Icon hinzu. Tipp: Solltest du die Datei nicht finden, verwende die Suche deiner IDE.
+3. Versuche nun in deiner Navigation-Seite einen Button zu erstellen und mittel **\[href\]** auf deine NavigationDetail-Seite zu navigieren.
+
+
+
+
 

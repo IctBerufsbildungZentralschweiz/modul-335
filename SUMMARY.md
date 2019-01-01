@@ -19,10 +19,11 @@
 
 * [Ionic: UI](tag-2/ionic-ui.md)
 * [Angular: Intro](tag-2/angular-intro.md)
+* [Angular: Navigation I](tag-2/angular-navigation.md)
 * [Angular: Syntax](tag-2/angular-syntax.md)
 * [Angular: Data Binding](tag-2/angular-data-binding.md)
 * [Angular: Directives](tag-2/angular-directives.md)
-* [Angular: Navigation](tag-2/angular-navigation.md)
+* [Angular: Navigation II](tag-2/angular-navigation-ii.md)
 * [Angular: Filters / Pipes](tag-2/angular-filters-pipes.md)
 
 ## Tag 3
