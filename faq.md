@@ -2,6 +2,15 @@
 
 Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 
+{% hint style="info" %}
+Ionic bietet schon eine sehr gute Auflistung von Fehlern, schau Sie dir hier an:
+
+* [Build Errors](https://beta.ionicframework.com/docs/faq/build)
+* [Runtime Errors](https://beta.ionicframework.com/docs/faq/runtime)
+* [Native Errors](https://beta.ionicframework.com/docs/faq/native)
+* [Developer Tips](https://beta.ionicframework.com/docs/faq/tips)
+{% endhint %}
+
 ## Wie kann ich meine App debuggen?
 
 Hast du auch einen weissen Bildschirm oder deine Styling sieht nicht wie gewünscht aus? Dann wird es Zeit deine App mittels Entwicklerconsole zu debuggen:
@@ -31,13 +40,13 @@ Verwende dazu mehrere `<div>`'s und ein wenig CSS.
 <ion-content no-scroll no-padding>
         <ion-grid>
             <ion-row>
-                <ion-col col-4>
+                <ion-col size="4">
                     <div class="separator"></div>
                 </ion-col>
-                <ion-col col-4 text-center>
+                <ion-col size="4" text-center>
                     ODER
                 </ion-col>
-                <ion-col col-4>
+                <ion-col size="4">
                     <div class="separator"></div>
                 </ion-col>
             </ion-row>
@@ -56,7 +65,7 @@ Verwende dazu mehrere `<div>`'s und ein wenig CSS.
 
 ## Wie kann ich Werte zwischen einzelnen Pages mitgeben?
 
-Oft generiert man sich dynamisch z.B. aus einer Datenbank eine Liste. Möchte man nun die Details eines Eintrags anzeigen und so auf eine Detail-Seite verweisen wird meist eine ID resp. das ganze Objekt mitgegeben. In Ionic funktioniert das mit sogenannten [Nav Params](https://ionicframework.com/docs/api/navigation/NavParams/).
+Oft generiert man sich dynamisch z.B. aus einer Datenbank eine Liste. Möchte man nun die Details eines Eintrags anzeigen und so auf eine Detail-Seite verweisen wird meist eine ID resp. das ganze Objekt mitgegeben. In Ionic funktioniert das mit sogenannten [paramMap von Activated Routes](tag-2/angular-navigation.md#wie-uebergebe-ich-werte-zwischen-zwei-seiten)
 
 ## Runtime Error - Cannot find module
 
@@ -68,7 +77,7 @@ Error: Cannot find module "angularfire2/auth"
 
 Dann fehlt angularfire2 in deinen `node_modules`. Gehe dazu in deinen Projektordner und gib folgendes ein:
 
-```text
+```bash
 npm install angularfire2 firebase --save
 ```
 
@@ -97,7 +106,7 @@ item: string;
 
 Das Property selber ist nicht das Problem, jedoch das Objekt selber. Es wird versucht ein Property `myValue` des nicht vorhanden oder null Objekts `item` aufzurufen. Prüfe die initialiserung des Objekts oder verwende folgenden Code:
 
-```javascript
+```typescript
 // ? operator prevents crashing here!
 {{ item?.myValue }}
 ```
@@ -118,9 +127,9 @@ Wird z.B. dein neuer Code nicht angezeigt:
 <!-- welt.html
 <ion-header>
 
-    <ion-navbar>
+    <ion-toolbar>
         <ion-title>Welt</ion-title>
-    </ion-navbar>
+    </ion-toolbar>
 
 </ion-header>
 
