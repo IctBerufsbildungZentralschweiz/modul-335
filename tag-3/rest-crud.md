@@ -89,7 +89,13 @@ Vergleich herkömmliches Framework \(links\) versus CRUD-Framework \(rechts\) am
 
 Der Hauptvorteil eines CRUD-Frameworks ist der folgenden Grafik zu entnehmen. Eine Anfrage geht direkt von der Präsentationsschicht bis runter in die Datenbank. Es werden keine zusätzlichen Verzweigungen und Verschachtelungen gebaut.
 
-![](https://github.com/IctBerufsbildungZentralschweiz/modul-335/tree/900158d28ee4dcc04d5a664e53ea16294cc9f8aa/_allgemein/500px-Nakedobjects.png)
+![Vergleich herk&#xF6;mmliches Framework \(links\) versus CRUD-Framework \(rechts\) am Beispiel von Naked Objects](../.gitbook/assets/nakedobjects.png)
 
 _Quelle:_ [_Wikipedia - CRUD_ ](https://de.wikipedia.org/wiki/CRUD)
+
+
+
+
+
+
 

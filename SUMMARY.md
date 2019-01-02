@@ -35,7 +35,7 @@
 
 ## Tag 4
 
-* [Ionic Pro / Firebase](tag-4/ionic-pro-firebase.md)
+* [Ionic Appflow / Firebase](tag-4/ionic-pro-firebase.md)
 * [Datenanbindung](tag-4/datenanbindung.md)
 * [Übung: Chat](tag-4/uebung-chat.md)
 * [Social Logins](tag-4/social-logins.md)
