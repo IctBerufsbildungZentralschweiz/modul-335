@@ -64,3 +64,9 @@ Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderu
 
 Wir besprechen deine Ergebnisse gemeinsam.
 
+## Wie sieht die Zukunft aus?
+
+Die Zukunft werden won sogenannte Progressive Web Apps \(kurz. PWA\) sein, hier ein Überblick:
+
+{% embed url="https://www.youtube.com/watch?v=fuhAmUpEEHA" %}
+

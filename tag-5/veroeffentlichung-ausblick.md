@@ -7,6 +7,8 @@ Ist deine App fertig programmiert heisst das noch lange nicht, dass Sie bereits 
 ### Approval
 
 Anbei ist der Apple Approval Prozess beschrieben:  
+
+
 ![](../.gitbook/assets/apple-approval-prozess.png)
 
 Die Website von [http://appreviewtimes.com/](http://appreviewtimes.com/) zeigt dir die aktuellen Wartezeiten von einem Apple Approval. Bei Releases von neuen Software-Versionen oder Feiertagen arbeiten auch nicht alle Mitarbeiter bei Apple/Google - was eine längere Wartezeit mit sich bringen kann.
@@ -29,16 +31,26 @@ Manchmal ist ein einfaches Icon sehr Nahe. Als Beispiel hier die Suurstoffi-App.
 
 Im Internet gibt es sehr viele Tools, welche Euch eine Vorlage für Photoshop/Sketch zur Verfügung stellen. Die Grössen der App-Icons variieren je nach Plattform und sind den jeweiligen Dokumentationen zu entnehmen. Ich habe mit folgender Vorlage \(inzwischen kostenpflichtig\) sehr gute Erfahrungen gemacht:
 
-[https://applypixels.com/](https://applypixels.com/)
+{% embed url="https://applypixels.com/" %}
+
+Solltest du dein Icon in verschiedenen Grössen brauchen, hier eine super Seite um in die gängigsten Grössen zu konvertieren:
+
+{% embed url="https://appicon.co/" %}
+
+
 
 #### App Screenshots
 
 Bilder oder in unserem Falle Screenshots deiner App sagen bekanntlich mehr als 1000 Worte. Screenshots deiner App sind Pflicht im Store und deine Visitenkarte. Mit Hilfe der Jungs von Launchkit kann man sich Kostenpflichtig schöne Screenshots erstellen lassen:  
 [https://launchkit.io/](https://launchkit.io/)
 
-Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von Mockdrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen.  
-[http://mockdrop.io/](http://mockdrop.io/)  
-[https://mockuphone.com/](https://mockuphone.com/)
+Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von Mockdrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen.
+
+{% embed url="http://mockdrop.io/" %}
+
+{% embed url="https://mockuphone.com/" %}
+
+
 
 ### AGB's / Terms of Use / Datenschutz
 
@@ -66,26 +78,11 @@ Ein Link für gute AGB's gibt's hier:
 
 ### Ionic 4
 
-* Änderungen von NavController zum [Angular Routing](https://www.joshmorony.com/converting-ionic-3-push-pop-navigation-to-angular-routing-in-ionic-4/)
-* [und vieles mehr ...](https://www.joshmorony.com/what-to-expect-when-ionic-4-is-released/)
-
-### Angular 6
-
-* Mehrheitlich Verbesserungen für Entwickler
-* Angular Material Starter Components
-* Service muss nicht mehr im `app.module.ts` registriert werden [\(Dependency Injection\)](https://angular.io/guide/dependency-injection)
-* Längerer LTS-Support
-* [und vieles mehr...](https://blog.angular.io/version-6-of-angular-now-available-cc56b0efa7a4)
+* Wird hoffentlich bald offiziell "Live" gehen
 
 ### Capacitor
 
 ![](../.gitbook/assets/capacitor-hero.jpg) [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
-
-### Ionicons v4
-
-* Die Icons kommen neu als Web-Components daher
-* Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden \(super lazy\) 
-* Man kann ein einges SVG zu Ionicons hinzufügen
 
 ### Apple WWDC18
 
