@@ -6,7 +6,7 @@
 
 Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechende Screens und das Starter-Projekt liegen im [M335-Exchange](https://enz.lu/m335-exchange) für dich bereit. Ich bin gespannt auf dein Ergebnis.
 
-### Verbindungsparameter für Firebase Auth `app.module.ts`
+### Verbindungsparameter für Firebase `app.module.ts`
 
 ```text
 apiKey: "AIzaSyDMfTpxjOIslKfKCxKjh0dg47up1jpOIKY",
@@ -17,83 +17,62 @@ storageBucket: "m335-usecase2.appspot.com",
 messagingSenderId: "327137245327"
 ```
 
-### Verbindungsparameter für Sheetsu API `api.ts`
-
-```text
-url: "https://sheetsu.com/apis/v1.0bu/71345d3e075a",
-apiKey: "D4jusY6yW5LjJcprUshb",
-apiSecret: "VzFZnWLaDaAsN41DURxxpFpjQVzy6hBebWRKJHsn"
-```
-
-### Farbtabelle
-
-Die folgenden Farbcodes sollen in der App verwendet werden.
-
-```text
-Blau:        #3939D9
-Violett:     #2B0B2F
-Grau:        #CCCCCC
-White:       #FFFFFF
-```
-
 ### Struktur der Daten
 
-```javascript
-Ferienorte:
-- id
-- name
-
-Galerie:
-- id
-- imgurl
-```
+![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image.png)
 
 ## Detailbeschreibung
 
 ### Allgemein / Styling
 
-* Die App soll nach den Farben in der Farbtabelle, resp. nach dem Prototyp gestylt sein.
-* Für die Daten werden die dazugehörigen Schnittstellen Sheetsu resp. Firebase Auth verwendet. Login- & API-Daten sind oben zu entnehmen.
+* Die App soll nach dem Hi-Fi Protoypen gestylt werden, als Farben sind die Defaults zu verwenden
+* Für die Daten werden die dazugehörige Firebase API verwendet. Login- & API-Daten sind oben zu entnehmen.
+* Die Seiten sind im Template bereits erstellt, die Grundnavigation inkl. Auth Guards fehlt jedoch im `app-routing.module.ts` 
 
 ### Navigation
 
 * Das Menu soll die im Prototyp ersichtlichen Menupunkte \(Galerie, Ferienorte\) haben
-* Der Benutzername des Benutzer soll im Menu angezeigt werden 
-* Am unteren Ende des Menus soll ein Button fürs Logout ersichtlich sein 
-* Klickt ein Benutzer Logout, wird er ausgeloggt und zum Login gesendet 
-* Das Sidemenu soll in den Farben wie im Screen erscheinen
+* Die Menupunkte sollen die im Prototyp ersichtlichen Icons und Farben haben
+* Der Titel im Menu soll "Use Case 2" stehen
+* Am unteren Ende des Menus soll ein Button fürs Logout ersichtlich sein
+* Klickt ein Benutzer Logout, wird er ausgeloggt und zum Login gesendet, verwende hier den `auth.service.ts`
 
 ### Willkommen
 
 * Die Willkommenseite soll nur beim ersten App-Start erscheinen. Verwende dazu `Ionic Storage`. Sonst soll das Login kommen \(falls nicht eingeloggt\)     
-* Auf der Seite ist ein Titel "Willkommen zum UseCase2" ersichtlich \(siehe Screen\) 
+* Auf der Seite ist ein Titel "Willkommen zum UseCase2" ersichtlich, verwende hier ein Grid und `h2` Elemente
 * Klickt der Benutzer irgendwo hin, soll er zum Login gelangen
 
 ### Login
 
-* Das Login besteht aus Email / Passwort
-* Der Login-Button soll am unteren Rand des Bildschirms erscheinen 
-* Die Farbe des Login-Button soll wie abgebildet sein 
-* Oberhalb des Login-Buttons gibt es einen Button zur Registration
-* Gibt es ein Fehler beim Login, soll dieser mittels `AlertController`  angezeigt werden
+* Für das Login soll `auth.service.ts` verwendet werden
+* Das Login soll mit Email / Passwort und Firebase Auth realisiert werden
+* Bei einem Klick auf den Login-Button wird überprüft ob etwas eingegeben wurde, nur dann wird ein Login versucht
+* Bei einem Klick auf den "Account erstellen"-Button soll zur Registrierung-Seite navigiert werden
+* Gibt es ein Fehler beim Login, soll dieser mittels `ToastController`  angezeigt werden
 
 ### Registrierung
 
-* Die Registration besteht aus Benutzername / Email / Passwort
-* Der Registrierungs-Button soll am unteren Rand des Bildschirms erscheinen 
-* Die Farbe des Registrierungs-Button soll wie abgebildet sein 
-* Oberhalb des Registrierungs-Buttons gibt es einen Button zurück zum Login
-* Gibt es ein Fehler beim Login, soll dieser mittels `AlertController`  angezeigt werden
+* Die Registration soll `auth.service.ts` verwendet werden
+* Die Registration soll mit Benutzername / Email / Passwort und Firebase Auth realisiert werden, alle Daten sollen gespeichert werden
+* Bei einem Klick auf den Registrieren-Button wird überprüft ob etwas eingegeben wurde, nur dann wird ein Registration versucht
+* Oberhalb des Registrierungs-Buttons gibt es einen Button "Zurück zum Login" mit entsprechender Aktion
+* Gibt es ein Fehler beim Login, soll dieser mittels `ToastController`  angezeigt werden
 
 ### Galerie
 
-* Die Galerie zeigt Bilder an
-* Die Bild-URL soll dabei von der Sheetsu-API geladen werden
+* Die Galerie-Seite ist nach dem Login die Standardseite
+* Die Galerie zeigt Bilder der Firebase Realtime Database an
+* Die jeweilige Gruppennummer ist einzuhalten \(Bsp. `groupNumber: string = "G1";` \)
+* Die Bild-URL soll dabei von der Firebase Realtime Database geladen werden
+* Die Bilder sollen in einem Grid dargestellt werden
 
 ### Ferienorte
 
-* In einer Liste werden alle in der Datenbank vorhanden Ferienorte mit Name angezeigt
+* In einer Liste werden alle in der Firebase Realtime Database vorhanden Ferienorte mit Name angezeigt
 * Ich kann ein über den "Plus"-Button in der Navigation einen neuen Ferienort hinzufügen
-* Dabei wird ein `AlertController` verwendet
-* Speichere ich den Datensatz wird dieser der Liste angehängt und an die API persistiert
+* Dabei wird ein `AlertController` mit Inputfelder verwendet
+* Speichere ich den Datensatz wird dieser der Liste angehängt und in Firebase persistiert
+
+
 
