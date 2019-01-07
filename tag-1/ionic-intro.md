@@ -105,7 +105,7 @@ Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localho
 
 1. Öffne dein Terminal oder deine Gitbash und tippe `ionic` ein
 2. Mach dich mit der Hilfe \(`ionic --help`\) und den wichtigsten Commands vertraut
-3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" \(also z.B. G1\_RoomiesRalph\_Übungen\), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Wähle dabei bitte ein Sidemenu-Projekt.
+3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Uebungen" \(also z.B. G1\_RoomiesRalph\_Uebungen\), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Wähle dabei bitte ein Sidemenu-Projekt.
 4. Mach dich mit der CLI vertraut. Versuch dabei folgende Fragen zu beantworten:
    1. Welche Projekttypen gibt es und was ist deren Unterschied?
    2. Was zeigt mir `ionic info` alles an und was ist darin so wichtig?
