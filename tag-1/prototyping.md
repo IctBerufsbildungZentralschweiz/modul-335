@@ -100,7 +100,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 4. Der Tab Fotos ist eine Sammlung von mehreren Fotos und jeweils pro Event gruppiert.
    1. Die Gruppierung muss optisch ersichtlich sein
    2. Ein Benutzer muss ein Foto zu einem Event hochladen können
-   3. Klickt er in der Übersicht auf ein Fotos geht dies in voller Grösse auf
+   3. Klickt er in der Übersicht auf ein Foto geht dies in voller Grösse auf
    4. Er kann ein Foto Liken oder auch Teilen \(z.B. via Facebook, Whatsapp\)
 5. Im Tab Einstellungen kann folgendes gemacht werden
    1. Es werden Informationen zu Copyright & Author angezeigt
