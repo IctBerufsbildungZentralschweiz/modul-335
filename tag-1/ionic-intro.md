@@ -108,6 +108,6 @@ Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localho
 3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" \(also z.B. G1\_RoomiesRalph\_Übungen\), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Wähle dabei bitte ein Sidemenu-Projekt.
 4. Mach dich mit der CLI vertraut. Versuch dabei folgende Fragen zu beantworten:
    1. Welche Projekttypen gibt es und was ist deren Unterschied?
-   2. Wie zeigt mir `ionic info` alles an und was ist darin so wichtig ?
+   2. Was zeigt mir `ionic info` alles an und was ist darin so wichtig?
    3. Wie kann ich mit `ionic serve` alle OS in einem Browserfenster anzeigen lassen?
 
