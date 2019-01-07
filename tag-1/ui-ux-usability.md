@@ -1,7 +1,5 @@
 # UI, UX, Usability
 
-UI / UX / Usability
-
 ## Standard EN-9241-110
 
 > Die Norm EN ISO 9241 ist ein internationaler Standard, der Richtlinien der Mensch-Computer-Interaktion beschreibt. Die Normenreihe trägt seit 2006 den deutschen Titel Ergonomie der Mensch-System-Interaktion und löst damit den bisherigen Titel Ergonomische Anforderungen für Bürotätigkeiten mit Bildschirmgeräten ab, um die frühere Einschränkung auf Büroarbeit aufzulösen.
