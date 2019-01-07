@@ -28,13 +28,13 @@ Ionic basiert und verwendet:
 * [HTML5](https://de.wikipedia.org/wiki/HTML5)
 * [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [SASS](http://sass-lang.com/)
-* [Angular](https://angularjs.org/) \(Typescript\)
+* [Angular](https://angular.io/) \(Typescript\)
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
-## Ionic 1 oder 2 ?
+## Ionic Version ?
 
-Ionic 1.x war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated \(wird nicht weiterentwickelt\) und somit sind Ionic 2 resp. 3 die direkte Nachfolger.
+Ionic 1.x war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated \(wird nicht weiterentwickelt\) und somit sind Ionic 2, 3 und 4 die direkten Nachfolger.
 
 ## Dokumentation
 
@@ -103,7 +103,7 @@ Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localho
 
 ## Übung
 
-1. Öffnen dein Terminal oder deine Gitbash und tippe `ionic` ein
+1. Öffne dein Terminal oder deine Gitbash und tippe `ionic` ein
 2. Mach dich mit der Hilfe \(`ionic --help`\) und den wichtigsten Commands vertraut
 3. Erstelle dein erstes Übungsprojekt. Verwende dabei die folgende Namenkonvention "GX\_NachnameVorname\_Übungen" \(also z.B. G1\_RoomiesRalph\_Übungen\), wenn du Ralph Roomies heisst und in der Gruppe 1 bist. Erstelle das Projekt in einem von dir gewünschten Ordner. Wähle dabei bitte ein Sidemenu-Projekt.
 4. Mach dich mit der CLI vertraut. Versuch dabei folgenden Fragen zu beantworten:
