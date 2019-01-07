@@ -41,7 +41,7 @@ Anbei eine Gegenüberstellung der wichtigsten Eigenschaften:
 
 Die neuesten Daten sind auch hier ersichtlich:
 
-{% embed url="https://whatwebcando.today/" %}
+{% embed url="https://whatwebcando.today/" caption="" %}
 
 ## Welche Art von Apps schreiben wir in diesem Kurs?
 
@@ -68,5 +68,5 @@ Wir besprechen deine Ergebnisse gemeinsam.
 
 Die Zukunft werden sogenannte Progressive Web Apps \(kurz. PWA\) sein, hier ein Überblick:
 
-{% embed url="https://www.youtube.com/watch?v=fuhAmUpEEHA" %}
+{% embed url="https://www.youtube.com/watch?v=fuhAmUpEEHA" caption="" %}
 

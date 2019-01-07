@@ -84,7 +84,7 @@ export class HomeModule {}
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-In der Datei `home.module.ts` sehen wir das die Routes in einer separaten Datei gehalten werden, welche in etwa so aussehen wird:
+In der Datei `home.module.ts` sehen wir, dass die Routes in einer separaten Datei gehalten werden, welche in etwa so aussehen wird:
 
 {% code-tabs %}
 {% code-tabs-item title="home-routing.module.ts" %}
