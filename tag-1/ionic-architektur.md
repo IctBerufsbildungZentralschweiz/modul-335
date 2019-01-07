@@ -24,7 +24,7 @@ Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende A
 
 ## Ionic Generator
 
-Ionic hat seit CLI-Version 3.x den Generator eingeführt. Ein super Hilfsmittel um die wichtigsten Dinge per CLI generieren zu lassen. In der Struktur oben kann du sehen, dass es z.B. im Verzeichnis _/app/pages/home_ immer 3 Dateien hat:
+Ionic hat seit CLI-Version 3.x den Generator eingeführt. Ein super Hilfsmittel um die wichtigsten Dinge per CLI generieren zu lassen. In der Struktur oben kannst du sehen, dass es z.B. im Verzeichnis _/app/pages/home_ immer 3 Dateien hat:
 
 * HTML
 * Typescript
