@@ -14,7 +14,9 @@ CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer
 Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche. Im Beispiel unten ist zu sehen, dass SASS Tabulatoren verwendet, SCSS jedoch Klammern. In der Fachliteratur wird daher oft SASS synonym mit SCSS beschrieben.
 
-_Codebeispiel:_ ![](../.gitbook/assets/sass-vs-scss.png)
+_Codebeispiel:_ 
+
+![](../.gitbook/assets/sass-vs-scss.png)
 
 ## Variablen
 

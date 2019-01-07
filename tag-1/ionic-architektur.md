@@ -10,15 +10,13 @@ Wie bereits erwähnt ist Ionic ein Framework welches sich die folgenden Technolo
 
 Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova dem eigentlichen Hybriden App Framework. Cordova wiederum greift auf die nativen API's des darunterliegenden Betriebssysteme \(iOS / Android\) zu.
 
-Die Architektur von Ionic kann sogar noch etwas detailierter aufgeteilt werden:  
-
+Die Architektur von Ionic kann sogar noch etwas detailierter aufgeteilt werden:
 
 ![](../.gitbook/assets/overview.png)
 
 ## Wichtige Dateien in der Projektstruktur
 
-Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende Aufstellung:  
-
+Um die richtigen Dateien in einer Projektstruktur zu finden hilft dir folgende Aufstellung:
 
 ![](../.gitbook/assets/ionic2_folder.png)
 
@@ -43,7 +41,6 @@ Verschaff dir doch bitte in folgender Doku einen Überblick:
 
 ## Ionic DevApp
 
-  
 DevApp ist eine 100% gratis App für iOS und Android, welche es dir ermöglicht deine Apps direkt auf deinem Mobiltelefon zu testen. Sie bietet eine perfekte Live-Ansicht deiner Änderungen und hat auch sehr vielen nativen Plugins bereits vorinstalliert.
 
 ![](../.gitbook/assets/devapp-image.jpg)
