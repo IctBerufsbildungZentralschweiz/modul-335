@@ -5,7 +5,7 @@
 ![](../.gitbook/assets/ralph_uebung.png)
 
 1. Wir gehen nun nochmals zurück zur zuvor erstellen Seiten Navigation. 
-2. Da wir nun auch die Wissen wie wir Events in unserem Template einfügen und auch Funktionen in unseren Component definieren, versuchen wir noch die weiteren Arten der Navigation hinzufügen:
+2. Da wir nun auch wissen, wie wir Events in unserem Template einfügen und auch Funktionen in unseren Component definieren, versuchen wir noch die weiteren Arten der Navigation hinzufügen:
    1. Mittels `NavController`: als Root auf die `NavigationDetail`-Seite
    2. Mittels `NavController`: Forward auf die `NavigationDetail`-Seite
    3. Mittels `NavController`: Forward mit Parameter auf die `NavigationDetail`-Seite
