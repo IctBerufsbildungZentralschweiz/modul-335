@@ -36,7 +36,7 @@ export class AppRoutingModule {
 
 Was sehen wir hier:
 
-* Wird kein Pfad aufgerufen, wird eine Weiterleitung/Redirect auf `/home` gemacht
+* Wird kein Pfad aufgerufen, wird eine Weiterleitung/Redirect auf `/login` gemacht
 * Die `LoginPage` wird als `component` direkt eingebunden
 * `/home` und `/about` werden mittels Lazy Loading eingebunden \(mehr dazu weiter unten\)
 * Nach der Route von `/detail` kann noch eine ID mitgegeben werden, so können wir z.B. Details in einer Liste anzeigen \(mehr dazu weiter unten\)
