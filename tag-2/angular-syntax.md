@@ -185,7 +185,7 @@ Das Dritte Resultat ist 19
 5. Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von deiner Component stammen. Füge dazu in deiner Klasse folgende Zeile hinzu:
 
    ```javascript
-   person: any = { 'name' : 'Muster', 'vorname' : 'Max' };
+   person: any = { name : 'Muster', vorname : 'Max' };
    ```
 
 6. Auf der Seite _Array_ möchten wir eine Liste \(List-Item\) von Früchte haben, welche wir aus dem Component holen:

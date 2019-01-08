@@ -53,7 +53,7 @@ Sicherlich ist ein weiterer Trend die Aufteilung einer Single Page Application i
 
 ## Kurze Geschichte von Angular
 
-AngularJS  v1.x wurde nicht für den mobilen Einsatz gebaut, Angular \(&gt; v2\) hingegen schon. Angular ist durch eine hierarchische Dependency Injection um einiges schneller als AngularJS und ein grosses Update.  
+AngularJS v1.x wurde nicht für den mobilen Einsatz gebaut, Angular \(&gt; v2\) hingegen schon. Angular ist durch eine hierarchische Dependency Injection um einiges schneller als AngularJS und ein grosses Update.  
 Hier weitere wichtige Vorteile von Version &gt; 2.0:
 
 | Vorteile Angular |
