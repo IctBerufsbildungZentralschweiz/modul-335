@@ -1,8 +1,6 @@
 # Angular: Navigation I
 
-Bis und mit Ionic 3 war die Navigation über den sogenannten NavController möglich und basierte auf einem "Array von Seiten". Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History. Hier ein ein Beispiel:
-
-![](../.gitbook/assets/stack.png)
+Bis und mit Ionic 3 war die Navigation über den sogenannten NavController möglich und basierte auf einem "Array von Seiten". Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History.
 
 Mit Ionic 4 wird die Navigation neu über das [**Angular Routing**](https://angular.io/guide/router) gemacht. Angular Routing basiert mehr auf dem in der URL ersichtlichen Pfad \(z.B. `http://localhost:8100/home`\).  
 In deiner Applikation findest du eine zentrale Datei um das Routing zu steuern:
@@ -43,8 +41,6 @@ Was sehen wir hier:
 
 ## Was versteht man unter Lazy Loading mit Angular Routing in Ionic?
 
-Lazy loading mit Angular Router ist nicht viel anders als das normale Routing. Unsere Routes sehen jedoch in etwas so aus:
-
 ```typescript
 const routes: Routes = [
   { path: 'login', loadChildren: './pages/login/login.module#LoginModule' },
@@ -54,7 +50,7 @@ const routes: Routes = [
 ];
 ```
 
-Anstatt nun eine `component` für eine Route angegeben wird, machen wir Gebrauch vom `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.  
+Anstatt nun eine `component` für eine Route anzugeben, machen wir Gebrauch der `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.  
 Nehmen wir die `/home` Route als Beispiel. Der Router weiss das er die Datei `home.module.ts` öffnen muss und schaut nach `HomeModule` darin.
 
 {% code-tabs %}
@@ -107,7 +103,7 @@ export class HomePageRoutingModule { }
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Hier wird nun wiederum die Zuordnung auf die jeweilige Component `HomePage` gemacht. Es können natürlich noch weitere routes definiert werden.
+Hier wird nun wiederum die Zuordnung auf die jeweiligen Komponenten `HomePage` und `SomethingPage` gemacht. Es können natürlich noch weitere `routes` definiert werden.
 
 ## Wie kann ich zu einer Seite resp. zurück navigieren?
 
@@ -125,37 +121,13 @@ oder auch im Code:
 navigateToLogin() {
     this.router.navigateByUrl('/login');
 }
-
-navigateToDetail() {
-    this.router.navigate(['/detail', { id: itemId }]);
-}
 ```
-
-Jedoch ist der **beste Weg** in einer Ionic/Angular Applikation zu navigieren, wenn mann den `NavController` von `@ionic/angular` verwendet:
-
-```typescript
-navigateTo() {
-    this.navCtrl.navigateForward('/detail');
-}
-
-navigateBack() {
-    this.navCtrl.navigateBack('/home');
-}
-
-makeRoot() {
-    this.navCtrl.navigateRoot('/login');
-}
-```
-
-Mit `NavController` sind wir wieder sehr nahe bei Routing von Ionic 3. Wir können die Richtung der Navigation \(nach vorne resp. zurück\) bestimmen und so Ionic's `<ion-router-outlet>` mitteilen wie die Page Transition funktionieren soll.
 
 ## Wie übergebe ich Werte zwischen zwei Seiten?
-
-Der `navigateForward` Funktion des Ionic `NavController` kann mann auch Parameter resp. ganze Objekte mitgeben. Beispiel hier eine Personen-ID:
-
-```javascript
-navToPersonPageWithParameters(){
-  this.navCtrl.navigateForward(['/person', { id: 3 }]);
+Der Array, welcher der `navigate` Funktion als Parameter übergeben wird, akzeptiert die Parameter wie folgt:
+```typescript
+navigateToDetail() {
+    this.router.navigate(['/detail', { id: itemId }]);
 }
 ```
 
