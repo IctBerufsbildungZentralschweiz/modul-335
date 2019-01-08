@@ -90,5 +90,5 @@ Lass uns in ein paar Google Slides einige Angular Applikationen zusammentragen:
 2. Erstelle dort einen oder mehrere neue Slides und suche im Internet nach Applikation \(auch Beispiel Apps\) welche mit Angular erstellt werden. \(Alternativ auch mit AngularJS \) 
 3. Ergänze deine Slides mit Bildern oder Code-Beispielen.
 
-Wir besprechen die Ergebnisse in Rund 15min gemeinsam gemeinsam.
+Wir besprechen die Ergebnisse in Rund 15min gemeinsam.
 
