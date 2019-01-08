@@ -15,5 +15,3 @@
 4. Füge auf der `NavigationDetail`-Seite 2 Buttons hinzu, mit welchen du zurück auf die Navigation-Seite navigieren kannst \(1x als Root, 1x mit `NavController` Back\)
 5. Suche in der Doku wie du den Zurück-Pfeil in deine Toolbar bringst
 
-
-
