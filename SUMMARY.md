@@ -36,6 +36,7 @@
 ## Tag 4
 
 * [Ionic Appflow / Firebase](tag-4/ionic-pro-firebase.md)
+* [Route Guards / Login ](tag-4/route-guards.md)
 * [Datenanbindung](tag-4/datenanbindung.md)
 * [Übung: Chat](tag-4/uebung-chat.md)
 * [Social Logins](tag-4/social-logins.md)
