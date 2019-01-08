@@ -2,7 +2,7 @@
 
 Direktiven \(Directives\) sind ein wichtiges Konzept in einer Angular Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://angular.io/guide/structural-directives). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
-AngularJS Direktiven sind erweitertes HTML mit dem Prefix `ng-`.
+Angular Direktiven sind erweitertes HTML mit dem Prefix `ng-`.
 
 Kurz gesagt: Mit Direktiven wird deine App zu einer voll funktionsfähigen App.
 
