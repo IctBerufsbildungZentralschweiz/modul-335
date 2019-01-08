@@ -2,7 +2,7 @@
 
 Direktiven \(Directives\) sind ein wichtiges Konzept in einer Angular Applikation. Siehe dazu auch folgendes Kapitel in der [Doku](https://angular.io/guide/structural-directives). Mit Direktiven werden die Komponenten in einer App dynamisch, an Daten gebunden, es lässt Elemente wiederholen und vieles mehr.
 
-Angular Direktiven sind erweitertes HTML mit dem Prefix `ng`.
+Angular Direktiven sind erweitertes HTML mit dem Prefix `ng-`.
 
 Kurz gesagt: Mit Direktiven wird deine App zu einer voll funktionsfähigen App.
 
@@ -96,7 +96,7 @@ buttonClicked(){
 
 ```markup
 <!-- clickExample.html -->
-<ion-button color="secondary" click)="buttonClicked()">Klick mich!</ion-button>
+<button ion-button color="secondary" round (click)="buttonClicked()">Klick mich!</button>
 ```
 
 Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
@@ -125,7 +125,7 @@ Wir bauen nun ein Toggle mit `ngModel` so dass wir die Variable geändert wird w
     <ion-toggle [(ngModel)]="showPicture"></ion-toggle>
   </ion-item>
 
-  <ion-img *ngIf="showPicture" src="https://jaxenter.de/wp-content/uploads/2015/05/Ionic-Logo.jpg"></ion-img>
+  <img *ngIf="showPicture" src="https://jaxenter.de/wp-content/uploads/2015/05/Ionic-Logo.jpg">
 ```
 
 Nachdem wir den toggle gebraucht haben sehen wir das Bild erscheinen oder verschwinden. ![](https://image.ibb.co/dQacXm/ngIf.png)
