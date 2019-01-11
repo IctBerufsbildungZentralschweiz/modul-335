@@ -9,7 +9,7 @@ Filter resp. auch Pipes genannt können in Angular hinzugefügt werden um Daten 
 * `json` Formatiert ein Objekt zu einem JSON string.
 * `lowercase` Format a string to lower case.
 * `uppercase` Formatiert ein String zu GROSSBUCHSTABEN.
-* `number` Formatiert eine Nummer zu einem String
+* `number` Formatiert einen String in eine Zahl
 
 Beispiel:
 
