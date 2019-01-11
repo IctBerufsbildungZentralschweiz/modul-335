@@ -4,7 +4,9 @@
 
 Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann mittels Cordova auf diese Ressourcen zugegriffen werden. Ionic hat die Dokumentation bereits auf die neue Version umgeschrieben:
 
-[https://ionicframework.com/docs/v2/native/](https://ionicframework.com/docs/v2/native/)
+{% embed url="https://beta.ionicframework.com/docs/native" %}
+
+
 
 ## Früher vs. heute
 
@@ -12,7 +14,7 @@ Die Geräteressourcen können natürlich nicht ohne Smartphone getestet werden. 
 
 Ionic sah dieses Problem und stellte die bereits verwendete DevApp zur Verfügung.  
 Eine Liste der unterstützten Plugins findest du hier:  
-[https://ionicframework.com/docs/pro/view.html\#plugin-support](https://ionicframework.com/docs/pro/view.html#plugin-support)
+[https://ionicframework.com/docs/appflow/devapp/\#native-cordova-plugin-support](https://ionicframework.com/docs/appflow/devapp/#native-cordova-plugin-support)
 
 ## Beispiel der Kamera
 
@@ -28,7 +30,7 @@ $ npm install --save @ionic-native/camera
 ```
 
 2\) Füge das Plugin zu deinem app.module.ts hinzu:  
-[https://ionicframework.com/docs/native/\#Add\_Plugins\_to\_Your\_App\_Module](https://ionicframework.com/docs/native/#Add_Plugins_to_Your_App_Module)
+[https://beta.ionicframework.com/docs/native\#usage-with-angular-apps](https://beta.ionicframework.com/docs/native#usage-with-angular-apps)
 
 ### Verwendung
 
