@@ -35,7 +35,7 @@ $ npm install --save @ionic-native/camera
 ### Verwendung
 
 ```javascript
-import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
 constructor(private camera: Camera) { }
 
