@@ -4,9 +4,9 @@ Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Route_ _Gua
 
 ## Route Guards
 
-Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welcher als Route Guard für eine spezifische Route gilt. Dieser Service muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurückliefert. Wenn `true` zurückkommt wir dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
+Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welcher als Route Guard für eine spezifische Route gilt. Dieser Service muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurückliefert. Wenn `true` zurückkommt wird dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
 
-`canActivate` wird verwendet um den Benutzer den Zugriff auf eine gewisse Route zu verweigern, `canLoad` hingegen verhindert sogar das Laden der Kinder anstatt nur den Zugriff. Dies sollte speziell im Fall von LazyLoaded Seiten verwendet werden. \(siehe `loadChildren` in den `routes` der Datei `app-routing.module.ts`\)
+`canActivate` wird verwendet um den Benutzer den Zugriff auf eine gewisse Route zu verweigern, `canLoad` hingegen verhindert sogar das Laden des Moduls und dessen Kinder anstatt nur den Zugriff. Dies sollte speziell im Fall von LazyLoaded Seiten verwendet werden. \(siehe `loadChildren` in den `routes` der Datei `app-routing.module.ts`\)
 
 {% hint style="warning" %}
 Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur clientseitig im Browser geschützt. Er wird strengstens empfohlen die verwendeten Daten auf dem Server resp. den API-Endpunkt ebenfalls zusätzlich vor unerwünschten Zugriffen und Diebstahl zu schützen.
@@ -14,13 +14,13 @@ Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur clientseitig im
 
 ### Eine Route Guard erstellen
 
-Eine Route Guard, in unserem Falls für das Login, zu erstellen ist so einfach wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
+Eine Route Guard, in unserem Falls für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
 
 ```bash
 ionic generate guard _core/Auth
 ```
 
-Diese AuthGuard muss nun lediglich die Methode `canActivate` resp. `canLoad` implementieren, welche `true` oder `false` zurückgibt sofern der Benutzer eingeloggt ist.
+Diese AuthGuard muss nun lediglich die Methode `canActivate` resp. `canLoad` implementieren, welche `true` oder `false` zurückgibt, sofern der Benutzer eingeloggt ist.
 
 {% code-tabs %}
 {% code-tabs-item title="auth.guard.ts" %}
@@ -52,7 +52,7 @@ export class AuthGuard implements CanActivate {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-Wie du siehst wird hier die Methode `authenticated` from `AuthService` verwendet, um zu prüfen ob der Benutzer eingeloggt ist. Sofern dies der fall ist senden wir `true` zurück, ansonsten geben wir `false` zurück und navigieren auf `/login` zurück. Wie wir den verwendeten `AuthService` erstellen siehst du gleich.
+Wie du siehst, wird hier die Methode `authenticated` from `AuthService` verwendet, um zu prüfen ob der Benutzer eingeloggt ist. Sofern dies der fall ist senden wir `true` zurück, ansonsten geben wir `false` zurück und navigieren auf `/login` zurück. Wie wir den verwendeten `AuthService` erstellen, siehst du gleich.
 
 Sobald wir die Methoden in unserer `AuthGuard` erstellt haben, müssen wir `AuthGuard` noch in unserem `app.module.ts` unter `providers` einbinden:
 
@@ -95,7 +95,7 @@ export class AppModule {}
 
 ### Einen Service erstellen
 
-Um die Logik rund um das Login etwas zu entkoppeln erstellen wir einen Service, welcher wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
+Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service, welcher wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
 
 ```text
 ionic generate service _core/Auth
@@ -190,5 +190,5 @@ Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit h
 1. Zusatz: Füge ein Logout in deine App ein.
 2. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
 3. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
-4. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein, evt. kannst du hier mit Gravatar arbeiten.
+4. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein. Evtl. kannst du hier mit Gravatar arbeiten.
 
