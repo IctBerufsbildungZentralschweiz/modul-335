@@ -1,6 +1,6 @@
 # Route Guards / Login
 
-Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Route_ _Guards_ Zugriff auf gewisse Routes \(z.B._`/meineliste`_\) verhindern, sofern gewisse Konditionen zutreffen. Eines der bekanntesten Beispiele ist einem Benutzer keine Zugriff zu gewähren, sofern dieser nicht eingeloggt ist. Genau diesen Fall werden wir in den kommenden Kapitel zusammen erarbeiten.
+Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Route_ _Guards_ Zugriff auf gewisse Routes \(z.B.`/meineliste`\) verhindern, sofern gewisse Konditionen zutreffen. Eines der bekanntesten Beispiele ist einem Benutzer keine Zugriff zu gewähren, sofern dieser nicht eingeloggt ist. Genau diesen Fall werden wir in den kommenden Kapitel zusammen erarbeiten.
 
 ## Route Guards
 
@@ -171,10 +171,6 @@ export class AppRoutingModule {}
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
-
-
-
 ## Übung Login
 
 ![](../.gitbook/assets/ralph_uebung.png)
@@ -185,7 +181,7 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Re
 Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit haben, frage in deiner Gruppe nach resp. wende dich an deinen Kursleiter.
 {% endhint %}
 
-{% embed url="https://www.youtube.com/watch?v=aNW444SpFNs" %}
+{% embed url="https://www.youtube.com/watch?v=aNW444SpFNs" caption="" %}
 
 1. Zusatz: Füge ein Logout in deine App ein.
 2. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
