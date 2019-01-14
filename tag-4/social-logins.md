@@ -4,11 +4,7 @@ Social Logins sind in praktisch jeder App zu finden. Immer öfter machen es sich
 
 ![](../.gitbook/assets/social-login-page.png)
 
-Die grossen Sozialen Netzwerke unterscheiden sich dabei nicht gross. Dem Benutzer soll das Login resp. die Registrierung mit Hilfe dieses Buttons massiv vereinfacht werden. Auch mit Ionic resp. Ionic Cloud lassen sich Social Logins exzellent in eine hybride App einbauen. Die jeweiligen Anleitungen der drei grossen Player findest du hier:
-
-* [Facebook](https://docs.ionic.io/services/auth/facebook-native.html)
-* [Twitter](https://docs.ionic.io/services/auth/twitter-auth.html)
-* [Google](https://docs.ionic.io/services/auth/google-native.html)
+Die grossen Sozialen Netzwerke unterscheiden sich dabei nicht gross. Dem Benutzer soll das Login resp. die Registrierung mit Hilfe dieses Buttons massiv vereinfacht werden.
 
 ## **Authentisierungs** - Prozess
 
