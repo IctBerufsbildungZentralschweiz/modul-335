@@ -1,6 +1,6 @@
 # Testing
 
-Auch in Ionic entwickelte Apps sollten vor der Veröffentlichung gründlich getestet werden. Ob ein Entwickler nun nach Test-First programmiert oder ein eigenes Team im Unternehmen dafür verantwortlich ist spielt keine Rolle. Tests sind wichtig und nur damit findest du die wirklichen Bugs... Wie ich meine Ionic App testen kann haben wir in diesem [Tutorial](https://ionicframework.com/docs/guide/testing.html) bereits kurz angeschaut.
+Auch in Ionic entwickelte Apps sollten vor der Veröffentlichung gründlich getestet werden. Ob ein Entwickler nun nach Test-First programmiert oder ein eigenes Team im Unternehmen dafür verantwortlich ist spielt keine Rolle. Tests sind wichtig und nur damit findest du die wirklichen Bugs... Wie ich meine Ionic App testen kann haben wir bereits kurz angeschaut.
 
 Das folgende Video zeigt dir noch eine Implementation von Unit-Tests:
 
