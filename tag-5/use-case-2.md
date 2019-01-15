@@ -53,7 +53,7 @@ messagingSenderId: "327137245327"
 
 ### Registrierung
 
-* Die Registration soll `auth.service.ts` verwendet werden
+* Die Registration soll `auth.service.ts` verwenden
 * Die Registration soll mit Benutzername / Email / Passwort und Firebase Auth realisiert werden, alle Daten sollen gespeichert werden
 * Bei einem Klick auf den Registrieren-Button wird überprüft ob etwas eingegeben wurde, nur dann wird ein Registration versucht
 * Oberhalb des Registrierungs-Buttons gibt es einen Button "Zurück zum Login" mit entsprechender Aktion

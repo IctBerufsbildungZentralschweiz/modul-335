@@ -4,9 +4,9 @@ Auch in Ionic entwickelte Apps sollten vor der Veröffentlichung gründlich gete
 
 Das folgende Video zeigt dir noch eine Implementation von Unit-Tests:
 
-{% embed url="https://www.youtube.com/watch?v=8ApX7EhkBDs" %}
+{% embed url="https://www.youtube.com/watch?v=8ApX7EhkBDs" caption="" %}
 
-{% embed url="https://www.youtube.com/watch?v=i0iV\_x8NgeE" %}
+{% embed url="https://www.youtube.com/watch?v=i0iV\_x8NgeE" caption="" %}
 
 ## Testarten
 
@@ -47,5 +47,5 @@ Ein weiterer Nachteil klassischer White-Box-Tests ist, dass der Entwickler das z
 
 Die Methode der testgetriebenen Entwicklung versucht den Gründen für eine nicht ausreichende Testabdeckung und einigen Nachteilen der White-Box-Tests entgegenzuwirken.
 
- _Quelle:_ [https://de.wikipedia.org/wiki/Testgetriebene\_Entwicklung](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung)
+_Quelle:_ [https://de.wikipedia.org/wiki/Testgetriebene\_Entwicklung](https://de.wikipedia.org/wiki/Testgetriebene_Entwicklung)
 

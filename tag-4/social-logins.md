@@ -18,7 +18,7 @@ Anbei eine grafische Übersicht des Authentisierungs-Prozesses:
 4. Unsere App spricht mit Facebook
 5. Facebook gibt unser App Informationen zum User
 
-{% embed url="https://www.youtube.com/watch?v=uUMp7qcHhIc" %}
+{% embed url="https://www.youtube.com/watch?v=uUMp7qcHhIc" caption="" %}
 
 ## Übung
 
