@@ -45,6 +45,13 @@ DevApp ist eine 100% gratis App für iOS und Android, welche es dir ermöglicht 
 
 ![](../.gitbook/assets/devapp-image.jpg)
 
+Die App kann wie folgt mit der Ionic DevApp verwendet werden: 
+
+```bash
+ionic cordova prepare
+ionic serve --devapp
+```
+
 ## Wie debugge ich meine App?
 
 HTML, CSS & JS sind cool oder? Ja, das denkt wohl jeder Entwickler bis er vor dem ersten wirklichen Problem steht.  
