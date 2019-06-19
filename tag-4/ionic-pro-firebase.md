@@ -48,26 +48,26 @@ Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.googl
 Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
 
 ```bash
-npm install angularfire2 firebase --save
+npm install @angular/fire firebase --save
 ```
 
 Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
 
 ```javascript
 // AngularFire2 importieren
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
-  authDomain: "m335-auth.firebaseapp.com",
-  databaseURL: "https://m335-auth.firebaseio.com",
-  projectId: "m335-auth",
-  storageBucket: "m335-auth.appspot.com",
-  messagingSenderId: "535601451759"
+  apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
+  authDomain: 'm335-auth.firebaseapp.com',
+  databaseURL: 'https://m335-auth.firebaseio.com',
+  projectId: 'm335-auth',
+  storageBucket: 'm335-auth.appspot.com',
+  messagingSenderId: '535601451759'
 };
 ```
 
@@ -101,19 +101,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 
 // AngularFire2 importieren
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI",
-  authDomain: "m335-auth.firebaseapp.com",
-  databaseURL: "https://m335-auth.firebaseio.com",
-  projectId: "m335-auth",
-  storageBucket: "m335-auth.appspot.com",
-  messagingSenderId: "535601451759"
+  apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
+  authDomain: 'm335-auth.firebaseapp.com',
+  databaseURL: 'https://m335-auth.firebaseio.com',
+  projectId: 'm335-auth',
+  storageBucket: 'm335-auth.appspot.com',
+  messagingSenderId: '535601451759'
 };
 @NgModule({
   declarations: [AppComponent],
@@ -124,6 +125,7 @@ export const firebaseConfig = {
     AppRoutingModule,
     IonicStorageModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
