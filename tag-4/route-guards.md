@@ -107,7 +107,7 @@ In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir 
 {% code-tabs-item title="auth.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireAuth } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'

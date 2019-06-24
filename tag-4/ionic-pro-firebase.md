@@ -62,12 +62,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
-  authDomain: 'm335-auth.firebaseapp.com',
-  databaseURL: 'https://m335-auth.firebaseio.com',
-  projectId: 'm335-auth',
-  storageBucket: 'm335-auth.appspot.com',
-  messagingSenderId: '535601451759'
+    apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
+    authDomain: 'm335-auth.firebaseapp.com',
+    databaseURL: 'https://m335-auth.firebaseio.com',
+    projectId: 'm335-auth',
+    storageBucket: 'm335-auth.appspot.com',
+    messagingSenderId: '535601451759',
+    appId: '1:535601451759:web:78213803d4d40b5d'
 };
 ```
 
@@ -109,12 +110,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Firebase Einstellungen 
 export const firebaseConfig = {
-  apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
-  authDomain: 'm335-auth.firebaseapp.com',
-  databaseURL: 'https://m335-auth.firebaseio.com',
-  projectId: 'm335-auth',
-  storageBucket: 'm335-auth.appspot.com',
-  messagingSenderId: '535601451759'
+     apiKey: 'AIzaSyBM_MflQcqElJum8Mc6IGDBr5ruBeDSVKI',
+    authDomain: 'm335-auth.firebaseapp.com',
+    databaseURL: 'https://m335-auth.firebaseio.com',
+    projectId: 'm335-auth',
+    storageBucket: 'm335-auth.appspot.com',
+    messagingSenderId: '535601451759',
+    appId: '1:535601451759:web:78213803d4d40b5d'
 };
 @NgModule({
   declarations: [AppComponent],
