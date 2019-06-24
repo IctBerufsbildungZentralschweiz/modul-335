@@ -9,7 +9,7 @@
    ```css
    // chat.page.scss
    .chat-nachrichten {
-       height: calc(100% - 40px);
+       height: calc(100% - 60px);
        overflow: scroll;
        background-color: var(--ion-color-light-shade);
        span {
