@@ -22,8 +22,7 @@ ionic generate guard _core/Auth
 
 Diese AuthGuard muss nun lediglich die Methode `canActivate` resp. `canLoad` implementieren, welche `true` oder `false` zurückgibt, sofern der Benutzer eingeloggt ist.
 
-{% code-tabs %}
-{% code-tabs-item title="auth.guard.ts" %}
+{% code title="auth.guard.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
@@ -49,15 +48,13 @@ export class AuthGuard implements CanActivate {
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Wie du siehst, wird hier die Methode `authenticated` from `AuthService` verwendet, um zu prüfen ob der Benutzer eingeloggt ist. Sofern dies der fall ist senden wir `true` zurück, ansonsten geben wir `false` zurück und navigieren auf `/login` zurück. Wie wir den verwendeten `AuthService` erstellen, siehst du gleich.
 
 Sobald wir die Methoden in unserer `AuthGuard` erstellt haben, müssen wir `AuthGuard` noch in unserem `app.module.ts` unter `providers` einbinden:
 
-{% code-tabs %}
-{% code-tabs-item title="app.module.ts" %}
+{% code title="app.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -90,8 +87,7 @@ import { AuthGuard } from './_core/auth.guard';
 })
 export class AppModule {}
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Einen Service erstellen
 
@@ -103,8 +99,7 @@ ionic generate service _core/Auth
 
 In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerütst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
-{% code-tabs %}
-{% code-tabs-item title="auth.service.ts" %}
+{% code title="auth.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
@@ -137,15 +132,13 @@ export interface User {
     displayname: string;
   }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Mit AuthGuard unsere Routes schützen
 
 Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit dem `AuthGuard` schützen. Füge dazu als weiteres Property `canActivated` zu den zu schützenden Routes hinzu:
 
-{% code-tabs %}
-{% code-tabs-item title="app-routing.module.ts" %}
+{% code title="app-routing.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -168,8 +161,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Übung Login
 

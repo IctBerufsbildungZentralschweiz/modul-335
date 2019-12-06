@@ -2,10 +2,6 @@
 
 ## Organisation
 
-## Author
-
-Tom Enz, 0797143000, [t@tomenz.ch](mailto:t@tomenz.ch?subject=Modul-335)
-
 ## Moodle - Kurse ICT-BZ
 
 Diese Kursunterlagen wurden mit Markdown auf Basis von Gitbook erstellt und dienen als Erweiterung der Kursdokumentation unter:  

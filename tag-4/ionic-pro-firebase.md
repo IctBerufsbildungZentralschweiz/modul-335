@@ -86,8 +86,7 @@ Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu:
 
 Deine `app.module.ts`-Datei sollte etwa so aussehen:
 
-{% code-tabs %}
-{% code-tabs-item title="app.module.ts" %}
+{% code title="app.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -141,8 +140,7 @@ export const firebaseConfig = {
 export class AppModule {}
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### 
 

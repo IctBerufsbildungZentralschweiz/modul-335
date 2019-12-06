@@ -173,8 +173,7 @@
 
     Hier die komplette Datei:
 
-    {% code-tabs %}
-    {% code-tabs-item title="app.module.ts" %}
+    {% code title="app.module.ts" %}
     ```javascript
 
     import { NgModule } from '@angular/core';
@@ -226,14 +225,12 @@
     export class AppModule {}
 
     ```
-    {% endcode-tabs-item %}
-    {% endcode-tabs %}
+    {% endcode %}
 
 13. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich:  
 
 
-    {% code-tabs %}
-    {% code-tabs-item title="chat.page.ts" %}
+    {% code title="chat.page.ts" %}
     ```typescript
     import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
     import { AlertController } from '@ionic/angular';
@@ -302,8 +299,7 @@
     }
 
     ```
-    {% endcode-tabs-item %}
-    {% endcode-tabs %}
+    {% endcode %}
 
 14. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gebe mittel `*ngFor` die Nachrichten in deinem Template aus.
 

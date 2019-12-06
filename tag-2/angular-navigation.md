@@ -5,8 +5,7 @@ Bis und mit Ionic 3 war die Navigation über den sogenannten NavController mögl
 Mit Ionic 4 wird die Navigation neu über das [**Angular Routing**](https://angular.io/guide/router) gemacht. Angular Routing basiert mehr auf dem in der URL ersichtlichen Pfad \(z.B. `http://localhost:8100/home`\).  
 In deiner Applikation findest du eine zentrale Datei um das Routing zu steuern:
 
-{% code-tabs %}
-{% code-tabs-item title="app-routing.module.ts" %}
+{% code title="app-routing.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -28,8 +27,7 @@ export class AppRoutingModule {
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Was sehen wir hier:
 
@@ -53,8 +51,7 @@ const routes: Routes = [
 Anstatt nun eine `component` für eine Route anzugeben, machen wir Gebrauch der `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.  
 Nehmen wir die `/home` Route als Beispiel. Der Router weiss das er die Datei `home.module.ts` öffnen muss und schaut nach `HomeModule` darin.
 
-{% code-tabs %}
-{% code-tabs-item title="home.module.ts" %}
+{% code title="home.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -75,13 +72,11 @@ import { HomePageRoutingModule } from './home-routing.module';
 })
 export class HomeModule {}
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 In der Datei `home.module.ts` sehen wir, dass die Routes in einer separaten Datei gehalten werden, welche in etwa so aussehen wird:
 
-{% code-tabs %}
-{% code-tabs-item title="home-routing.module.ts" %}
+{% code title="home-routing.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -100,8 +95,7 @@ const routes: Routes = [
 })
 export class HomePageRoutingModule { }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Hier wird nun wiederum die Zuordnung auf die jeweiligen Komponenten `HomePage` und `SomethingPage` gemacht. Es können natürlich noch weitere `routes` definiert werden.
 
@@ -135,8 +129,7 @@ navigateToDetail() {
 
 Die Daten sind in der `PersonDetail`-Seite nun über die `ActivatedRoute` mit über `paramMap`zu holen:
 
-{% code-tabs %}
-{% code-tabs-item title="person-detail.page.ts" %}
+{% code title="person-detail.page.ts" %}
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
@@ -157,8 +150,7 @@ export class PersonDetailPage implements OnInit {
 
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Mehr dazu findest du auch in folgendem Tutorial:
 
