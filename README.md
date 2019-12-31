@@ -15,5 +15,5 @@ Dieses Script wurde im Rahmen des Moduls 335 - Mobile Applikation realisieren f�
 ![](.gitbook/assets/ralph_hello.png)
 
 Heyy, mein Name ist Ralph!  
-Ich bin die Person hinter [Roomies](https://roomies.ch) und auch in diesem Script öfters mal anzutreffen. Du wirst mich bei Übungen oder an wichtigen Stellen mit einem Tipp finden. Freu mich dich zu sehen ...
+Ich bin die Person hinter Roomies, einem alten Schulprojekt und auch in diesem Script öfters mal anzutreffen. Du wirst mich bei Übungen oder an wichtigen Stellen mit einem Tipp finden. Freu mich dich zu sehen ...
 
