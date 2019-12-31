@@ -4,7 +4,7 @@
 
 ## Mobile App entwickeln
 
-![](.gitbook/assets/bookcover.jpg)
+![](.gitbook/assets/image%20%282%29.png)
 
 ### Über dieses Script
 
