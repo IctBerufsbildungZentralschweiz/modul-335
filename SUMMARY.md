@@ -12,7 +12,7 @@
 * [Ionic: Intro](tag-1/ionic-intro.md)
 * [UI, UX, Usability](tag-1/ui-ux-usability.md)
 * [Prototyping](tag-1/prototyping.md)
-* [SASS](tag-1/sass.md)
+* [SASS/SCSS](tag-1/sass.md)
 * [Ionic: Architektur](tag-1/ionic-architektur.md)
 
 ## Tag 2
@@ -46,6 +46,7 @@
 
 * [App Store](tag-5/app-store.md)
 * [Testing](tag-5/testing.md)
+* [Sicherheit](tag-5/sicherheit.md)
 * [Use Case 2](tag-5/use-case-2.md)
 * [Veröffentlichung, Ausblick](tag-5/veroeffentlichung-ausblick.md)
 

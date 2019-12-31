@@ -19,7 +19,7 @@ messagingSenderId: "327137245327"
 
 ### Struktur der Daten
 
-![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image.png)
+![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image%20%281%29.png)
 
 ## Detailbeschreibung
 

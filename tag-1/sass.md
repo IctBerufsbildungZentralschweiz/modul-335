@@ -1,6 +1,6 @@
-# SASS
+# SASS/SCSS
 
-[Link zur offiziellen SASS-Website](http://sass-lang.com/guide)
+{% embed url="https://sass-lang.com/guide" caption="Link zur offiziellen SASS-Website" %}
 
 ## Preprocessors
 
@@ -17,6 +17,8 @@ Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, P
 _Codebeispiel:_ 
 
 ![](../.gitbook/assets/sass-vs-scss.png)
+
+Neben der oben beschriebenen Sass-Syntax \(indented syntax\) verfügt Sass über die neuere und heute weiter verbreitete SCSS-Syntax \(Sassy CSS\). Hier sind für die Verschachtelung der Selektoren nicht die Einrückung des Quelltextes ausschlaggebend, sondern wie in der klassischen CSS-Schreibweise die geschweiften Klammern. Auch sind am Ende der Regeln Semikola erforderlich.
 
 ## Variablen
 

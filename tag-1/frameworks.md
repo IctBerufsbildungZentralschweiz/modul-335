@@ -4,6 +4,12 @@
 
 ![](../.gitbook/assets/chartoftheday_4112_smartphone_platform_market_share_n.jpg)
 
+Statcounter ist eine gute Website um die Marktanteile aufzuzeigen:
+
+{% embed url="https://gs.statcounter.com/os-market-share/mobile/worldwide" %}
+
+
+
 ### Android
 
 Android ist ein von Google zu Verfügung gestelltes mobiles Betriebssystem. Mehr dazu gibts hier:

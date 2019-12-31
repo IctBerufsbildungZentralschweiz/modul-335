@@ -58,3 +58,13 @@ this.camera.getPicture(options).then((imageData) => {
 });
 ```
 
+## Ausblick -&gt; Capactior
+
+![](../.gitbook/assets/capacitor-hero.jpg)
+
+{% embed url="https://capacitor.ionicframework.com/" %}
+
+
+
+
+

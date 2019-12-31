@@ -50,13 +50,39 @@ Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in
 
 {% embed url="https://mockuphone.com/" %}
 
+{% embed url="https://mockup.photos/freebies" %}
 
+{% embed url="https://cleanmock.com/" %}
+
+
+
+### Versionierung
+
+In der Praxis werden dann oft mehrere Versionen und Builds einer App geneiert. Es gibt dazu coole CI/CD Tools wie fastlane, möchte man es aber im kleinen Rahmen halten müssen mindest jeweils folgende Dateien angepasst werden:
+
+* config.xml
+* package.json
+* evt. src/environments/environment.ts
+
+Um diese Vorgang etwas zu vereinfacher hier ein kleine Hilfstellung:
+
+{% embed url="https://gist.github.com/motzne/13c1c6f67acb5dd01806a7c665fc7ccb" %}
 
 ### AGB's / Terms of Use / Datenschutz
 
 Der rechtliche Aspekt einer App wird oft stark vernachlässigt. Speicherst du Daten eines Benutzer \(Email/Passwort\)? Sind Daten deiner App auf einem Server im Ausland \(USA\) gespeichert? Stell dir diese Fragen doch bevor du vor einem Richter sitzt und für Millionen angeklagt wirst. 😅  
 Ein Link für gute AGB's gibt's hier:  
 [http://www.schweizer-vertraege.ch/Suchbegriff/60-AGB](http://www.schweizer-vertraege.ch/Suchbegriff/60-AGB)
+
+#### Copyright
+
+Bitte beachtet und respektiert dass im Internet schon sehr viel geklaut wird. Eine Linksammlung für gute Bilder, Illustrationen gibts hier:
+
+{% embed url="https://github.com/neutraltone/awesome-stock-resources" %}
+
+
+
+
 
 ### Übung
 
@@ -76,15 +102,5 @@ Ein Link für gute AGB's gibt's hier:
 
 ### PWA
 
-### Ionic 4
 
-* Wird hoffentlich bald offiziell "Live" gehen
-
-### Capacitor
-
-![](../.gitbook/assets/capacitor-hero.jpg) [https://capacitor.ionicframework.com/](https://capacitor.ionicframework.com/)
-
-### Apple WWDC18
-
-Apple hat an der WWDC 2018 vorgestellt, dass Web-Inhalt nun auch auf der Apple Watch \(mit watchOS 5\) kommen wir. Wir sind gespannt in welche Richtung das gehen wird...
 
