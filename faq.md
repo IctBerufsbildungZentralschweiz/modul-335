@@ -149,3 +149,15 @@ Sobald deine App in den App-Store kommt, möchtest du z.B. `console.log` ausscha
 
 Eine gute Anleitung um dies zu realisieren, findest du hier: [http://roblouie.com/article/296/ionic-2-environment-variables-the-best-way/](http://roblouie.com/article/296/ionic-2-environment-variables-the-best-way/)
 
+## Wie bekomm ich die Scrollbar im Browser weg?
+
+Geh dazu in dein `app.scss` und füge folgende Zeilen ein
+
+```css
+*::-webkit-scrollbar {
+    display:none;
+}
+```
+
+Wichtig ist hier zu wissen, dass du in deiner finalen App evt. wieder eine Scrollbar möchtest. Dazu einfach den Code wieder auskommentieren. 
+
