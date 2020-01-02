@@ -14,6 +14,11 @@ Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur clientseitig im
 
 ### Eine Route Guard erstellen
 
+{% hint style="danger" %}
+WICHTIG:   
+Seit Herbst 2019 bietet `@angular/fire` eine [eigene Router-Guard](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt. Daher hilft zwar das folgende Kapitel noch fürs Verständnis, kann aber direkt gelöst werden.
+{% endhint %}
+
 Eine Route Guard, in unserem Falls für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
 
 ```bash
@@ -89,6 +94,8 @@ export class AppModule {}
 ```
 {% endcode %}
 
+
+
 ### Einen Service erstellen
 
 Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service, welcher wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
@@ -138,6 +145,41 @@ export interface User {
 
 Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit dem `AuthGuard` schützen. Füge dazu als weiteres Property `canActivated` zu den zu schützenden Routes hinzu:
 
+{% tabs %}
+{% tab title="NEU: AngularFire guards" %}
+{% code title="app-routing.module.ts" %}
+```javascript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './_core/auth.guard';
+import { LogoutComponent } from './logout/logout.page';
+import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
+
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'ferienorte',
+    pathMatch: 'full'
+  },
+  { path: 'ferienorte', loadChildren: './ferienorte/ferienorte.module#FerienortePageModule', canActivate: [AngularFireAuthGuard] },
+  { path: 'gallerie', loadChildren: './gallerie/gallerie.module#GalleriePageModule', canActivate: [AngularFireAuthGuard] },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'registrierung', loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' },
+  { path: 'willkommen', loadChildren: './willkommen/willkommen.module#WillkommenPageModule' },
+  { path: 'logout', component: LogoutComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Mit eigener Route-Guard" %}
 {% code title="app-routing.module.ts" %}
 ```typescript
 import { NgModule } from '@angular/core';
@@ -162,6 +204,14 @@ const routes: Routes = [
 export class AppRoutingModule {}
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
+
+Für die neue Variante mi [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+
+```typescript
+import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
+```
 
 ## Übung Login
 
