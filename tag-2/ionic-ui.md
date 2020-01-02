@@ -1,6 +1,5 @@
 # Ionic: UI
 
-  
 Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige Duplikationen zu vermeiden verweisen ich hier auf folgende Links:
 
 ![](../.gitbook/assets/ionic-ui.jpeg)
