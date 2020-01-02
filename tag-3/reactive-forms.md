@@ -7,17 +7,17 @@ In Angular gibt es grundsätzlich 2 Varianten wie man mit Formularen umgehen kan
 
 Auf den ersten Blick scheinen Reactive Forms etwas komplex, aber ihr werdet sehen, dass man hier relativ schnell sehr gute Erfolge erzielen kann:
 
-## Wie kann ich ReactiveForms integrieren?
+## Hinzufügen: Aber wie richtig?
 
 Um Reactive Forms in deiner App zu brauchen braucht es folgende drei Schritte:
 
-1. ReactiveForms Modul importieren
+1. ReactiveFormsModule hinzufügen
 2. In deiner Komponente eine FormGroup deklarieren
 3. Mit deinem HTML-Template verknüpfen
 
 Wir gehen Schritt für Schritt vor und werden hier als Beispiel ein einfaches Kontaktformular erstellen.  Tipp: 
 
-### 1. ReactiveForms importieren
+### 1. ReactiveFormsModule hinzufügen
 
 Wir fügen ReactiveFormsModule zu unseren Modulen pro Komponente hinzu.
 
@@ -109,7 +109,7 @@ export class FormExamplePage implements OnInit {
 ```
 {% endcode %}
 
-### 3. Mit deinem HTML-Template verknüpfen
+### 3. HTML-Template verknüpfen
 
 Nun müssen wir die erstelle FormGroup und Felder noch sauber mit unserem Template verknüpfen:
 
@@ -157,7 +157,7 @@ Was hier noch zu sehen ist:
 * Wir haben unsere Formular-Elemente mit `formControlName` mit den FormControls aus unsere Komponente verknüpft \(`lastname`, `firstname`, `email`\)
 * Da die ion-input Elemente alle `required` sind wird der "Send it!"-Button erst aktiv werden wenn alles ausgefüllt wurde.  Im nächsten Kapitel siehst du jedoch das es noch mehr Möglichkeiten dazu gibt
 
-## Wie kann ich ein Formular validieren?
+## Validators: Lass uns Felder überprüfen
 
 Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was wenn du deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
 Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.   
