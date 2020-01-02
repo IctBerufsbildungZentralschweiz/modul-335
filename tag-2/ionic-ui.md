@@ -25,7 +25,7 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 
 * Die Icons kommen neu als Web-Components daher
 * Mit der Intersection Observer API werden Icons nur noch geladen wenn Sie sichtbar werden \(super lazy\) 
-* Man kann ein einges SVG zu Ionicons hinzufügen
+* Man kann ein eigenes SVG zu Ionicons hinzufügen
 * Ionicons können Plattformunabhängig eingebunden werden, [siehe hier](https://ionicons.com/usage)
 
 ## Übung
