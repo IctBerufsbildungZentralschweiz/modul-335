@@ -12,7 +12,7 @@ Als alternative für den Datenaustausch im Klassenraum kann auch folgende Google
 
 ## Modulidentifikation und Handlungskompetenzen
 
-Die detaillierte [Modulidentifikation inkl. beschriebenen Handlungskompetenzen](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=307) kann auf der Website von [ict-berufsbildung.ch](http://www.ict-berufsbildung.ch/) nachgelesen werden.
+Die detaillierte [Modulidentifikation inkl. beschriebenen Handlungskompetenzen](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=335) kann auf der Website von [ict-berufsbildung.ch](http://www.ict-berufsbildung.ch/) nachgelesen werden.
 
 ## Leistungsbeurteilung
 
