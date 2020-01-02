@@ -39,7 +39,7 @@ Ionic 1.x war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x 
 ## Dokumentation
 
 Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Richtig, daher ist die Ionic Doku auch elektronisch und hier zu finden:  
-[https://ionicframework.com/docs/](https://ionicframework.com/docs/v2/faq/)
+[https://ionicframework.com/docs/](https://ionicframework.com/docs/)
 
 Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
 
