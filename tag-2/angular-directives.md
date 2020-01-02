@@ -96,7 +96,7 @@ buttonClicked(){
 
 ```markup
 <!-- clickExample.html -->
-<ion-button color="secondary" click)="buttonClicked()">Klick mich!</ion-button>
+<ion-button color="secondary" (click)="buttonClicked()">Klick mich!</ion-button>
 ```
 
 Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
