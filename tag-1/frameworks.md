@@ -6,6 +6,8 @@
 
 ![Schweiz 2019](../.gitbook/assets/statcounter-os_combined-ch-monthly-201811-201912.png)
 
+Weltweit liegt eindeutig Android vorne, in der Schweiz ist es etwa eine 50/50 Aufteilung.
+
 Statcounter ist eine gute Website um die Marktanteile aufzuzeigen:
 
 {% embed url="https://gs.statcounter.com/os-market-share/mobile/worldwide" %}
