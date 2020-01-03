@@ -2,7 +2,9 @@
 
 ## Mobile Betriebssysteme
 
-![](../.gitbook/assets/chartoftheday_4112_smartphone_platform_market_share_n.jpg)
+![Weltweit bis 2016](../.gitbook/assets/chartoftheday_4112_smartphone_platform_market_share_n.jpg)
+
+![Schweiz 2019](../.gitbook/assets/statcounter-os_combined-ch-monthly-201811-201912.png)
 
 Statcounter ist eine gute Website um die Marktanteile aufzuzeigen:
 
