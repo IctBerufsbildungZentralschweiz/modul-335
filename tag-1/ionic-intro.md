@@ -92,6 +92,12 @@ Ionic bietet uns ein super Möglichkeit die von Euch programmierte App mit folge
 ionic serve
 ```
 
+{% hint style="warning" %}
+Evt. hast du Probleme unter Windows mit den Pfeiltasten \(arrow-Keys\). Du kannst ein Projekt auch manuell erstellen:  
+`ionic serve <NAME> <ART> --type=angular  
+ionic server testProjekt sidemenu --type=angular`
+{% endhint %}
+
 Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localhost:8100/](http://localhost:8100/)
 
 **Vorteile von** `ionic serve`

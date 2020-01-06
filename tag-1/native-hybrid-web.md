@@ -1,7 +1,5 @@
 # Native, Hybrid, Web
 
-
-
 Wir werden in den kommenden Tagen viel über die drei Hauptbegriffe Native, Hybrid, Web und deren Vor-/Nachteile sprechen. In diesem Kapitel lernst du die genannten drei Hauptbegriffe kennen und verschaffst dir einen Überblick in die mobile App Entwicklung.
 
 ![](../.gitbook/assets/ibm-worklight-application-types.png)
@@ -71,8 +69,4 @@ Wir besprechen deine Ergebnisse gemeinsam.
 Die Zukunft werden sogenannte Progressive Web Apps \(kurz. PWA\) sein, hier ein Überblick:
 
 {% embed url="https://www.youtube.com/watch?v=fuhAmUpEEHA" caption="" %}
-
-{% embed url="https://ionicframework.com/pwa" %}
-
-
 
