@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/paperprotoyping.jpg)
 
-## Definition Protoyping
+## Definition Prototyping
 
 > Prototyping ist eine Methode, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht.
 >
@@ -68,7 +68,7 @@ Es gibt zwei Arten eines Wireframes:
 
 Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
-1. Begib dich in eine der Drei vom Kursleiter erstellten Gruppen
+1. Begib dich in eine der drei vom Kursleiter erstellten Gruppen
 2. Geh via [Moodle](https://kurse.ict-bz.ch/) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag1/Teil10\_PrototypingTools"_ und öffne die Datei online.
 3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
 4. Ergänze deine Slides wie in der Vorlage ersichtlich.
@@ -94,7 +94,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
    2. Fotos
    3. Einstellungen
 3. Im Tab Anmeldung soll eine Liste von Events erscheinen
-   1. Ein Event hat jeweils ein Titel, ein kleines Foto und ein Datum welches in der Liste angezeigt wird
+   1. Ein Event hat jeweils einen Titel, ein kleines Foto und ein Datum welches in der Liste angezeigt wird
    2. Klickt ein Benutzer auf den Event kommt er zur Detailseite, dort sieht er zusätzlich noch einen Beschreibungstext zum Event.
    3. Will er sich für den Event Anmelden, kann er dies dort mittels Button tun
 4. Der Tab Fotos ist eine Sammlung von mehreren Fotos und jeweils pro Event gruppiert.
@@ -109,6 +109,6 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
 
 **Zusatzaufgaben**
 
-1. Überleg dir was du alles umbauen musst um die App in einem Sidemenu darzustellen, zeichne einige Mocks dazu
+1. Überleg dir was du alles umbauen musst, um die App in einem Sidemenu darzustellen, zeichne einige Mocks dazu
 2. Probier die App mit einem Online Prototyping Tool nachzuzeichnen und gehe dabei von einem Lo-Fi zu einem klickbaren Prototypen über
 
