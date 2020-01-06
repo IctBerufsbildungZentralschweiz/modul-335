@@ -103,7 +103,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
    3. Klickt er in der Übersicht auf ein Foto geht dies in voller Grösse auf
    4. Er kann ein Foto Liken oder auch Teilen \(z.B. via Facebook, WhatsApp\)
 5. Im Tab Einstellungen kann folgendes gemacht werden
-   1. Es werden Informationen zu Copyright & Author angezeigt
+   1. Es werden Informationen zu Copyright & Autor angezeigt
    2. Es gibt ein Logout-Button
    3. Es gibt eine Email-Adresse, klickt man darauf wird der Benutzer gefragt, ob die Mail-App geöffnet werden soll
 
