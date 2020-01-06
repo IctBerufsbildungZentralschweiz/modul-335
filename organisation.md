@@ -7,6 +7,9 @@
 Diese Kursunterlagen wurden mit Markdown auf Basis von Gitbook erstellt und dienen als Erweiterung der Kursdokumentation unter:  
 [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch)
 
+Als alternative für den Datenaustausch im Klassenraum kann auch folgende Google Drive Seite verwendet werden:  
+[http://enz.lu/m335-exchange](http://enz.lu/m335-exchange)
+
 ## Modulidentifikation und Handlungskompetenzen
 
 Die detaillierte [Modulidentifikation inkl. beschriebenen Handlungskompetenzen](https://cf.ict-berufsbildung.ch/modules.php?name=Mbk&a=20101&cmodnr=335) kann auf der Website von [ict-berufsbildung.ch](http://www.ict-berufsbildung.ch/) nachgelesen werden.
