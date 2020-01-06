@@ -307,7 +307,7 @@
 
 ## Zusatz
 
-1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir ngStyle in der Angular Doku an.
+1. Zusatz: Füge eine Funktion hinzu, dass wie bei Whatsapp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir ngStyle in der Angular Doku an.
 2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
 3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
 

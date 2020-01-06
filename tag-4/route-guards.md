@@ -4,7 +4,7 @@ Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Route_ _Gua
 
 ## Route Guards
 
-Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welcher als Route Guard für eine spezifische Route gilt. Dieser Service muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurück liefert. Wenn `true` zurückkommt wird dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
+Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welcher als Route Guard für eine spezifische Route gilt. Dieser Service muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurückliefert. Wenn `true` zurückkommt wird dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
 
 `canActivate` wird verwendet um den Benutzer den Zugriff auf eine gewisse Route zu verweigern, `canLoad` hingegen verhindert sogar das Laden des Moduls und dessen Kinder anstatt nur den Zugriff. Dies sollte speziell im Fall von LazyLoaded Seiten verwendet werden. \(siehe `loadChildren` in den `routes` der Datei `app-routing.module.ts`\)
 

@@ -31,15 +31,15 @@ messagingSenderId: "327137245327"
 
 ### Navigation
 
-* Das Menu soll die im Prototyp ersichtlichen Menüpunkte \(Galerie, Ferienorte\) haben
-* Die Menüpunkte sollen die im Prototyp ersichtlichen Icons und Farben haben
+* Das Menu soll die im Prototyp ersichtlichen Menupunkte \(Galerie, Ferienorte\) haben
+* Die Menupunkte sollen die im Prototyp ersichtlichen Icons und Farben haben
 * Der Titel im Menu soll "Use Case 2" stehen
 * Am unteren Ende des Menus soll ein Button fürs Logout ersichtlich sein
 * Klickt ein Benutzer Logout, wird er ausgeloggt und zum Login gesendet, verwende hier den `auth.service.ts`
 
 ### Willkommen
 
-* Die Willkommensseite soll nur beim ersten App-Start erscheinen. Verwende dazu `Ionic Storage`. Sonst soll das Login kommen \(falls nicht eingeloggt\)     
+* Die Willkommenseite soll nur beim ersten App-Start erscheinen. Verwende dazu `Ionic Storage`. Sonst soll das Login kommen \(falls nicht eingeloggt\)     
 * Auf der Seite ist ein Titel "Willkommen zum UseCase2" ersichtlich, verwende hier ein Grid und `h2` Elemente
 * Klickt der Benutzer irgendwo hin, soll er zum Login gelangen
 
