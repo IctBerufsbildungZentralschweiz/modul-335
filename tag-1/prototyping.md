@@ -43,7 +43,7 @@ Bei Prototypen wird oft von der "fidelity" \(deutsch: Wiedergabetreue\) gesproch
 
 ### Pen & Paper
 
-Ein Stift und Papier findest noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und ein Stift \(z.B. Moleskine\) dabei. Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Protoyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine vielzahl von möglichen Tool fürs prototyping.  
+Ein Stift und Papier findest du noch in jedem Büro. Viele UX-Designer haben oft einen kleinen Block und einen Stift \(z.B. Moleskine\) dabei. Deine geniale App-Idee kannst du auch unterwegs mit einem Pen & Paper Prototyp festhalten, die Website [UIStencils](http://www.uistencils.com/) bietet dir eine Vielzahl von möglichen Tool fürs Prototyping.  
 ![](../.gitbook/assets/paper-prototype-03.jpg)
 
 Mögliche Vorlagen gibt es z.B. hier:
@@ -83,7 +83,7 @@ Schnapp dir einen Stift, Papier \(evt. eine Vorlage\) und beginne mit der folgen
 
 #### Ausgangslage:
 
-Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er aber nie so richtig, wie viele Leute an die Party kommen resp. wie sie die Party fanden. Meistens wurde er auch nach dem Event mit unzähligen Fotos im Whatsapp bombardiert, welche er nur mühsam mit allen Gästen teilen konnte.
+Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er aber nie so richtig, wie viele Leute an die Party kommen resp. wie sie die Party fanden. Meistens wurde er auch nach dem Event mit unzähligen Fotos im WhatsApp bombardiert, welche er nur mühsam mit allen Gästen teilen konnte.
 
 #### Details:
 
@@ -101,7 +101,7 @@ Ralph schmeisst in seiner WG ab und zu mal eine coole Party. Bis jetzt wusste er
    1. Die Gruppierung muss optisch ersichtlich sein
    2. Ein Benutzer muss ein Foto zu einem Event hochladen können
    3. Klickt er in der Übersicht auf ein Foto geht dies in voller Grösse auf
-   4. Er kann ein Foto Liken oder auch Teilen \(z.B. via Facebook, Whatsapp\)
+   4. Er kann ein Foto Liken oder auch Teilen \(z.B. via Facebook, WhatsApp\)
 5. Im Tab Einstellungen kann folgendes gemacht werden
    1. Es werden Informationen zu Copyright & Author angezeigt
    2. Es gibt ein Logout-Button
