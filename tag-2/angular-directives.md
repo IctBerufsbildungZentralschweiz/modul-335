@@ -54,7 +54,7 @@ Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man
 
 ### \(input\) - Event
 
-Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfachere Variante.
+Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfacher Variante.
 
 Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine suboptimale Idee - erfüllt aber in diesem Beispiel den Zweck.
 
@@ -105,9 +105,9 @@ Weitere Events findest du z.B. hier: [https://developer.mozilla.org/en-US/docs/W
 
 ## \[hidden\] / ngIf
 
-Manchmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
+Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
 
-Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert `true` in `*ngIf` wird die Komponente angezeigt, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
+Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert `true` in `*ngIf` wird die Komponente anzeigen, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
 
 Lass uns ein einfaches Beispiel mit folgenden Code machen:
 
@@ -149,7 +149,7 @@ Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPictu
    3. Ein Button zum zurücksetzen
 5. Teste dein App mittels Dev-App auf deinem Smartphone. Zufrieden?
 
-Wir schauen uns einige Lösungen gemeinsamen an.
+Wir schauen uns einigen Lösungen gemeinsamen an.
 
 #### Zusatzaufgabe:
 

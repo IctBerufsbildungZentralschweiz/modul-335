@@ -9,6 +9,6 @@
    1. Mittels Angular Router: Navigate By URL auf die `NavigationDetail`-Seite
    2. Mittels Angular Router: Navigate mit Parameter auf die `NavigationDetail`-Seite
 3. Wenn wir mit Parameter navigieren, sollen die Werte im Template dargestellt werden
-4. Füge auf der `NavigationDetail`-Seite 2 Buttons hinzu, mit welchen du zurück auf die Navigation-Seite navigieren kannst \(1x als Root, 1x mit `NavController` Back\)
+4. Füge auf der `NavigationDetail`-Seite ein Button hinzu, mit welchen du zurück auf die Navigation-Seite navigieren kannst
 5. Suche in der Doku wie du den Zurück-Pfeil in deine Toolbar bringst
 
