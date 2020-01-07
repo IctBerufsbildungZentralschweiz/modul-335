@@ -12,7 +12,7 @@ Eine Direktive erlaubt es uns nun, ein Stück HTML Code um zusätzliche Informat
 <ion-item>List Item</ion-item>
 ```
 
-Wird dieser um einigs mächtiger wenn wir ihn so schreiben:
+Wir dieser um einigs mächtiger wenn wir ihn so schreiben:
 
 ```markup
 <ion-item *ngFor="let item of items">{{item.name}}</ion-item>.

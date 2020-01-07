@@ -10,7 +10,7 @@ Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation od
 
 ## Früher vs. heute
 
-Die Geräteressourcen können natürlich nicht ohne Smartphone getestet werden. Mit Ionic 1 war spätestens hier der Zeitpunkt um auf die lokale Entwicklungsumgebung zu wechseln. Mühsam musste man die Smartphones für die Entwicklung konfigurieren und die App rauf kopieren.
+Die Geräteressourcen können natürlich nicht ohne Smartphone getestet werden. Mit Ionic 1 war spätestens hier der Zeitpunkt um auf die lokale Entwicklungsumgebung zu wechseln. Mühsam musste man die Smartphones für die Entwicklung konfigurieren und die App raufkopieren.
 
 Ionic sah dieses Problem und stellte die bereits verwendete DevApp zur Verfügung.  
 Eine Liste der unterstützten Plugins findest du hier:  
