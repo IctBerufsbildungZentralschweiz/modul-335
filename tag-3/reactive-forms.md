@@ -161,7 +161,7 @@ Was hier noch zu sehen ist:
 
 Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was wenn du deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
 Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.   
-Wir schauen uns [wichtigsten Standartvalidatoren ](https://angular.io/api/forms/Validators)an:
+Wir schauen uns [wichtigsten Standardvalidatoren ](https://angular.io/api/forms/Validators)an:
 
 * **minLength\(**_**n**_**\):** Hier kann ein minimale Länge angeben werden
 * **maxLength**_**\(n**_**\):** Auch hier kann man die maximale Länge definieren

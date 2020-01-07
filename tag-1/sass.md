@@ -4,14 +4,14 @@
 
 ## Preprocessors
 
-CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer und schwieriger zu Warten. Hier können dir Preprocessoren helfen. SASS bietet dir Funktionen die es so in CSS nicht gibt:
+CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer und schwieriger zu Warten. Hier können dir Preprozessoren helfen. SASS bietet dir Funktionen die es so in CSS nicht gibt:
 
 * Variablen \(variables\)
 * Verschachtelung \(nesting\)
 * Operatoren
 * Mixins, Extend, usw.
 
-Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
+Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömmliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche. Im Beispiel unten ist zu sehen, dass SASS Tabulatoren verwendet, SCSS jedoch Klammern. In der Fachliteratur wird daher oft SASS synonym mit SCSS beschrieben.
 
 _Codebeispiel:_ 
@@ -162,7 +162,7 @@ h1 {
 
 Ionic setzt voll und ganz auf SCSS. Du kannst so deine App bis ins letzte Detail stylen. Dazu wurde in der Doku ein eigenes Kapitel gewidmet: [https://beta.ionicframework.com/docs/theming/basics](https://beta.ionicframework.com/docs/theming/basics)
 
-### Theming Beispiel auf Stackblitz
+### Theming Beispiel auf StackBlitz
 
 {% embed url="https://stackblitz.com/edit/ionic4-theming-example?embed=1&file=src/global.scss&hideExplorer=1" caption="" %}
 

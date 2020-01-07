@@ -12,7 +12,7 @@ Das folgende Video zeigt dir noch eine Implementation von Unit-Tests:
 
 ### Komponententest
 
-Der Modultest, auch Komponententest oder Unittest genannt, ist ein Test auf der Ebene der einzelnen Module der Software. Testgegenstand ist die Funktionalität innerhalb einzelner abgrenzbarer Teile der Software \(Module, Programme oder Unterprogramme, Units oder Klassen\). Testziel dieser häufig durch den Softwareentwickler selbst durchgeführten Tests ist der Nachweis der technischen Lauffähigkeit und korrekter fachlicher \(Teil-\) Ergebnisse.
+Der Modultest, auch Komponententest oder Unit Test genannt, ist ein Test auf der Ebene der einzelnen Module der Software. Testgegenstand ist die Funktionalität innerhalb einzelner abgrenzbarer Teile der Software \(Module, Programme oder Unterprogramme, Units oder Klassen\). Testziel dieser häufig durch den Softwareentwickler selbst durchgeführten Tests ist der Nachweis der technischen Lauffähigkeit und korrekter fachlicher \(Teil-\) Ergebnisse.
 
 ### Integrationstest
 
@@ -24,7 +24,7 @@ Der Systemtest ist die Teststufe, bei der das gesamte System gegen die gesamten 
 
 ### Abnahmetest
 
-Ein Abnahmetest, Verfahrenstest, Akzeptanztest oder auch User Acceptance Test \(UAT\) ist das Testen der gelieferten Software durch den Kunden. Der erfolgreiche Abschluss dieser Teststufe ist meist Voraussetzung für die rechtswirksame Übernahme der Software und deren Bezahlung. Dieser Test kann unter Umständen \(z. B. bei neuen Anwendungen\) bereits auf der Produktionsumgebung mit Kopien aus Echtdaten durchgeführt werden.
+Ein Abnahmetest, Verfahrenstest, Akzeptanztest oder auch User Acceptance Test \(UAT\) ist das Testen der gelieferten Software durch den Kunden. Der erfolgreiche Abschluss dieser Teststufe ist meist Voraussetzung für die rechtswirksame Übernahme der Software und deren Bezahlung. Dieser Test kann unter Umständen \(z. B. bei neuen Anwendungen\) bereits auf der Produktionsumgebung mit Kopien aus echten Daten durchgeführt werden.
 
 Besonders für System- und Abnahmetests wird das Blackbox-Verfahren angewendet, d. h. der Test orientiert sich nicht am Code der Software, sondern nur am Verhalten der Software bei spezifizierten Vorgängen \(Eingaben des Benutzers, Grenzwerte bei der Datenerfassung etc.\).
 
