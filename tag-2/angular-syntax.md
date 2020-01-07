@@ -24,7 +24,7 @@ Mein erster Ausdruck: 12
 
 ## Zahlen
 
-In Expressions kann man sehr einfach mit Zahlen und den gängigen Operatoren rechnen:
+In Expressions kann man sehr eifach mit Zahlen und den gängigen Operatoren rechnen:
 
 ```javascript
 // zahlen.page.ts

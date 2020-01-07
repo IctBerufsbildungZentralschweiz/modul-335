@@ -107,7 +107,7 @@ Weitere Events findest du z.B. hier: [https://developer.mozilla.org/en-US/docs/W
 
 Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
 
-Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert `true` in `*ngIf` wird die Komponente anzeigen, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
+Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert `true` in `*ngIf` wird die Komponente angezeigt, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
 
 Lass uns ein einfaches Beispiel mit folgenden Code machen:
 
@@ -149,7 +149,7 @@ Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPictu
    3. Ein Button zum zurücksetzen
 5. Teste dein App mittels Dev-App auf deinem Smartphone. Zufrieden?
 
-Wir schauen uns einigen Lösungen gemeinsamen an.
+Wir schauen uns einige Lösungen gemeinsamen an.
 
 #### Zusatzaufgabe:
 
