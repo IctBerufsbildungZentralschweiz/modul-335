@@ -1,6 +1,6 @@
 # Ionic: UI
 
-Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige Duplikationen zu vermeiden verweisen ich hier auf folgende Links:
+Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige Duplikate zu vermeiden, verweise ich hier auf folgende Links:
 
 ![](../.gitbook/assets/ionic-ui.jpeg)
 
@@ -14,7 +14,7 @@ Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber spät
 
 **Tipp von Ralph:**
 
-> Wilst du Icons in deiner App verwenden? Bilder abspeichern ist dir zu mühsam resp. eine externe Bibliothek wie [FontAwesome](http://fontawesome.io/) ist dir zu mächtig?
+> Willst du Icons in deiner App verwenden? Bilder abspeichern ist dir zu mühsam resp. eine externe Bibliothek wie [FontAwesome](http://fontawesome.io/) ist dir zu mächtig?
 >
 > Ionic hat ihre eigene Icon-Sammlung zusammengestellt, sie nennen Sie [Ionicons](https://ionicons.com) und ich kann Sie dir empfehlen!
 
