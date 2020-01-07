@@ -44,7 +44,7 @@ Solltest du dein Icon in verschiedenen Grössen brauchen, hier eine super Seite 
 Bilder oder in unserem Falle Screenshots deiner App sagen bekanntlich mehr als 1000 Worte. Screenshots deiner App sind Pflicht im Store und deine Visitenkarte. Mit Hilfe der Jungs von Launchkit kann man sich Kostenpflichtig schöne Screenshots erstellen lassen:  
 [https://launchkit.io/](https://launchkit.io/)
 
-Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von Mockdrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen.
+Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von MockDrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen.
 
 {% embed url="http://mockdrop.io/" %}
 
@@ -58,13 +58,13 @@ Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in
 
 ### Versionierung
 
-In der Praxis werden dann oft mehrere Versionen und Builds einer App geneiert. Es gibt dazu coole CI/CD Tools wie fastlane, möchte man es aber im kleinen Rahmen halten müssen mindest jeweils folgende Dateien angepasst werden:
+In der Praxis werden dann oft mehrere Versionen und Builds einer App generiert. Es gibt dazu coole CI/CD Tools wie Fastlane, möchte man es aber im kleinen Rahmen halten müssen mindest jeweils folgende Dateien angepasst werden:
 
 * config.xml
 * package.json
 * evt. src/environments/environment.ts
 
-Um diese Vorgang etwas zu vereinfacher hier ein kleine Hilfstellung:
+Um diesen Vorgang etwas zu vereinfachen, hier ein kleine Hilfestellung:
 
 {% embed url="https://gist.github.com/motzne/13c1c6f67acb5dd01806a7c665fc7ccb" %}
 

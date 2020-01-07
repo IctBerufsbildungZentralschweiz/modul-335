@@ -2,8 +2,8 @@
 
 ## Mögliche Angriffsvektoren
 
-* Datendiebstal 
-* Man in the Middle \(verändern von Daten, Identiät übernehmen\)
+* Datendiebstahl 
+* Man in the Middle \(verändern von Daten, Identität übernehmen\)
 
 ## Schutzmöglichkeiten
 
@@ -21,7 +21,7 @@ Firebase oder auch andere Backends müssen geschützt werden, Client-Seitig reic
 
 ### Cordova Whitelisting von URL's
 
-Schon mal die Datei `config.xml` von Cordova genau angeschaut? Dort gibt es ein access Tag, standartmässig sieht das so aus:
+Schon mal die Datei `config.xml` von Cordova genau angeschaut? Dort gibt es ein access Tag, standardmässig sieht das so aus:
 
 ```markup
 <access origin="*" />
