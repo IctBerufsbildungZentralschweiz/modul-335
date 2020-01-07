@@ -105,7 +105,7 @@ Weitere Events findest du z.B. hier: [https://developer.mozilla.org/en-US/docs/W
 
 ## \[hidden\] / ngIf
 
-Machmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
+Manchmal möchte man eine Komponente anzeigen resp. verschwinden lassen je nachdem ob der Wert in einer Variable true oder false ist \(oder auch wenn ein JavaScript-Ausdruck true/false ergibt\). Um dies mit Angular zu machen, brauchst du entweder `*ngIf` oder `[hidden]` Direktiven.
 
 Diese Direktiven funktionieren in sich ähnlich. Als Beispiel ist der Wert `true` in `*ngIf` wird die Komponente angezeigt, aber ein Wert `true` mit `[hidden]` wird Sie verstecken.
 
