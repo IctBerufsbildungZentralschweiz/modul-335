@@ -54,7 +54,7 @@ Oftmals möchte man die Elemente auch sortiert ausgeben. In diesem Fall kann man
 
 ### \(input\) - Event
 
-Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfacher Variante.
+Es kann vorkommen, dass man eine Funktion aufrufen möchte wenn das `ngModel` für dein Textfeld ändert. Obwohl man es auch mit `[(ngModel)]` einem Two-Way-Binding machen könnte, bevorzugen wir hier die einfachere Variante.
 
 Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Binding angeschaut haben. Wir können dort ein Javascript-Alert hinzufügen sofern der Name geändert wird. Klar ist ein Alert eine suboptimale Idee - erfüllt aber in diesem Beispiel den Zweck.
 
