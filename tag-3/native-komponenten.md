@@ -58,7 +58,7 @@ this.camera.getPicture(options).then((imageData) => {
 });
 ```
 
-## Ausblick -&gt; Capactior
+## Ausblick -&gt; Capacitor
 
 ![](../.gitbook/assets/capacitor-hero.jpg)
 
