@@ -1,7 +1,7 @@
 # Ionic: API
 
 Ionic ist beides, ein CSS-Framework und eine Javascript UI Bibliothek. Um die App etwas dynamischer zu machen gibt es einige sehr zentrale Funktionen, welche in den folgenden Dokumentationen beschrieben werden:  
-Ionic 4: [https://beta.ionicframework.com/docs/api](https://beta.ionicframework.com/docs/api)
+Ionic 4: [https://ionicframework.com/docs/api](https://ionicframework.com/docs/api)
 
 Hier einige Beispiele:
 
