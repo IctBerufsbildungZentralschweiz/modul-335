@@ -5,9 +5,9 @@
 Filter resp. auch Pipes genannt können in Angular hinzugefügt werden um Daten zu formatieren oder sortieren. Anbei eine Auflistung der wichtigsten Filtermöglichkeiten welche Euch Angular bereits mitbringt:
 
 * `currency` Formatiert eine Nummer zu einem Währungs-Format
-* `date` Formatiert ein Datum zu ein speziellen Format
+* `date` Formatiert ein Datum zu einem speziellen Format
 * `json` Formatiert ein Objekt zu einem JSON string.
-* `lowercase` Format a string to lower case.
+* `lowercase` Formatiert ein String zu kleinbuchstaben
 * `uppercase` Formatiert ein String zu GROSSBUCHSTABEN.
 * `number` Formatiert einen String in eine Zahl
 
