@@ -16,7 +16,7 @@ Du konntest nun schon einige Erfahrungen sammeln und siehst immer mehr Möglichk
 * Verwende Fotos \(z.B. mit URL's aus dem Web\)
 * Mind. eine Liste, bei welcher Elemente gelöscht resp. hinzugefügt werden können
 * Ein Popup 
-* Du sollst die Standart-Farben im Theme anpassen
+* Du sollst die Standard-Farben im Theme anpassen
 * Ein Kreis \(z.B. als Link, Hintergrund, User-Foto-Template\) muss ersichtlich und durch CSS gestylt sein.
 * Zusatz: Versuche in deine App eine Google Maps Karte einzubinden, die Adresse soll dabei aus einem Textfeld kommen
 
