@@ -3,7 +3,7 @@
 In Angular gibt es grundsätzlich 2 Varianten wie man mit Formularen umgehen kann:
 
 * **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine Perfekte Wahl wenn du an mehrer Orten Formulare einsetzen möchtest 
-* **Template-basierte Formulare:** eher für einfacher Apps \(Newsletter-Anmeldung oder einfache Registrierungen\) 
+* **Template-basierte Formulare:** eher für einfachere Apps \(Newsletter-Anmeldung oder einfache Registrierungen\) 
 
 Auf den ersten Blick scheinen Reactive Forms etwas komplex, aber ihr werdet sehen, dass man hier relativ schnell sehr gute Erfolge erzielen kann:
 
@@ -68,7 +68,7 @@ export class FormExamplePageModule {}
 
 In unser Komponente müssen wir nun zwei Dinge hinzufügen:
 
-* **FormGroup:** Die Felder in unserem Kontaktformular werde in einer sogenannten FormGroup gruppiert. Natürlich könnten wir bei einem grossen Formular pro Seite auch mehre Groups machen. Der Gruppe geben wir einen Namen `contactForm`
+* **FormGroup:** Die Felder in unserem Kontaktformular werden in einer sogenannten FormGroup gruppiert. Natürlich könnten wir bei einem grossen Formular pro Seite auch mehre Groups machen. Der Gruppe geben wir einen Namen `contactForm`
 * **FormControl:** Jeder Input in unserem Kontaktformular wird zu einer FormControl gemappt. Hier können die klassischen Typen wie Input, Radio, Select usw. verwendet werden. Jedes FormControl Element enthält einen _value_ und _validations_ des Felds.   Wir fügen also im `ngOnInit` unserem `contactForm` nun mehrere Felder \(Nachname, Vorname, Email, Land + Nachricht\)  in form von FormControls hinzu.
 
 Unser Code sieht somit wie folgt aus:
@@ -117,7 +117,7 @@ Nun müssen wir die erstelle FormGroup und Felder noch sauber mit unserem Templa
 <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
 ```
 
-* **formGroup:** Bindet dies Formular an die von uns in der Komponente erstellte `contactForm` 
+* **formGroup:** Bindet das Formular an die von uns in der Komponente erstellte `contactForm` 
 * **ngSubmit:** Fügt ein Event hinzu was beim absenden des Formular passieren soll, wir rufen hier unsere Methode sendContactForm\(\) auf.
 
 Unser Template sollte also in etwa so aussehen:
@@ -159,13 +159,13 @@ Was hier noch zu sehen ist:
 
 ## Validators: Lass uns Felder überprüfen
 
-Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was wenn du deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
+Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was, wenn deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
 Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.   
 Wir schauen uns [wichtigsten Standardvalidatoren ](https://angular.io/api/forms/Validators)an:
 
 * **minLength\(**_**n**_**\):** Hier kann ein minimale Länge angeben werden
 * **maxLength**_**\(n**_**\):** Auch hier kann man die maximale Länge definieren
-* **required:** ja der Name sagst ja eigentlich schon
+* **required:** ja der Name sagt es ja eigentlich schon
 * **email:** Prüft ob die Eingabe im Format einer Email-Adresse entspricht
 
 Wir möchten nun in unseren Beispiel ein wenig anpassen:
