@@ -15,14 +15,14 @@ Um Reactive Forms in deiner App zu brauchen führst du folgende drei Schritte du
 2. In deiner Komponente eine FormGroup deklarieren
 3. Mit deinem HTML-Template verknüpfen
 
-Wir gehen Schritt für Schritt vor und werden hier als Beispiel ein einfaches Kontaktformular erstellen.  Tipp: 
+Wir gehen Schritt für Schritt vor und werden hier als Beispiel ein einfaches Kontaktformular erstellen. Tipp:
 
 ### 1. ReactiveFormsModule hinzufügen
 
 Wir fügen ReactiveFormsModule zu unseren Modulen pro Komponente hinzu.
 
 {% hint style="warning" %}
-Wichtig: Da die meisten Ionic Projekte mit Submodulen arbeiten, reicht es nicht ReactiveForms nur im `app.module.ts` hinzufügen. Das würde in unserem Fall zu folgendem Fehler führen: 
+Wichtig: Da die meisten Ionic Projekte mit Submodulen arbeiten, reicht es nicht ReactiveForms nur im `app.module.ts` hinzufügen. Das würde in unserem Fall zu folgendem Fehler führen:
 
 `Can't bind to 'formGroup' since it isn't a known property of 'form'.`
 {% endhint %}
@@ -58,15 +58,12 @@ import { FormExamplePage } from './form-example.page';
   declarations: [FormExamplePage]
 })
 export class FormExamplePageModule {}
-
 ```
 {% endcode %}
 
-
-
 ### 2. In deiner Komponente eine FormGroup deklarieren
 
-In unser Komponente müssen wir nun zwei Dinge hinzufügen:
+In unserer Komponente müssen wir nun zwei Dinge hinzufügen:
 
 * **FormGroup:** Die Felder in unserem Kontaktformular werden in einer sogenannten FormGroup gruppiert. Natürlich könnten wir bei einem grossen Formular pro Seite auch mehre Groups machen. Der Gruppe geben wir einen Namen `contactForm`
 * **FormControl:** Jeder Input in unserem Kontaktformular wird zu einer FormControl gemappt. Hier können die klassischen Typen wie Input, Radio, Select usw. verwendet werden. Jedes FormControl Element enthält einen _value_ und _validations_ des Felds.   Wir fügen also im `ngOnInit` unserem `contactForm` nun mehrere Felder \(Nachname, Vorname, Email, Land + Nachricht\)  in form von FormControls hinzu.
@@ -105,7 +102,6 @@ export class FormExamplePage implements OnInit {
     console.log("Email: " + this.contactForm.get('email').value);
   }
 }
-
 ```
 {% endcode %}
 
@@ -160,7 +156,7 @@ Was hier noch zu sehen ist:
 ## Validators: Lass uns Felder überprüfen
 
 Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was, wenn deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
-Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.   
+Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.  
 Wir schauen uns [wichtigsten Standardvalidatoren ](https://angular.io/api/forms/Validators)an:
 
 * **minLength\(**_**n**_**\):** Hier kann eine minimale Länge angeben werden
@@ -184,7 +180,7 @@ Dazu passen wir unsere FormControls in der Komponente wie folgt an:
       firstname: new FormControl(null),
       email: new FormControl(null)
     });
-    
+
 // AFTER:
     this.contactForm = new FormGroup({
       lastname: new FormControl('', [Validators.required,
@@ -244,15 +240,13 @@ Beispiel mit Fehler:
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
-
-
 Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das würde den Rahmen hier aber sprengen. Möchtest du mehr darüber erfahren, empfehle ich dir direkt die [Angular Form Validatoren Seite](https://angular.io/guide/form-validation).
 
 ## Weitere Dokumentationen
 
-{% embed url="https://angular.io/guide/reactive-forms" %}
+{% embed url="https://angular.io/guide/reactive-forms" caption="" %}
 
-{% embed url="https://medium.com/@jinalshah999/reactive-forms-in-angular-a46af57c5f36" %}
+{% embed url="https://medium.com/@jinalshah999/reactive-forms-in-angular-a46af57c5f36" caption="" %}
 
 ## Übung
 
@@ -265,14 +259,4 @@ Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das w
    3. Mann kann sich erst anmelden wenn eine gültige Email eingegeben werden
 3. Gibt es eine Fehler soll zwischen Input + Button ein Fehler angezeigt werden. 
 4. BONUS I : Nach dem Absenden soll die Email in einer Toast-Nachricht angezeigt werden
-
-
-
-
-
-
-
-
-
-
 
