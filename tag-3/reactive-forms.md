@@ -2,14 +2,14 @@
 
 In Angular gibt es grundsätzlich 2 Varianten wie man mit Formularen umgehen kann:
 
-* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine Perfekte Wahl wenn du an mehrer Orten Formulare einsetzen möchtest 
+* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine Perfekte Wahl wenn du an mehreren Orten Formulare einsetzen möchtest 
 * **Template-basierte Formulare:** eher für einfachere Apps \(Newsletter-Anmeldung oder einfache Registrierungen\) 
 
 Auf den ersten Blick scheinen Reactive Forms etwas komplex, aber ihr werdet sehen, dass man hier relativ schnell sehr gute Erfolge erzielen kann:
 
 ## Hinzufügen: Aber wie richtig?
 
-Um Reactive Forms in deiner App zu brauchen braucht es folgende drei Schritte:
+Um Reactive Forms in deiner App zu brauchen führst du folgende drei Schritte durch:
 
 1. ReactiveFormsModule hinzufügen
 2. In deiner Komponente eine FormGroup deklarieren
@@ -27,7 +27,7 @@ Wichtig: Da die meisten Ionic Projekte mit Submodulen arbeiten, reicht es nicht 
 `Can't bind to 'formGroup' since it isn't a known property of 'form'.`
 {% endhint %}
 
-Also fügen wir einfach die folgende Zeile unserem `form-example.module.ts` hinzu:
+Also fügen wir einfach folgende Zeile unserem `form-example.module.ts` hinzu:
 
 ```javascript
 // ReactiveForms importieren 
@@ -111,7 +111,7 @@ export class FormExamplePage implements OnInit {
 
 ### 3. HTML-Template verknüpfen
 
-Nun müssen wir die erstelle FormGroup und Felder noch sauber mit unserem Template verknüpfen:
+Nun müssen wir die erstellte FormGroup und deren Controls noch sauber mit unserem Template verknüpfen:
 
 ```javascript
 <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
@@ -163,10 +163,10 @@ Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was, wenn de
 Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.   
 Wir schauen uns [wichtigsten Standardvalidatoren ](https://angular.io/api/forms/Validators)an:
 
-* **minLength\(**_**n**_**\):** Hier kann ein minimale Länge angeben werden
+* **minLength\(**_**n**_**\):** Hier kann eine minimale Länge angeben werden
 * **maxLength**_**\(n**_**\):** Auch hier kann man die maximale Länge definieren
-* **required:** ja der Name sagt es ja eigentlich schon
-* **email:** Prüft ob die Eingabe im Format einer Email-Adresse entspricht
+* **required:** Der Name sagt es ja schon
+* **email:** Prüft ob die Eingabe dem Format einer Email-Adresse entspricht
 
 Wir möchten nun in unseren Beispiel ein wenig anpassen:
 
@@ -197,7 +197,7 @@ Dazu passen wir unsere FormControls in der Komponente wie folgt an:
 ```
 {% endcode %}
 
-Und unsere Template passen wir wie folgt an:
+Und unser Template passen wir wie folgt an:
 
 {% code title="form-example.page.html" %}
 ```markup
@@ -259,7 +259,7 @@ Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das w
 ![](../.gitbook/assets/ralph_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Newsletter" 
-2. Ziel soll es sein sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%286%29.png)
+2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%286%29.png)
    1. Das Feld muss ein Pflichtfeld sein
    2. Das Feld muss eine gültige Email sein
    3. Mann kann sich erst anmelden wenn eine gültige Email eingegeben werden
