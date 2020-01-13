@@ -169,7 +169,7 @@
 
 Hier die komplette Datei
 
-{% code title="app.module.txt" %}
+{% code title="app.module.ts" %}
 ```javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
