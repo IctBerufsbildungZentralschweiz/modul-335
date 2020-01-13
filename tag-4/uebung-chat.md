@@ -294,8 +294,6 @@ interface ChatMessage {
   text: string;
   date: any;
 }
-
-```
 ```
 {% endcode %}
 
