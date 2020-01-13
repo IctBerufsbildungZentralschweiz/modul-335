@@ -169,7 +169,7 @@
 
 Hier die komplette Datei
 
-{% code title="app.module.txt" %}
+{% code title="app.module.ts" %}
 ```javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -294,12 +294,10 @@ interface ChatMessage {
   text: string;
   date: any;
 }
-
-```
 ```
 {% endcode %}
 
-1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gib mittels`*ngFor` die Nachrichten in deinem Template aus.  Wichtig: Da es sich bei der `chatList` um ein Oberservable handelt musst du ein Pipe `| async` anhängen. Mehr Codebeispiele findest du auch [hier](https://github.com/angular/angularfire)
+1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gib mittels`*ngFor` die Nachrichten in deinem Template aus.  Wichtig: Da es sich bei der `chatList` um ein Observable handelt, musst du ein Pipe `| async` anhängen. Mehr Codebeispiele findest du auch [hier](https://github.com/angular/angularfire)
 
 ## Zusatz
 
