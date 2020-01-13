@@ -247,54 +247,54 @@
       @ViewChild('XXXXX') private myScrollContainer: ElementRef;
 
       message: string;
-      showSpinnerIcon: boolean = false;
-      showDates: boolean = false;
+      showSpinnerIcon = false;
+      showDates = false;
       chatList: Observable<ChatMessage[]>;
       chatListRef: AngularFireList<ChatMessage>;
       // TODO: Passe deine Gruppennummer und deinen Namen an
-      groupNumber: string =  "G0"; // Bsp. G1
-      currentUser: string =  "Roomies Ralph"; // Bsp. Ralph
-  
+      groupNumber = 'G0'; // Bsp. G1
+      currentUser = 'Roomies Ralph'; // Bsp. Ralph
+
       constructor(private alertCtrl: AlertController, afDb: AngularFireDatabase) {
-        this.chatListRef = afDb.list('/chats/'+this.groupNumber);
+        this.chatListRef = afDb.list('/chats/' + this.groupNumber);
         this.chatList = this.chatListRef.valueChanges();
       }
-  
-      ngOnInit() { 
+
+      ngOnInit() {
         // TODO: An das Ende scrollen
       }
 
-      ngAfterViewChecked() {        
+      ngAfterViewChecked() {
         // TODO: An das Ende scrollen
-      } 
+      }
 
       scrollToBottom(): void {
-          try {
-              this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
-          } catch(err) { }                 
+        try {
+          this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+        } catch (err) { }
       }
       swipeEvent(swipe) {
         // 2  = Right to left swipe
         // 4  = Left to right swipe
-        if(swipe.direction == 2 || swipe.direction == 4) {
+        if (swipe.direction === 2 || swipe.direction === 4) {
           // TODO: Datum ein resp. ausblenden
         }
       }
       sendMessage(e) {
-        if(this.message != '') {
-        // TODO: Spinner anzeigen
-        let formattedDate = new Date().toLocaleString();  
-    
-        // TODO: Mittels push()) die Nachricht an Firebase senden 
-        // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
+        if (this.message !== '') {
+          // TODO: Spinner anzeigen
+          let formattedDate = new Date().toLocaleString();
 
-        // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
+          // TODO: Mittels push()) die Nachricht an Firebase senden 
+          // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
+
+          // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
         }
       }
     }
     interface ChatMessage {
-      username: String;
-      text: String;    
+      username: string;
+      text: string;
       date: any;
     }
 
