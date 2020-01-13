@@ -104,7 +104,7 @@ Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service,
 ionic generate service _core/Auth
 ```
 
-In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerütst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
+In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
 {% code title="auth.service.ts" %}
 ```typescript
