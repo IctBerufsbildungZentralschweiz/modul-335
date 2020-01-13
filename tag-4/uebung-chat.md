@@ -169,7 +169,7 @@
 
 Hier die komplette Datei
 
-{% code title="app.module.ts" %}
+{% code title="app.module.txt" %}
 ```javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -294,6 +294,8 @@ interface ChatMessage {
   text: string;
   date: any;
 }
+
+```
 ```
 {% endcode %}
 
