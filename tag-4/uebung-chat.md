@@ -191,12 +191,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 ​
 // Firebase Einstellungen 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
-  authDomain: "m335-chat.firebaseapp.com",
-  databaseURL: "https://m335-chat.firebaseio.com",
-  projectId: "m335-chat",
-  storageBucket: "m335-chat.appspot.com",
-  messagingSenderId: "477777194250"
+   apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
+   authDomain: "m335-uebungen.firebaseapp.com",
+   databaseURL: "https://m335-uebungen.firebaseio.com",
+   projectId: "m335-uebungen",
+   storageBucket: "m335-uebungen.appspot.com",
+   messagingSenderId: "675049996439",
+   appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
 };
 @NgModule({
   declarations: [AppComponent],
