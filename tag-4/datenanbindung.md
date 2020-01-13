@@ -63,7 +63,7 @@ if(typeof(Storage) != "undefined") {
 
 #### Ionic Storage
 
-Ionic hat auch fürs persistieren von einfachen Daten eine Lösung bereit: [https://ionicframework.com/docs/building/storage](https://ionicframework.com/docs/building/storage)
+Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit: [https://ionicframework.com/docs/building/storage](https://ionicframework.com/docs/building/storage)
 
 Mit den Methoden `storage.set` `storage.get` kannst du einfache Key/Value-Paare oder JSON Objekte speichern:
 
