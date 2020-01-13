@@ -104,7 +104,7 @@ Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service,
 ionic generate service _core/Auth
 ```
 
-In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
+In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerütst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
 {% code title="auth.service.ts" %}
 ```typescript
@@ -151,6 +151,7 @@ Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing
 ```javascript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './_core/auth.guard';
 import { LogoutComponent } from './logout/logout.page';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 
@@ -206,7 +207,7 @@ export class AppRoutingModule {}
 {% endtab %}
 {% endtabs %}
 
-Für die neue Variante mit [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+Für die neue Variante mi [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
 
 ```typescript
 import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
@@ -216,13 +217,7 @@ import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 
-
-1. Lies die Doku oben nochmals gut durch. 
-
-2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 
-
-3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
+Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 1. Lies die Doku oben nochmals gut durch. 2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
 
 {% hint style="warning" %}
 Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit haben, frage in deiner Gruppe nach resp. wende dich an deinen Kursleiter.
