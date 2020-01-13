@@ -249,9 +249,16 @@ const routes: Routes = [
     redirectTo: 'locations',
     pathMatch: 'full'
   },
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'registrierung', loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' },
-  { path: 'locations', loadChildren: './locations/locations.module#LocationsPageModule', canActivate: [AuthGuard]}
+  { path: 'login', 
+    loadChildren: './login/login.module#LoginPageModule' 
+  },
+  { path: 'registrierung', 
+    loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' 
+  },
+  { path: 'locations', 
+    loadChildren: './locations/locations.module#LocationsPageModule', 
+    canActivate: [AuthGuard]
+  }
 ];
 
 @NgModule({

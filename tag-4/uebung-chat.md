@@ -135,181 +135,173 @@
     npm install angularfire2 firebase --save
     ```
 12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:   
+13. Wir müssen die Angularfire2Module importieren:  
 
-
-    1. Wir müssen die Angularfire2Module importieren:  
-
-
-       ```javascript
+```javascript
        // AngularFire2 importieren
        import { AngularFireModule } from 'angularfire2';
        import { AngularFireDatabaseModule } from 'angularfire2/database';
        import { AngularFireAuthModule } from 'angularfire2/auth';
-       ```
+```
 
-    2. Wir setzen die Firebase-Konfiguration für diese Übung  
+1. Wir setzen die Firebase-Konfiguration für diese Übung  
 
-
-       ```javascript
+```javascript
        // Firebase Einstellungen 
        export const firebaseConfig = {
-         apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
-         authDomain: "m335-chat.firebaseapp.com",
-         databaseURL: "https://m335-chat.firebaseio.com",
-         projectId: "m335-chat",
-         storageBucket: "m335-chat.appspot.com",
-         messagingSenderId: "477777194250"
+         apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
+         authDomain: "m335-uebungen.firebaseapp.com",
+         databaseURL: "https://m335-uebungen.firebaseio.com",
+         projectId: "m335-uebungen",
+         storageBucket: "m335-uebungen.appspot.com",
+         messagingSenderId: "675049996439",
+         appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
        };
-       ```
+```
 
-    3. Wir fügen die Angularfire in den `imports` hinzu:  
+1. Wir fügen die Angularfire in den `imports` hinzu:  
 
-
-       ```javascript
+```javascript
         AngularFireModule.initializeApp(firebaseConfig),
         AngularFireDatabaseModule,
         AngularFireAuthModule
-       ```
+```
 
-    Hier die komplette Datei:
+Hier die komplette Datei
 
-    {% code title="app.module.ts" %}
-    ```javascript
+{% code title="app.module.txt" %}
+```javascript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
 
-    import { NgModule } from '@angular/core';
-    import { BrowserModule } from '@angular/platform-browser';
-    import { RouteReuseStrategy } from '@angular/router';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
 
-    import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-    import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-    import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { IonicStorageModule } from '@ionic/storage';
 
-    import { AppComponent } from './app.component';
-    import { AppRoutingModule } from './app-routing.module';
-    import { IonicStorageModule } from '@ionic/storage';
+// AngularFire2 importieren
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+​
+​
+// Firebase Einstellungen 
+export const firebaseConfig = {
+  apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
+  authDomain: "m335-chat.firebaseapp.com",
+  databaseURL: "https://m335-chat.firebaseio.com",
+  projectId: "m335-chat",
+  storageBucket: "m335-chat.appspot.com",
+  messagingSenderId: "477777194250"
+};
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    IonicStorageModule.forRoot(),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
 
-    // AngularFire2 importieren
-    import { AngularFireModule } from 'angularfire2';
-    import { AngularFireDatabaseModule } from 'angularfire2/database';
-    import { AngularFireAuthModule } from 'angularfire2/auth';
-    ​
-    ​
-    // Firebase Einstellungen 
-    export const firebaseConfig = {
-      apiKey: "AIzaSyCiaDccUKo4hwUW3m3n3qmEACOODb71-dc",
-      authDomain: "m335-chat.firebaseapp.com",
-      databaseURL: "https://m335-chat.firebaseio.com",
-      projectId: "m335-chat",
-      storageBucket: "m335-chat.appspot.com",
-      messagingSenderId: "477777194250"
-    };
-    @NgModule({
-      declarations: [AppComponent],
-      entryComponents: [],
-      imports: [
-        BrowserModule,
-        IonicModule.forRoot(),
-        AppRoutingModule,
-        IonicStorageModule.forRoot(),
-        AngularFireModule.initializeApp(firebaseConfig),
-        AngularFireDatabaseModule,
-        AngularFireAuthModule
-      ],
-      providers: [
-        StatusBar,
-        SplashScreen,
-        { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-      ],
-      bootstrap: [AppComponent]
-    })
-    export class AppModule {}
+```
+```
+{% endcode %}
 
-    ```
-    {% endcode %}
+1. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich:  
 
-13. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich:  
+{% code title="chat.page.ts" %}
+```javascript
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { AlertController } from '@ionic/angular';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { Observable } from 'rxjs';
 
+@Component({
+  selector: 'app-chat',
+  templateUrl: './chat.page.html',
+  styleUrls: ['./chat.page.scss'],
+})
+export class ChatPage implements OnInit {
+  // TODO: In der Angular Doku nachlesen, was ViewChild macht und basierend auf deinem HTML XXXXX ersetzen 
+  @ViewChild('XXXXX') private myScrollContainer: ElementRef;
 
-    {% code title="chat.page.ts" %}
-    ```typescript
-    import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-    import { AlertController } from '@ionic/angular';
-    import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
-    import { Observable } from 'rxjs';
+  message: string;
+  showSpinnerIcon = false;
+  showDates = false;
+  chatList: Observable<ChatMessage[]>;
+  chatListRef: AngularFireList<ChatMessage>;
+  // TODO: Passe deine Gruppennummer und deinen Namen an
+  groupNumber = 'G0'; // Bsp. G1
+  currentUser = 'Roomies Ralph'; // Bsp. Ralph
 
-    @Component({
-      selector: 'app-chat',
-      templateUrl: './chat.page.html',
-      styleUrls: ['./chat.page.scss'],
-    })
-    export class ChatPage implements OnInit {
-      // TODO: In der Angular Doku nachlesen, was ViewChild macht und basierend auf deinem HTML XXXXX ersetzen 
-      @ViewChild('XXXXX') private myScrollContainer: ElementRef;
+  constructor(private alertCtrl: AlertController, afDb: AngularFireDatabase) {
+    this.chatListRef = afDb.list('/chats/' + this.groupNumber);
+    this.chatList = this.chatListRef.valueChanges();
+  }
 
-      message: string;
-      showSpinnerIcon = false;
-      showDates = false;
-      chatList: Observable<ChatMessage[]>;
-      chatListRef: AngularFireList<ChatMessage>;
-      // TODO: Passe deine Gruppennummer und deinen Namen an
-      groupNumber = 'G0'; // Bsp. G1
-      currentUser = 'Roomies Ralph'; // Bsp. Ralph
+  ngOnInit() {
+    // TODO: An das Ende scrollen
+  }
 
-      constructor(private alertCtrl: AlertController, afDb: AngularFireDatabase) {
-        this.chatListRef = afDb.list('/chats/' + this.groupNumber);
-        this.chatList = this.chatListRef.valueChanges();
-      }
+  ngAfterViewChecked() {
+    // TODO: An das Ende scrollen
+  }
 
-      ngOnInit() {
-        // TODO: An das Ende scrollen
-      }
-
-      ngAfterViewChecked() {
-        // TODO: An das Ende scrollen
-      }
-
-      scrollToBottom(): void {
-        try {
-          this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
-        } catch (err) { }
-      }
-      swipeEvent(swipe) {
-        // 2  = Right to left swipe
-        // 4  = Left to right swipe
-        if (swipe.direction === 2 || swipe.direction === 4) {
-          // TODO: Datum ein resp. ausblenden
-        }
-      }
-      sendMessage(e) {
-        if (this.message !== '') {
-          // TODO: Spinner anzeigen
-          let formattedDate = new Date().toLocaleString();
-
-          // TODO: Mittels push()) die Nachricht an Firebase senden 
-          // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
-
-          // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
-        }
-      }
+  scrollToBottom(): void {
+    try {
+      this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
+    } catch (err) { }
+  }
+  swipeEvent(swipe) {
+    // 2  = Right to left swipe
+    // 4  = Left to right swipe
+    if (swipe.direction === 2 || swipe.direction === 4) {
+      // TODO: Datum ein resp. ausblenden
     }
-    interface ChatMessage {
-      username: string;
-      text: string;
-      date: any;
+  }
+  sendMessage(e) {
+    if (this.message !== '') {
+      // TODO: Spinner anzeigen
+      let formattedDate = new Date().toLocaleString();
+
+      // TODO: Mittels push()) die Nachricht an Firebase senden 
+      // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
+
+      // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
     }
+  }
+}
+interface ChatMessage {
+  username: string;
+  text: string;
+  date: any;
+}
 
-    ```
-    {% endcode %}
+```
+```
+{% endcode %}
 
-14. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gebe mittel `*ngFor` die Nachrichten in deinem Template aus.
-
-
+1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gebe mittel `*ngFor` die Nachrichten in deinem Template aus.
 
 ## Zusatz
 
 1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir ngStyle in der Angular Doku an.
 2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
 3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
-
-
 
