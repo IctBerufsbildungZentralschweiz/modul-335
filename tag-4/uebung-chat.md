@@ -298,7 +298,7 @@ interface ChatMessage {
 ```
 {% endcode %}
 
-1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gebe mittel `*ngFor` die Nachrichten in deinem Template aus.
+1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gib mittels`*ngFor` die Nachrichten in deinem Template aus.  Wichtig: Da es sich bei der `chatList` um ein Oberservable handelt musst du ein Pipe `| async` anhängen. Mehr Codebeispiele findest du auch [hier](https://github.com/angular/angularfire)
 
 ## Zusatz
 
