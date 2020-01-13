@@ -207,7 +207,7 @@ export class AppRoutingModule {}
 {% endtab %}
 {% endtabs %}
 
-Für die neue Variante mi [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+Für die neue Variante mit [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
 
 ```typescript
 import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
