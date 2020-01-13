@@ -239,7 +239,8 @@ import { Observable } from 'rxjs';
 })
 export class ChatPage implements OnInit {
   // TODO: In der Angular Doku nachlesen, was ViewChild macht und basierend auf deinem HTML XXXXX ersetzen 
-  @ViewChild('XXXXX') private myScrollContainer: ElementRef;
+  @ViewChild('XXXXX', {static: false}) messageInput;
+  @ViewChild('XXXXX', {static: false}) private myScrollContainer: ElementRef;
 
   message: string;
   showSpinnerIcon = false;
