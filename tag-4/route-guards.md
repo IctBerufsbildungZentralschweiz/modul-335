@@ -19,7 +19,7 @@ WICHTIG:
 Seit Herbst 2019 bietet `@angular/fire` eine [eigene Router-Guard](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt. Daher hilft zwar das folgende Kapitel noch fürs Verständnis, kann aber direkt gelöst werden.
 {% endhint %}
 
-Eine Route Guard, in unserem Fall für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
+Eine Route Guard, in unserem Falls für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
 
 ```bash
 ionic generate guard _core/Auth
@@ -104,46 +104,10 @@ Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service,
 ionic generate service _core/Auth
 ```
 
-In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
+In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerütst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
-{% tabs %}
-{% tab title="NEU:  Service wenn mit AngularFire guards" %}
 {% code title="auth.service.ts" %}
 ```typescript
-import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthService {
-
-  constructor(private afAuth: AngularFireAuth) { }
-
-  async loginWithEmailAndPassword (user: User) {
-    // TODO: Login für Benutzer ausprogrammieren
-  }
-
-  async createUserWithEmailAndPassword (user: User) {
-   // TODO: Registrierung für den Benutzer ausprogrammieren
-  }
-  
-  logout() {
-    // TODO: User ausloggen
-  }
-}
-export interface User {
-    email: string;
-    password: string;
-    displayname: string;
-  }
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="Wenn mit eigener Route-Guard" %}
-{% code title="auth.service.ts" %}
-```javascript
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 
@@ -176,10 +140,8 @@ export interface User {
   }
 ```
 {% endcode %}
-{% endtab %}
-{% endtabs %}
 
-### Mit Guards unsere Routes schützen
+### Mit AuthGuard unsere Routes schützen
 
 Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit dem `AuthGuard` schützen. Füge dazu als weiteres Property `canActivated` zu den zu schützenden Routes hinzu:
 
@@ -189,42 +151,23 @@ Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing
 ```javascript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './_core/auth.guard';
 import { LogoutComponent } from './logout/logout.page';
-// Neue imports hinzufügen
-import { AngularFireAuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
-
-// Standartverhalten festlegen
-const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
-const redirectLoggedInToRoot = () => redirectLoggedInTo(['']);
+import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 
 
 const routes: Routes = [
   {
-    path: "",
-    redirectTo: "home",
-    pathMatch: "full"
+    path: '',
+    redirectTo: 'ferienorte',
+    pathMatch: 'full'
   },
-  {
-    path: "home",
-    loadChildren: "./home/home.module#HomePageModule",
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectUnauthorizedToLogin }
-  },
-  {
-    path: "list",
-    loadChildren: "./list/list.module#ListPageModule",
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectUnauthorizedToLogin }
-  },
-  { path: "login", 
-    loadChildren: "./login/login.module#LoginPageModule", 
-    canActivate: [AngularFireAuthGuard],
-    data: { authGuardPipe: redirectLoggedInToRoot }
-  },
-  {
-    path: "register",
-    loadChildren: "./register/register.module#RegisterPageModule"
-  }
+  { path: 'ferienorte', loadChildren: './ferienorte/ferienorte.module#FerienortePageModule', canActivate: [AngularFireAuthGuard] },
+  { path: 'gallerie', loadChildren: './gallerie/gallerie.module#GalleriePageModule', canActivate: [AngularFireAuthGuard] },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'registrierung', loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' },
+  { path: 'willkommen', loadChildren: './willkommen/willkommen.module#WillkommenPageModule' },
+  { path: 'logout', component: LogoutComponent}
 ];
 
 @NgModule({
@@ -249,16 +192,9 @@ const routes: Routes = [
     redirectTo: 'locations',
     pathMatch: 'full'
   },
-  { path: 'login', 
-    loadChildren: './login/login.module#LoginPageModule' 
-  },
-  { path: 'registrierung', 
-    loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' 
-  },
-  { path: 'locations', 
-    loadChildren: './locations/locations.module#LocationsPageModule', 
-    canActivate: [AuthGuard]
-  }
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'registrierung', loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' },
+  { path: 'locations', loadChildren: './locations/locations.module#LocationsPageModule', canActivate: [AuthGuard]}
 ];
 
 @NgModule({
@@ -271,7 +207,7 @@ export class AppRoutingModule {}
 {% endtab %}
 {% endtabs %}
 
-Für die neue Variante mit [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+Für die neue Variante mi [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
 
 ```typescript
 import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
@@ -281,13 +217,7 @@ import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 
-
-1. Lies die Doku oben nochmals gut durch. 
-
-2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 
-
-3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
+Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 1. Lies die Doku oben nochmals gut durch. 2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
 
 {% hint style="warning" %}
 Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit haben, frage in deiner Gruppe nach resp. wende dich an deinen Kursleiter.

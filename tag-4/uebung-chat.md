@@ -130,18 +130,18 @@
    <ion-spinner *ngIf="showSpinnerIcon" name="bubbles"></ion-spinner>
    ```
 
-10. Nun musst du deinem Projekt Angularfire2 und Firebase hinzufügen
+10. Nun musst du deinem Projekt `@angular/fire` und `firebase` hinzufügen
 11. ```bash
-    npm install angularfire2 firebase --save
+    npm install @angular/fire firebase --save
     ```
 12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:   
 13. Wir müssen die Angularfire2Module importieren:  
 
 ```javascript
        // AngularFire2 importieren
-       import { AngularFireModule } from 'angularfire2';
-       import { AngularFireDatabaseModule } from 'angularfire2/database';
-       import { AngularFireAuthModule } from 'angularfire2/auth';
+       import { AngularFireModule } from '@angular/fire';
+       import { AngularFireDatabaseModule } from '@angular/fire/database';
+       import { AngularFireAuthModule } from '@angular/fire/auth';
 ```
 
 1. Wir setzen die Firebase-Konfiguration für diese Übung  
@@ -184,9 +184,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage';
 
 // AngularFire2 importieren
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 ​
 ​
 // Firebase Einstellungen 
@@ -229,7 +229,7 @@ export class AppModule {}
 ```javascript
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 import { Observable } from 'rxjs';
 
 @Component({
