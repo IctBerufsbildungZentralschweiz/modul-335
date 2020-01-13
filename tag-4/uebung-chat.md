@@ -2,7 +2,7 @@
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen: ![](../.gitbook/assets/chat.png)
+1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:  ![](../.gitbook/assets/chat.png)
 2. Du nimmst wiederum deine Übung von Tag 1 "GX\_NachnameVorname\_Übung" und erstellst dort eine neue Seite "Chat".
 3. Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
 
