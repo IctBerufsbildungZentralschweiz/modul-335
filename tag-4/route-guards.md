@@ -151,7 +151,6 @@ Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing
 ```javascript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './_core/auth.guard';
 import { LogoutComponent } from './logout/logout.page';
 import { AngularFireAuthGuard } from '@angular/fire/auth-guard';
 
