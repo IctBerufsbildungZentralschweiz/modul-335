@@ -4,9 +4,7 @@
 
 Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann mittels Cordova auf diese Ressourcen zugegriffen werden. Ionic hat die Dokumentation bereits auf die neue Version umgeschrieben:
 
-{% embed url="https://beta.ionicframework.com/docs/native" %}
-
-
+{% embed url="https://beta.ionicframework.com/docs/native" caption="" %}
 
 ## Früher vs. heute
 
@@ -62,9 +60,5 @@ this.camera.getPicture(options).then((imageData) => {
 
 ![](../.gitbook/assets/capacitor-hero.jpg)
 
-{% embed url="https://capacitor.ionicframework.com/" %}
-
-
-
-
+{% embed url="https://capacitor.ionicframework.com/" caption="" %}
 

@@ -117,6 +117,10 @@ navigateToLogin() {
 }
 ```
 
+```typescript
+<ion-button (click)="navigateToLogin()">Login</ion-button>
+```
+
 ## Wie übergebe ich Werte zwischen zwei Seiten?
 
 Der Array, welcher der `navigate` Funktion als Parameter übergeben wird, akzeptiert die Parameter wie folgt:

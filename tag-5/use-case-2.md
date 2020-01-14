@@ -20,7 +20,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Struktur der Daten
 
-![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image%20%283%29.png)
+![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image%20%284%29.png)
 
 ## Detailbeschreibung
 
