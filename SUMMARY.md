@@ -48,5 +48,5 @@
 * [Testing](tag-5/testing.md)
 * [Sicherheit](tag-5/sicherheit.md)
 * [Use Case 2](tag-5/use-case-2.md)
-* [Veröffentlichung, Ausblick](tag-5/veroeffentlichung-ausblick.md)
+* [Build, Veröffentlichung, Ausblick](tag-5/veroeffentlichung-ausblick.md)
 

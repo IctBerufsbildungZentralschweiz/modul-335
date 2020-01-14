@@ -9,12 +9,13 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 ### Verbindungsparameter für Firebase `app.module.ts`
 
 ```text
-apiKey: "AIzaSyDMfTpxjOIslKfKCxKjh0dg47up1jpOIKY",
-authDomain: "m335-usecase2.firebaseapp.com",
-databaseURL: "https://m335-usecase2.firebaseio.com",
-projectId: "m335-usecase2",
-storageBucket: "m335-usecase2.appspot.com",
-messagingSenderId: "327137245327"
+  apiKey: "AIzaSyBgjvp1reruxeOQ4hlur94bJhAh0nV28Pg",
+  authDomain: "m335-usecase-2.firebaseapp.com",
+  databaseURL: "https://m335-usecase-2.firebaseio.com",
+  projectId: "m335-usecase-2",
+  storageBucket: "m335-usecase-2.appspot.com",
+  messagingSenderId: "829173625908",
+  appId: "1:829173625908:web:3b808b777a912d39d08661"
 ```
 
 ### Struktur der Daten
@@ -27,7 +28,7 @@ messagingSenderId: "327137245327"
 
 * Die App soll nach dem Hi-Fi Protoypen gestylt werden, als Farben sind die Defaults zu verwenden
 * Für die Daten werden die dazugehörige Firebase API verwendet. Login- & API-Daten sind oben zu entnehmen.
-* Die Seiten sind im Template bereits erstellt, die Grundnavigation inkl. Auth Guards fehlt jedoch im `app-routing.module.ts` 
+* Die Seiten sind im Template bereits erstellt, die Grundnavigation inkl. AngularFireAuthGuards fehlt jedoch im `app-routing.module.ts` 
 
 ### Navigation
 

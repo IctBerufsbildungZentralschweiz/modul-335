@@ -1,4 +1,20 @@
-# Veröffentlichung, Ausblick
+# Build, Veröffentlichung, Ausblick
+
+## Build
+
+
+
+### Windows
+
+{% embed url="https://www.youtube.com/watch?v=c7HmwiTtYPE" %}
+
+
+
+### macOS
+
+{% embed url="https://www.youtube.com/watch?v=B\_seja5eHt8" %}
+
+
 
 ## Veröffentlichung
 
