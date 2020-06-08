@@ -238,7 +238,7 @@ Und unser Template passen wir wie folgt an:
 
 Beispiel mit Fehler:
 
-![](../.gitbook/assets/image%20%285%29.png)
+![](../.gitbook/assets/image%20%284%29.png)
 
 Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das würde den Rahmen hier aber sprengen. Möchtest du mehr darüber erfahren, empfehle ich dir direkt die [Angular Form Validatoren Seite](https://angular.io/guide/form-validation).
 
@@ -253,7 +253,7 @@ Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das w
 ![](../.gitbook/assets/ralph_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Newsletter" 
-2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%287%29.png)
+2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%286%29.png)
    1. Das Feld muss ein Pflichtfeld sein
    2. Das Feld muss eine gültige Email sein
    3. Mann kann sich erst anmelden wenn eine gültige Email eingegeben werden

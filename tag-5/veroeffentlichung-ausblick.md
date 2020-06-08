@@ -53,6 +53,14 @@ Solltest du dein Icon in verschiedenen Grössen brauchen, hier eine super Seite 
 
 {% embed url="https://appicon.co/" %}
 
+Hast du kein Adobe Photoshop oder sonstige kostenpflichtige Programme. Hier ist ein gutes Online Bildbearbeitungsprogramm:
+
+{% embed url="https://pixlr.com/e" %}
+
+
+
+
+
 
 
 #### App Screenshots
