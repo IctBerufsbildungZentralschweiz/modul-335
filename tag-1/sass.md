@@ -130,7 +130,7 @@ Die SCSS-Datei
 ```css
 // SCSS: Operatoren
 // ----
-$faktor:15;
+$faktor: 15;
 h1 { 
   color: black; 
 }
