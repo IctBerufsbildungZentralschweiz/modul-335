@@ -70,6 +70,12 @@ Ein neues Projekt erstellt du mit
 ionic start myNewProject
 ```
 
+{% hint style="warning" %}
+Evt. hast du Probleme unter Windows mit den Pfeiltasten \(arrow-Keys\). Du kannst ein Projekt auch manuell erstellen:  
+`ionic start <NAME> <ART> --type=angular  
+ionic start testProjekt sidemenu --type=angular`
+{% endhint %}
+
 wobei myNewProject der Name deines Projekt ist. Es dauert einen Moment, dann kannst du mit
 
 ```bash
@@ -92,12 +98,6 @@ Ionic bietet uns ein super Möglichkeit die von Euch programmierte App mit folge
 ionic serve
 ```
 
-{% hint style="warning" %}
-Evt. hast du Probleme unter Windows mit den Pfeiltasten \(arrow-Keys\). Du kannst ein Projekt auch manuell erstellen:  
-`ionic serve <NAME> <ART> --type=angular  
-ionic server testProjekt sidemenu --type=angular`
-{% endhint %}
-
 Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localhost:8100/](http://localhost:8100/)
 
 **Vorteile von** `ionic serve`
@@ -105,7 +105,7 @@ Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localho
 * kein direktes Deployment via Build \(Android SDK / XCode\) auf Mobiltelefon nötig \(==&gt; Ihr spart Zeit\)
 * Änderungen sind direkt sichtbar \(inkl. Live-Reload im Browser\)
 * Ihr könnt eine App ohne zusätzliche Installation von SDK's / XCode Programmen mit HTML, CSS, JS \(Typescript\) entwickeln
-* Hinsichtlich von PWA \(Progressive Web Apps\) ein weitere Vorteil
+* Hinsichtlich von PWA \(Progressive Web Apps\) ein weitere Vorteile
 
 ## Übung
 
