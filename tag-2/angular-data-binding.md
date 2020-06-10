@@ -14,10 +14,9 @@ Genau hier hat Angular seinen Vorteil. Das Data Binding in Angular synchronisier
 
 ```markup
 <!-- TwoWayBindingExample.page.html -->
-<ion-content padding>
-    <h1>Hello World</h1>
-    Hello {{ username }}
-    <input type="text" value="username" (input)="changeUsername($event)">
+<ion-content class="ion-padding">
+    <h1>Hello {{ username }}</h1>
+    <input type="text" value="" (input)="changeUsername($event)">
 </ion-content>
 ```
 
@@ -26,7 +25,7 @@ Genau hier hat Angular seinen Vorteil. Das Data Binding in Angular synchronisier
 ...
 export class TwoWayBindingExamplePage implements OnInit {
 
-  username: any = "default";
+  username: string = "max.muster";
   ngOnInit() {
   }
   changeUsername(ev) {
