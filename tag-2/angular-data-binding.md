@@ -66,7 +66,7 @@ userData: any = {'name': 'Ralph', 'city': 'Luzern, Switzerland'};
 Nun fügen wir unserem HTML einen `input`-Feld hinzu und verbinden es mit `ngModel` mit unserem Code. Dabei wollen wir auf den Namen unter `userData.name` zugreifen.
 
 ```markup
-<ion-content padding>
+<ion-content class="ion-padding">
     <input id="name" type="text" [(ngModel)]="userData.name">
     <h1 id="ausgabe">Hey, my name is {{userData.name}} and I'm from {{userData.city}}</h1>
 </ion-content>

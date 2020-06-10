@@ -34,8 +34,8 @@ items: any = [{id: 1}, {id: 2}, {id: 3}, {id: 4}, {id: 5}];
 ```
 
 ```markup
-<!-- ngForExample.ts -->
-<ion-content padding>
+<!-- ngForExample.html -->
+<ion-content class="ion-padding">
     <ion-list>
         <ion-item *ngFor="let item of items">Item {{item.id}}</ion-item>
     </ion-list>
@@ -72,7 +72,7 @@ Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Bind
 ```markup
 <!-- keyupExample.html -->
 <ion-item>
-  <ion-label fixed>Name</ion-label>
+  <ion-label position="fixed">Name</ion-label>
   <ion-input type="text" [value]="data.name" (input)="nameChanged()"></ion-input>
 </ion-item>
 ```
