@@ -7,7 +7,7 @@ Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation od
 
 ## Capacitor
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%288%29.png)
 
 {% embed url="https://capacitor.ionicframework.com/" %}
 
@@ -60,14 +60,18 @@ Dein Projekt sollte nun geöffnet werden.
 
 
 
-## Android Studio
+## Für Android: mit Android Studio
 
-Mit dem Android Studio kannst du deine hybride Ionic App nun auf ein natives Gerät kopieren und dort den geschrieben Code testen.  
+Mit dem Android Studio kannst du deine hybride Ionic App nun auf ein natives Gerät kopieren und dort den geschrieben Code testen.
+
+![](../.gitbook/assets/image%20%287%29.png)
+
+Überprüfe in  \(1\) ob du die richtigen Permissions \(2\) gesetzt hast.   
+In der Toolbar solltest du ein verbundenes Gerät \(3\) finden  und kannst deine App darauf laufen lassen \(4\).
+
 Eine detaillierte Anleitung dazu findest du hier:
 
 {% embed url="https://capacitor.ionicframework.com/docs/android" %}
-
-
 
 {% hint style="warning" %}
 Ähnlich wie bei iOS müssten wir für Android auch die entsprechenden Zugriff auf die nativen Komponenten freischalten. Bei Android findest du dies in der `AndroidManifest.xml`Datei, du findest diese Datei unter `android/app/src/main/`.
@@ -76,6 +80,22 @@ Eine detaillierte Anleitung dazu findest du hier:
 {% hint style="warning" %}
 Auf deinem Android-Gerät muss in den Entwicklereinstellungen USB-Debugging aktiviert sein.
 {% endhint %}
+
+
+
+## Für iOS: mit Xcode
+
+{% hint style="danger" %}
+Achtung: Bei iOS ist das ganze Deployment dank   und den sogenannten Provisioning Profiles etwas komplizierter. Hast du schon einmal mit Xcode gearbeitet, kennst du damit aus oder suchst die ultimative Challenge, dann bist du hier richtig.
+{% endhint %}
+
+Eine Getting Started Anleitung für iOS findest du hier:
+
+{% embed url="https://capacitor.ionicframework.com/docs/ios" %}
+
+
+
+
 
 
 
