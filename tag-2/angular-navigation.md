@@ -123,7 +123,7 @@ navigateToLogin() {
 
 ## Wie übergebe ich Werte zwischen zwei Seiten?
 
-Der Array, welcher der `navigate` Funktion als Parameter übergeben wird, akzeptiert die Parameter wie folgt:
+Das Array, welches der `navigate` Funktion als Parameter übergeben wird, akzeptiert die folgenden Parameter:
 
 ```typescript
 navigateToDetail() {
