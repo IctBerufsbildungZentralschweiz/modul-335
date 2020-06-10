@@ -1,6 +1,6 @@
 # Native Komponenten
 
-Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann darauf zugreifen, dabei gibt es grundsätzlich zwei Möglichkeiten:
+Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann man darauf zugreifen, dabei gibt es grundsätzlich zwei Möglichkeiten:
 
 * Cordova Plugins mit grosser Community \(Eine Liste davon findest du [hier](https://ionicframework.com/docs/native)\)
 * [Capacitor](https://capacitor.ionicframework.com/) - der nativen Bridge vom Ionic Team
