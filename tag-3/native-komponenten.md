@@ -73,9 +73,9 @@ Eine detaillierte Anleitung dazu findest du hier:
 Ähnlich wie bei iOS müssten wir für Android auch die entsprechenden Zugriff auf die nativen Komponenten freischalten. Bei Android findest du dies in der `AndroidManifest.xml`Datei, du findest diese Datei unter `android/app/src/main/`.
 {% endhint %}
 
-
-
-
+{% hint style="warning" %}
+Auf deinem Android-Gerät muss in den Entwicklereinstellungen USB-Debugging aktiviert sein.
+{% endhint %}
 
 
 
