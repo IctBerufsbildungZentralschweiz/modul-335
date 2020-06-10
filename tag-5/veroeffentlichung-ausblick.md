@@ -59,6 +59,8 @@ Hast du kein Adobe Photoshop oder sonstige kostenpflichtige Programme. Hier ist 
 
 
 
+{% embed url="https://romannurik.github.io/AndroidAssetStudio" %}
+
 
 
 
