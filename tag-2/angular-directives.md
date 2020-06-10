@@ -99,7 +99,7 @@ buttonClicked(){
 <ion-button color="secondary" (click)="buttonClicked()">Klick mich!</ion-button>
 ```
 
-Nun setzen wir `(click)="buttonClick()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
+Nun setzen wir `(click)="buttonClicked()"` wiederum auf eine Button-Komponente. Wichtig: Hier darf die Klammer `()` für den Funktionsaufruf nicht fehlen.
 
 Weitere Events findest du z.B. hier: [https://developer.mozilla.org/en-US/docs/Web/Events](https://developer.mozilla.org/en-US/docs/Web/Events)
 
