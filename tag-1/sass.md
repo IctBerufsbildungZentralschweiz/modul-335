@@ -14,7 +14,7 @@ CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer
 Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömmliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche. Im Beispiel unten ist zu sehen, dass SASS Tabulatoren verwendet, SCSS jedoch Klammern. In der Fachliteratur wird daher oft SASS synonym mit SCSS beschrieben.
 
-_Codebeispiel:_ 
+_Codebeispiel:_
 
 ![](../.gitbook/assets/sass-vs-scss.png)
 
@@ -170,7 +170,7 @@ Ionic setzt voll und ganz auf SCSS. Du kannst so deine App bis ins letzte Detail
 
 Ionic hat in ihrer neuen Doku einen Color Generator mit einem direkt Showcase eingebaut, dieser kann im Verlauf des Kurs sicher einige Male gebraucht werden: [https://beta.ionicframework.com/docs/theming/color-generator](https://beta.ionicframework.com/docs/theming/color-generator)
 
-Noch ein etwas älteres Ionic 2 Video für die Lachmuskeln 😂 
+Noch ein etwas älteres Ionic 2 Video für die Lachmuskeln 😂
 
 {% embed url="https://www.youtube.com/watch?v=1cgr0z9TXnQ" caption="" %}
 

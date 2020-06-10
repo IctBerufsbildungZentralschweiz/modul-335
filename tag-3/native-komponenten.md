@@ -1,64 +1,81 @@
 # Native Komponenten
 
-![](../.gitbook/assets/ionic-native.png)
+Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann darauf zugreifen, dabei gibt es grundsätzlich zwei Möglichkeiten:
 
-Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann mittels Cordova auf diese Ressourcen zugegriffen werden. Ionic hat die Dokumentation bereits auf die neue Version umgeschrieben:
+* Cordova Plugins mit grosser Community \(Eine Liste davon findest du [hier](https://ionicframework.com/docs/native)\)
+* [Capacitor](https://capacitor.ionicframework.com/) - der nativen Bridge vom Ionic Team
 
-{% embed url="https://beta.ionicframework.com/docs/native" caption="" %}
+## Capacitor
 
-## Früher vs. heute
+![](../.gitbook/assets/image%20%287%29.png)
 
-Die Geräteressourcen können natürlich nicht ohne Smartphone getestet werden. Mit Ionic 1 war spätestens hier der Zeitpunkt um auf die lokale Entwicklungsumgebung zu wechseln. Mühsam musste man die Smartphones für die Entwicklung konfigurieren und die App rauf kopieren.
+{% embed url="https://capacitor.ionicframework.com/" %}
 
-Ionic sah dieses Problem und stellte die bereits verwendete DevApp zur Verfügung.  
-Eine Liste der unterstützten Plugins findest du hier:  
-[https://ionicframework.com/docs/appflow/devapp/\#native-cordova-plugin-support](https://ionicframework.com/docs/appflow/devapp/#native-cordova-plugin-support)
+Capacitor ist die aus dem Hause Ionic eigens hergestellt Brücke zwischen Javascript und dem nativen Code von iOS und Android. Der Hauptvorteil dabei ist, Sie ist perfekt auf das Ionic Framework abgestimmt. Die Community ist sicher kleiner als bei den Cordova Plugins, weiter geht Ionic auch hier geht Ionic immer mehr ihrem Ecosystem nach.
 
-## Beispiel der Kamera
+### Vorbereitungen
 
-### Installation
+Um Capacitor brauchen zu können müssen folgende Punkte erfüllt sein:
 
-Wenn du nicht die DevApp verwendest und deine App selber auf dein Smartphone resp. in den AppStore deployen möchtest:
+* [NodeJS](https://nodejs.org) ist installiert
+* [Ionic CLI](https://ionicframework.com/docs/cli) ist installiert
+* [Android Studio ](https://developer.android.com/studio)wurde runtergeladen und installiert
+* \(optional für macOS-User\) Xcode ist installiert, wenn auf iOS deployed werden soll
 
-1\) Installiere folgendes Plugin in deinen Projektordner \(Gitbash\)
+### Starter Template verwenden
+
+Um das Projektsetup zu vereinfachen haben wir dir hier ein Starter Template für Capacitor zur Verfügung gestellt:
 
 ```bash
-$ ionic cordova plugin add cordova-plugin-camera
-$ npm install --save @ionic-native/camera
+git clone https://github.com/IctBerufsbildungZentralschweiz/modul-335-capacitor-starter.git
+cd ./modul-335-capacitor-starter
+npm install
 ```
 
-2\) Füge das Plugin zu deinem app.module.ts hinzu:  
-[https://beta.ionicframework.com/docs/native\#usage-with-angular-apps](https://beta.ionicframework.com/docs/native#usage-with-angular-apps)
+## Mit Capacitor programmieren
 
-### Verwendung
+Programmiere nun ganz normale deine Funktionen in den entsprechenden Components mit Angular \(Typescript\) aus. Sobald du dein Code geschrieben hast und ihn auf dem nativen Gerät testen möchtest führe folgenden Befehl aus um ein Build zu erstellen:
 
-```javascript
-import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
-
-constructor(private camera: Camera) { }
-
-...
-
-
-const options: CameraOptions = {
-  quality: 100,
-  destinationType: this.camera.DestinationType.DATA_URL,
-  encodingType: this.camera.EncodingType.JPEG,
-  mediaType: this.camera.MediaType.PICTURE
-}
-
-this.camera.getPicture(options).then((imageData) => {
- // imageData is either a base64 encoded string or a file URI
- // If it's base64:
- let base64Image = 'data:image/jpeg;base64,' + imageData;
-}, (err) => {
- // Handle error
-});
+```bash
+ionic build
 ```
 
-## Ausblick -&gt; Capacitor
+Dann muss du den Capacitor `copy` Befehl ausführen, welcher alle Assets \(in diesem Fall deine die Ionic Angular App\) in den nativen Codeteil deines Projekt kopiert:
 
-![](../.gitbook/assets/capacitor-hero.jpg)
+```bash
+npx cap copy
+```
 
-{% embed url="https://capacitor.ionicframework.com/" caption="" %}
+Als nächsten können wir \(falls nicht schon offen\) dein Projekt in den nativen Entwicklungsstudios öffnen:
+
+```bash
+# Android
+npx cap open android
+
+# iOS
+npx cap open ios
+```
+
+Dein Projekt sollte nun geöffnet werden.
+
+
+
+## Android Studio
+
+Mit dem Android Studio kannst du deine hybride Ionic App nun auf ein natives Gerät kopieren und dort den geschrieben Code testen.  
+Eine detaillierte Anleitung dazu findest du hier:
+
+{% embed url="https://capacitor.ionicframework.com/docs/android" %}
+
+
+
+{% hint style="warning" %}
+Ähnlich wie bei iOS müssten wir für Android auch die entsprechenden Zugriff auf die nativen Komponenten freischalten. Bei Android findest du dies in der `AndroidManifest.xml`Datei, du findest diese Datei unter `android/app/src/main/`.
+{% endhint %}
+
+
+
+
+
+
 
