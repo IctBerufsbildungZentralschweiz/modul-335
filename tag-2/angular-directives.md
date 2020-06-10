@@ -77,7 +77,7 @@ Gehen wir nochmals zum Beispiel mit dem Namen-Textfeld, welches wir in Data Bind
 </ion-item>
 ```
 
-Achtung: hier wird `(input)` als Event verwendet. Das heisst nach jedem Tastaturanschlag wir ein `alert()` ausgelöst, natürlich unschön. Eine saubere Lösung würde man mit Observables implementieren, sprengt aber den aktuellen Rahmen hier.
+Achtung: hier wird `(input)` als Event verwendet. Das heisst nach jedem Tastaturanschlag wird ein `alert()` ausgelöst, natürlich unschön. Eine saubere Lösung würde man mit Observables implementieren, sprengt aber den aktuellen Rahmen hier.
 
 ### \(click\) - Event
 
