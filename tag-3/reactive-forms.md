@@ -256,7 +256,7 @@ Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das w
 2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%286%29.png)
    1. Das Feld muss ein Pflichtfeld sein
    2. Das Feld muss eine gültige Email sein
-   3. Mann kann sich erst anmelden wenn eine gültige Email eingegeben werden
+   3. Man kann sich erst anmelden wenn eine gültige Email eingegeben wurde
 3. Gibt es einen Fehler soll zwischen Input + Button ein Fehler angezeigt werden. 
 4. BONUS I : Nach dem Absenden soll die Email in einer Toast-Nachricht angezeigt werden
 
