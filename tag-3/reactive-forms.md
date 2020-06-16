@@ -2,7 +2,7 @@
 
 In Angular gibt es grundsätzlich 2 Varianten wie man mit Formularen umgehen kann:
 
-* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine Perfekte Wahl wenn du an mehreren Orten Formulare einsetzen möchtest 
+* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine perfekte Wahl wenn du an mehreren Orten Formulare einsetzen möchtest 
 * **Template-basierte Formulare:** eher für einfachere Apps \(Newsletter-Anmeldung oder einfache Registrierungen\) 
 
 Auf den ersten Blick scheinen Reactive Forms etwas komplex, aber ihr werdet sehen, dass man hier relativ schnell sehr gute Erfolge erzielen kann:
