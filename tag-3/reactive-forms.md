@@ -63,7 +63,7 @@ export class FormExamplePageModule {}
 
 ### 2. In deiner Komponente eine FormGroup deklarieren
 
-In unser Komponente müssen wir nun zwei Dinge hinzufügen:
+In unserer Komponente müssen wir nun zwei Dinge hinzufügen:
 
 * **FormGroup:** Die Felder in unserem Kontaktformular werden in einer sogenannten FormGroup gruppiert. Natürlich könnten wir bei einem grossen Formular pro Seite auch mehrere Groups machen. Der Gruppe geben wir einen Namen `contactForm`
 * **FormControl:** Jeder Input in unserem Kontaktformular wird zu einer FormControl gemappt. Hier können die klassischen Typen wie Input, Radio, Select usw. verwendet werden. Jedes FormControl Element enthält einen _value_ und _validation_ des Felds.   Wir fügen also im `ngOnInit` unserem `contactForm` nun mehrere Felder \(Nachname, Vorname, Email, Land + Nachricht\)  in form von FormControls hinzu.
