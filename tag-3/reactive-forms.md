@@ -225,7 +225,7 @@ Und unser Template passen wir wie folgt an:
         Sorry, that firstname is either to short or not yet provided!
       </ion-item>
       <ion-item color="danger" *ngIf="!contactForm.controls.email.valid && !contactForm.controls.email.pending && (contactForm.controls.email.dirty)">
-        Sorry, that email ist not correct!
+        Sorry, that email is not correct!
       </ion-item>
     </div>
     <ion-button block color="primary" type="submit" [disabled]="contactForm.invalid">
