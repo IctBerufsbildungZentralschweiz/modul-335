@@ -62,6 +62,7 @@ Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu:
 
 ```javascript
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule
 ```
