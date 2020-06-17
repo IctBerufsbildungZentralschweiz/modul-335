@@ -7,13 +7,12 @@
 3. Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
 
    ```css
-   // chat.page.scss
    .chat-nachrichten {
        height: calc(100% - 60px);
        overflow: scroll;
        background-color: var(--ion-color-light-shade);
        span {
-           background-color: var(--ion-color-light-shade) !important;
+           background-color: var(--ion-color-success) !important;
            display: inline-block !important;
            color: var(--ion-color-dark) !important;
            padding: 10px !important;
@@ -108,7 +107,7 @@
    ```markup
     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
            <ion-list>
-               <div class="messages" [ngClass]="{other: chat.username == this.currentUser}">
+               <div class="messages" [class.other]="chat.username === this.currentUser">
                    <div class="message">
                        <span>
                            <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
@@ -301,7 +300,7 @@ interface ChatMessage {
 
 ## Zusatz
 
-1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir ngStyle in der Angular Doku an.
+1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir `ngStyle` in der Angular Doku an.
 2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
 3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
 
