@@ -98,7 +98,7 @@ export class AppModule {}
 
 ### Einen Service erstellen
 
-Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service, welcher wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
+Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service, welchen wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
 
 ```text
 ionic generate service _core/Auth
