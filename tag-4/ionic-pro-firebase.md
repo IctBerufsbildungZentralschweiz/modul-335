@@ -34,6 +34,31 @@ npm install @angular/fire firebase --save
 npm install --save @ionic/storage
 ```
 
+Wir müssen nun die Verbindung zwischen deiner App und  Firebase herstellen. Dazu kann man online im Firebase-Projekt die nötigen Verbindungsparameter kopieren. In unserem Fall verwenden wir für das Login immer das gleiche Projekt.  
+Kopiere folgenden Inhalt in dein src/environments/environment.ts :
+
+{% code title="environment.ts" %}
+```javascript
+export const environment = {
+  production: false,
+  // Neu hinzufügen
+  firebaseConfig: {
+    apiKey: "AIzaSyArTTnqykFNgwBRL8IldPCFn8dobVVghBI",
+    authDomain: "m335-login.firebaseapp.com",
+    databaseURL: "https://m335-login.firebaseio.com",
+    projectId: "m335-login",
+    storageBucket: "m335-login.appspot.com",
+    messagingSenderId: "14955115856",
+    appId: "1:14955115856:web:d53930b7c82b6d01106855"
+  }
+};
+```
+{% endcode %}
+
+{% hint style="warning" %}
+Die Datei `environment.ts` ist für die lokale Entwicklung gedacht, mit der Datei `environment.prod.ts` kannst du die Verbindungsparameter deines produktiven Firebase-Projekts eintragen. Best-Practice ist hier mind. zwei unterschiedliche Umgebungen/Projekte zu verwenden.
+{% endhint %}
+
 Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
 
 ```javascript
@@ -43,16 +68,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
-// Firebase Einstellungen 
-export const firebaseConfig = {
-    apiKey: 'AIzaSyArTTnqykFNgwBRL8IldPCFn8dobVVghBI',
-    authDomain: 'm335-login.firebaseapp.com',
-    databaseURL: 'https://m335-login.firebaseio.com',
-    projectId: 'm335-login',
-    storageBucket: 'm335-login.appspot.com',
-    messagingSenderId: '14955115856',
-    appId: '1:14955115856:web:d53930b7c82b6d01106855'
-};
+// Environments importieren
+import { environment } from "../environments/environment";t
 ```
 
 {% hint style="info" %}
@@ -62,7 +79,7 @@ Die Verbindungsdaten der `firebaseConfig` sind für diesen Kurs hier gegeben. Du
 Füge noch folgende beiden Zeilen im `@NgModule`-Teil im `imports`-Array hinzu:
 
 ```javascript
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule
@@ -91,16 +108,10 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 
-// Firebase Einstellungen 
-export const firebaseConfig = {
-    apiKey: 'AIzaSyArTTnqykFNgwBRL8IldPCFn8dobVVghBI',
-    authDomain: 'm335-login.firebaseapp.com',
-    databaseURL: 'https://m335-login.firebaseio.com',
-    projectId: 'm335-login',
-    storageBucket: 'm335-login.appspot.com',
-    messagingSenderId: '14955115856',
-    appId: '1:14955115856:web:d53930b7c82b6d01106855'
-};
+// Environments importieren
+import { environment } from "../environments/environment";
+
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -109,7 +120,7 @@ export const firebaseConfig = {
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule
