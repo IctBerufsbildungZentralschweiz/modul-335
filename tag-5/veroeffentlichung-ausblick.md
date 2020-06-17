@@ -80,6 +80,14 @@ Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in
 
 {% embed url="https://cleanmock.com/" %}
 
+## Landing Page
+
+Ein cooles Repo um eine einfache App Landing Page auf Github zu hosten.
+
+{% embed url="https://github.com/emilbaehr/automatic-app-landing-page" %}
+
+
+
 
 
 ### Versionierung

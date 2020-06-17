@@ -22,3 +22,8 @@ Um eine App zu veröffentlichen, sollte man die folgenden \(ausgedruckt mehrere 
 
 ![](../.gitbook/assets/inapppurchases.jpg) Als In-App-Käufe werden Käufe bezeichnet, die innerhalb einer App, bzw. für eine App, getätigt werden. Gegenstand solcher In-App-Käufe sind meist Erweiterungen für die App oder andere Zusatzinhalte, wie bspw. die Freischaltung von zusätzlichen Funktionen, virtuelles Geld oder das Freischalten bestimmter Elemente in einem Spiel. Solche Käufe können i.d.R. über einen App Store getätigt werden, oder alternativ über eine eigene Funktion des App-Erstellers.
 
+  
+Lading 
+
+
+
