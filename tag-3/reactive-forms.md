@@ -53,7 +53,7 @@ import { FormExamplePage } from './form-example.page';
     FormsModule,
     IonicModule,
     FormExamplePageRoutingModule,
-    ReactiveFormsModule, // Add this line
+    ReactiveFormsModule // Add this line
   ],
   declarations: [FormExamplePage]
 })
