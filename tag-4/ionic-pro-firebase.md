@@ -17,7 +17,7 @@ Die meistens Services basieren auf einem einfachen GIT-Workflow, welcher dir als
 
 ### Du möchtest, resp. hast Ionic Appflow bereits verwendet
 
-Zu Beginn dieses Kurses haben wir dich darum gebeten, einen Account auf folgender Website zu machen: [https://dashboard.ionicjs.com/apps](https://dashboard.ionicjs.com/apps) Ja genau, bereits auf Ionic Appflow. Zudem hast du sicher die DevApp auf deinem Gerät installiert, auch diese gehört bereits zur Ionic Appflow Produktpalette.
+Zu Beginn dieses Kurses haben wir dich darum gebeten, einen Account auf folgender Website zu machen: [https://dashboard.ionicjs.com/apps](https://dashboard.ionicjs.com/apps) Ja genau, bereits auf Ionic Appflow.
 
 ## Google Firebase
 
