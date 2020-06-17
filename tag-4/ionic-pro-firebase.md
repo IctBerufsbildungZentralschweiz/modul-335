@@ -31,6 +31,7 @@ Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, ge
 
 ```bash
 npm install @angular/fire firebase --save
+npm install --save @ionic/storage
 ```
 
 Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
