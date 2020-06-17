@@ -26,10 +26,6 @@
        bottom: 0px;
        display: block;
        width: 100%;
-       background-color: white;
-       -webkit-box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
-       -moz-box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
-       box-shadow: 0px -1px 5px 0px rgba(204,204,204,1);
        button {
            margin: 0px !important;
        }
