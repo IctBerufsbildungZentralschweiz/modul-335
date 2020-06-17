@@ -295,6 +295,12 @@ Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit h
 
 {% embed url="https://www.youtube.com/watch?v=aNW444SpFNs" caption="" %}
 
+**Video für Ionic 4**
+
+{% embed url="https://www.youtube.com/watch?v=Q8zcieAWn3g" %}
+
+
+
 1. Zusatz: Füge ein Logout in deine App ein.
 2. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
 3. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
