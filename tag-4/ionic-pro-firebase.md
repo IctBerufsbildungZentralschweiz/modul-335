@@ -1,23 +1,5 @@
 # Ionic Appflow / Firebase
 
-## Ionic: Cloud
-
-**\(Im Januar 2019 heisst es bye bye Wolke\)**
-
-Ionic Cloud war ein hybrid-fokussiertes Mobiles Backend inkl. Services von Ionic. Es erlaubt einem Entwickler sehr einfach eine performante, produktive App aufzusetzen und zu skalieren.
-
-Die [Dokumentation für Ionic Cloud](http://docs.ionic.io/) war jeweils mit beiden Versionen Ionic 1 und 2 kompatibel und geschrieben .
-
-### Services
-
-Folgende Services waren darin enthalten und sind jetzt nicht mehr im neuen Produkt drin:
-
-* [Auth](http://docs.ionic.io/services/auth/) eine Benutzerverwaltung inkl. Social Logins
-* [Ionic DB](http://docs.ionic.io/services/database/) eine einfache Echzeit-Datenbank
-* [Push](http://docs.ionic.io/services/push/)-Notifikationen über die Plattform an Benutzer senden
-
-Ionic möchte sich auf die Entwicklung fokussieren und nicht anderen Cloud-Grössen wie Amazon, Google, Heroku, usw. Konkurrenz machen.
-
 ## Ionic Appflow
 
 **\(Ihr neues Flaggschiff, seit Herbst 2018 nicht mehr Ionic PRO\)**
@@ -26,7 +8,7 @@ Ionic Appflow ist eine powervolle Sammlung von Services und Features, welche das
 
 Ionic Appflow hat diverse Services, welche dich durch den gesamten App Lifecycle beschäftigen:
 
-* \*\*\*\*[**Builds**](https://ionicframework.com/docs/appflow/builds/#builds): Zusammen mit einem Git-Workflow können Builds deployed oder paketiert werden
+* \*\*\*\*[**Builds**](https://ionicframework.com/docs/appflow/quickstart/connect): Zusammen mit einem Git-Workflow können Builds deployed oder paketiert werden
 * \*\*\*\*[**Deploy**](https://ionicframework.com/docs/appflow/deploy/)**:** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
 * \*\*\*\*[**Package**](https://ionicframework.com/docs/appflow/package/)**:** Baue native App-Binaries in der Cloud für iOS und Android.
 * \*\*\*\*[**Automation**](https://ionicframework.com/docs/appflow/automation/): Automatisierte Build mit Möglichkeiten für Webhooks
