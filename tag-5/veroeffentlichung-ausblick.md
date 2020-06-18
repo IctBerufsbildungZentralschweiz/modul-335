@@ -132,11 +132,15 @@ Bitte beachtet und respektiert dass im Internet schon sehr viel geklaut wird. Ei
 5. Ergänze den Slide mit dem Export von Mockdrop.io 
 6. Wir besprechen die Apps im Plenum.
 
-## Ausblick
+## Ausblick 
 
-### 
+{% embed url="https://developer.apple.com/wwdc20/" %}
 
 {% embed url="https://ionicframework.com/ioniconf" %}
+
+## Feedback
+
+![](../.gitbook/assets/wordcloud.png)
 
 
 
