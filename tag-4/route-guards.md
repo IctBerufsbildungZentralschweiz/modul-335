@@ -12,14 +12,14 @@ Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welche
 Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur clientseitig im Browser geschützt. Er wird strengstens empfohlen die verwendeten Daten auf dem Server resp. den API-Endpunkt ebenfalls zusätzlich vor unerwünschten Zugriffen und Diebstahl zu schützen.
 {% endhint %}
 
-### Eine Route Guard erstellen
+### Eine eigene Guard erstellen \(optional\)
 
 {% hint style="danger" %}
 WICHTIG:   
-Seit Herbst 2019 bietet `@angular/fire` eine [eigene Router-Guard](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt. Daher hilft zwar das folgende Kapitel noch fürs Verständnis, kann aber direkt gelöst werden.
+Seit Herbst 2019 bietet `@angular/fire` die [AngularFireAuthGuard](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt. Daher hilft zwar das folgende Kapitel noch fürs Verständnis, kann aber direkt gelöst werden.
 {% endhint %}
 
-Eine Route Guard, in unserem Fall für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
+Eine eigene Guard, in unserem Fall für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
 
 ```bash
 ionic generate guard _core/Auth
