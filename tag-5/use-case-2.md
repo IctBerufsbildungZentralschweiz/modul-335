@@ -4,7 +4,7 @@
 
 ## Ausgangslage
 
-Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechende Screens und das Starter-Projekt liegen im [M335-Exchange](https://enz.lu/m335-exchange) für dich bereit. Ich bin gespannt auf dein Ergebnis.
+Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechenden Screens und das Starter-Projekt liegen im [M335-Exchange](https://enz.lu/m335-exchange) für dich bereit. Ich bin gespannt auf dein Ergebnis.
 
 ### Verbindungsparameter für Firebase `environment.ts`
 
