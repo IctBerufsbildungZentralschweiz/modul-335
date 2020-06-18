@@ -6,17 +6,23 @@
 
 Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechende Screens und das Starter-Projekt liegen im [M335-Exchange](https://enz.lu/m335-exchange) für dich bereit. Ich bin gespannt auf dein Ergebnis.
 
-### Verbindungsparameter für Firebase `app.module.ts`
+### Verbindungsparameter für Firebase `environment.ts`
 
-```text
-  apiKey: "AIzaSyBgjvp1reruxeOQ4hlur94bJhAh0nV28Pg",
-  authDomain: "m335-usecase-2.firebaseapp.com",
-  databaseURL: "https://m335-usecase-2.firebaseio.com",
-  projectId: "m335-usecase-2",
-  storageBucket: "m335-usecase-2.appspot.com",
-  messagingSenderId: "829173625908",
-  appId: "1:829173625908:web:3b808b777a912d39d08661"
+{% code title="environment.ts" %}
+```javascript
+...
+    firebaseConfig: {
+    apiKey: "AIzaSyBgjvp1reruxeOQ4hlur94bJhAh0nV28Pg",
+    authDomain: "m335-usecase-2.firebaseapp.com",
+    databaseURL: "https://m335-usecase-2.firebaseio.com",
+    projectId: "m335-usecase-2",
+    storageBucket: "m335-usecase-2.appspot.com",
+    messagingSenderId: "829173625908",
+    appId: "1:829173625908:web:3b808b777a912d39d08661"
+  }
+...
 ```
+{% endcode %}
 
 ### Struktur der Daten
 
