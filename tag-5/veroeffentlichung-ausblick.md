@@ -132,7 +132,19 @@ Bitte beachtet und respektiert dass im Internet schon sehr viel geklaut wird. Ei
 5. Ergänze den Slide mit dem Export von Mockdrop.io 
 6. Wir besprechen die Apps im Plenum.
 
-## Ausblick 
+## Ausblick
+
+### Gute Links
+
+{% embed url="https://www.joshmorony.com/blog" %}
+
+{% embed url="https://www.youtube.com/user/saimon1924" %}
+
+{% embed url="https://fireship.io/" %}
+
+
+
+### Aktuelles
 
 {% embed url="https://developer.apple.com/wwdc20/" %}
 
