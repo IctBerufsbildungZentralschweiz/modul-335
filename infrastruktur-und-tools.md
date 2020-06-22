@@ -26,7 +26,6 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
 * [ ] Rufen dann im Visual Studio Code folgendes auf npm i -g ionic cordova
 * [ ] Browser \(Chrome, Firefox, …\)
 * [ ] Git \(optional\)
-* [ ] Balsamiq
 
 
 
