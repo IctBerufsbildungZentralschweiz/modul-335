@@ -159,5 +159,11 @@ Geh dazu in dein `app.scss` und füge folgende Zeilen ein
 }
 ```
 
-Wichtig ist hier zu wissen, dass du in deiner finalen App evt. wieder eine Scrollbar möchtest. Dazu einfach den Code wieder auskommentieren. 
+Wichtig ist hier zu wissen, dass du in deiner finalen App evt. wieder eine Scrollbar möchtest. Dazu einfach den Code wieder auskommentieren.
+
+## Wie kann ich die ionic App auf alle Netzwerkinterfaces öffnen?
+
+```text
+ng run app:serve --host=0.0.0.0 --port=8100
+```
 
