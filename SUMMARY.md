@@ -3,6 +3,7 @@
 * [Intro](README.md)
 * [Organisation](organisation.md)
 * [Kursplanung](kursplanung.md)
+* [Infrastruktur und Tools](infrastruktur-und-tools.md)
 * [FAQ](faq.md)
 
 ## Tag 1
