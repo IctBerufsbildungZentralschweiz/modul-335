@@ -131,5 +131,10 @@ npx cap add android
 npx cap open ios
 npx cap open android
 
+
+
+# App aktualisieren
+ionic build; npx cap copy
+
 ```
 
