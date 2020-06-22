@@ -52,7 +52,11 @@ Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic 
 
 ## Ionic Command Line Interface
 
-![](https://ionicframework.com/img/docs/symbols/docs-cli-symbol@2x.png)
+Du kannst ionic mit folgendem Befehl installieren:
+
+```bash
+npm install -g @ionic/cli
+```
 
 Die [Ionic CLI](https://ionicframework.com/docs/cli/) ist bester Helfer für die künftige Entwicklung mit Ionic. Wir Wissen, aller Anfang ist schwer, aber wie wärs mit
 
