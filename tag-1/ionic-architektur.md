@@ -107,3 +107,9 @@ Mit dem `debugger;`-Befehl wird ein Projekt an jener Stelle angehalten und du ka
 2. Logge dich mit deinem Ionic Account ein
 3. Folge den Anweisungen auf deinem Handy und probiere DevApp aus
 
+
+
+## Capacitor
+
+[https://capacitor.ionicframework.com/docs/getting-started](https://capacitor.ionicframework.com/docs/getting-started)
+
