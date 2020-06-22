@@ -68,7 +68,7 @@ Wir besprechen deine Ergebnisse gemeinsam.
 
 ## Wie sieht die Zukunft aus?
 
-Die Zukunft werden sogenannte Progressive Web Apps \(kurz. PWA\) sein, hier ein Überblick:
+Die Zukunft werden evtl. sogenannte Progressive Web Apps \(kurz. PWA\) sein, hier ein Überblick:
 
 {% embed url="https://www.youtube.com/watch?v=fuhAmUpEEHA" caption="" %}
 
