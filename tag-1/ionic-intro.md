@@ -111,6 +111,10 @@ Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localho
 * Ihr könnt eine App ohne zusätzliche Installation von SDK's / XCode Programmen mit HTML, CSS, JS \(Typescript\) entwickeln
 * Hinsichtlich von PWA \(Progressive Web Apps\) ein weitere Vorteile
 
+## Dokumentation
+
+[https://beta.ionicframework.com/docs/intro](https://beta.ionicframework.com/docs/intro)
+
 ## Übung
 
 1. Öffne dein Terminal oder deine Gitbash und tippe `ionic` ein
