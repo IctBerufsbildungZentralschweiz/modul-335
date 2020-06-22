@@ -111,5 +111,25 @@ Mit dem `debugger;`-Befehl wird ein Projekt an jener Stelle angehalten und du ka
 
 ## Capacitor
 
-[https://capacitor.ionicframework.com/docs/getting-started](https://capacitor.ionicframework.com/docs/getting-started)
+{% embed url="https://capacitor.ionicframework.com/docs/getting-started" %}
+
+```bash
+# Installieren
+npm install --save @capacitor/core @capacitor/cli
+npx cap init
+
+# Projekt kompillieren
+ionic build
+
+# Plattform hinzufügen
+npx cap add ios
+# oder
+npx cap add android
+
+
+# App öffnen
+npx cap open ios
+npx cap open android
+
+```
 
