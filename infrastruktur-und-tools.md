@@ -23,7 +23,12 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
 * [ ] Android Studio  [https://developer.android.com/studio](https://developer.android.com/studio)
 * [ ] Gitbash \(optional\)
 * [ ] NodeJS 
-* [ ] Rufen dann im Visual Studio Code folgendes auf npm i -g ionic cordova
+* [ ] Rufen dann im Visual Studio Code folgendes auf
+
+```text
+npm i -g @ionic/cli 
+```
+
 * [ ] Browser \(Chrome, Firefox, …\)
 * [ ] Git \(optional\)
 
