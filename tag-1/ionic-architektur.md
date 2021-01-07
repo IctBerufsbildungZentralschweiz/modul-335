@@ -1,6 +1,6 @@
 # Ionic: Architektur
 
-![](../.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2812%29.png)
 
 ![](../.gitbook/assets/architecture.png)
 
@@ -14,7 +14,7 @@ Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova/
 
 Die Architektur von Ionic kann sogar noch etwas detaillierter aufgeteilt werden:
 
-![](../.gitbook/assets/overview.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 ## Wichtige Dateien in der Projektstruktur
 
