@@ -28,7 +28,10 @@ Ionic basiert und verwendet:
 * [HTML5](https://de.wikipedia.org/wiki/HTML5)
 * [CSS](https://de.wikipedia.org/wiki/Cascading_Style_Sheets)
 * [SASS](http://sass-lang.com/)
-* [Angular](https://angular.io/) \(Typescript\)
+* Ein JS-Framework
+  * [Angular](https://angular.io/) \(inkl. Typescript\)
+  * [React](https://ionicframework.com/docs/vue/your-first-app)
+  * [Vue](https://ionicframework.com/docs/vue/your-first-app) \(seit Herbst 2020\)
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
@@ -36,19 +39,14 @@ Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
 Ionic 1.x war die erste, sehr gute produktiv verwendbare Version von Ionic. 1.x ist jedoch inzwischen deprecated \(wird nicht weiterentwickelt\) und somit sind Ionic 2, 3 und 4 die direkten Nachfolger.
 
+Seit 2020 ist Ionic für alle 3 grossen JS-Frameworks \(Angular, React, Vue\) verfügbar und somit etwas agnostischer. 
+
 ## Dokumentation
 
 Handbücher und Bedienungsanleitung liest niemand und verstauben doch nur oder? Richtig, daher ist die Ionic Doku auch elektronisch und hier zu finden:  
 [https://ionicframework.com/docs/](https://ionicframework.com/docs/)
 
 Du findest dort sehr anschauliche Beispiele fürs Styling deiner App, gute Codebeispiele für native Komponenten und vieles mehr.
-
-## Ionic Creator
-
-Ionic bietet eine eigene, kostenpflichtige IDE namens [Creator](https://creator.ionic.io/app/login) an. Im letzten Jahr wurde [Ionic Creator](https://creator.ionic.io/app/login) in diesem ÜK's mit allen Vor- & Nachteilen noch verwendet.
-
-![](../.gitbook/assets/ionic_creator.png)  
-Wir verwenden in diesem Kurs aber die lokale Entwicklungsumgebung rund um Ionic CLI, damit könnt ihr auch nach diesen 5 Kurstagen noch weiter an Euren Apps ~~basteln~~ programmieren.
 
 ## Ionic Command Line Interface
 
@@ -72,6 +70,9 @@ Ein neues Projekt erstellt du mit
 
 ```bash
 ionic start myNewProject
+
+# Überischt aller Möglichkeiten
+ionic start --list
 ```
 
 {% hint style="warning" %}
