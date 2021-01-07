@@ -14,7 +14,8 @@ Zusätzlich gibt es Unterlagen auf Moodle unter: [https://kurse.ict-bz.ch](https
 
 Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installieren könnt:
 
-* [ ] Visual Studio Code \(empfohlen\) Plugins:
+* [ ] Visual Studio Code \(empfohlen\)
+* [ ] Plugins:
   * [ ] Angular Snippets
   * [ ] Auto Close Tag
   * [ ] Auto Rename Tag
