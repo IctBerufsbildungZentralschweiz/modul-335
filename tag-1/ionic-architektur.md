@@ -1,5 +1,7 @@
 # Ionic: Architektur
 
+![](../.gitbook/assets/image%20%2811%29.png)
+
 ![](../.gitbook/assets/architecture.png)
 
 Wie bereits erwähnt ist Ionic ein Framework welches sich die folgenden Technologien zu Nutze macht:
@@ -8,7 +10,7 @@ Wie bereits erwähnt ist Ionic ein Framework welches sich die folgenden Technolo
 * CSS
 * JS
 
-Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova dem eigentlichen Hybriden App Framework. Cordova wiederum greift auf die nativen API's des darunterliegenden Betriebssysteme \(iOS / Android\) zu.
+Dabei übernimmt Ionic auch die Kommunikation als JavaScript-Bridge mit Cordova/Capacitor dem eigentlichen Hybriden App Framework. Cordova/Capacitor wiederum greift auf die nativen API's der darunterlegenden Betriebssysteme \(iOS / Android\) zu.
 
 Die Architektur von Ionic kann sogar noch etwas detaillierter aufgeteilt werden:
 

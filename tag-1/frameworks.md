@@ -57,3 +57,9 @@ Die Seite zeigt dir nicht nur die Unterschiede auf, sondern bietet dir und deine
    1. Welche Frameworks kennst du schon?
    2. Welches würde dich interessieren? Warum?
 
+
+
+{% embed url="https://appfigures.com/top-sdks/development/apps" %}
+
+
+

@@ -4,7 +4,7 @@
 
 [Wikipedia - Ionic Framework](https://enz.lu/7t)
 
-![](https://github.com/IctBerufsbildungZentralschweiz/modul-335/tree/4fd708292f5edca996163bd7205d0ebb1762778c/_allgemein/ionic-logo.png)
+![](../.gitbook/assets/image%20%2810%29.png)
 
 ## Website
 
@@ -32,6 +32,10 @@ Ionic basiert und verwendet:
   * [Angular](https://angular.io/) \(inkl. Typescript\)
   * [React](https://ionicframework.com/docs/vue/your-first-app)
   * [Vue](https://ionicframework.com/docs/vue/your-first-app) \(seit Herbst 2020\)
+
+![](https://ionicframework.com/img/homepage/frameworks.png)
+
+
 
 Geh auf die Links oben und schau dir die Technologien etwas genauer an...
 
