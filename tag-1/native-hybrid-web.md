@@ -8,7 +8,7 @@ Wir werden in den kommenden Tagen viel über die drei Hauptbegriffe Native, Hybr
 
 ### Native
 
-Bei einer nativen Applikation wird meist gemeint, dass die App explizit für ein Betriebssystem \(iOS, Android, ...\) programmiert wurden. So kann z.B. eine mit der Programmiersprache Swift \(Apple\) für iOS geschriebene App nicht auf Android laufen.
+Bei einer nativen Applikation wird meist gemeint, dass die App explizit für ein Betriebssystem \(iOS, Android, ...\) programmiert wurde. So kann z.B. eine mit der Programmiersprache Swift \(Apple\) für iOS geschriebene App nicht auf Android laufen.
 
 ### Web
 
