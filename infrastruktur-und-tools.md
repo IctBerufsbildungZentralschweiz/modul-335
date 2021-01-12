@@ -26,8 +26,8 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
 * [ ] NodeJS 
 * [ ] Rufen dann im Visual Studio Code folgendes auf
 
-```text
-npm i -g @ionic/cli 
+```bash
+npm i -g @ionic/cli   # Auf macOS / Linux muss sudo verwendet werden
 ```
 
 * [ ] Browser \(Chrome, Firefox, …\)
