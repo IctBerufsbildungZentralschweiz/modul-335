@@ -20,6 +20,8 @@ Die Architektur von Ionic kann sogar noch etwas detaillierter aufgeteilt werden:
 
 Um die richtigen Dateien in einer Projektstruktur zu finden, hilft dir folgende Aufstellung:
 
+![](../.gitbook/assets/ionic_angular-2-page-2.svg)
+
 ![](../.gitbook/assets/ionic2_folder.png)
 
 ## Ionic Generator
