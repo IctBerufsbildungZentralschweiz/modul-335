@@ -10,7 +10,7 @@ In deiner Applikation findest du eine zentrale Datei um das Routing zu steuern:
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginPage } from './login/login.page';
-import { DetailPage } from './datail/datail.page';
+import { DetailPage } from './detail/detail.page';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -103,33 +103,62 @@ Hier wird nun wiederum die Zuordnung auf die jeweiligen Komponenten `HomePage` u
 
 Die Navigation ist basierend auf welcher URL wir gerade haben resp. welcher Route dazu passt. Wenn die URL gewechselt wird, ändert die aktuelle Seite. Aber wir haben einige weitere Optionen um zu navigieren:
 
-Man kann mittels normalen Angular Router **href** verwenden um auf eine andere Seite zu navigieren:
+Zuerst müssen wir den Angular Router importieren und im `constructor` in unserer Page/Component hinzufügen. Füge dazu in der Page/Component folgendes ein:
 
+{% code title="navigation.page.ts" %}
+```typescript
+// Schritt 1: Angular Router importieren
+import { Router } from '@angular/router';
+
+
+... 
+
+export class NavigationPage implements OnInit {
+    // Schritt 2: Router in den Konstruktur hinzufügen
+    constructor(private router: Router) { }
+    
+    
+    ...
+}
+```
+{% endcode %}
+
+Danach kann man ein normalen Angular Router **href** verwenden um auf eine andere Seite zu navigieren. `/detail` ist dabei die URL der Zielseite.
+
+{% code title="navigation.page.html" %}
 ```markup
 <ion-item [href]="'/detail/' + item.id">
 ```
+{% endcode %}
 
 oder auch im Code:
 
-```typescript
-navigateToLogin() {
-    this.router.navigateByUrl('/login');
+{% code title="navigation.page.ts" %}
+```javascript
+navigateToDetail() {
+    this.router.navigateByUrl('/detail');
 }
 ```
+{% endcode %}
 
-```typescript
-<ion-button (click)="navigateToLogin()">Login</ion-button>
+{% code title="navigation.page.html" %}
+```markup
+<ion-button (click)="navigateToDetail()">Detailseite anzeigen</ion-button>
 ```
+{% endcode %}
 
 ## Wie übergebe ich Werte zwischen zwei Seiten?
 
 Das Array, welches der `navigate` Funktion als Parameter übergeben wird, akzeptiert die folgenden Parameter:
 
-```typescript
+{% code title="navigation.page.ts" %}
+```javascript
 navigateToDetail() {
+    // Der Parameter 'id' wird später weiter unten weiterverwendet
     this.router.navigate(['/detail', { id: itemId }]);
 }
 ```
+{% endcode %}
 
 Die Daten sind in der `PersonDetail`-Seite nun über die `ActivatedRoute` mit über `paramMap`zu holen:
 
@@ -149,6 +178,7 @@ export class PersonDetailPage implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    // Hier wird die Personen-ID über den Parameter 'id' geholt.
     this.personID = this.route.snapshot.paramMap.get('id');
   }
 
