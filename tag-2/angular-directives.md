@@ -147,9 +147,7 @@ Danach fügen wir bei unserem Bild die Komponente auf `ngIf` mit Wert `showPictu
       3. Multiplikation \(x\)
       4. Division \(÷\)
    3. Ein Button zum zurücksetzen
-5. Teste dein App mittels Dev-App auf deinem Smartphone. Zufrieden?
-
-Wir schauen uns einige Lösungen gemeinsamen an.
+5. Wir schauen uns einige Lösungen gemeinsamen an.
 
 #### Zusatzaufgabe:
 
