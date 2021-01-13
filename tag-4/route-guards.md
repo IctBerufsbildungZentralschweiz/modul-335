@@ -285,7 +285,7 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Re
 
 1. Lies die Doku oben nochmals gut durch. 
 
-2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: _m335-auth_ 
+2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` 
 
 3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
 
