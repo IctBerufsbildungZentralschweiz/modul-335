@@ -12,3 +12,5 @@
 4. Füge auf der `NavigationDetail`-Seite ein Button hinzu, mit welchen du zurück auf die Navigation-Seite navigieren kannst
 5. Suche in der Doku wie du den Zurück-Pfeil in deine Toolbar bringst
 
+
+
