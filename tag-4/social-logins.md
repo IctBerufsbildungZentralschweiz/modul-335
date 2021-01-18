@@ -20,6 +20,10 @@ Anbei eine grafische Übersicht des Authentisierungs-Prozesses:
 
 {% embed url="https://www.youtube.com/watch?v=uUMp7qcHhIc" caption="" %}
 
+{% embed url="https://www.youtube.com/watch?v=Rs1imvTbeN0&ab\_channel=SimonGrimm" %}
+
+
+
 ## Übung
 
 ![](../.gitbook/assets/ralph_uebung.png)
