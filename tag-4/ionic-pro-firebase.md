@@ -70,7 +70,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 // Environments importieren
-import { environment } from "../environments/environment";t
+import { environment } from "../environments/environment";
 ```
 
 {% hint style="info" %}
