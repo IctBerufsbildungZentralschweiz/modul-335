@@ -2,9 +2,7 @@
 
 ## Ionic Appflow
 
-**\(Ihr neues Flaggschiff, seit Herbst 2018 nicht mehr Ionic PRO\)**
-
-Ionic Appflow ist eine powervolle Sammlung von Services und Features, welche das Ionic Framework erweitert. Es bringt die App Entwicklung für Entwicklungsteams auf ein total neues Level.
+Ionic Appflow ist ihr neues Flaggschiff und eine powervolle Sammlung von Services und Features, welche das Ionic Framework erweitert. Es bringt die App Entwicklung für Entwicklungsteams auf ein total neues Level.
 
 Ionic Appflow hat diverse Services, welche dich durch den gesamten App Lifecycle beschäftigen:
 
@@ -15,9 +13,12 @@ Ionic Appflow hat diverse Services, welche dich durch den gesamten App Lifecycle
 
 Die meistens Services basieren auf einem einfachen GIT-Workflow, welcher dir als Entwickler bekannt sein sollte.
 
-### Du möchtest, resp. hast Ionic Appflow bereits verwendet
+### Du möchtest Ionic Appflow verwenden?
 
-Zu Beginn dieses Kurses haben wir dich darum gebeten, einen Account auf folgender Website zu machen: [https://dashboard.ionicjs.com/apps](https://dashboard.ionicjs.com/apps) Ja genau, bereits auf Ionic Appflow.
+Um Ionic Appflow zu Nutzen, kannst du dir auf der folgenden Seite einen kostenlosen, limitierten Account erstellt:  
+[https://ionicframework.com/appflow](https://ionicframework.com/appflow)
+
+Damit Ionic ihre Kosten ebenfalls bezahlen kann, gibts dort mehrere Pro-Features welche kostenpflichtig werden. 
 
 ## Google Firebase
 
