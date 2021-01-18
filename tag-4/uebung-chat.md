@@ -141,18 +141,27 @@
 
 1. Wir setzen die Firebase-Konfiguration für diese Übung  
 
+
+
+Kopiere folgenden Inhalt in dein src/environments/environment.ts :
+
+{% code title="environment.ts" %}
 ```javascript
-       // Firebase Einstellungen 
-       export const firebaseConfig = {
-         apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
-         authDomain: "m335-uebungen.firebaseapp.com",
-         databaseURL: "https://m335-uebungen.firebaseio.com",
-         projectId: "m335-uebungen",
-         storageBucket: "m335-uebungen.appspot.com",
-         messagingSenderId: "675049996439",
-         appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
-       };
+export const environment = {
+  production: false,
+  // Neu hinzufügen
+  firebaseConfig: {
+    apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
+    authDomain: "m335-uebungen.firebaseapp.com",
+    databaseURL: "https://m335-uebungen.firebaseio.com",
+    projectId: "m335-uebungen",
+    storageBucket: "m335-uebungen.appspot.com",
+    messagingSenderId: "675049996439",
+    appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
+  }
+};
 ```
+{% endcode %}
 
 1. Wir fügen die Angularfire in den `imports` hinzu:  
 
@@ -183,17 +192,9 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 ​
+// Environments importieren
+import { environment } from "../environments/environment";
 ​
-// Firebase Einstellungen 
-export const firebaseConfig = {
-   apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
-   authDomain: "m335-uebungen.firebaseapp.com",
-   databaseURL: "https://m335-uebungen.firebaseio.com",
-   projectId: "m335-uebungen",
-   storageBucket: "m335-uebungen.appspot.com",
-   messagingSenderId: "675049996439",
-   appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
-};
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -202,7 +203,7 @@ export const firebaseConfig = {
     IonicModule.forRoot(),
     AppRoutingModule,
     IonicStorageModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule
   ],
