@@ -17,7 +17,19 @@
 
 Firebase oder auch andere Backends müssen geschützt werden, Client-Seitig reicht dies nicht. Daher immer schön brav die Regeln erstellen:
 
+{% embed url="https://www.youtube.com/watch?v=sw1Uy3zwsLs&ab\_channel=Fireship" %}
+
+
+
 {% embed url="https://firebase.google.com/docs/rules" %}
+
+### Capacitor absichern
+
+{% embed url="https://capacitorjs.com/docs/guides/security" %}
+
+
+
+### 
 
 ### Cordova Whitelisting von URL's
 
