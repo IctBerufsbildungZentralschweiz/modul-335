@@ -104,16 +104,16 @@ item: string;
 {{ item.myValue }}
 ```
 
-Das Property selber ist nicht das Problem, jedoch das Objekt selber. Es wird versucht ein Property `myValue` des nicht vorhanden oder null Objekts `item` aufzurufen. Prüfe die initialiserung des Objekts oder verwende folgenden Code:
+Das Property selber ist nicht das Problem, jedoch das Objekt selber. Es wird versucht ein Property `myValue` des nicht vorhanden oder null Objekts `item` aufzurufen. Prüfe die initialiserung des Objekts oder verwende den "safe navigation operator":
 
 ```typescript
-// ? operator prevents crashing here!
+// ? operator prevents crashing here if item is null or undefined!
 {{ item?.myValue }}
 ```
 
 ## Runtime Error - Uncaught \(in promise\): invalid link: MyPage
 
-Dieser Fehler tritt auf wenn du versuchst auf eine Seite MyPage zu navigieren, die nicht existiert. Hast du den Name richtig geschrieben?
+Dieser Fehler tritt auf wenn du versuchst auf eine Seite MyPage zu navigieren, die nicht existiert. Hast du den Namen richtig geschrieben?
 
 ## Runtime Error - \_co.myFunction is not a function
 
