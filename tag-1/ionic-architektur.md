@@ -43,19 +43,6 @@ uns das ganze generieren lassen. Praktisch nicht?
 Verschaff dir doch bitte in folgender Doku einen Überblick:  
 [https://ionicframework.com/docs/cli/generate/](https://ionicframework.com/docs/cli/generate/)
 
-## Ionic DevApp
-
-DevApp ist eine 100% gratis App für iOS und Android, welche es dir ermöglicht deine Apps direkt auf deinem Mobiltelefon zu testen. Sie bietet eine perfekte Live-Ansicht deiner Änderungen und hat auch sehr vielen nativen Plugins bereits vorinstalliert.
-
-![](../.gitbook/assets/devapp-image.jpg)
-
-Die App kann wie folgt mit der Ionic DevApp verwendet werden: 
-
-```bash
-ionic cordova prepare
-ionic serve --devapp
-```
-
 ## Wie debugge ich meine App?
 
 HTML, CSS & JS sind cool oder? Ja, das denkt wohl jeder Entwickler bis er vor dem ersten wirklichen Problem steht.  
