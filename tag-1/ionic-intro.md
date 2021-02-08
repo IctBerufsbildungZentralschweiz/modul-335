@@ -60,7 +60,7 @@ Du kannst ionic mit folgendem Befehl installieren:
 npm install -g @ionic/cli
 ```
 
-Die [Ionic CLI](https://ionicframework.com/docs/cli/) ist bester Helfer für die künftige Entwicklung mit Ionic. Wir Wissen, aller Anfang ist schwer, aber wie wärs mit
+Die [Ionic CLI](https://ionicframework.com/docs/cli/) ist bester Helfer für die künftige Entwicklung mit Ionic. Wir wissen, aller Anfang ist schwer, aber wie wärs mit
 
 ```bash
 ionic
