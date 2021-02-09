@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'login', component: LoginPage },
   { path: 'home', loadChildren: './pages/home/home.module#HomeModule' },
   { path: 'about', loadChildren: './pages/about/about.module#AboutModule' },
-  { path: 'detail/:id', component: DetailPage },
+  { path: 'detail/:id', loadChildren: './pages/detail/detail.module#DetailModule' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
