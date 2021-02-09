@@ -14,31 +14,31 @@ Bislang wurden über 100 Gestaltprinzipien formuliert, die sich teilweise übers
 
 #### Prinzip der Ähnlichkeit
 
-![](../.gitbook/assets/image%20%2813%29.png)
+![](../.gitbook/assets/gestaltprinzip_aehnlichkeit-300x300.gif)
 
 Ähnliche Elemente werden als zusammengehörig und gruppiert wahrgenommen. Die Ähnlichkeit der Elemente kann dabei auch in Farbe, Form oder Orientierung erfolgen. Im Bild links oben sehen wir Punkte, die nicht zwingend horizontale Zeilen oder vertikale Spalten bilden. Färben wir einige Punkte ein, sehen wir vertikale Spalten. Unten sehen wir die gedrehten Rechtecke als zusammengehörig.
 
 #### Prinzip des guten Verlaufs
 
-![](../.gitbook/assets/image%20%2815%29.png)
+![](../.gitbook/assets/gestaltprinzip_guter-verlauf-300x300.gif)
 
 Beieinanderliegende Punkte werden gruppiert und als zusammengehörige Linie angesehen. Sich überschneidende Linien folgen in unserer Interpretation dem einfachsten Weg. So werden links oben im Bild zwei sich überlappende, leicht geschwungene Linien \(statt einzelner Punkte\) gesehen, deren Anfang und Ende jeweils diagonal gegenüberliegen. Die Alternative \(zwei Linien deren Anfang und Ende jeweils auf der gleichen Seite liegen, so dass die Linien selbst eine Spitze in der Mitte bilden\) ist nicht einfach genug. Zudem werden die überlappenden Quadrate bzw. Kreise als ebensolche wahrgenommen und nicht als Zusammensetzung komplexer Einzelelemente. \|
 
 #### Prinzip der Nähe
 
-![](../.gitbook/assets/image%20%2817%29.png)
+![](../.gitbook/assets/gestaltprinzip_naehe-300x300.gif)
 
 Elemente die nahe beieinander liegen, werden als zusammengehörig wahrgenommen. So bilden die Punkte oben links im Bild horizontale Zeilen. Rechts unten schlägt das Prinzip der Nähe das Prinzip der Ähnlichkeit, so dass wir keine Spalten aus Kreis und Quadraten sehen, sondern ebenfalls Horizontale Linien. \(Die Gruppenbildung im Bild „links oben“ und „rechts unten“ selbst folgt auch dem Prinzip der Nähe.\)
 
 #### Prinzip der gemeinsamen Region
 
-![](../.gitbook/assets/image%20%2816%29.png)
+![](../.gitbook/assets/gestaltprinzip_gemeinsame-region-300x300.gif)
 
 Elemente, die in einem geschlossenen Bereich liegen, nehmen wir als Einheit wahr. In der ersten Zeile werden diejenigen Punkte nach dem Gesetz der Nähe als zusammengehörig empfunden, die näher aneinander liegen. Wird, wie in der zweiten Zeile, ein Rahmen um die Punkte gelegt, folgt die Gruppierung den Rahmen. Die Worte im Buchstabensalat erkennen wir schneller als zusammengehörig, wenn wir diese in einen abgeschlossenen Bereich setzen. Das dritte versteckte Wort habe ich nicht markiert…
 
 #### Prinzip der Verbundenheit
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../.gitbook/assets/gestaltprinzip_verbundenheit-300x300.gif)
 
 Verbundene Elemente werden als zusammengehörig wahrgenommen. Im Bild oben dominiert das Prinzip der Verbundenheit die Prinzipien der Nähe und Ähnlichkeit: Trotz Einfärbung oder Formänderungen, werden die zwei verbundenen Elemente als gruppiert wahrgenommen.
 
