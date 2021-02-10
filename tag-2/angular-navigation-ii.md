@@ -4,7 +4,7 @@
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-1. Wir gehen nun nochmals zurück zur zuvor erstellen Seiten Navigation. 
+1. Wir gehen nun nochmals zurück zur zuvor erstellten Seite Navigation. 
 2. Da wir nun auch wissen, wie wir Events in unserem Template einfügen und auch Funktionen in unseren Component definieren, versuchen wir noch die weiteren Arten der Navigation hinzufügen:
    1. Mittels Angular Router: Navigate By URL auf die `NavigationDetail`-Seite
    2. Mittels Angular Router: Navigate mit Parameter auf die `NavigationDetail`-Seite
