@@ -9,7 +9,7 @@ Hier einige Beispiele:
 
 _The Action Sheet is a slide-up panel that lets the user choose from a set of options. Dangerous options are highlighted in red and made obvious._
 
-![](../.gitbook/assets/actionSheet.gif)
+![](../.gitbook/assets/actionsheet.gif)
 
 ### Spinner
 

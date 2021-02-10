@@ -30,7 +30,7 @@ Ionic basiert und verwendet:
 * [SASS](http://sass-lang.com/)
 * Ein JS-Framework
   * [Angular](https://angular.io/) \(inkl. Typescript\)
-  * [React](https://ionicframework.com/docs/vue/your-first-app)
+  * [React](https://ionicframework.com/docs/react)
   * [Vue](https://ionicframework.com/docs/vue/your-first-app) \(seit Herbst 2020\)
 
 ![](https://ionicframework.com/img/homepage/frameworks.png)

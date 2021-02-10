@@ -37,8 +37,10 @@
 ## Tag 4
 
 * [Ionic Appflow / Firebase](tag-4/ionic-pro-firebase.md)
-* [Route Guards / Login](tag-4/route-guards.md)
-* [Datenanbindung](tag-4/datenanbindung.md)
+* [Guards / Service / Login](tag-4/route-guards.md)
+* [Datenanbindung: Online](tag-4/datenanbindung-online.md)
+* [Datenanbindung: Offline](tag-4/storage.md)
+* [Eigene Guard erstellen \(Tutorial\)](tag-4/eigene-guard-erstellen-tutorial.md)
 * [Übung: Chat](tag-4/uebung-chat.md)
 * [Social Logins](tag-4/social-logins.md)
 * [iOS, Android Entwicklung](tag-4/ios-android-entwicklung.md)

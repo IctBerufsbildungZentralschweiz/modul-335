@@ -40,6 +40,16 @@ Programmiere nun ganz normale deine Funktionen in den entsprechenden Components 
 ionic build
 ```
 
+Danach müssen wir die Platform zu dem Projekt hinzufügen. Es wird ein Order `android` oder `ios` erstellt:
+
+```bash
+# Android
+npx cap add android
+
+# iOS
+npx cap add ios
+```
+
 Dann muss du den Capacitor `copy` Befehl ausführen, welcher alle Assets \(in diesem Fall deine die Ionic Angular App\) in den nativen Codeteil deines Projekt kopiert:
 
 ```bash

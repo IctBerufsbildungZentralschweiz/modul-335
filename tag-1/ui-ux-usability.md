@@ -44,7 +44,7 @@ Verbundene Elemente werden als zusammengehörig wahrgenommen. Im Bild oben domin
 
 #### Prinzip des gemeinsamen Schicksals
 
-![](../.gitbook/assets/gestaltprinzip_gemeinsames-schicksal.gif)
+![](../.gitbook/assets/gestaltprinzip_gemeinsames-schicksal%20%281%29.gif)
 
 Elemente, die sich gemeinsam verändern oder bewegen, werden als zusammengehörig wahrgenommen. Bekannt aus Animationen, Leuchtreklamen, Paraden uvm. Auch nehmen wir Vogelschwärme nicht als tausende einzelner Vögel wahr, sondern als einen sich bewegenden Schwarm.
 
@@ -56,7 +56,7 @@ Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehöri
 
 #### Prinzip der Bedeutung
 
-![](../.gitbook/assets/gestaltprinzip_bedeutung.gif)
+![](../.gitbook/assets/gestaltprinzip_bedeutung%20%281%29.gif)
 
 Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt.
 
@@ -111,13 +111,13 @@ Die User Experience oder wörtlich Deutsch Nutzererfahrung umschreibt alle Aspek
 
 ### Beispiel der Heinz Ketchup-Flasche
 
-![](../.gitbook/assets/uiuxusability.jpg)
+![](../.gitbook/assets/uiuxusability%20%281%29.jpg)
 
 [Hier gehts zum vollen Artikel](http://www.measuringu.com/blog/evaluating-ux.php)
 
 ## Gruppenübung
 
-![](../.gitbook/assets/ralph_uebung%20%281%29.png)
+![](../.gitbook/assets/ralph_uebung%20%281%29%20%281%29.png)
 
 Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 

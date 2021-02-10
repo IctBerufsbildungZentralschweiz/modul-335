@@ -1,113 +1,40 @@
-# Route Guards / Login
+# Guards / Service / Login
 
-Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Route_ _Guards_ Zugriff auf gewisse Routes \(z.B.`/meineliste`\) verhindern, sofern gewisse Konditionen zutreffen. Eines der bekanntesten Beispiele ist einem Benutzer keine Zugriff zu gewähren, sofern dieser nicht eingeloggt ist. Genau diesen Fall werden wir in den kommenden Kapitel zusammen erarbeiten.
+Wenn wir das Angular Routing verwenden, können wir mit sogenannten _Guards_ Zugriff auf gewisse Routes \(z.B.`/meineliste`\) verhindern, sofern gewisse Konditionen zutreffen.   
+Beispiele dafür sind:
 
-## Route Guards
+* Willkommens und Tutorial-Seiten beim Start der App
+* Login- und Registrierung-Formulare resp. die geschützten Seiten dazu
 
-Die grundsätzliche Idee ist es unseren Routes einen Service anzuhängen, welcher als Route Guard für eine spezifische Route gilt. Dieser Service muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurück liefert. Wenn `true` zurückkommt wird dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
+In den kommenden Kapiteln werden wir dies zusammen erarbeiten.
+
+## Guards
+
+Die grundsätzliche Idee ist es unseren Routes eine Route Guard anzuhängen.   
+Diese Guard muss über eine `canActivate` resp. `canLoad` Methode verfügen, welche entweder `true` oder `false` zurück liefert. Wenn `true` zurückkommt wird dem Benutzer der Zugriff erlaubt, bei `false` wird er keinen Zugriff auf die Route erhalten.
 
 `canActivate` wird verwendet um den Benutzer den Zugriff auf eine gewisse Route zu verweigern, `canLoad` hingegen verhindert sogar das Laden des Moduls und dessen Kinder anstatt nur den Zugriff. Dies sollte speziell im Fall von LazyLoaded Seiten verwendet werden. \(siehe `loadChildren` in den `routes` der Datei `app-routing.module.ts`\)
 
 {% hint style="warning" %}
-Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur clientseitig im Browser geschützt. Er wird strengstens empfohlen die verwendeten Daten auf dem Server resp. den API-Endpunkt ebenfalls zusätzlich vor unerwünschten Zugriffen und Diebstahl zu schützen.
+Wichtig: Wenn wir Auth Guards verwenden wird die Applikation nur Clientseitig im Browser geschützt. Er wird strengstens empfohlen die verwendeten Daten auf dem Server resp. den API-Endpunkt ebenfalls zusätzlich vor unerwünschten Zugriffen und Diebstahl zu schützen. Mehr dazu auch am Tag 5 im Kapitel Security.
 {% endhint %}
 
-### Eine eigene Guard erstellen \(optional\)
+In diesem Kapitel schauen wir uns zuerst das Login an, später am heutigen Tag kommt dann noch das Tutorial dazu. 
 
-{% hint style="danger" %}
-WICHTIG:   
-Seit Herbst 2019 bietet `@angular/fire` die [AngularFireAuthGuard](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt. Daher hilft zwar das folgende Kapitel noch fürs Verständnis, kann aber direkt gelöst werden.
-{% endhint %}
+![Capture](https://everythingfullstack.files.wordpress.com/2017/04/capture.jpg?w=700)
 
-Eine eigene Guard, in unserem Fall für das Login, zu erstellen ist so einfach, wie einen Service zu erstellen. Verwende dazu `generate` der Ionic CLI:
+## Service
 
-```bash
-ionic generate guard _core/Auth
-```
-
-Diese AuthGuard muss nun lediglich die Methode `canActivate` resp. `canLoad` implementieren, welche `true` oder `false` zurückgibt, sofern der Benutzer eingeloggt ist.
-
-{% code title="auth.guard.ts" %}
-```typescript
-import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { AuthService } from './auth.service';
-
-
-@Injectable()
-export class AuthGuard implements CanActivate {
-  constructor(private auth: AuthService, private router: Router) {}
-
-
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean> | boolean {
-      if (this.auth.authenticated) { return true; }
-
-      console.log('access denied!')
-      this.router.navigate(['/login']);
-      return false
-
-
-  }
-}
-```
-{% endcode %}
-
-Wie du siehst, wird hier die Methode `authenticated` from `AuthService` verwendet, um zu prüfen ob der Benutzer eingeloggt ist. Sofern dies der fall ist senden wir `true` zurück, ansonsten geben wir `false` zurück und navigieren auf `/login` zurück. Wie wir den verwendeten `AuthService` erstellen, siehst du gleich.
-
-Sobald wir die Methoden in unserer `AuthGuard` erstellt haben, müssen wir `AuthGuard` noch in unserem `app.module.ts` unter `providers` einbinden:
-
-{% code title="app.module.ts" %}
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { AuthGuard } from './_core/auth.guard';
-
-
-@NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    AuthGuard
-  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-```
-{% endcode %}
-
-
-
-### Einen Service erstellen
-
-Um die Logik rund um das Login etwas zu entkoppeln, erstellen wir einen Service, welchen wir oben bereits in der `AuthGuard` verwendet haben. Verwende hier wiederum die Ionic CLI:
+Um die Logik rund um das Login etwas zu entkoppeln und unser wachsendes Projekt sauber zu halten, erstellen wir einen Service. Verwende hier wiederum die Ionic CLI:
 
 ```text
 ionic generate service _core/Auth
 ```
 
-In der soeben generierten Datei `auth.service.ts` im Ordner `_core` müssen wir nun zwingend die Methode `authenticated` ausprogrammieren. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
+Die soeben generierten Datei `auth.service.ts` im Ordner `_core` soll alles rund ums Login beinhalten. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
 {% tabs %}
-{% tab title="NEU:  Service wenn mit AngularFire guards" %}
+{% tab title="Auth Services" %}
 {% code title="auth.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
@@ -140,51 +67,32 @@ export interface User {
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="Wenn mit eigener Route-Guard" %}
-{% code title="auth.service.ts" %}
-```javascript
-import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
-
-@Injectable({
-  providedIn: 'root'
-})
-export class AuthService {
-
-  constructor(private afAuth: AngularFireAuth) { }
-
-  async loginWithEmailAndPassword (user: User) {
-    // TODO: Login für Benutzer ausprogrammieren
-  }
-
-  async createUserWithEmailAndPassword (user: User) {
-   // TODO: Registrierung für den Benutzer ausprogrammieren
-  }
-  get authenticated(): boolean {
-    // Holt den Login-Status von FirebaseAuth und gibt true zurück wenn der Benutzer eingeloggt ist
-    return this.afAuth.auth.currentUser !== null;
-  }
-  logout() {
-    // TODO: User ausloggen
-  }
-}
-export interface User {
-    email: string;
-    password: string;
-    displayname: string;
-  }
-```
-{% endcode %}
-{% endtab %}
 {% endtabs %}
 
-### Mit Guards unsere Routes schützen
+### 
 
-Was nun noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit dem `AuthGuard` schützen. Füge dazu als weiteres Property `canActivated` zu den zu schützenden Routes hinzu:
+### Mit `AngularFireAuthGuard` unsere Routes schützen
+
+Seit Herbst 2019 bietet `@angular/fire` die `AngularFireAuthGuard` an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt, so dass wir fürs Login nicht noch eine eigene Guard schreiben müssen.  
+
+Für die neue Variante mit [AngularFireAuthGuards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss  folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+
+```typescript
+import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
+```
+
+Gut nun sind wir Startklar, was uns jetzt noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit einer `AngularFireAuthGuard` schützen.   
+  
+Dabei gehen wir wie folgt vor:
+
+1. Einmalig: Neue Imports hinzufügen \(Zeile 5\)
+2. Einmalig: Zwei neue Variable definieren um das Standardverhalten festzulegen \(Zeile 8+9\)
+   1. `redirectUnauthorizedToLogin` = Wohin wird der User geleitet wenn er nicht eingeloggt ist
+   2. `redirectLoggedInToRoot` = Wohin wird der User geleitet wenn er eingeloggt ist
+3. Pro Route: Den zu schützenden Routes zwei weiteres Properties `canActivate` und `data` hinzufügen \( Zeile 21 + 21, Zeile 27+28, usw.\)
 
 {% tabs %}
-{% tab title="NEU: AngularFire guards" %}
+{% tab title="AppRouting mit AngularFireAuthGuard" %}
 {% code title="app-routing.module.ts" %}
 ```javascript
 import { NgModule } from '@angular/core';
@@ -193,7 +101,7 @@ import { LogoutComponent } from './logout/logout.page';
 // Neue imports hinzufügen
 import { AngularFireAuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
 
-// Standartverhalten festlegen
+// Standardverhalten festlegen
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
 const redirectLoggedInToRoot = () => redirectLoggedInTo(['']);
 
@@ -235,47 +143,7 @@ export class AppRoutingModule {}
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="Mit eigener Route-Guard" %}
-{% code title="app-routing.module.ts" %}
-```typescript
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from './_core/auth.guard';
-
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'locations',
-    pathMatch: 'full'
-  },
-  { path: 'login', 
-    loadChildren: './login/login.module#LoginPageModule' 
-  },
-  { path: 'registrierung', 
-    loadChildren: './registrierung/registrierung.module#RegistrierungPageModule' 
-  },
-  { path: 'locations', 
-    loadChildren: './locations/locations.module#LocationsPageModule', 
-    canActivate: [AuthGuard]
-  }
-];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule {}
-```
-{% endcode %}
-{% endtab %}
 {% endtabs %}
-
-Für die neue Variante mit [AngularFire Routeguards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss noch folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
-
-```typescript
-import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
-```
 
 ## Übung Login
 
