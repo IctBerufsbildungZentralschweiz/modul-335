@@ -22,7 +22,7 @@ export class TutorialGuard implements CanLoad {
   constructor(private storage: Storage, private router: Router) {}
 
   canLoad() {
-    return this.storage.get('tutorialVistited').then(res => {
+    return this.storage.get('tutorialVisited').then(res => {
       if (res) {
         this.router.navigate(['/app', 'tabs', 'schedule']);
         return false;
