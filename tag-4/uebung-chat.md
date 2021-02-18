@@ -278,7 +278,7 @@ export class ChatPage implements OnInit {
       // TODO: Spinner anzeigen
       let formattedDate = new Date().toLocaleString();
 
-      // TODO: Mittels push()) die Nachricht an Firebase senden 
+      // TODO: Mittels .push() die Nachricht an Firebase senden 
       // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
 
       // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
