@@ -74,7 +74,35 @@ export class AppModule {}
 ```
 {% endcode %}
 
+So und nun müssen wir zuletzt unser `app.routing-module.ts` noch anpassen, indem wir die `TutorialGuard` mit `canLoad` zu der gewünschten Route hinzufügen: 
 
+{% code title="app.routing-module.ts" %}
+```javascript
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { TutorialGuard } from './_core/tutorial.guard';
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/tutorial',
+    pathMatch: 'full'
+  },
+  // ... 
+  {
+    path: 'tutorial',
+    loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule),
+    canLoad: [TutorialGuard]
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+```
+{% endcode %}
 
 
 
