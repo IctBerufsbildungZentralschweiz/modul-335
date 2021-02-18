@@ -108,30 +108,30 @@ const redirectLoggedInToRoot = () => redirectLoggedInTo(['']);
 
 const routes: Routes = [
   {
-    path: "",
-    redirectTo: "home",
-    pathMatch: "full"
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
-    path: "home",
-    loadChildren: "./home/home.module#HomePageModule",
+    path: 'home',
+    loadChildren: './home/home.module#HomePageModule',
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
-    path: "list",
-    loadChildren: "./list/list.module#ListPageModule",
+    path: 'list',
+    loadChildren: './list/list.module#ListPageModule',
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
-  { path: "login", 
-    loadChildren: "./login/login.module#LoginPageModule", 
+  { path: 'login', 
+    loadChildren: './login/login.module#LoginPageModule', 
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectLoggedInToRoot }
   },
   {
-    path: "register",
-    loadChildren: "./register/register.module#RegisterPageModule"
+    path: 'register',
+    loadChildren: './register/register.module#RegisterPageModule'
   }
 ];
 
