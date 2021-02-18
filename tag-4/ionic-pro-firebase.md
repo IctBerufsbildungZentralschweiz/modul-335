@@ -28,11 +28,14 @@ Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.googl
 
 ### Wie füge ich Firebase zu meinem Projekt hinzu?
 
-Um Firebase zu installieren, brauchen wir AngularFire2. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
+Um Firebase zu installieren, brauchen wir `@angular/fire`. Öffne dein Terminal, geh in den Projektordner und führe folgenden Befehl aus:
 
 ```bash
+# Angular Firebase
 npm install @angular/fire firebase --save
-npm install --save @ionic/storage
+
+# Storage, brauchen wir später auch im Kapitel Datenanbindung
+npm install @ionic/storage --save 
 ```
 
 Wir müssen nun die Verbindung zwischen deiner App und  Firebase herstellen. Dazu kann man online im Firebase-Projekt die nötigen Verbindungsparameter kopieren. In unserem Fall verwenden wir für das Login immer das gleiche Projekt.  
