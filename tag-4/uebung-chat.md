@@ -98,7 +98,7 @@
 
 4. Setze im HTML den `ion-content` so, dass er nicht scrollt und kein padding hat.
 5. Ändere die Navigationsleiste so ab, dass sie eine Rote Farbe erhält.
-6. Wir helfen dir nochmals, füge folgenden Code direkt innerhalb von `ion-content` ein. Versuch dabei den Code zu verstehen.
+6. Wir helfen dir nochmals, füge folgenden Code direkt innerhalb von `ion-content` ein. Versuch dabei den Code zu verstehen. Damit \(swipe\) funktioniert, musst du das `HammerModule` in dein `app.module.ts` hinzufügen. Versuch dies doch als Zusatzaufgabe in einem zweiten Schritt.
 
    ```markup
     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
