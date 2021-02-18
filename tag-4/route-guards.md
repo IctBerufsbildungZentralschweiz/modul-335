@@ -89,7 +89,7 @@ Dabei gehen wir wie folgt vor:
 2. Einmalig: Zwei neue Variable definieren um das Standardverhalten festzulegen \(Zeile 8+9\)
    1. `redirectUnauthorizedToLogin` = Wohin wird der User geleitet wenn er nicht eingeloggt ist
    2. `redirectLoggedInToRoot` = Wohin wird der User geleitet wenn er eingeloggt ist
-3. Pro Route: Den zu schützenden Routes zwei weiteres Properties `canActivate` und `data` hinzufügen \( Zeile 21 + 21, Zeile 27+28, usw.\)
+3. Pro Route: Den zu schützenden Routes zwei weiteres Properties `canActivate` und `data` hinzufügen \( Zeile 21 + 22, Zeile 27+28, usw.\)
 
 {% tabs %}
 {% tab title="AppRouting mit AngularFireAuthGuard" %}
