@@ -146,9 +146,9 @@ Bitte beachtet und respektiert dass im Internet schon sehr viel geklaut wird. Ei
 
 ### Aktuelles
 
-{% embed url="https://developer.apple.com/wwdc20/" %}
+{% embed url="https://ionic.io/events?utm\_campaign=q1-launch-event&utm\_medium=email&\_hsmi=111812384&utm\_content=111812384&utm\_source=hs\_email" %}
 
-{% embed url="https://ionicframework.com/ioniconf" %}
+
 
 ## Feedback
 
