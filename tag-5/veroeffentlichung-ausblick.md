@@ -67,8 +67,7 @@ Hast du kein Adobe Photoshop oder sonstige kostenpflichtige Programme. Hier ist 
 
 #### App Screenshots
 
-Bilder oder in unserem Falle Screenshots deiner App sagen bekanntlich mehr als 1000 Worte. Screenshots deiner App sind Pflicht im Store und deine Visitenkarte. Mit Hilfe der Jungs von Launchkit kann man sich Kostenpflichtig schöne Screenshots erstellen lassen:  
-[https://launchkit.io/](https://launchkit.io/)
+Bilder oder in unserem Falle Screenshots deiner App sagen bekanntlich mehr als 1000 Worte. Screenshots deiner App sind Pflicht im Store und deine Visitenkarte. 
 
 Weiter macht es Sinn die Screenshots für eine Präsentation oder die Website in eine schöne Umgebung zu packen. Der Service von MockDrop bietet dir diese Möglichkeit. Mit Emotionen lässt sich eine App viel besser verkaufen.
 
