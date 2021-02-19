@@ -41,7 +41,7 @@ Um deine App in den Stores zu veröffentlichen brauchst du mindestens noch folge
 
 #### App Icon
 
-Hast du deine eigene Idee zur App gemacht, dann wirst bei der Wahl des Icons noch flexibel sein. In Projekten oder in Firmen gelten oft klare CI/CD-Guides, welchen du dich als Entwickler fügen musst.  
+Hast du deine eigene Idee zur App gemacht, dann wirst du bei der Wahl des Icons noch flexibel sein. In Projekten oder in Firmen gelten oft klare CI/CD-Guides, welchen du dich als Entwickler fügen musst.  
 Manchmal ist ein einfaches Icon sehr Nahe. Als Beispiel hier die Suurstoffi-App. Die Sauerstoff-Blasen der Schriftart "Bubbles" wurden in Form des Buchstaben "S" dargestellt:  
 ![](../.gitbook/assets/icon-76-2x.png)
 
