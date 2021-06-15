@@ -4,7 +4,7 @@
 
 ![](../.gitbook/assets/architecture.png)
 
-Wie bereits erwähnt ist Ionic ein Framework welches sich die folgenden Technologien zu Nutze macht:
+Wie bereits erwähnt ist Ionic ein Framework, welches sich die folgenden Technologien zu Nutze macht:
 
 * HTML
 * CSS
