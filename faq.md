@@ -5,10 +5,10 @@ Hier findest du eine Sammlung der meist gestellten Fragen... ❓
 {% hint style="info" %}
 Ionic bietet schon eine sehr gute Auflistung von Fehlern, schau Sie dir hier an:
 
-* [Build Errors](https://beta.ionicframework.com/docs/faq/build)
-* [Runtime Errors](https://beta.ionicframework.com/docs/faq/runtime)
-* [Native Errors](https://beta.ionicframework.com/docs/faq/native)
-* [Developer Tips](https://beta.ionicframework.com/docs/faq/tips)
+* [Build Errors](https://ionicframework.com/docs/troubleshooting/build)
+* [Runtime Errors](https://ionicframework.com/docs/troubleshooting/runtime)
+* [Native Errors](https://ionicframework.com/docs/troubleshooting/native)
+* [Developer Tips](https://ionicframework.com/docs/troubleshooting/debugging)
 {% endhint %}
 
 ## Wie kann ich meine App debuggen?
