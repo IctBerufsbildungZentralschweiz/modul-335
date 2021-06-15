@@ -18,7 +18,13 @@ _Codebeispiel:_
 
 ![](../.gitbook/assets/sass-vs-scss.png)
 
-Neben der oben beschriebenen Sass-Syntax \(indented syntax\) verfügt Sass über die neuere und heute weiter verbreitete SCSS-Syntax \(Sassy CSS\). Hier sind für die Verschachtelung der Selektoren nicht die Einrückung des Quelltextes ausschlaggebend, sondern wie in der klassischen CSS-Schreibweise die geschweiften Klammern. Auch sind am Ende der Regeln Semikola erforderlich.
+Neben der oben beschriebenen Sass-Syntax \(indented syntax\) verfügt Sass über die neuere und heute weiter verbreitete SCSS-Syntax \(Sassy CSS\). Hier sind für die Verschachtelung der Selektoren nicht die Einrückung des Quelltextes ausschlaggebend, sondern wie in der klassischen CSS-Schreibweise die geschweiften Klammern. Auch sind am Ende der Regeln Semikola erforderlich.  
+  
+Was kann der Browser anzeigen: HTML, CSS & JS ... aber nicht PUG/Jade, SCSS/SASS oder Typescript.
+
+![](../.gitbook/assets/html_css_js_body.png)
+
+
 
 ## Variablen
 
