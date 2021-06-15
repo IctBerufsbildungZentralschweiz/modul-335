@@ -20,7 +20,7 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
   * [ ] Auto Close Tag
   * [ ] Auto Rename Tag
   * [ ] Beautify
-  * [ ] Ionic 4 Snippets
+  * [ ] Ionic Snippets
 * [ ] Android Studio  [https://developer.android.com/studio](https://developer.android.com/studio)
 * [ ] Gitbash \(optional\)
 * [ ] NodeJS 
