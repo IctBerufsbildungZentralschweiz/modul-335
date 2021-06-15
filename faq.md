@@ -167,3 +167,7 @@ Wichtig ist hier zu wissen, dass du in deiner finalen App evt. wieder eine Scrol
 ng run app:serve --host=0.0.0.0 --port=8100
 ```
 
+## Beim ausführen von ionic kommt ein Fehler, dass die Scriptausführung nicht zugelassen ist
+
+[https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts](https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts)
+
