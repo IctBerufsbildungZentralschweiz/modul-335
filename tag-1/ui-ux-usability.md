@@ -72,6 +72,16 @@ Elemente, die zeitgleich auftreten oder sich ändern, werden als zusammengehöri
 
 Je nach Kontext geben wir Elementen unterschiedliche Bedeutung und neigen dazu, aufgrund der Bedeutung/Erfahrung Zusammengehörigkeit herzustellen. Im Bild sehen wir ein nach rechts zeigendes Dreieck im Kreis, das je nach Kontext eine unterschiedliche Bedeutung bekommt: Mit einem nach links zeigenden Pfeil an der Seite, wird unser Objekt zum Navigationselement \(vor/zurück\), mit einem Stop-Icon dagegen, interpretieren wir unser Objekt als Teil einer multimediale Steuerung \(Pause/Play\). Auch „Prinzip der Vertrautheit“ genannt.
 
+
+
+{% hint style="info" %}
+Weiterführende Informationen zu den Gestaltprinzipien findet ihr in den folgenden Artikeln:
+
+* [https://medium.com/@soniamos/gestaltpsychologie-und-visuelle-wahrnehmung-9-gesetze-im-ux-design-23f35ed7aff1](https://medium.com/@soniamos/gestaltpsychologie-und-visuelle-wahrnehmung-9-gesetze-im-ux-design-23f35ed7aff1)
+* [https://www.e-teaching.org/didaktik/gestaltung/visualisierung/gestaltgesetze](https://www.e-teaching.org/didaktik/gestaltung/visualisierung/gestaltgesetze)
+* [https://verdino.com/blog/gesetz-der-aehnlichkeit-und-der-naehe/](https://verdino.com/blog/gesetz-der-aehnlichkeit-und-der-naehe/)
+{% endhint %}
+
 ## Begriffe
 
 > „The difference lies in whether people are regarded as extensions of the machine or the machine is designed as an extension of people.“ Czaja \(1987\)
