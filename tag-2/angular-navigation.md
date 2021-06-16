@@ -196,5 +196,5 @@ Mehr dazu findest du auch in folgendem Tutorial:
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin mit dem Generator zwei neue Seiten Namens "Navigation" und "NavigationDetail"
 2. Füge die Seiten in deiner Seiten-Navigation mit einem passenden Ionicon-Icon hinzu. Tipp: Solltest du die Datei nicht finden, verwende die Suche deiner IDE.
-3. Versuche nun in deiner Navigation-Seite einen Button zu erstellen und mittel **\[href\]** auf deine NavigationDetail-Seite zu navigieren.
+3. Versuche nun in deiner Navigation-Seite einen Button zu erstellen und mittels **\[href\]** auf deine NavigationDetail-Seite zu navigieren.
 
