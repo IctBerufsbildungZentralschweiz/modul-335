@@ -4,7 +4,7 @@ Ionic bietet eine sehr gute Dokumentation zu allen UI-Elementen an. Um unnötige
 
 ![](../.gitbook/assets/ionic-ui.jpeg)
 
-[Dokumentation ab Ionic 4](https://beta.ionicframework.com/docs/components)
+[Dokumentation ab Ionic 4](https://ionicframework.com/docs/components)
 
 Natürlich können die Elemente auch umgestylt werden. Dazu sehen wir aber später mehr...
 
