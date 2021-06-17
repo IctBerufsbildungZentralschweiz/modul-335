@@ -50,7 +50,7 @@ npx cap add android
 npx cap add ios
 ```
 
-Dann muss du den Capacitor `copy` Befehl ausführen, welcher alle Assets \(in diesem Fall deine die Ionic Angular App\) in den nativen Codeteil deines Projekt kopiert:
+Dann musst du den Capacitor `copy` Befehl ausführen, welcher alle Assets \(in diesem Fall deine die Ionic Angular App\) in den nativen Codeteil deines Projekt kopiert:
 
 ```bash
 npx cap copy
