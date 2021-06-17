@@ -28,7 +28,7 @@ Anbei eine grafische Übersicht des Authentisierungs-Prozesses:
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-1. Ich weiss die Zeit ist knapp, aber wie Social Logins in etwa funktionieren sollte man schon wissen.
+1. Ich weiss, die Zeit ist knapp, aber wie Social Logins in etwa funktionieren sollte man schon wissen.
 2. Lies die Firebase Dokumentation z.B. zum [Social Login mit Facebook](https://firebase.google.com/docs/auth/web/facebook-login?authuser=0) durch
 3. Versuche anhand der Doku, für deine eigene App-Idee die nötigen Schritte zu machen
 4. Dabei wirst du einige Einstellungen auch auf Facebook machen müssen
