@@ -67,7 +67,7 @@ Man darf nicht vergessen, dass „Backend as a Service“-Dienste neben den Nach
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-Wir werden nun das gewonnen Wissen in einer kleinen Google Slides Herausforderung ergänzen:
+Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
 1. Begib dich in eine der Gruppen
 2. Geh via [Moodle](https://kurse.ict-bz.ch) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag4/Teil49\_Datenanbindung"_
