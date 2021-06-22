@@ -35,7 +35,7 @@ Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit:
 Mit den Methoden `storage.set(..)` `storage.get(..)` kannst du einfache Key/Value-Paare oder JSON Objekte speichern:
 
 ```javascript
-import { Storage } from '@ionic/storage';
+import { Storage } from '@ionic/storage-angular';
 
 export class MyApp {
   constructor(private storage: Storage) { }
