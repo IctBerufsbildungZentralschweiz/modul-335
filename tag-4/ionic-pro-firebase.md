@@ -35,7 +35,7 @@ Um Firebase zu installieren, brauchen wir `@angular/fire`. Öffne dein Terminal,
 npm install @angular/fire firebase --save
 
 # Storage, brauchen wir später auch im Kapitel Datenanbindung
-npm install @ionic/storage --save 
+npm install @ionic/storage-angular --save 
 ```
 
 Wir müssen nun die Verbindung zwischen deiner App und  Firebase herstellen. Dazu kann man online im Firebase-Projekt die nötigen Verbindungsparameter kopieren. In unserem Fall verwenden wir für das Login immer das gleiche Projekt.  
@@ -103,7 +103,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { IonicStorageModule } from '@ionic/storage';
+// Storage hinzufügen
+import { IonicStorageModule } from '@ionic/storage-angular';
 
 // AngularFire2 importieren
 import { AngularFireModule } from '@angular/fire';
