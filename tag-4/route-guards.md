@@ -149,13 +149,63 @@ export class AppRoutingModule {}
 
 ![](../.gitbook/assets/ralph_uebung.png)
 
-Wir möchten nun für deine App-Idee aus Use-Case 1 ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 
+Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor: 
 
 1. Lies die Doku oben nochmals gut durch. 
 
-2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher "Firebase"
+2. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher "Firebase".
 
-3. Schau dir folgendes HowTo-Video Schritt für Schritt an. Pausiere zwischendurch, denn er spricht schnell und tippt noch viel schneller. Baue dir dein eigenes Login inkl. Registrierung in deine App-Idee.
+3. Mit `ionic generate` zwei neue Seite erstellen \(Login + Registrierung\)
+
+4. Füge auf beiden Seiten Formularfelder hinzu, verwende doch gleich die Reactive Forms aus Tag 3. 
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Login</th>
+      <th style="text-align:left">Registrierung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>Email</p>
+        <p>Passwort</p>
+      </td>
+      <td style="text-align:left">
+        <p>Email</p>
+        <p>Passwort</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+5. Erstelle mit `ionic generate` einen neuen Auth-Service
+
+```text
+ionic generate service _core/Auth
+```
+
+6. Verknüpfe nun dein Registrierungsseite mit der Methode `createUserWithEmailAndPassword` des AuthService .
+
+7. Programmiere nun die Methode `createUserWithEmailAndPassword`im AuthService, damit du einen Benutzer registrieren kannst und gibt das Resultat zurück an deine Registrierungsseite. Im Service solltest du im Constructor ein `afAuth` sehen. Versuch die Methoden mit `this.afAuth.` rausfinden.
+
+8. Du solltest jetzt einen Account registriert haben. Jetzt gehts weiter zum Login
+
+9.  Das gleiche gilt es nur für die Login-Seite zu machen
+
+10. Sobald das Login fertig ist, musst du deine Applikation noch vor unerwünschten Zugriffen schützen. Verwende dazu Angular Guards
+
+#### Zusatz
+
+1. Zusatz: Füge ein Logout in deine App ein.
+2. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
+3. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
+4. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein. Evtl. kannst du hier mit Gravatar arbeiten.
+
+**Videos**
+
+Die beiden Videos sind schon etwas älter, können dir aber evt. helfen Details rauszufinden.
 
 {% hint style="warning" %}
 Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit haben, frage in deiner Gruppe nach resp. wende dich an deinen Kursleiter.
@@ -163,14 +213,8 @@ Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit h
 
 {% embed url="https://www.youtube.com/watch?v=aNW444SpFNs" caption="" %}
 
-**Video für Ionic 4**
-
 {% embed url="https://www.youtube.com/watch?v=Q8zcieAWn3g" %}
 
 
 
-1. Zusatz: Füge ein Logout in deine App ein.
-2. Zusatz: Gib dem User die Möglichkeit mehr über sich im Profil zu speichern. Z.B. Geburtsdatum, Adresse, Wohnort, usw.
-3. Zusatz: Hat der Benutzer sein Passwort vergessen? Er soll eine Möglichkeit haben sich ein neues zuzusenden.
-4. Zusatz: Gib dem Benutzer ein Gesicht. Es soll ein Profilbild hinterlegt sein. Evtl. kannst du hier mit Gravatar arbeiten.
-
+1. 
