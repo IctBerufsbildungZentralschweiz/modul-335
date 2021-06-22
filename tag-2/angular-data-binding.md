@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 ## Data binding mit ngModel
 
-`ngModel` erlaubt es eine Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder \(Inputs\) sondern auch mit Radios, Selects, usw.
+`ngModel` erlaubt es, eine Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder \(Inputs\) sondern auch mit Radios, Selects, usw.
 
 Füge folgenden Zeile deiner Component hinzu:
 
