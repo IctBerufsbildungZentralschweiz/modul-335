@@ -177,8 +177,16 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt e
         <p>Passwort</p>
       </td>
     </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
   </tbody>
 </table>
+
+![](../.gitbook/assets/image%20%2823%29.png)
+
+![](../.gitbook/assets/image%20%2824%29.png)
 
 5. Erstelle mit `ionic generate` einen neuen Auth-Service
 
@@ -187,6 +195,8 @@ ionic generate service _core/Auth
 ```
 
 6. Verknüpfe nun dein Registrierungsseite mit der Methode `createUserWithEmailAndPassword` des AuthService .
+
+![](../.gitbook/assets/login.svg)
 
 7. Programmiere nun die Methode `createUserWithEmailAndPassword`im AuthService, damit du einen Benutzer registrieren kannst und gibt das Resultat zurück an deine Registrierungsseite. Im Service solltest du im Constructor ein `afAuth` sehen. Versuch die Methoden mit `this.afAuth.` rausfinden.
 
