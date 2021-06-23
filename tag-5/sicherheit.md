@@ -29,7 +29,13 @@ Firebase oder auch andere Backends müssen geschützt werden, Client-Seitig reic
 
 
 
-### 
+### Beispiel für JS-Injection im Browser
+
+Bookmark machen, mit folgendem Inhalt. Viel Spass mit dem Game ;-\) 
+
+```markup
+javascript:var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);
+```
 
 ### Cordova Whitelisting von URL's
 
