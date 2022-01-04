@@ -36,8 +36,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./zahlen.page.scss'],
 })
 export class ZahlenPage implements OnInit {
-  anzahl: any = 3;
-  kosten: any = 5;
+  anzahl: number = 3;
+  kosten: number = 5;
+  anyVar: any = 5; // Variable mit Datentyp any
 
   constructor() {
   }
@@ -112,12 +113,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ObjektePage implements OnInit {
-  person: any = { vorname: 'Max', nachname: 'Muster'};
+  person: Person = { vorname: 'Max', nachname: 'Muster'};
 
   constructor() {
   }
   ngOnInit() {
   }
+}
+
+interface Person {
+  vorname: string;
+  nachname: string;
 }
 ```
 
@@ -147,7 +153,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ObjektePage implements OnInit {
-  punkte: any = [1,15,19,2,40];
+  punkte: number[] = [1,15,19,2,40];
 
   constructor() {
   }
@@ -187,12 +193,12 @@ Das Dritte Resultat ist 19
 5.  Auf der Seite _Objekte_ wollen wir in einem Paragraph deinen Namen ausgeben. Dabei soll "Mein Name ist:" normal als Text hinzugefügt werden und dein Name mit Hilfe von Expressions aus dem Objekt "Person" von deiner Component stammen. Füge dazu in deiner Klasse folgende Zeile hinzu:
 
     ```javascript
-    person: any = { name : 'Muster', vorname : 'Max' };
+    person: Person = { name : 'Muster', vorname : 'Max' };
     ```
 6.  Auf der Seite _Array_ möchten wir eine Liste (List-Item) von Früchte haben, welche wir aus dem Component holen:
 
     ```javascript
-    fruechte: any = [
+    fruechte: Frucht = [
     {name:'Orange'},
     {name:'Banane'},
     {name:'Apfel'}
