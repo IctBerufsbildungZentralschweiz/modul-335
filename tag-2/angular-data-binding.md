@@ -80,7 +80,7 @@ Dieses TwoWay-Binding machen wir uns in der Ausgabe gleich wieder zu Nutze. Und 
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung"
 2. Erstelle eine neue Seite "Data Binding" und füge diese wie gewohnt in dein Sidemenu ein.
-3. Erstelle in deinem HTML folgende drei Felder. Verwende dazu das [Ionic Grid](https://ionicframework.com/docs/components/#grid). Bitte wähle auch logische Namen und wähle [passende UI-Elemente](https://ionicframework.com/docs/components/#inputs):
+3. Erstelle in deinem HTML folgende drei Felder. Verwende dazu das [Ionic Grid](https://ionicframework.com/docs/api/grid). Bitte wähle auch logische Namen und wähle [passende UI-Elemente](https://ionicframework.com/docs/components/#inputs):
    1. Input: Name - Text
    2. Input: Vorname - Text
    3. Input: Alter - Number
