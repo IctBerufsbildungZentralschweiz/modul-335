@@ -2,7 +2,7 @@
 
 Bis und mit Ionic 3 war die Navigation über den sogenannten NavController möglich und basierte auf einem "Array von Seiten". Die Navigation erfolgt meistens über `push` und `pop` von Seiten und hinzufügen resp. entfernen in der History.
 
-Mit Ionic 4 wird die Navigation neu über das [**Angular Routing**](https://angular.io/guide/router) gemacht. Angular Routing basiert mehr auf dem in der URL ersichtlichen Pfad \(z.B. `http://localhost:8100/home`\).  
+Mit Ionic 4 wird die Navigation neu über das [**Angular Routing**](https://angular.io/guide/router) gemacht. Angular Routing basiert mehr auf dem in der URL ersichtlichen Pfad (z.B. `http://localhost:8100/home`).\
 In deiner Applikation findest du eine zentrale Datei um das Routing zu steuern:
 
 {% code title="app-routing.module.ts" %}
@@ -33,8 +33,8 @@ Was sehen wir hier:
 
 * Wird kein Pfad aufgerufen, wird eine Weiterleitung/Redirect auf `/login` gemacht
 * Die `LoginPage` wird als `component` direkt eingebunden
-* `/home` und `/about` werden mittels Lazy Loading eingebunden \(mehr dazu weiter unten\)
-* Nach der Route von `/detail` kann noch eine ID mitgegeben werden, so können wir z.B. Details in einer Liste anzeigen \(mehr dazu weiter unten\)
+* `/home` und `/about` werden mittels Lazy Loading eingebunden (mehr dazu weiter unten)
+* Nach der Route von `/detail` kann noch eine ID mitgegeben werden, so können wir z.B. Details in einer Liste anzeigen (mehr dazu weiter unten)
 * Die definierten `routes` werden im `RouterModule forRoot()` registriert
 
 ## Was versteht man unter Lazy Loading mit Angular Routing in Ionic?
@@ -48,7 +48,7 @@ const routes: Routes = [
 ];
 ```
 
-Anstatt nun eine `component` für eine Route anzugeben, machen wir Gebrauch der `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.  
+Anstatt nun eine `component` für eine Route anzugeben, machen wir Gebrauch der `loadChildren`-Property. Da nun nicht alles zu Beginn geladen wird, sagen wir eigentlich _"geh in diese Datei und finde heraus welche Components du laden musst"_.\
 Nehmen wir die `/home` Route als Beispiel. Der Router weiss das er die Datei `home.module.ts` öffnen muss und schaut nach `HomeModule` darin.
 
 {% code title="home.module.ts" %}
@@ -188,13 +188,19 @@ export class PersonDetailPage implements OnInit {
 
 Mehr dazu findest du auch in folgendem Tutorial:
 
-{% embed url="https://www.joshmorony.com/implementing-a-master-detail-pattern-in-ionic-4-with-angular-routing/" caption="" %}
+{% embed url="https://www.joshmorony.com/implementing-a-master-detail-pattern-in-ionic-4-with-angular-routing/" %}
 
 ## Übung
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin mit dem Generator zwei neue Seiten Namens "Navigation" und "NavigationDetail"
-2. Füge die Seiten in deiner Seiten-Navigation mit einem passenden Ionicon-Icon hinzu. Tipp: Solltest du die Datei nicht finden, verwende die Suche deiner IDE.
-3. Versuche nun in deiner Navigation-Seite einen Button zu erstellen und mittels **\[href\]** auf deine NavigationDetail-Seite zu navigieren.
-
+2. Das Ionic Template beinhaltet im Pages mit der URL "`/folder/:id`" und in deinem `app/src` findest du ebenfalls ein Ordner namens `folder`
+   1. Lösche nun den gesamten Ordner `folder` aus deinem Projekt raus
+   2. Ebenfalls geh ins `app.routing-module.ts` und lösche unter  `routes` dort alles mit "Folder" raus, wir brauchen diese Routes nicht mehr.
+3. Nun müssen wir die Links im Seitenmenu noch entfernen
+   1. Lösche dazu im `app.component.ts` im Array `appPages` alle Elemente mit Folder raus&#x20;
+4. Füge die Seiten in deiner Seiten-Navigation mit einem passenden Ionicon-Icon hinzu. Tipp: Solltest du die Datei nicht finden, verwende die Suche deiner IDE.
+5. Versuche nun in deiner Navigation-Seite einen Button zu erstellen und mittels **\[href]** auf deine NavigationDetail-Seite zu navigieren.
+6. Zusatzaufgabe:
+   1. Die Labels im Seitenmenu des Ionic Templates gefallen mir nicht, lösch diese ebenfalls aus dem Projekt raus
