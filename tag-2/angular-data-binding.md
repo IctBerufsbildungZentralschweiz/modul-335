@@ -74,6 +74,12 @@ Nun fügen wir unserem HTML einen `input`-Feld hinzu und verbinden es mit `ngMod
 
 Dieses TwoWay-Binding machen wir uns in der Ausgabe gleich wieder zu Nutze. Und geben dabei einen einfachen Text aus. Der Ort lassen wir unverändert.
 
+
+
+![2-Way Data Binding](<../.gitbook/assets/Untitled-2021-02-25-1512 (1).png>)
+
+
+
 ## Übungen
 
 ![](../.gitbook/assets/ralph\_uebung.png)
