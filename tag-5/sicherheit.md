@@ -2,22 +2,22 @@
 
 ## Mögliche Angriffsvektoren
 
-* Datendiebstahl 
-* Man in the Middle \(verändern von Daten, Identität übernehmen\)
+* Datendiebstahl&#x20;
+* Man in the Middle (verändern von Daten, Identität übernehmen)
 
 ## Schutzmöglichkeiten
 
 ### Man in the Middle
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](<../.gitbook/assets/image (1).png>)
 
-==&gt; SSL-Pinning in der App implementieren
+\==> SSL-Pinning in der App implementieren
 
 ### Firebase Regeln
 
 Firebase oder auch andere Backends müssen geschützt werden, Client-Seitig reicht dies nicht. Daher immer schön brav die Regeln erstellen:
 
-{% embed url="https://www.youtube.com/watch?v=sw1Uy3zwsLs&ab\_channel=Fireship" %}
+{% embed url="https://www.youtube.com/watch?v=sw1Uy3zwsLs&ab_channel=Fireship" %}
 
 
 
@@ -31,7 +31,7 @@ Firebase oder auch andere Backends müssen geschützt werden, Client-Seitig reic
 
 ### Beispiel für JS-Injection im Browser
 
-Bookmark machen, mit folgendem Inhalt. Viel Spass mit dem Game ;-\) 
+Bookmark machen, mit folgendem Inhalt. Viel Spass mit dem Game ;-)&#x20;
 
 ```markup
 javascript:var KICKASSVERSION='2.0';var s = document.createElement('script');s.type='text/javascript';document.body.appendChild(s);s.src='//hi.kickassapp.com/kickass.js';void(0);
@@ -66,8 +66,6 @@ Weiter zu schützen sind die sogenannten Intends, hier kann man z.B. `mailto` en
 ### Weitere nützliche Tipps
 
 {% embed url="https://blog.jscrambler.com/securing-ionic-4-cordova-apps/" %}
-
-
 
 
 

@@ -3,7 +3,8 @@
 * [Intro](README.md)
 * [Organisation](organisation.md)
 * [Kursplanung](kursplanung.md)
-* [Infrastruktur und Tools](infrastruktur-und-tools.md)
+* [Infrastruktur und Tools](infrastruktur-und-tools/README.md)
+  * [Ionic 6 & Angular 13 Upgrade](infrastruktur-und-tools/ionic-6-and-angular-13-upgrade.md)
 * [FAQ](faq.md)
 
 ## Tag 1
@@ -40,7 +41,7 @@
 * [Guards / Service / Login](tag-4/route-guards.md)
 * [Datenanbindung: Online](tag-4/datenanbindung-online.md)
 * [Datenanbindung: Offline](tag-4/storage.md)
-* [Eigene Guard erstellen \(Tutorial\)](tag-4/eigene-guard-erstellen-tutorial.md)
+* [Eigene Guard erstellen (Tutorial)](tag-4/eigene-guard-erstellen-tutorial.md)
 * [Übung: Chat](tag-4/uebung-chat.md)
 * [Social Logins](tag-4/social-logins.md)
 * [iOS, Android Entwicklung](tag-4/ios-android-entwicklung.md)
@@ -52,4 +53,3 @@
 * [Sicherheit](tag-5/sicherheit.md)
 * [Use Case 2](tag-5/use-case-2.md)
 * [Build, Veröffentlichung, Ausblick](tag-5/veroeffentlichung-ausblick.md)
-

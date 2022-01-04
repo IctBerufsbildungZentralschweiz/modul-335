@@ -1,136 +1,134 @@
 # Übung: Chat
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
-1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:  ![](../.gitbook/assets/chat.png)
+1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:\
+   &#x20;![](../.gitbook/assets/chat.png)
 2. Du nimmst wiederum deine Übung von Tag 1 "GX\_NachnameVorname\_Übung" und erstellst dort eine neue Seite "Chat".
-3. Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
+3.  Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
 
-   ```css
-   .chat-nachrichten {
-       height: calc(100% - 60px);
-       overflow: scroll;
-       background-color: var(--ion-color-light-shade);
-       span {
-           background-color: var(--ion-color-success) !important;
-           display: inline-block !important;
-           color: var(--ion-color-dark) !important;
-           padding: 10px !important;
-           border-radius: 10px !important;
-           text-align: left !important;
-           max-width: 240px !important;
-       }
-   }
-   .chat-eingabe {
-       position: absolute;
-       bottom: 0px;
-       display: block;
-       width: 100%;
-       button {
-           margin: 0px !important;
-       }
-       ion-spinner {
-           width: 12px;
-           height: 12px;
-       }
-       ion-spinner * {
-           stroke: var(--ion-color-light);
-           fill: white;
-           margin: 0px !important;
-       }
-   }
-   .messages {
-       display: -webkit-box !important;
-       display: -moz-box !important;
-       display: -ms-flexbox !important;
-       display: -webkit-flex !important;
-       display: flex !important;
-       -webkit-align-content: center !important;
-       -ms-flex-line-pack: center !important;
-       align-content: center !important;
-       -webkit-box-align: center !important;
-       -moz-box-align: center !important;
-       -webkit-align-items: center !important;
-       -ms-flex-align: center !important;
-       align-items: center !important;
-       margin-bottom: 5px !important;
-       h3 {
-           font-size: 12px;
-           margin: 0px;
-           padding-bottom: 10px;
-       }
-       p {
-           margin: 0px;
-       }
-       .time {
-           font-size: 10px;
-           color: rgb(180, 179, 179);
-       }
-       .message {
-           -webkit-box-flex: 1 !important;
-           -moz-box-flex: 1 !important;
-           -webkit-flex: 1 1 auto !important;
-           -ms-flex: 1 1 auto !important;
-           flex: 1 1 auto !important;
-           padding: 5px !important;
-           -webkit-transition: all 250ms ease-in-out !important;
-           transition: all 250ms ease-in-out !important;
-           overflow: hidden !important;
-           text-align: left !important;
-           -webkit-transform: translate3d(0, 0, 0) !important;
-           -moz-transform: translate3d(0, 0, 0) !important;
-           transform: translate3d(0, 0, 0) !important;
-       }
-   }
-   .messages.other {
-       .message {
-           -webkit-transform: translate3d(0, 0, 0) !important;
-           -moz-transform: translate3d(0, 0, 0) !important;
-           transform: translate3d(0, 0, 0) !important;
-           text-align: right !important;
-       }
-       span {
-           color: var(--ion-color-light) !important;
-           background: var(--ion-color-primary) !important;
-       }
-   }
-   ```
-
+    ```css
+    .chat-nachrichten {
+        height: calc(100% - 60px);
+        overflow: scroll;
+        background-color: var(--ion-color-light-shade);
+        span {
+            background-color: var(--ion-color-success) !important;
+            display: inline-block !important;
+            color: var(--ion-color-dark) !important;
+            padding: 10px !important;
+            border-radius: 10px !important;
+            text-align: left !important;
+            max-width: 240px !important;
+        }
+    }
+    .chat-eingabe {
+        position: absolute;
+        bottom: 0px;
+        display: block;
+        width: 100%;
+        button {
+            margin: 0px !important;
+        }
+        ion-spinner {
+            width: 12px;
+            height: 12px;
+        }
+        ion-spinner * {
+            stroke: var(--ion-color-light);
+            fill: white;
+            margin: 0px !important;
+        }
+    }
+    .messages {
+        display: -webkit-box !important;
+        display: -moz-box !important;
+        display: -ms-flexbox !important;
+        display: -webkit-flex !important;
+        display: flex !important;
+        -webkit-align-content: center !important;
+        -ms-flex-line-pack: center !important;
+        align-content: center !important;
+        -webkit-box-align: center !important;
+        -moz-box-align: center !important;
+        -webkit-align-items: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        margin-bottom: 5px !important;
+        h3 {
+            font-size: 12px;
+            margin: 0px;
+            padding-bottom: 10px;
+        }
+        p {
+            margin: 0px;
+        }
+        .time {
+            font-size: 10px;
+            color: rgb(180, 179, 179);
+        }
+        .message {
+            -webkit-box-flex: 1 !important;
+            -moz-box-flex: 1 !important;
+            -webkit-flex: 1 1 auto !important;
+            -ms-flex: 1 1 auto !important;
+            flex: 1 1 auto !important;
+            padding: 5px !important;
+            -webkit-transition: all 250ms ease-in-out !important;
+            transition: all 250ms ease-in-out !important;
+            overflow: hidden !important;
+            text-align: left !important;
+            -webkit-transform: translate3d(0, 0, 0) !important;
+            -moz-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important;
+        }
+    }
+    .messages.other {
+        .message {
+            -webkit-transform: translate3d(0, 0, 0) !important;
+            -moz-transform: translate3d(0, 0, 0) !important;
+            transform: translate3d(0, 0, 0) !important;
+            text-align: right !important;
+        }
+        span {
+            color: var(--ion-color-light) !important;
+            background: var(--ion-color-primary) !important;
+        }
+    }
+    ```
 4. Setze im HTML den `ion-content` so, dass er nicht scrollt und kein padding hat.
 5. Ändere die Navigationsleiste so ab, dass sie eine Rote Farbe erhält.
-6. Wir helfen dir nochmals, füge folgenden Code direkt innerhalb von `ion-content` ein. Versuch dabei den Code zu verstehen. Damit \(swipe\) funktioniert, musst du das `HammerModule` in dein `app.module.ts` hinzufügen. Versuch dies doch als Zusatzaufgabe in einem zweiten Schritt.
+6.  Wir helfen dir nochmals, füge folgenden Code direkt innerhalb von `ion-content` ein. Versuch dabei den Code zu verstehen. Damit (swipe) funktioniert, musst du das `HammerModule` in dein `app.module.ts` hinzufügen. Versuch dies doch als Zusatzaufgabe in einem zweiten Schritt.
 
-   ```markup
-    <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
-           <ion-list>
-               <div class="messages" [class.other]="chat.username === this.currentUser">
-                   <div class="message">
-                       <span>
-                           <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
-                           <p *ngIf="chat.text">{{chat.text}}</p>
-                        </span>
-                       <div class="time" *ngIf="showDates">{{chat.date}}</div>
-                   </div>
-               </div>
-           </ion-list>
-       </div>
-   ```
-
+    ```markup
+     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
+            <ion-list>
+                <div class="messages" [class.other]="chat.username === this.currentUser">
+                    <div class="message">
+                        <span>
+                            <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
+                            <p *ngIf="chat.text">{{chat.text}}</p>
+                         </span>
+                        <div class="time" *ngIf="showDates">{{chat.date}}</div>
+                    </div>
+                </div>
+            </ion-list>
+        </div>
+    ```
 7. Unterhalb dieses divs fügst du ein `form` mit der CSS-Klasse `chat-eingabe` darunter ein. Dieses Form wird unsere Eingabe sein.
-8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren \(Tipp: `size="10"` / `size="2"` sehen nicht schlecht aus\).
-9. Den Button möchten wir mit einem Icon lösen, dazu kannst du folgenden Code verwenden:
+8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren (Tipp: `size="10"` / `size="2"` sehen nicht schlecht aus).
+9.  Den Button möchten wir mit einem Icon lösen, dazu kannst du folgenden Code verwenden:
 
-   ```markup
-   <ion-icon *ngIf="!showSpinnerIcon" name="send"></ion-icon>
-   <ion-spinner *ngIf="showSpinnerIcon" name="bubbles"></ion-spinner>
-   ```
-
+    ```markup
+    <ion-icon *ngIf="!showSpinnerIcon" name="send"></ion-icon>
+    <ion-spinner *ngIf="showSpinnerIcon" name="bubbles"></ion-spinner>
+    ```
 10. Nun musst du deinem Projekt `@angular/fire` und `firebase` hinzufügen
 11. ```bash
     npm install @angular/fire firebase --save
     ```
-12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:   
-13. Wir müssen die Angularfire2Module importieren:  
+12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:  &#x20;
+13. Wir müssen die Angularfire2Module importieren: &#x20;
 
 ```javascript
        // AngularFire2 importieren
@@ -139,7 +137,7 @@
        import { AngularFireAuthModule } from '@angular/fire/auth';
 ```
 
-1. Wir setzen die Firebase-Konfiguration für diese Übung  
+1. Wir setzen die Firebase-Konfiguration für diese Übung &#x20;
 
 
 
@@ -163,7 +161,7 @@ export const environment = {
 ```
 {% endcode %}
 
-1. Wir fügen die Angularfire in den `imports` hinzu:  
+1. Wir fügen die Angularfire in den `imports` hinzu: &#x20;
 
 ```javascript
         AngularFireModule.initializeApp(firebaseConfig),
@@ -174,7 +172,7 @@ export const environment = {
 Hier die komplette Datei
 
 {% code title="app.module.ts" %}
-```javascript
+````javascript
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -217,10 +215,10 @@ import { environment } from "../environments/environment";
 export class AppModule {}
 
 ```
-```
+````
 {% endcode %}
 
-1. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich:  
+1. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich: &#x20;
 
 {% code title="chat.page.ts" %}
 ```javascript
@@ -300,4 +298,3 @@ interface ChatMessage {
 1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir `ngStyle` in der Angular Doku an.
 2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
 3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
-

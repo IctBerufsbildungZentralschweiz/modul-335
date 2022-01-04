@@ -1,28 +1,30 @@
 # SASS/SCSS
 
-{% embed url="https://sass-lang.com/guide" caption="Link zur offiziellen SASS-Website" %}
+{% embed url="https://sass-lang.com/guide" %}
+Link zur offiziellen SASS-Website
+{% endembed %}
 
 ## Preprocessors
 
 CSS alleine kann Spass machen. Stylesheets werden aber immer grösser, komplexer und schwieriger zu Warten. Hier können dir Preprozessoren helfen. SASS bietet dir Funktionen die es so in CSS nicht gibt:
 
-* Variablen \(variables\)
-* Verschachtelung \(nesting\)
+* Variablen (variables)
+* Verschachtelung (nesting)
 * Operatoren
 * Mixins, Extend, usw.
 
-Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömmliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.  
+Ein Preprocessor nimmt deine SASS-Datei und wandelt Sie in eine herkömmliche CSS-Datei um. Denn dein Browser versteht nur CSS, kein SASS.\
 Es gibt diverse Programme die dir diese Umwandlung abnehmen, egal ob Terminal, Programm oder in Ionic direkt - die Idee bleibt die gleiche. Im Beispiel unten ist zu sehen, dass SASS Tabulatoren verwendet, SCSS jedoch Klammern. In der Fachliteratur wird daher oft SASS synonym mit SCSS beschrieben.
 
 _Codebeispiel:_
 
 ![](../.gitbook/assets/sass-vs-scss.png)
 
-Neben der oben beschriebenen Sass-Syntax \(indented syntax\) verfügt Sass über die neuere und heute weiter verbreitete SCSS-Syntax \(Sassy CSS\). Hier sind für die Verschachtelung der Selektoren nicht die Einrückung des Quelltextes ausschlaggebend, sondern wie in der klassischen CSS-Schreibweise die geschweiften Klammern. Auch sind am Ende der Regeln Semikola erforderlich.  
-  
+Neben der oben beschriebenen Sass-Syntax (indented syntax) verfügt Sass über die neuere und heute weiter verbreitete SCSS-Syntax (Sassy CSS). Hier sind für die Verschachtelung der Selektoren nicht die Einrückung des Quelltextes ausschlaggebend, sondern wie in der klassischen CSS-Schreibweise die geschweiften Klammern. Auch sind am Ende der Regeln Semikola erforderlich.\
+\
 Was kann der Browser anzeigen: HTML, CSS & JS ... aber nicht PUG/Jade, SCSS/SASS oder Typescript.
 
-![](../.gitbook/assets/html_css_js_body.png)
+![](../.gitbook/assets/html\_css\_js\_body.png)
 
 
 
@@ -170,7 +172,7 @@ Ionic setzt voll und ganz auf SCSS. Du kannst so deine App bis ins letzte Detail
 
 ### Theming Beispiel auf StackBlitz
 
-{% embed url="https://stackblitz.com/edit/ionic4-theming-example?embed=1&file=src/global.scss&hideExplorer=1" caption="" %}
+{% embed url="https://stackblitz.com/edit/ionic4-theming-example?embed=1&file=src/global.scss&hideExplorer=1" %}
 
 ### Color Generator
 
@@ -178,5 +180,4 @@ Ionic hat in ihrer neuen Doku einen Color Generator mit einem direkt Showcase ei
 
 Noch ein etwas älteres Ionic 2 Video für die Lachmuskeln 😂
 
-{% embed url="https://www.youtube.com/watch?v=1cgr0z9TXnQ" caption="" %}
-
+{% embed url="https://www.youtube.com/watch?v=1cgr0z9TXnQ" %}

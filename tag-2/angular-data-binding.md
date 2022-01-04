@@ -6,7 +6,7 @@ Das Data Binding mit Angular ist eines der Hauptvorteile des Frameworks:
 
 ## One-Way Data Binding
 
-Bei einer einfachen Applikation hat man Daten im Model \(blau\) und meist ein Template / HTML \(rot\) bei welchem die Daten einmalig zusammengeführt werden und dem User in einer View \(grün\) dargestellt werden. Die Verschmelzung von Daten und Code passiert meist nur einmalig. Stellen wir uns nun ein Formular auf einer Website vor und der Benutzer gibt dort ein Wert in ein Textfeld ein, so ist es mit dieser Methode nicht so einfach Daten im gleiche HTML-DOM zu ändern. Meist wird hier dann mit Javascript ein sehr unschöner Code geschrieben.
+Bei einer einfachen Applikation hat man Daten im Model (blau) und meist ein Template / HTML (rot) bei welchem die Daten einmalig zusammengeführt werden und dem User in einer View (grün) dargestellt werden. Die Verschmelzung von Daten und Code passiert meist nur einmalig. Stellen wir uns nun ein Formular auf einer Website vor und der Benutzer gibt dort ein Wert in ein Textfeld ein, so ist es mit dieser Methode nicht so einfach Daten im gleiche HTML-DOM zu ändern. Meist wird hier dann mit Javascript ein sehr unschöner Code geschrieben.
 
 ## Two-Way Data Binding
 
@@ -55,7 +55,7 @@ $(document).ready(function() {
 
 ## Data binding mit ngModel
 
-`ngModel` erlaubt es, eine Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder \(Inputs\) sondern auch mit Radios, Selects, usw.
+`ngModel` erlaubt es, eine Variable an ein Input-Feld in der App zu binden. Dies funktioniert nicht nur mit Textfelder (Inputs) sondern auch mit Radios, Selects, usw.
 
 Füge folgenden Zeile deiner Component hinzu:
 
@@ -76,7 +76,7 @@ Dieses TwoWay-Binding machen wir uns in der Ausgabe gleich wieder zu Nutze. Und 
 
 ## Übungen
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
 1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung"
 2. Erstelle eine neue Seite "Data Binding" und füge diese wie gewohnt in dein Sidemenu ein.
@@ -85,9 +85,9 @@ Dieses TwoWay-Binding machen wir uns in der Ausgabe gleich wieder zu Nutze. Und 
    2. Input: Vorname - Text
    3. Input: Alter - Number
 4. Verknüpfe nun die jeweiligen Input-Felder mit deiner Component mit Hilfe der oben beschriebene Methode `ngModel`.
-5. Füge nun unter deine Inputs ein Paragraph hinzu und gib einen Satz in folgendem Stil \(je nach Eingaben\) aus:
+5.  Füge nun unter deine Inputs ein Paragraph hinzu und gib einen Satz in folgendem Stil (je nach Eingaben) aus:
 
-   `Mein Name ist Max Muster und ich bin 23 Jahre alt!`
-
-6. Teste deine App 1. Funktioniert Sie wie erwartet? 2. Hast du die richtigen Input-Typen gewählt? 3. Kannst du bei deinem Alter auch wirklich nur eine Zahl eingeben?
-
+    `Mein Name ist Max Muster und ich bin 23 Jahre alt!`
+6. Teste deine App\
+   1\. Funktioniert Sie wie erwartet?\
+   2\. Hast du die richtigen Input-Typen gewählt? 3. Kannst du bei deinem Alter auch wirklich nur eine Zahl eingeben?

@@ -27,15 +27,14 @@ Wie du sicher bereits erahnen kannst, kann man mit dem Ionic CLI Generator nicht
 
 `ionic g pipe <PIPENAME>`
 
-{% embed url="https://www.youtube.com/watch?time\_continue=7&v=Z1g1iroNHK0" %}
+{% embed url="https://www.youtube.com/watch?time_continue=7&v=Z1g1iroNHK0" %}
 
 ## Übung
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
-1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Filters" 
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Filters"&#x20;
 2. Deine Aufgabe soll es nun sein die folgenden Filter/Pipes in einem Beispiel auf deiner Seite zu integrieren. Als Hilfestellung soll dir die [Angular Dokumentation](https://angular.io/guide/pipes) dienen.
    1. `lowercase`
    2. `uppercase`
-   3. `date` \(Formatiere doch ein Datum um\)
-
+   3. `date` (Formatiere doch ein Datum um)
