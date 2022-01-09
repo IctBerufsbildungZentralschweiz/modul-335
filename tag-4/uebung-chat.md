@@ -128,20 +128,19 @@
     npm install @angular/fire firebase --save
     ```
 12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:  &#x20;
-13. Wir müssen die Angularfire2Module importieren: &#x20;
+13. Wir müssen die Angularfire2Module importieren:   \
 
-```javascript
+
+    ```
        // AngularFire2 importieren
        import { AngularFireModule } from '@angular/fire';
        import { AngularFireDatabaseModule } from '@angular/fire/database';
        import { AngularFireAuthModule } from '@angular/fire/auth';
-```
-
-1. Wir setzen die Firebase-Konfiguration für diese Übung &#x20;
+    ```
 
 
+14. Wir setzen auf eine gemeinsame Firebase-Konfiguration für diese Übung. Kopiere folgenden Inhalt in dein src/environments/environment.ts \
 
-Kopiere folgenden Inhalt in dein src/environments/environment.ts :
 
 {% code title="environment.ts" %}
 ```javascript
@@ -183,12 +182,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { IonicStorageModule } from '@ionic/storage';
+import { IonicStorageModule } from '@ionic/storage-angular';
 
 // AngularFire2 importieren
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/database/compat';
+import { AngularFireAuthModule } from '@angular/fire/auth/compat';
 ​
 // Environments importieren
 import { environment } from "../environments/environment";
@@ -224,7 +223,7 @@ export class AppModule {}
 ```javascript
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { Observable } from 'rxjs';
 
 @Component({
