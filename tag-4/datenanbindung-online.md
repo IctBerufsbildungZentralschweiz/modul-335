@@ -6,11 +6,11 @@ Bei mobile Apps möchte man ziemlich schnell Daten speichern können. Sei es ein
 
 ### Online/Offline
 
-Wie muss die Verfügbarkeit meiner App sein? Soll der Benutzer die App hauptsächlich Offline \(z.B. also auch ohne Internet-Verbindung\) nutzen können oder sind die Daten so zentral gelagert, dass sie nur Online sein können.
+Wie muss die Verfügbarkeit meiner App sein? Soll der Benutzer die App hauptsächlich Offline (z.B. also auch ohne Internet-Verbindung) nutzen können oder sind die Daten so zentral gelagert, dass sie nur Online sein können.
 
 ### Schlechte Netzwerkverbindung
 
-Was wenn die Internet-Verbindung sehr schlecht ist oder gar nicht funktioniert ? Ich spreche hier nicht vom ebenfalls sehr wichtigen Exception-Handling \(geht auch etwas ins Thema UX\), sondern von den Daten. Macht es Sinn, gewisse oder alle Daten Offline zu halten und mit der Online-Datenbank zu synchronisieren?
+Was wenn die Internet-Verbindung sehr schlecht ist oder gar nicht funktioniert ? Ich spreche hier nicht vom ebenfalls sehr wichtigen Exception-Handling (geht auch etwas ins Thema UX), sondern von den Daten. Macht es Sinn, gewisse oder alle Daten Offline zu halten und mit der Online-Datenbank zu synchronisieren?
 
 ### Single vs. Multi-User
 
@@ -24,16 +24,16 @@ Es ist von zentraler Bedeutung, dass du als Entwickler dir solchen Fragen stells
 
 Wir haben in der Gruppenübung zuvor einige Online-Tools kennengelernt. Bevor wir voll mit Firebase loslegen, hier noch die wichtigsten Vor-/Nachteile:
 
-| Vorteile | Nachteile |
-| :--- | :--- |
-| Daten im Web | Internet-Verbindung nötig |
+| **Vorteile**                                      | **Nachteile**                   |
+| ------------------------------------------------- | ------------------------------- |
+| Daten im Web                                      | Internet-Verbindung nötig       |
 | Bestehende Online-Datenbank kann verwendet werden | Für kleine Daten nicht geeignet |
-| Optimal für grosse Daten |  |
-| Geeignet für grosse Datenmodelle |  |
+| Optimal für grosse Daten                          |                                 |
+| Geeignet für grosse Datenmodelle                  |                                 |
 
-Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
+Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 
-{% embed url="https://www.youtube.com/watch?v=U5aeM5dvUpA" caption="" %}
+{% embed url="https://www.youtube.com/watch?v=U5aeM5dvUpA" %}
 
 ### Eigenes Backend vs. Backend as a Service
 
@@ -43,11 +43,11 @@ Während man in der Vergangenheit das Backend einer Anwendung meist eigens imple
 
 #### Man spart Zeit und Geld
 
-Ein BaaS \(die Abkürzung steht für „Backend as a Service“\) bringt viele Möglichkeiten. Man kann mit wenigen Klicks die Tabellen am Server anlegen und bearbeiten, muss sich nicht um die Datenbank Anbindung kümmern und hat sofort eine funktionierende Schnittstelle für seine Frontend-Anwendung. Man benötigt keinen Entwickler mehr für das Backend, keine zeitaufwendige Kommunikation zwischen Frontend- und Backend-Entwickler, keine Dokumentation der Server-Schnittstelle und man hat auch keine Probleme mit der Benutzung der Schnittstelle. Das spart Zeit und Geld. Möchte man die Daten aufbereiten, so kann man auch eigene Zugangspunkte am Server definieren und mit wenig Programmcode die gewünschten Daten abrufen.
+Ein BaaS (die Abkürzung steht für „Backend as a Service“) bringt viele Möglichkeiten. Man kann mit wenigen Klicks die Tabellen am Server anlegen und bearbeiten, muss sich nicht um die Datenbank Anbindung kümmern und hat sofort eine funktionierende Schnittstelle für seine Frontend-Anwendung. Man benötigt keinen Entwickler mehr für das Backend, keine zeitaufwendige Kommunikation zwischen Frontend- und Backend-Entwickler, keine Dokumentation der Server-Schnittstelle und man hat auch keine Probleme mit der Benutzung der Schnittstelle. Das spart Zeit und Geld. Möchte man die Daten aufbereiten, so kann man auch eigene Zugangspunkte am Server definieren und mit wenig Programmcode die gewünschten Daten abrufen.
 
 #### Spart man wirklich Geld?
 
-Steigt die Last am Server, so skaliert dieser automatisch, man braucht sich um nichts kümmern, muss den Server nicht von Hand migrieren oder aufrüsten. Doch gerade hier verbergen sich die Kosten eines „Backend as a Service“. Während man die Services bei sehr kleinen Anwendungen sogar kostenlos nutzen kann, so steigen die Kosten mit der Anzahl der Anfragen pro Sekunde, mit jedem zusätzlich benötigten Gigabyte Festplatten- sowie Datenbankspeicher und mit jedem Gigabyte Datentransfer. Bei einem dedizierten Server wusste man genau, wieviel Speicher man hat und wieviel Datentransfer inkludiert ist \(oftmals unbegrenzt\), das Gesamtpaket hatte einen fixen Preis, die Kosten waren einfach kalkulierbar. Nutzt man beispielsweise den Service Parse, so ist es bis zu 30 Anfragen pro Sekunde, 20 GB Festplattenspeicher, 20 GB Datenbankspeicher und 2 TB Datentransfer kostenlos. Für jedes weitere Gigabyte Festplattenspeicher zahlt man 3 Cent, für weitere 20 Gigabyte Datenbankspeicher sogar $200, für jedes weitere Gigabyte Datentransfer 10 Cent und für jeweils 10 weitere Anfragen pro Sekunde stolze $100 pro Monat. Die eigentlichen Kosten kann man also sehr schwer berechnen, denn diese Werte hängen sehr stark von der Verbreitung und dem Inhalt der App, sowie vom Nutzerverhalten ab. Andere „Backend as a Service“ Anbieter haben wieder andere Arten der Abrechnung, ein Vergleich ist daher schwer möglich.
+Steigt die Last am Server, so skaliert dieser automatisch, man braucht sich um nichts kümmern, muss den Server nicht von Hand migrieren oder aufrüsten. Doch gerade hier verbergen sich die Kosten eines „Backend as a Service“. Während man die Services bei sehr kleinen Anwendungen sogar kostenlos nutzen kann, so steigen die Kosten mit der Anzahl der Anfragen pro Sekunde, mit jedem zusätzlich benötigten Gigabyte Festplatten- sowie Datenbankspeicher und mit jedem Gigabyte Datentransfer. Bei einem dedizierten Server wusste man genau, wieviel Speicher man hat und wieviel Datentransfer inkludiert ist (oftmals unbegrenzt), das Gesamtpaket hatte einen fixen Preis, die Kosten waren einfach kalkulierbar. Nutzt man beispielsweise den Service Parse, so ist es bis zu 30 Anfragen pro Sekunde, 20 GB Festplattenspeicher, 20 GB Datenbankspeicher und 2 TB Datentransfer kostenlos. Für jedes weitere Gigabyte Festplattenspeicher zahlt man 3 Cent, für weitere 20 Gigabyte Datenbankspeicher sogar $200, für jedes weitere Gigabyte Datentransfer 10 Cent und für jeweils 10 weitere Anfragen pro Sekunde stolze $100 pro Monat. Die eigentlichen Kosten kann man also sehr schwer berechnen, denn diese Werte hängen sehr stark von der Verbreitung und dem Inhalt der App, sowie vom Nutzerverhalten ab. Andere „Backend as a Service“ Anbieter haben wieder andere Arten der Abrechnung, ein Vergleich ist daher schwer möglich.
 
 #### Sicherheit und Kontrolle
 
@@ -59,21 +59,19 @@ Vor allem in Österreich ist auch der Standort der Server von entscheidender Rol
 
 #### Fazit
 
-Man darf nicht vergessen, dass „Backend as a Service“-Dienste neben den Nachteilen auch viele Vorteile aufweisen. Parse bietet beispielsweise auch gleich Statistiken zur Nutzung der Anwendung, \(bis zu einer gewissen Anzahl\) kostenlose Push-Benachrichtigungen sowie Social-Logins \(Facebook, Twitter\). Man sollte bei jeder Anwendung abwägen, welcher Weg beschritten werden soll. Denn welche Funktionen benötigt werden und wie Komplex das Backend am Ende sein wird, hängt stark von der Art und Anforderung der Anwendung ab. Man kann nicht grundsätzlich sagen, ob ein „Backend as a Service“ oder ein eigenes Backend auf einem dedizierten Server die bessere Wahl ist, beides hat seine Vor- und Nachteile. Man sollte jedenfalls bedenken, dass ein „Backend as a Service“ kein vollständiger Serverersatz ist. Wenn eine Anwendung und damit die Anforderungen an den Server wachsen, kann solch ein Dienst schnell an seine Grenzen stoßen. Wenn gewisse Sicherheitsrichtlinien eingehalten werden müssen oder eine Anbindung an ein Fremdsystem notwendig ist, dann entwickelt sich ein „Backend as a Service“ schnell zum Wegwerf-Produkt. „Backend as a Service“ Systeme eignen sich gerade für Startups sehr gut um die Time-to-Market extrem zu verringern und mit minimalen Investitionskosten schnell etwas auf die Beine zu stellen. Wenn ein Geschäftsmodell einschlägt und man es professionell aufziehen möchte, dann wird man früher oder später einen eigenen Server mit dediziertem Backend aufstellen müssen.
+Man darf nicht vergessen, dass „Backend as a Service“-Dienste neben den Nachteilen auch viele Vorteile aufweisen. Parse bietet beispielsweise auch gleich Statistiken zur Nutzung der Anwendung, (bis zu einer gewissen Anzahl) kostenlose Push-Benachrichtigungen sowie Social-Logins (Facebook, Twitter). Man sollte bei jeder Anwendung abwägen, welcher Weg beschritten werden soll. Denn welche Funktionen benötigt werden und wie Komplex das Backend am Ende sein wird, hängt stark von der Art und Anforderung der Anwendung ab. Man kann nicht grundsätzlich sagen, ob ein „Backend as a Service“ oder ein eigenes Backend auf einem dedizierten Server die bessere Wahl ist, beides hat seine Vor- und Nachteile. Man sollte jedenfalls bedenken, dass ein „Backend as a Service“ kein vollständiger Serverersatz ist. Wenn eine Anwendung und damit die Anforderungen an den Server wachsen, kann solch ein Dienst schnell an seine Grenzen stoßen. Wenn gewisse Sicherheitsrichtlinien eingehalten werden müssen oder eine Anbindung an ein Fremdsystem notwendig ist, dann entwickelt sich ein „Backend as a Service“ schnell zum Wegwerf-Produkt. „Backend as a Service“ Systeme eignen sich gerade für Startups sehr gut um die Time-to-Market extrem zu verringern und mit minimalen Investitionskosten schnell etwas auf die Beine zu stellen. Wenn ein Geschäftsmodell einschlägt und man es professionell aufziehen möchte, dann wird man früher oder später einen eigenen Server mit dediziertem Backend aufstellen müssen.
 
 
 
 ## Gruppenübung
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
 Wir werden nun das gewonnene Wissen in einer kleinen Google Slides Herausforderung ergänzen:
 
 1. Begib dich in eine der Gruppen
-2. Geh via [Moodle](https://kurse.ict-bz.ch) -&gt; Nützliche Links auf den entsprechenden Ordner _"Tag4/Teil49\_Datenanbindung"_
+2.  Geh via [Moodle](https://kurse.ict-bz.ch) -> Nützliche Links auf den entsprechenden Ordner _"Tag4/Teil49\_Datenanbindung"_
 
-   und öffne die Datei online.
-
+    und öffne die Datei online.
 3. Beantworte dort die Fragen zu dem dir zugeteilten Thema
 4. Ergänze die Slides wie in der Vorlage ersichtlich.
-
