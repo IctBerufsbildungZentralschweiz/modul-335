@@ -1,11 +1,11 @@
-# Eigene Guard erstellen \(Tutorial\)
+# Eigene Guard erstellen (Tutorial)
 
 ### Eine eigene Guard erstellen
 
 Eine eigene Guard, in unserem Fall für die Willkommens/Tutorial-Seite zu erstellen ist ziemlich einfach. Verwende dazu `generate guard` der Ionic CLI:
 
 ```bash
-ionic generate guard _core/tutorial
+ionic generate guard _guards/tutorial
 ```
 
 Diese Guard muss nun lediglich die Methode `canActivate` resp. `canLoad` implementieren, welche `true` oder `false` zurückgibt, sofern der Benutzer die Willkommensseite noch nicht besucht hat.
@@ -14,15 +14,16 @@ Diese Guard muss nun lediglich die Methode `canActivate` resp. `canLoad` impleme
 ```typescript
 import { Injectable } from '@angular/core';
 import { CanLoad, Router } from '@angular/router';
-import { Storage } from '@ionic/storage';
+import { StorageService } from '../_services/storage.service';
+
 @Injectable({
   providedIn: 'root'
 })
 export class TutorialGuard implements CanLoad {
-  constructor(private storage: Storage, private router: Router) {}
+  constructor(private storageService: StorageService, private router: Router) {}
 
   canLoad() {
-    return this.storage.get('tutorialVisited').then(res => {
+    return this.storageService.get('tutorialVisited').then(res => {
       if (res) {
         this.router.navigate(['/app', 'tabs', 'schedule']);
         return false;
@@ -51,7 +52,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { TutorialGuard } from './_core/tutorial.guard';
+import { TutorialGuard } from './_guards/tutorial.guard';
 
 
 @NgModule({
@@ -74,13 +75,13 @@ export class AppModule {}
 ```
 {% endcode %}
 
-So und nun müssen wir zuletzt unser `app.routing-module.ts` noch anpassen, indem wir die `TutorialGuard` mit `canLoad` zu der gewünschten Route hinzufügen: 
+So und nun müssen wir zuletzt unser `app.routing-module.ts` noch anpassen, indem wir die `TutorialGuard` mit `canLoad` zu der gewünschten Route hinzufügen:&#x20;
 
 {% code title="app.routing-module.ts" %}
 ```javascript
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TutorialGuard } from './_core/tutorial.guard';
+import { TutorialGuard } from './_guards/tutorial.guard';
 
 const routes: Routes = [
   {
@@ -88,7 +89,7 @@ const routes: Routes = [
     redirectTo: '/tutorial',
     pathMatch: 'full'
   },
-  // ... 
+  // More routes ... 
   {
     path: 'tutorial',
     loadChildren: () => import('./pages/tutorial/tutorial.module').then(m => m.TutorialModule),
@@ -103,8 +104,6 @@ const routes: Routes = [
 export class AppRoutingModule {}
 ```
 {% endcode %}
-
-
 
 
 
