@@ -64,7 +64,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 
 1.  Installiere `@ionic/storage-angular` mittels NPM in deinem Projekt&#x20;
 
-    ```
+    ```bash
     npm install @ionic/storage-angular --save
     ```
 
@@ -73,7 +73,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 2.  Erstelle für den Storage eine eigenen, neuen Service welcher dir hilft Daten zu speichern/lesen:\
 
 
-    ```
+    ```bash
     ionic generate service _services/storage
     ```
 
@@ -82,7 +82,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 3.  Der Service sollte in etwa so aussehen:\
 
 
-    ```
+    ```typescript
     import { Injectable } from '@angular/core';
 
     import { Storage } from '@ionic/storage-angular';
@@ -117,7 +117,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 4.  Verwende nun den Service in deiner erstellten Page, indem du ihn über den Konstruktur einfügst und importierst:\
 
 
-    ```
+    ```typescript
     import { Component, OnInit } from '@angular/core';
     // Importieren
     import { StorageService } from '../_services/storage.service';
