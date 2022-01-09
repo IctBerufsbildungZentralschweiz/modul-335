@@ -6,23 +6,23 @@ Ionic Appflow ist ihr neues Flaggschiff und eine powervolle Sammlung von Service
 
 Ionic Appflow hat diverse Services, welche dich durch den gesamten App Lifecycle beschäftigen:
 
-* \*\*\*\*[**Builds**](https://ionicframework.com/docs/appflow/quickstart/connect): Zusammen mit einem Git-Workflow können Builds deployed oder paketiert werden
-* \*\*\*\*[**Deploy**](https://ionicframework.com/docs/appflow/deploy/)**:** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
-* \*\*\*\*[**Package**](https://ionicframework.com/docs/appflow/package/)**:** Baue native App-Binaries in der Cloud für iOS und Android.
-* \*\*\*\*[**Automation**](https://ionicframework.com/docs/appflow/automation/): Automatisierte Build mit Möglichkeiten für Webhooks
+* ****[**Builds**](https://ionicframework.com/docs/appflow/quickstart/connect): Zusammen mit einem Git-Workflow können Builds deployed oder paketiert werden
+* ****[**Deploy**](https://ionicframework.com/docs/appflow/deploy/)**:** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
+* ****[**Package**](https://ionicframework.com/docs/appflow/package/)**:** Baue native App-Binaries in der Cloud für iOS und Android.
+* ****[**Automation**](https://ionicframework.com/docs/appflow/automation/): Automatisierte Build mit Möglichkeiten für Webhooks
 
 Die meistens Services basieren auf einem einfachen GIT-Workflow, welcher dir als Entwickler bekannt sein sollte.
 
 ### Du möchtest Ionic Appflow verwenden?
 
-Um Ionic Appflow zu Nutzen, kannst du dir auf der folgenden Seite einen kostenlosen, limitierten Account erstellt:  
+Um Ionic Appflow zu Nutzen, kannst du dir auf der folgenden Seite einen kostenlosen, limitierten Account erstellt:\
 [https://ionicframework.com/appflow](https://ionicframework.com/appflow)
 
-Damit Ionic ihre Kosten ebenfalls bezahlen kann, gibts dort mehrere Pro-Features welche kostenpflichtig werden. 
+Damit Ionic ihre Kosten ebenfalls bezahlen kann, gibts dort mehrere Pro-Features welche kostenpflichtig werden.&#x20;
 
 ## Google Firebase
 
-Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
+Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 
 {% embed url="https://www.youtube.com/watch?v=O17OWyx08Cg" %}
 
@@ -38,7 +38,7 @@ npm install @angular/fire firebase --save
 npm install @ionic/storage-angular --save 
 ```
 
-Wir müssen nun die Verbindung zwischen deiner App und  Firebase herstellen. Dazu kann man online im Firebase-Projekt die nötigen Verbindungsparameter kopieren. In unserem Fall verwenden wir für das Login immer das gleiche Projekt.  
+Wir müssen nun die Verbindung zwischen deiner App und  Firebase herstellen. Dazu kann man online im Firebase-Projekt die nötigen Verbindungsparameter kopieren. In unserem Fall verwenden wir für das Login immer das gleiche Projekt.\
 Kopiere folgenden Inhalt in dein src/environments/environment.ts :
 
 {% code title="environment.ts" %}
@@ -63,14 +63,18 @@ export const environment = {
 Die Datei `environment.ts` ist für die lokale Entwicklung gedacht, mit der Datei `environment.prod.ts` kannst du die Verbindungsparameter deines produktiven Firebase-Projekts eintragen. Best-Practice ist hier mind. zwei unterschiedliche Umgebungen/Projekte zu verwenden.
 {% endhint %}
 
+{% hint style="warning" %}
+Seit Dezember 2021 hat Firebase eine neu Version veröffentlicht. Damit die Kursunterlagen nach altem Muster funktionieren, muss bei allen Firebase-Imports der Compatibility-Modus `compat` verwendet werden.&#x20;
+{% endhint %}
+
 Jetzt können wir Firebase initialisieren, gehe dazu in die Datei `src/app/app.module.ts` und importiere alles was du von Firebase benötigst.
 
 ```javascript
 // AngularFire2 importieren
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 // Environments importieren
 import { environment } from "../environments/environment";
@@ -105,10 +109,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { IonicStorageModule } from '@ionic/storage-angular';
 
 // AngularFire2 importieren
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 // Environments importieren
@@ -140,5 +144,4 @@ export class AppModule {}
 ```
 {% endcode %}
 
-### 
-
+###
