@@ -60,7 +60,7 @@ export class MyApp {
 
 #### @ionic/storage-angular im Projekt verwenden
 
-Damit di `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen sich folgende Schritt:
+Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen sich folgende Schritt:
 
 1.  Installiere `@ionic/storage-angular` mittels NPM in deinem Projekt&#x20;
 
