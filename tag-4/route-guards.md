@@ -28,17 +28,17 @@ In diesem Kapitel schauen wir uns zuerst das Login an, später am heutigen Tag k
 Um die Logik rund um das Login etwas zu entkoppeln und unser wachsendes Projekt sauber zu halten, erstellen wir einen Service. Verwende hier wiederum die Ionic CLI:
 
 ```
-ionic generate service _core/Auth
+ionic generate service _services/Auth
 ```
 
-Die soeben generierten Datei `auth.service.ts` im Ordner `_core` soll alles rund ums Login beinhalten. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
+Die soeben generierten Datei `auth.service.ts` im Ordner `_services` soll alles rund ums Login beinhalten. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
 {% tabs %}
 {% tab title="Auth Services" %}
 {% code title="auth.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 
 @Injectable({
   providedIn: 'root'
@@ -78,7 +78,7 @@ Seit Herbst 2019 bietet `@angular/fire` die `AngularFireAuthGuard` an, die uns d
 Für die neue Variante mit [AngularFireAuthGuards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss  folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
 
 ```typescript
-import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
+import { AngularFireAuthGuardModule } from '@angular/fire/compat/auth-guard';
 ```
 
 Gut nun sind wir Startklar, was uns jetzt noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit einer `AngularFireAuthGuard` schützen. \
@@ -99,7 +99,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LogoutComponent } from './logout/logout.page';
 // Neue imports hinzufügen
-import { AngularFireAuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/auth-guard';
+import { AngularFireAuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/compat/auth-guard';
 
 // Standardverhalten festlegen
 const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['login']);
@@ -114,24 +114,26 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: './home/home.module#HomePageModule',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
     path: 'list',
-    loadChildren: './list/list.module#ListPageModule',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   { path: 'login', 
-    loadChildren: './login/login.module#LoginPageModule', 
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule) 
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectLoggedInToRoot }
   },
   {
     path: 'register',
-    loadChildren: './register/register.module#RegisterPageModule'
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule), 
+    canActivate: [AngularFireAuthGuard],
+    data: { authGuardPipe: redirectLoggedInToRoot }
   }
 ];
 
@@ -153,18 +155,17 @@ export class AppRoutingModule {}
 
 Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt ein einfaches Login inkl. Registrierung einbauen. Gehe dazu wie folgt vor:&#x20;
 
-1\. Lies die Doku oben nochmals gut durch.&#x20;
+1\. Lies die Doku der beiden Kapitel aus Tag 4 nochmals gut durch.&#x20;
 
-2\. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher "Firebase".
+2\. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher [Ionic Appflow / Firebase.](ionic-pro-firebase.md)
 
-3\. Mit `ionic generate` zwei neue Seite erstellen (Login + Registrierung)
+3\. Mit `ionic generate` zwei neue Seite erstellen (Login + Register)
 
-4\. Füge auf beiden Seiten Formularfelder hinzu, verwende doch gleich die Reactive Forms aus Tag 3.&#x20;
+4\. Füge auf beiden Seiten Formularfelder hinzu, verwende dort gleich  Reactive Forms aus Tag 3.&#x20;
 
 | Login                       | Registrierung               |
 | --------------------------- | --------------------------- |
 | <p>Email</p><p>Passwort</p> | <p>Email</p><p>Passwort</p> |
-|                             |                             |
 
 ![](<../.gitbook/assets/image (23).png>)
 
@@ -173,20 +174,20 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt e
 5\. Erstelle mit `ionic generate` einen neuen Auth-Service
 
 ```
-ionic generate service _core/Auth
+ionic generate service _services/Auth
 ```
 
-6\. Verknüpfe nun dein Registrierungsseite mit der Methode `createUserWithEmailAndPassword` des AuthService .
+6\. Verknüpfe nun dein `register.page.ts` mit der Methode `createUserWithEmailAndPassword` des AuthService  `_services/auth.service.ts`.
 
 ![](../.gitbook/assets/login.svg)
 
-7\. Programmiere nun die Methode `createUserWithEmailAndPassword`im AuthService, damit du einen Benutzer registrieren kannst und gibt das Resultat zurück an deine Registrierungsseite. Im Service solltest du im Constructor ein `afAuth` sehen. Versuch die Methoden mit `this.afAuth.` rausfinden.
+7\. Programmiere nun die Methode `createUserWithEmailAndPassword`im AuthService, damit du einen Benutzer registrieren kannst und gibt das Resultat zurück an deine Registrierungsseite. Im Service solltest du im Konstruktor ein `afAuth` sehen. Versuch die Methoden mit `this.afAuth. (Intellisense)` rausfinden.
 
-8\. Du solltest jetzt einen Account registriert haben. Jetzt gehts weiter zum Login
+8\. Du solltest jetzt einen Account registriert können. Falls du Problem hast, frag deinen Instruktuor. Nun gehts weiter zum Login
 
-9\.  Das gleiche gilt es nur für die Login-Seite zu machen
+9\.  Das gleiche gilt es nun für die Login-Seite zu machen. Siehe Grafik oben. &#x20;
 
-10\. Sobald das Login fertig ist, musst du deine Applikation noch vor unerwünschten Zugriffen schützen. Verwende dazu Angular Guards
+10\. Sobald das Login fertig ist, musst du deine Applikation noch vor unerwünschten Zugriffen schützen. Verwende dazu Angular Guards.
 
 #### Zusatz
 
@@ -197,16 +198,12 @@ ionic generate service _core/Auth
 
 **Videos**
 
-Die beiden Videos sind schon etwas älter, können dir aber evt. helfen Details rauszufinden.
+Youtube ist eine super Quelle für Programmier-Videos. Oft gilt es die Konzepte zu verstehen, der Code sollte aber trotzdem verstanden und auf die eigenen Bedürfnisse angepasst werden. In der Beschreibung eines YouTube-Videos findest du oft ein Link zu einem Repo. So brauchst du den Code nicht komplett abzuschreiben.
 
-{% hint style="warning" %}
-Dieses Video wurde mit Ionic 3 erstellt. Solltest du Probleme in Ionic 4 damit haben, frage in deiner Gruppe nach resp. wende dich an deinen Kursleiter.
-{% endhint %}
+Solltest du mit der oben beschrieben Anleitungen nicht klar kommen, schau doch mal in diese beiden Videos rein. Sie sind aus Januar 2021, mit Ionic 5 / Angular 10 und Firebase 6.0.2 erstellt worden. In der Zwischenzeit sind wir auf neueren Version von Ionic/Angular und Firebase.&#x20;
 
-{% embed url="https://www.youtube.com/watch?v=aNW444SpFNs" %}
+{% embed url="https://www.youtube.com/watch?v=Ib4yQZzf-ZM" %}
 
-{% embed url="https://www.youtube.com/watch?v=Q8zcieAWn3g" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=Y-gn-4V3_yI" %}
 
 1.
