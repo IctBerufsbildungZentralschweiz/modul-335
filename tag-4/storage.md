@@ -29,14 +29,13 @@ if(typeof(Storage) != "undefined") {
 
 ### Ionic Storage
 
-Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit: \
-
+Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit: \\
 
 {% embed url="https://github.com/ionic-team/ionic-storage" %}
 
 #### API
 
-Mit den asynchronen Methoden `storage.set(..)` `storage.get(..)` kannst du einfache Key/Value-Paare oder JSON Objekte speichern. Beachte das hier `await` verwendet wird und die  Methode somit mit `async` deklariert werden muss.
+Mit den asynchronen Methoden `storage.set(..)` `storage.get(..)` kannst du einfache Key/Value-Paare oder JSON Objekte speichern. Beachte das hier `await` verwendet wird und die Methode somit mit `async` deklariert werden muss.
 
 ```javascript
 import { Storage } from '@ionic/storage-angular';
@@ -62,25 +61,21 @@ export class MyApp {
 
 Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen sich folgende Schritt:
 
-1.  Installiere `@ionic/storage-angular` mittels NPM in deinem Projekt&#x20;
+1.  Installiere `@ionic/storage-angular` mittels NPM in deinem Projekt
 
     ```bash
     npm install @ionic/storage-angular --save
     ```
 
-    \
-
-2.  Erstelle für den Storage eine eigenen, neuen Service welcher dir hilft Daten zu speichern/lesen:\
-
+    \\
+2.  Erstelle für den Storage eine eigenen, neuen Service welcher dir hilft Daten zu speichern/lesen:\\
 
     ```bash
     ionic generate service _services/storage
     ```
 
-    \
-
-3.  Der Service sollte in etwa so aussehen:\
-
+    \\
+3.  Der Service sollte in etwa so aussehen:\\
 
     ```typescript
     import { Injectable } from '@angular/core';
@@ -91,31 +86,27 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
       providedIn: 'root'
     })
     export class StorageService {
-      private _storage: Storage | null = null;
+      private _storage$: Promise<Storage>;
 
       constructor(private storage: Storage) {
         this.init();
       }
 
-      async init() {
-        const storage = await this.storage.create();
-        this._storage = storage;
+      init() {
+        this._storage$ = this.storage.create();
       }
 
-      public set(key: string, value: any) {
-        this._storage?.set(key, value);
+      public async set(key: string, value: any) {
+        (await this._storage$).set(key, value);
       }
 
-      public get(key: string) {
-        return this._storage?.get(key)
+      public async get(key: string): Promise<any> {
+        return (await this._storage$).get(key)
       }
 
     }
     ```
-
-
-4.  Verwende nun den Service in deiner erstellten Page, indem du ihn über den Konstruktur einfügst und importierst:\
-
+4.  Verwende nun den Service in deiner erstellten Page, indem du ihn über den Konstruktur einfügst und importierst:\\
 
     ```typescript
     import { Component, OnInit } from '@angular/core';
@@ -139,12 +130,6 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
      
     } 
     ```
-
-
-
-
-
-
 
 ## Übung - Ionic Storage
 
