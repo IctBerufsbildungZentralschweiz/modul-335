@@ -23,8 +23,8 @@ export class TutorialGuard implements CanLoad {
   constructor(private storageService: StorageService, private router: Router) {}
 
   async canLoad(): Promise<boolean> {
-     let tutorialVisited = await this.storageService.get('tutorialVisited').then(res => {
-      if (tutorialVisited) {
+     let tutorialVisited = await this.storageService.get('tutorialVisited')
+     if (tutorialVisited) {
         this.router.navigate(['/app', 'tabs', 'schedule']);
         return false;
       } else {
