@@ -218,7 +218,6 @@ export class AppModule {}
 {% code title="chat.page.ts" %}
 ```javascript
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { AlertController } from '@ionic/angular';
 import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
 import { Observable } from 'rxjs';
 
@@ -241,7 +240,7 @@ export class ChatPage implements OnInit {
   groupNumber = 'G0'; // Bsp. G1
   currentUser = 'Roomies Ralph'; // Bsp. Ralph
 
-  constructor(private alertCtrl: AlertController, afDb: AngularFireDatabase) {
+  constructor(private afDb: AngularFireDatabase) {
     this.chatListRef = afDb.list('/chats/' + this.groupNumber);
     this.chatList = this.chatListRef.valueChanges();
   }
