@@ -165,7 +165,7 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt e
 
 | **Login**                                                                                                                                            | **Registrierung**                                                                                                                                                |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ul><li><p>Inputs</p><ul><li>Email</li><li>Passwort</li></ul></li><li><p>Buttons</p><ul><li>Link zur Registrierung</li><li>Login</li></ul></li></ul> | <ul><li><p>Inputs</p><ul><li>Email</li><li>Password</li><li>(optional) Password wiederholen</li></ul></li><li><p>Buttons</p><ul><li>Passwort</li></ul></li></ul> |
+| <ul><li><p>Inputs</p><ul><li>Email</li><li>Passwort</li></ul></li><li><p>Buttons</p><ul><li>Link zur Registrierung</li><li>Login</li></ul></li></ul> | <ul><li><p>Inputs</p><ul><li>Email</li><li>Password</li><li>(optional) Password wiederholen</li></ul></li><li><p>Buttons</p><ul><li>Register</li></ul></li></ul> |
 
 ![](<../.gitbook/assets/image (23).png>)
 
