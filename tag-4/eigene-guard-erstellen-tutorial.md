@@ -22,9 +22,9 @@ import { StorageService } from '../_services/storage.service';
 export class TutorialGuard implements CanLoad {
   constructor(private storageService: StorageService, private router: Router) {}
 
-  canLoad() {
-    return this.storageService.get('tutorialVisited').then(res => {
-      if (res) {
+  canLoad(): Promise<boolean> {
+     let tutorialVisited = await this.storageService.get('tutorialVisited').then(res => {
+      if (tutorialVisited) {
         this.router.navigate(['/app', 'tabs', 'schedule']);
         return false;
       } else {
@@ -33,6 +33,8 @@ export class TutorialGuard implements CanLoad {
     });
   }
 }
+
+
 ```
 {% endcode %}
 
