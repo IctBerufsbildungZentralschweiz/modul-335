@@ -133,8 +133,6 @@ import { environment } from "../environments/environment";
     AngularFireAuthModule
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
