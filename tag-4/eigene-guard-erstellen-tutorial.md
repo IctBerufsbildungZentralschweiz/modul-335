@@ -30,7 +30,6 @@ export class TutorialGuard implements CanLoad {
       } else {
         return true;
       }
-    });
   }
 }
 
