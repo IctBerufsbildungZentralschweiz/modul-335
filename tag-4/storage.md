@@ -75,7 +75,19 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
     ```
 
 
-3.  Der Service sollte in etwa so aussehen:
+3.  Ergänze bei dein Imports im App Module (`app.module.ts`) folgendes:
+
+    ```bash
+      imports: [
+        ...
+        IonicStorageModule.forRoot()
+        ...
+      ]
+    ```
+
+    \
+
+4.  Der Service sollte in etwa so aussehen:
 
     ```typescript
     import { Injectable } from '@angular/core';
@@ -106,7 +118,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 
     }
     ```
-4.  Verwende nun den Service in deiner erstellten Page, indem du ihn über den Konstruktor einfügst und importierst:
+5.  Verwende nun den Service in deiner erstellten Page, indem du ihn über den Konstruktor einfügst und importierst:
 
     ```typescript
     import { Component, OnInit } from '@angular/core';
