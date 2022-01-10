@@ -7,7 +7,7 @@ Ionic Appflow ist ihr neues Flaggschiff und eine powervolle Sammlung von Service
 Ionic Appflow hat diverse Services, welche dich durch den gesamten App Lifecycle beschäftigen:
 
 * ****[**Builds**](https://ionicframework.com/docs/appflow/quickstart/connect): Zusammen mit einem Git-Workflow können Builds deployed oder paketiert werden
-* ****[**Deploy**](https://ionicframework.com/docs/appflow/deploy/)**:** Spiele in Echzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
+* ****[**Deploy**](https://ionicframework.com/docs/appflow/deploy/)**:** Spiele in Echtzeit Remote-Updates deiner App ein, ohne über die Verzögerungen im App-Store.
 * ****[**Package**](https://ionicframework.com/docs/appflow/package/)**:** Baue native App-Binaries in der Cloud für iOS und Android.
 * ****[**Automation**](https://ionicframework.com/docs/appflow/automation/): Automatisierte Build mit Möglichkeiten für Webhooks
 
