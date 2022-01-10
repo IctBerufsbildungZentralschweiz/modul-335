@@ -114,18 +114,18 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   {
     path: 'list',
-    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule),
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectUnauthorizedToLogin }
   },
   { path: 'login', 
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule) 
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
     canActivate: [AngularFireAuthGuard],
     data: { authGuardPipe: redirectLoggedInToRoot }
   },
