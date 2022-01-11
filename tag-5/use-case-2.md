@@ -1,10 +1,10 @@
 # Use Case 2
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
 ## Ausgangslage
 
-Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechenden Screens und das Starter-Projekt liegen im [M335-Exchange](https://enz.lu/m335-exchange) für dich bereit. Ich bin gespannt auf dein Ergebnis.
+Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich eine einfache Ferien App von dir als Entwickler programmiert haben. Die entsprechenden Screens und das Starter-Projekt werden dir auf [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch) zur Verfügung gestellt. Ich bin gespannt auf dein Ergebnis.
 
 ### Verbindungsparameter für Firebase `environment.ts`
 
@@ -26,7 +26,18 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Struktur der Daten
 
-![Daten aus Firebase \(GX steht jeweils f&#xFC;r die Gruppe\)](../.gitbook/assets/image%20%283%29%20%281%29.png)
+![Daten aus Firebase (GX steht jeweils für die Gruppe)](<../.gitbook/assets/image (3) (1).png>)
+
+### Empfehlung für Vorgehen:
+
+1. Download ZIP (Student Starter Template) von https://kurse.ict-bz.ch&#x20;
+2. Unzip der Datei (an einen sichere Ort mit genügend Speicherplatz)
+3. IDE (VS Code) im gerade entpackten Ordner öffnen
+4. Packages installieren mit: `npm install`
+5. Ionic Serve starten mit: `ionic serve`
+6. Verbindungsparameter von Google Firebase (siehe oben) ins `environments.ts` kopieren
+7. Imports im `app.module.ts` (mit TODO: markiert) hinzufügen
+8. Alle Aufgaben unten in der Detailbeschreibung lesen
 
 ## Detailbeschreibung
 
@@ -34,11 +45,11 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 * Die App soll nach dem Hi-Fi Protoypen gestylt werden, als Farben sind die Defaults zu verwenden
 * Für die Daten werden die dazugehörige Firebase API verwendet. Login- & API-Daten sind oben zu entnehmen.
-* Die Seiten sind im Template bereits erstellt, die Grundnavigation inkl. AngularFireAuthGuards fehlt jedoch im `app-routing.module.ts` 
+* Die Seiten sind im Template bereits erstellt, die Grundnavigation inkl. AngularFireAuthGuards fehlt jedoch im `app-routing.module.ts`&#x20;
 
 ### Navigation
 
-* Das Menu soll die im Prototyp ersichtlichen Menüpunkte \(Galerie, Ferienorte\) haben
+* Das Menu soll die im Prototyp ersichtlichen Menüpunkte (Galerie, Ferienorte) haben
 * Die Menüpunkte sollen die im Prototyp ersichtlichen Icons und Farben haben
 * Der Titel im Menu soll "Use Case 2" stehen
 * Am unteren Ende des Menus soll ein Button fürs Logout ersichtlich sein
@@ -46,7 +57,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Willkommen
 
-* Die Willkommensseite soll nur beim ersten App-Start erscheinen. Verwende dazu `Ionic Storage`. Sonst soll das Login kommen \(falls nicht eingeloggt\)     
+* Die Willkommensseite soll nur beim ersten App-Start erscheinen. Verwende dazu `Ionic Storage`. Sonst soll das Login kommen (falls nicht eingeloggt)    &#x20;
 * Auf der Seite ist ein Titel "Willkommen zum UseCase2" ersichtlich, verwende hier ein Grid und `h2` Elemente
 * Klickt der Benutzer irgendwo hin, soll er zum Login gelangen
 
@@ -70,7 +81,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 * Die Galerie-Seite ist nach dem Login die Standardseite
 * Die Galerie zeigt Bilder der Firebase Realtime Database an
-* Die jeweilige Gruppennummer ist einzuhalten \(Bsp. `groupNumber: string = "G1";` \)
+* Die jeweilige Gruppennummer ist einzuhalten (Bsp. `groupNumber: string = "G1";` )
 * Die Bild-URL soll dabei von der Firebase Realtime Database geladen werden
 * Die Bilder sollen in einem Grid dargestellt werden
 
@@ -80,6 +91,4 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 * Ich kann ein über den "Plus"-Button in der Navigation einen neuen Ferienort hinzufügen
 * Dabei wird ein `AlertController` mit Inputfelder verwendet
 * Speichere ich den Datensatz wird dieser der Liste angehängt und in Firebase persistiert
-
-
 
