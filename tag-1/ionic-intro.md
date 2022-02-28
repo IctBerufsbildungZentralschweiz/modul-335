@@ -75,7 +75,7 @@ Ein neues Projekt erstellt du mit
 ```bash
 ionic start myNewProject
 
-# Überischt aller Möglichkeiten
+# Übersicht aller Möglichkeiten
 ionic start --list
 ```
 
