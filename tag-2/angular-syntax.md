@@ -195,10 +195,10 @@ Das Dritte Resultat ist 19
     ```javascript
     person: Person = { name : 'Muster', vorname : 'Max' };
     ```
-6.  Auf der Seite _Array_ möchten wir eine Liste (List-Item) von Früchte haben, welche wir aus dem Component holen:
+6.  Auf der Seite _Array_ möchten wir eine Liste (List-Item) von Früchten haben, welche wir aus dem Component holen:
 
     ```javascript
-    fruechte: Frucht = [
+    fruechte: Frucht[] = [
     {name:'Orange'},
     {name:'Banane'},
     {name:'Apfel'}
