@@ -11,7 +11,7 @@ _Quelle:_ [_https://de.wikipedia.org/wiki/App\_Store_](https://de.wikipedia.org/
 | Apple App Store                                           | Google Play Store                                      |
 | --------------------------------------------------------- | ------------------------------------------------------ |
 | [Public](https://itunes.apple.com/ch/genre/ios/id36?mt=8) | [Public](https://play.google.com/store/apps?hl=de)     |
-| [Entwickler](https://developer.apple.com)                 | [Entwickler](https://developer.android.com/index.html) |
+| [Entwickler](https://developer.apple.com/)                | [Entwickler](https://developer.android.com/index.html) |
 
 Um eine App zu veröffentlichen, sollte man die folgenden (ausgedruckt mehrere 100 Seiten) grosse Tutorials anschauen:
 

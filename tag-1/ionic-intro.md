@@ -9,7 +9,7 @@
 ## Website
 
 Ionic ist unter folgender Website zu finden:\
-[http://ionicframework.com/](http://ionicframework.com)
+[http://ionicframework.com/](http://ionicframework.com/)
 
 ### Welche Apps wurden mit Ionic erstellt?
 
@@ -27,9 +27,9 @@ Ionic basiert und verwendet:
 
 * [HTML5](https://de.wikipedia.org/wiki/HTML5)
 * [CSS](https://de.wikipedia.org/wiki/Cascading\_Style\_Sheets)
-* [SASS](http://sass-lang.com)
+* [SASS](http://sass-lang.com/)
 * Ein JS-Framework
-  * [Angular](https://angular.io) (inkl. Typescript)
+  * [Angular](https://angular.io/) (inkl. Typescript)
   * [React](https://ionicframework.com/docs/react)
   * [Vue](https://ionicframework.com/docs/vue/your-first-app) (seit Herbst 2020)
 
@@ -107,7 +107,7 @@ Ionic bietet uns ein super Möglichkeit die von Euch programmierte App mit folge
 ionic serve
 ```
 
-Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localhost:8100/](http://localhost:8100)
+Ein neuer Tab im Browser wird dabei geöffnet, meist auf der URL [http://localhost:8100/](http://localhost:8100/)
 
 **Vorteile von** `ionic serve`
 

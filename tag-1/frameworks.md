@@ -2,11 +2,11 @@
 
 ## Mobile Betriebssysteme
 
-![Weltweit bis 2016](../.gitbook/assets/chartoftheday_4112_smartphone_platform_market_share_n.jpg)
+![Weltweit bis 2016](../.gitbook/assets/chartoftheday\_4112\_smartphone\_platform\_market\_share\_n.jpg)
 
-![Schweiz 2019](../.gitbook/assets/statcounter-os_combined-ch-monthly-201811-201912.png)
+![Schweiz 2021](<../.gitbook/assets/image (25).png>)
 
-Weltweit liegt eindeutig Android vorne, in der Schweiz ist es etwa eine 50/50 Aufteilung.
+Weltweit liegt eindeutig Android vorne, in der Schweiz ist es etwa eine 55/45 Aufteilung zugunsten von iOS.
 
 Statcounter ist eine gute Website um die Marktanteile aufzuzeigen:
 
@@ -18,28 +18,28 @@ Statcounter ist eine gute Website um die Marktanteile aufzuzeigen:
 
 Android ist ein von Google zu Verfügung gestelltes mobiles Betriebssystem. Mehr dazu gibts hier:
 
-[https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\)](https://de.wikipedia.org/wiki/Android_%28Betriebssystem%29)
+[https://de.wikipedia.org/wiki/Android\_(Betriebssystem)](https://de.wikipedia.org/wiki/Android\_\(Betriebssystem\))
 
 ### iOS
 
 Apple installiert auf seiner Produktlinie hauptsächlich ihr eigenes Betriebssystem iOS. Lies den kompletten Artikel hier:
 
-[https://de.wikipedia.org/wiki/Apple\_iOS](https://de.wikipedia.org/wiki/Apple_iOS)
+[https://de.wikipedia.org/wiki/Apple\_iOS](https://de.wikipedia.org/wiki/Apple\_iOS)
 
 ### Weitere
 
 Wie ihr der Grafik oben entnehmen könnt, bleiben neben den zwei grossen Firmen Google und Apple kaum noch Hersteller von mobilen Betriebsystemen. Windows, Blackberry und co. sind praktisch weg vom Markt.
 
-![](../.gitbook/assets/ralph_tipp.png)
+![](../.gitbook/assets/ralph\_tipp.png)
 
 **Tipp von Ralph:**
 
-> Orientiere dich als Entwickler am Markt.  
+> Orientiere dich als Entwickler am Markt.\
 > Wenn du deine App für Android und iOS in den Store bringst, deckst du 98% aller Betriebssysteme ab. Setze den Fokus auf diese beiden Apps und kümmere dich erst später, wenn überhaupt noch um die anderen 2%.
 
 ## Begriff Framework
 
-> Ein Framework \(englisch für Rahmenstruktur\) ist ein Programmiergerüst, das in der Softwaretechnik, insbesondere im Rahmen der objektorientierten Softwareentwicklung sowie bei komponentenbasierten Entwicklungsansätzen, verwendet wird. Im allgemeineren Sinne bezeichnet man mit Framework auch einen Ordnungsrahmen.
+> Ein Framework (englisch für Rahmenstruktur) ist ein Programmiergerüst, das in der Softwaretechnik, insbesondere im Rahmen der objektorientierten Softwareentwicklung sowie bei komponentenbasierten Entwicklungsansätzen, verwendet wird. Im allgemeineren Sinne bezeichnet man mit Framework auch einen Ordnungsrahmen.
 
 [https://de.wikipedia.org/wiki/Framework ](https://de.wikipedia.org/wiki/Framework)
 
@@ -60,6 +60,4 @@ Die Seite zeigt dir nicht nur die Unterschiede auf, sondern bietet dir und deine
 
 
 {% embed url="https://appfigures.com/top-sdks/development/apps" %}
-
-
 

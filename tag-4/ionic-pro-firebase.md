@@ -22,7 +22,7 @@ Damit Ionic ihre Kosten ebenfalls bezahlen kann, gibts dort mehrere Pro-Features
 
 ## Google Firebase
 
-Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
+Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 
 {% embed url="https://www.youtube.com/watch?v=O17OWyx08Cg" %}
 

@@ -27,7 +27,7 @@ Anbei ist der Apple Approval Prozess beschrieben:\
 
 ![](../.gitbook/assets/apple-approval-prozess.png)
 
-Die Website von [http://appreviewtimes.com/](http://appreviewtimes.com) zeigt dir die aktuellen Wartezeiten von einem Apple Approval. Bei Releases von neuen Software-Versionen oder Feiertagen arbeiten auch nicht alle Mitarbeiter bei Apple/Google - was eine längere Wartezeit mit sich bringen kann.
+Die Website von [http://appreviewtimes.com/](http://appreviewtimes.com/) zeigt dir die aktuellen Wartezeiten von einem Apple Approval. Bei Releases von neuen Software-Versionen oder Feiertagen arbeiten auch nicht alle Mitarbeiter bei Apple/Google - was eine längere Wartezeit mit sich bringen kann.
 
 Um deine App in den Stores zu veröffentlichen brauchst du mindestens noch folgende Informationen:
 
@@ -122,8 +122,8 @@ Bitte beachtet und respektiert dass im Internet schon sehr viel geklaut wird. Ei
 ![](../.gitbook/assets/ralph\_uebung.png)
 
 1. Erstell nun einige Screenshots deiner eigenen (UseCase 1) App-Idee.&#x20;
-2. Verwende die Screenshots um nun mit dem Service [Mockdrop.io](http://mockdrop.io) ein cooles Bild deiner App zu erzeugen. Zusatz: Such dir ein passendes Screenshot-Template wie launchkit.io resp. ein passendes App-Icon&#x20;
-3.  Geh via [Moodle](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit#) -> Nützliche Links auf den entsprechenden Ordner _"Tag5/Teil66\_Veröffentlichung"_
+2. Verwende die Screenshots um nun mit dem Service [Mockdrop.io](http://mockdrop.io/) ein cooles Bild deiner App zu erzeugen. Zusatz: Such dir ein passendes Screenshot-Template wie launchkit.io resp. ein passendes App-Icon&#x20;
+3.  Geh via [Moodle](https://www.gitbook.com/book/motzne/ict-bz-modul-335/edit) -> Nützliche Links auf den entsprechenden Ordner _"Tag5/Teil66\_Veröffentlichung"_
 
     und öffne die Datei online.
 4. Erstelle für deine App einen neuen Slide. Der Titel soll beinhalten: Name deiner App / Nachname Vorname (z.B. Roomies / Roomies Ralph).

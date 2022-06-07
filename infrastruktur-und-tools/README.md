@@ -6,7 +6,7 @@ Dieses Gitbook findet Ihr unter [m335.ict-bz.ch](https://m335.ict-bz.ch)
 
 ### Moodle
 
-Zusätzlich gibt es Unterlagen auf Moodle unter: [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch)​‌
+Zusätzlich gibt es Unterlagen auf Moodle unter: [https://kurse.ict-bz.ch](https://kurse.ict-bz.ch/)​‌
 
 ![](<../.gitbook/assets/image (9).png>)
 

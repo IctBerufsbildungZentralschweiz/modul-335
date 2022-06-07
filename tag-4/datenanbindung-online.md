@@ -31,7 +31,7 @@ Wir haben in der Gruppenübung zuvor einige Online-Tools kennengelernt. Bevor wi
 | Optimal für grosse Daten                          |                                 |
 | Geeignet für grosse Datenmodelle                  |                                 |
 
-Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
+Wir werden die kommenden Übungen mit [Google's Firebase](https://firebase.google.com/) als Backend as a Service absolvieren, schau dir dazu folgendes Video an:
 
 {% embed url="https://www.youtube.com/watch?v=U5aeM5dvUpA" %}
 
