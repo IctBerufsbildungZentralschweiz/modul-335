@@ -26,7 +26,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Struktur der Daten
 
-![Daten aus Firebase (GX steht jeweils für die Gruppe)](<../.gitbook/assets/image (3) (1).png>)
+![](<../.gitbook/assets/image (26).png>)
 
 ### Empfehlung für Vorgehen:
 
