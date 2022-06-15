@@ -4,7 +4,7 @@
 
 ![Weltweit bis 2016](../.gitbook/assets/chartoftheday\_4112\_smartphone\_platform\_market\_share\_n.jpg)
 
-![Schweiz 2021](<../.gitbook/assets/image (25).png>)
+![Schweiz 2021](<../.gitbook/assets/image (25) (1).png>)
 
 Weltweit liegt eindeutig Android vorne, in der Schweiz ist es etwa eine 55/45 Aufteilung zugunsten von iOS.
 

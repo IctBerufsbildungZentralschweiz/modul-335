@@ -26,7 +26,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Struktur der Daten
 
-![](<../.gitbook/assets/image (26).png>)
+![](<../.gitbook/assets/image (25).png>)
 
 ### Empfehlung für Vorgehen:
 
