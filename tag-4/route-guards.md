@@ -34,7 +34,7 @@ ionic generate service _services/Auth
 Die soeben generierten Datei `auth.service.ts` im Ordner `_services` soll alles rund ums Login beinhalten. Hier ein mögliches Grundgerüst für einen `AuthService`, später sollen die mit `// TODO` markierten Stellen noch gefüllt werden.
 
 {% tabs %}
-{% tab title="Auth Services" %}
+{% tab title="Compatibility" %}
 {% code title="auth.service.ts" %}
 ```typescript
 import { Injectable } from '@angular/core';
@@ -55,7 +55,7 @@ export class AuthService {
    // TODO: Registrierung für den Benutzer ausprogrammieren
   }
   
-  logout() {
+  async logout() {
     // TODO: User ausloggen
   }
 }
@@ -67,6 +67,49 @@ export interface User {
 ```
 {% endcode %}
 {% endtab %}
+
+{% tab title="Modular" %}
+{% code title="auth.service.ts" %}
+```typescript
+import { Injectable, OnDestroy } from '@angular/core';
+import {
+    Auth,
+    authState,
+    signInWithEmailAndPassword,
+    signOut,
+    User,
+} from '@angular/fire/auth';
+import { EMPTY, Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
+@Injectable({
+    providedIn: 'root',
+})
+export class AuthService implements OnDestroy {
+    public readonly user: Observable<User | null> = EMPTY;
+
+    constructor(private afAuth: Auth) {
+        if (afAuth) {
+            this.user = authState(this.afAuth);
+        }
+    }
+
+    async loginWithEmailAndPassword(user: User) {
+        // TODO: Login für Benutzer ausprogrammieren
+    }
+
+    async createUserWithEmailAndPassword(user: User) {
+        // TODO: Registrierung für den Benutzer ausprogrammieren
+    }
+
+    async logout() {
+         // TODO: User ausloggen
+    }
+}
+
+```
+{% endcode %}
+{% endtab %}
 {% endtabs %}
 
 ###
@@ -75,30 +118,41 @@ export interface User {
 
 Seit Herbst 2019 bietet `@angular/fire` die `AngularFireAuthGuard` an, die uns die Komplexität rund um den Authentisierungsstatus mit Oberservables abnimmt, so dass wir fürs Login nicht noch eine eigene Guard schreiben müssen. &#x20;
 
-Für die neue Variante mit [AngularFireAuthGuards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss  folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann:
+* **Compatibility**: Für die `compat` Variante mit [AngularFireAuthGuards](https://github.com/angular/angularfire/blob/master/docs/auth/router-guards.md) muss  folgender Import im `app.module.ts` gemacht werden, damit man `AngularFireAuthGuardModule` weiter unten in die `imports` hinzugefügt kann
+* **Modular:** Hier braucht es kein Import im `app.module.ts` mehr
 
+{% tabs %}
+{% tab title="Compatibility" %}
 ```typescript
 import { AngularFireAuthGuardModule } from '@angular/fire/compat/auth-guard';
 ```
+{% endtab %}
+
+{% tab title="Modular" %}
+```typescript
+// Kein Import im app.module.ts nötig
+```
+{% endtab %}
+{% endtabs %}
 
 Gut nun sind wir Startklar, was uns jetzt noch fehlt ist, dass wir die gewünschten Routes in unserem `app-routing.module.ts` mit einer `AngularFireAuthGuard` schützen. \
 \
 Dabei gehen wir wie folgt vor:
 
+{% tabs %}
+{% tab title="Compatibility" %}
 1. Einmalig: Neue Imports hinzufügen (Zeile 5)
 2. Einmalig: Zwei neue Variable definieren um das Standardverhalten festzulegen (Zeile 8+9)
    1. `redirectUnauthorizedToLogin` = Wohin wird der User geleitet wenn er nicht eingeloggt ist
    2. `redirectLoggedInToRoot` = Wohin wird der User geleitet wenn er eingeloggt ist
 3. Pro Route: Den zu schützenden Routes zwei weiteres Properties `canActivate` und `data` hinzufügen ( Zeile 21 + 22, Zeile 27+28, usw.)
 
-{% tabs %}
-{% tab title="AppRouting mit AngularFireAuthGuard" %}
-{% code title="app-routing.module.ts" %}
-```javascript
+{% code lineNumbers="true" %}
+```typescript
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { LogoutComponent } from './logout/logout.page';
-// Neue imports hinzufügen
+// Auth-Guards imports hinzufügen
 import { AngularFireAuthGuard, redirectUnauthorizedTo, redirectLoggedInTo } from '@angular/fire/compat/auth-guard';
 
 // Standardverhalten festlegen
@@ -144,8 +198,74 @@ const routes: Routes = [
 export class AppRoutingModule {}
 ```
 {% endcode %}
+{% endtab %}
 
+{% tab title="Modular" %}
+1. Einmalig: Neue Imports hinzufügen (Zeile 5-12)
+2. Einmalig: Eine neue Variable definieren um das Standardverhalten festzulegen (Zeile 14-15)
+   1. `redirectUnauthorizedToLogin` = Wohin wird der User geleitet wenn er nicht eingeloggt ist
+3. Pro Route: Den zu schützenden Routes zwei weiteres Properties `canActivate` und `data` hinzufügen ( Zeile 30 + 31, Zeile 36+37, usw.)
 
+{% code lineNumbers="true" %}
+```typescript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { LogoutComponent } from './logout/logout.page';
+// Auth-Guards imports hinzufügen
+import {
+    AuthGuard,
+    AuthPipe,
+    AuthPipeGenerator,
+} from '@angular/fire/auth-guard';
+import { User } from '@angular/fire/auth';
+import { map } from 'rxjs/operators';
+
+// Standardverhalten festlegen
+const authPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToAuth;
+const redirectUnauthorizedToLogin: AuthPipe = map((user: User | null) => {
+    // if not logged in, redirect to `login`
+    // if logged in, allow redirect
+    return !!user ? true : ['login'];
+});
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
+    canActivate: [AuthGuard],
+    data: { authGuardPipe: authPipeGenerator },
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule),
+    canActivate: [AuthGuard],
+    data: { authGuardPipe: authPipeGenerator },
+  },
+  { path: 'login', 
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
+    canActivate: [AuthGuard],
+    data: { authGuardPipe: authPipeGenerator },
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule), 
+    canActivate: [AuthGuard],
+    data: { authGuardPipe: authPipeGenerator },
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}
+```
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -157,7 +277,7 @@ Wir möchten nun für deine App-Idee aus Use-Case 1 oder deinem Übungsprojekt e
 
 1\. Lies die Doku der beiden Kapitel aus Tag 4 nochmals gut durch.&#x20;
 
-2\. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher [Ionic Appflow / Firebase.](ionic-pro-firebase.md)
+2\. Füge AngularFire nach der Anleitung in dein Projekt ein. Wir verwenden für diese Übung alle die selben Firebase-Daten: `m335-login` . Du findest diese im Kapitel vorher [Ionic Appflow / Firebase.](google-firebase.md)
 
 3\. Mit `ionic generate` zwei neue Seite erstellen (Login + Register)
 
@@ -205,5 +325,3 @@ Solltest du mit der oben beschrieben Anleitungen nicht klar kommen, schau doch m
 {% embed url="https://www.youtube.com/watch?v=Ib4yQZzf-ZM" %}
 
 {% embed url="https://www.youtube.com/watch?v=Y-gn-4V3_yI" %}
-
-1.

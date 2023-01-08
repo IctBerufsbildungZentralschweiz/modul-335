@@ -37,7 +37,8 @@
 
 ## Tag 4
 
-* [Ionic Appflow / Firebase](tag-4/ionic-pro-firebase.md)
+* [Ionic Appflow](tag-4/ionic-appflow.md)
+* [Google Firebase](tag-4/google-firebase.md)
 * [Guards / Service / Login](tag-4/route-guards.md)
 * [Datenanbindung: Online](tag-4/datenanbindung-online.md)
 * [Datenanbindung: Offline](tag-4/storage.md)

@@ -29,9 +29,11 @@ if(typeof(Storage) != "undefined") {
 
 ### Ionic Storage
 
-Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit: \\
+Ionic hat auch fürs Persistieren von einfachen Daten eine Lösung bereit:&#x20;
 
 {% embed url="https://github.com/ionic-team/ionic-storage" %}
+
+
 
 #### API
 
@@ -71,7 +73,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 2.  Füge  `IonicStorageModule.forRoot()` unter `imports` im `ngModule` in der Datei `app.module.ts` hinzu.  Beispiel:\
 
 
-    ```bash
+    ```typescript
     // Importieren
     import { IonicStorageModule } from '@ionic/storage-angular';
 
@@ -105,7 +107,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 
 4.  Ergänze bei dein Imports im App Module (`app.module.ts`) folgendes:
 
-    ```bash
+    ```typescript
       imports: [
         ...
         IonicStorageModule.forRoot()
@@ -166,7 +168,7 @@ Damit du `@ionic/storage-angular` in deinem Projekt verwenden kannst. Empfehlen 
 
       constructor(private storageService: StorageService) {}
       
-     // TODO: ...
+     // TODO: ... 
      
     } 
     ```
