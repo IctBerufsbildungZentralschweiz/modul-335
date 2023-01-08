@@ -2,8 +2,8 @@
 
 In Angular gibt es grundsätzlich 2 Varianten wie man mit Formularen umgehen kann:
 
-* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine perfekte Wahl wenn du an mehreren Orten Formulare einsetzen möchtest 
-* **Template-basierte Formulare:** eher für einfachere Apps \(Newsletter-Anmeldung oder einfache Registrierungen\) 
+* **Reactive Forms:** Sind robuster, besser skalier- und testbar. Also deine perfekte Wahl wenn du an mehreren Orten Formulare einsetzen möchtest&#x20;
+* **Template-basierte Formulare:** eher für einfachere Apps (Newsletter-Anmeldung oder einfache Registrierungen)&#x20;
 
 Auf den ersten Blick scheinen Reactive Forms etwas komplex, aber ihr werdet sehen, dass man hier relativ schnell sehr gute Erfolge erzielen kann:
 
@@ -66,7 +66,7 @@ export class FormExamplePageModule {}
 In unserer Komponente müssen wir nun zwei Dinge hinzufügen:
 
 * **FormGroup:** Die Felder in unserem Kontaktformular werden in einer sogenannten FormGroup gruppiert. Natürlich könnten wir bei einem grossen Formular pro Seite auch mehrere Groups machen. Der Gruppe geben wir einen Namen `contactForm`
-* **FormControl:** Jeder Input in unserem Kontaktformular wird zu einer FormControl gemappt. Hier können die klassischen Typen wie Input, Radio, Select usw. verwendet werden. Jedes FormControl Element enthält einen _value_ und _validation_ des Felds.   Wir fügen also im `ngOnInit` unserem `contactForm` nun mehrere Felder \(Nachname, Vorname, Email, Land + Nachricht\)  in form von FormControls hinzu.
+* **FormControl:** Jeder Input in unserem Kontaktformular wird zu einer FormControl gemappt. Hier können die klassischen Typen wie Input, Radio, Select usw. verwendet werden. Jedes FormControl Element enthält einen _value_ und _validation_ des Felds.   Wir fügen also im `ngOnInit` unserem `contactForm` nun mehrere Felder (Nachname, Vorname, Email, Land + Nachricht)  in form von FormControls hinzu.
 
 Unser Code sieht somit wie folgt aus:
 
@@ -113,8 +113,8 @@ Nun müssen wir die erstellte FormGroup und deren Controls noch sauber mit unser
 <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
 ```
 
-* **formGroup:** Bindet das Formular an die von uns in der Komponente erstellte `contactForm` 
-* **ngSubmit:** Fügt ein Event hinzu was beim absenden des Formular passieren soll, wir rufen hier unsere Methode sendContactForm\(\) auf.
+* **formGroup:** Bindet das Formular an die von uns in der Komponente erstellte `contactForm`&#x20;
+* **ngSubmit:** Fügt ein Event hinzu was beim absenden des Formular passieren soll, wir rufen hier unsere Methode sendContactForm() auf.
 
 Unser Template sollte also in etwa so aussehen:
 
@@ -150,17 +150,17 @@ Unser Template sollte also in etwa so aussehen:
 
 Was hier noch zu sehen ist:
 
-* Wir haben unsere Formular-Elemente mit `formControlName` mit den FormControls aus unsere Komponente verknüpft \(`lastname`, `firstname`, `email`\)
+* Wir haben unsere Formular-Elemente mit `formControlName` mit den FormControls aus unsere Komponente verknüpft (`lastname`, `firstname`, `email`)
 * Da die ion-input Elemente alle `required` sind wird der "Send it!"-Button erst aktiv werden wenn alles ausgefüllt wurde.  Im nächsten Kapitel siehst du jedoch das es noch mehr Möglichkeiten dazu gibt
 
 ## Validators: Lass uns Felder überprüfen
 
-Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was, wenn deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?  
-Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.  
+Meist reicht es nicht nur zu prüfen ob ein Feld ausgefüllt wurde. Was, wenn deine Benutzer ein komplexes Passwort wählen müssen oder du den Benutzernamen schon prüfen möchtest?\
+Hierzu bietet uns Angular zusammen mit ReactiveForms sogenannte Validators an.\
 Wir schauen uns die [wichtigsten Standardvalidatoren ](https://angular.io/api/forms/Validators) an:
 
-* **minLength\(**_**n**_**\):** Hier kann eine minimale Länge angeben werden
-* **maxLength**_**\(n**_**\):** Auch hier kann man die maximale Länge definieren
+* **minLength(**_**n**_**):** Hier kann eine minimale Länge angeben werden
+* **maxLength**_**(n**_**):** Auch hier kann man die maximale Länge definieren
 * **required:** Der Name sagt es ja schon
 * **email:** Prüft ob die Eingabe dem Format einer Email-Adresse entspricht
 
@@ -238,25 +238,24 @@ Und unser Template passen wir wie folgt an:
 
 Beispiel mit Fehler:
 
-![](../.gitbook/assets/image%20%284%29.png)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 Wie eingangs beschrieben könnte man hier beliebig viel selber validieren, das würde den Rahmen hier aber sprengen. Möchtest du mehr darüber erfahren, empfehle ich dir direkt die [Angular Form Validatoren Seite](https://angular.io/guide/form-validation).
 
 ## Weitere Dokumentationen
 
-{% embed url="https://angular.io/guide/reactive-forms" caption="" %}
+{% embed url="https://angular.io/guide/reactive-forms" %}
 
-{% embed url="https://medium.com/@jinalshah999/reactive-forms-in-angular-a46af57c5f36" caption="" %}
+{% embed url="https://medium.com/@jinalshah999/reactive-forms-in-angular-a46af57c5f36" %}
 
 ## Übung
 
-![](../.gitbook/assets/ralph_uebung.png)
+![](../.gitbook/assets/ralph\_uebung.png)
 
-1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Newsletter" 
-2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](../.gitbook/assets/image%20%286%29.png)
+1. Nimm dein am Tag 1 erstelltes  Projekt "GX\_NachnameVorname\_Übung" und erstelle darin eine neue Seite Namens "Newsletter"&#x20;
+2. Ziel soll es sein, sich mit einer Email Adresse an einem Newsletter anmelden zu können. Die Validierung soll mit `Validators` und `ReactiveForms` realisiert werden. ![](<../.gitbook/assets/image (6).png>)
    1. Das Feld muss ein Pflichtfeld sein
    2. Das Feld muss eine gültige Email sein
    3. Man kann sich erst anmelden wenn eine gültige Email eingegeben wurde
-3. Gibt es einen Fehler soll zwischen Input + Button ein Fehler angezeigt werden. 
+3. Gibt es einen Fehler soll zwischen Input + Button ein Fehler angezeigt werden.&#x20;
 4. BONUS I : Nach dem Absenden soll die Email in einer Toast-Nachricht angezeigt werden
-

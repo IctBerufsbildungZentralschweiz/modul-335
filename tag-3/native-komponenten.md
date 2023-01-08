@@ -2,12 +2,12 @@
 
 Heute verwendet praktisch jede App lokale Komponenten wie Kamera, Geolocation oder Kalender. Auch mit Ionic kann man darauf zugreifen, dabei gibt es grundsätzlich zwei Möglichkeiten:
 
-* Cordova Plugins mit grosser Community \(Eine Liste davon findest du [hier](https://ionicframework.com/docs/native)\)
+* Cordova Plugins mit grosser Community (Eine Liste davon findest du [hier](https://ionicframework.com/docs/native))
 * [Capacitor](https://capacitor.ionicframework.com/) - der nativen Bridge vom Ionic Team
 
 ## Capacitor
 
-![](../.gitbook/assets/image%20%288%29.png)
+![](<../.gitbook/assets/image (8).png>)
 
 {% embed url="https://capacitor.ionicframework.com/" %}
 
@@ -20,7 +20,7 @@ Um Capacitor brauchen zu können müssen folgende Punkte erfüllt sein:
 * [NodeJS](https://nodejs.org) ist installiert
 * [Ionic CLI](https://ionicframework.com/docs/cli) ist installiert
 * [Android Studio ](https://developer.android.com/studio)wurde runtergeladen und installiert
-* \(optional für macOS-User\) Xcode ist installiert, wenn auf iOS deployed werden soll
+* (optional für macOS-User) Xcode ist installiert, wenn auf iOS deployed werden soll
 
 ### Starter Template verwenden
 
@@ -34,7 +34,7 @@ npm install
 
 ## Mit Capacitor programmieren
 
-Programmiere nun ganz normale deine Funktionen in den entsprechenden Components mit Angular \(Typescript\) aus. Sobald du dein Code geschrieben hast und ihn auf dem nativen Gerät testen möchtest führe folgenden Befehl aus um ein Build zu erstellen:
+Programmiere nun ganz normale deine Funktionen in den entsprechenden Components mit Angular (Typescript) aus. Sobald du dein Code geschrieben hast und ihn auf dem nativen Gerät testen möchtest führe folgenden Befehl aus um ein Build zu erstellen:
 
 ```bash
 ionic build
@@ -50,13 +50,13 @@ npx cap add android
 npx cap add ios
 ```
 
-Dann musst du den Capacitor `copy` Befehl ausführen, welcher alle Assets \(in diesem Fall deine die Ionic Angular App\) in den nativen Codeteil deines Projekt kopiert:
+Dann musst du den Capacitor `copy` Befehl ausführen, welcher alle Assets (in diesem Fall deine die Ionic Angular App) in den nativen Codeteil deines Projekt kopiert:
 
 ```bash
 npx cap copy
 ```
 
-Als nächsten können wir \(falls nicht schon offen\) dein Projekt in den nativen Entwicklungsstudios öffnen:
+Als nächsten können wir (falls nicht schon offen) dein Projekt in den nativen Entwicklungsstudios öffnen:
 
 ```bash
 # Android
@@ -74,10 +74,10 @@ Dein Projekt sollte nun geöffnet werden.
 
 Mit dem Android Studio kannst du deine hybride Ionic App nun auf ein natives Gerät kopieren und dort den geschrieben Code testen.
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](<../.gitbook/assets/image (7) (1).png>)
 
-Überprüfe in  \(1\) ob du die richtigen Permissions \(2\) gesetzt hast.   
-In der Toolbar solltest du ein verbundenes Gerät \(3\) finden  und kannst deine App darauf laufen lassen \(4\).
+Überprüfe in  (1) ob du die richtigen Permissions (2) gesetzt hast. \
+In der Toolbar solltest du ein verbundenes Gerät (3) finden  und kannst deine App darauf laufen lassen (4).
 
 Eine detaillierte Anleitung dazu findest du hier:
 
@@ -102,8 +102,6 @@ Achtung: Bei iOS ist das ganze Deployment dank   und den sogenannten Provisio
 Eine Getting Started Anleitung für iOS findest du hier:
 
 {% embed url="https://capacitor.ionicframework.com/docs/ios" %}
-
-
 
 
 

@@ -2,293 +2,385 @@
 
 ![](../.gitbook/assets/ralph\_uebung.png)
 
-1. Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:\
-   &#x20;![](../.gitbook/assets/chat.png)
-2. Du nimmst wiederum deine Übung von Tag 1 "GX\_NachnameVorname\_Übung" und erstellst dort eine neue Seite "Chat".
-3.  Lass uns zuerst das Styling etwas vorantreiben. Hier ist unser SCSS-Code:
+Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in etwa so aussehen:\
+&#x20;<img src="../.gitbook/assets/image (4).png" alt="" data-size="original">
 
-    ```css
-    .chat-nachrichten {
-        height: calc(100% - 60px);
-        overflow: scroll;
-        background-color: var(--ion-color-light-shade);
-        span {
-            background-color: var(--ion-color-success) !important;
-            display: inline-block !important;
-            color: var(--ion-color-dark) !important;
-            padding: 10px !important;
-            border-radius: 10px !important;
-            text-align: left !important;
-            max-width: 240px !important;
-        }
+## Vorbereitung
+
+1. Du nimmst wiederum deine Übung von Tag 1 "GX\_NachnameVorname\_Übung" und erstellst dort mit dem Generator eine neue Seite "Chat".
+2.  Füge nun Firebase zu deinem Projekt hinzu. Im Kapitel [google-firebase.md](google-firebase.md "mention") findest du die komplette Anleitung. Kurz zusammengefasst:\
+    \- `npm install @angular/fire firebase --save`\
+    \- Imports im `app.module.ts` hinzufügen \
+    \- environments.ts anpassen\
+    \
+    Wir setzen auf eine gemeinsame Firebase-Konfiguration für diese Chat-Übung. Kopiere folgenden Inhalt in dein `src/environments/environment.ts` \
+    ``
+
+    ```typescript
+     export const environment = {
+      production: false,
+      // Neu hinzufügen
+      firebaseConfig: {
+        apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
+        authDomain: "m335-uebungen.firebaseapp.com",
+        databaseURL: "https://m335-uebungen.firebaseio.com",
+        projectId: "m335-uebungen",
+        storageBucket: "m335-uebungen.appspot.com",
+        messagingSenderId: "675049996439",
+        appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
+      }
+    };
+
+    ```
+3. Füge der `ion-toolbar` wiederum ein Menu-Button hinzu und färbe die Navigationsleiste in `danger` um.&#x20;
+4.  Mit dem Styling helfen wir dir etwas. Kopiere folgenden SCSS-Code in dein Projekt:
+
+    {% code title="chat-page.scss" %}
+    ```scss
+    ion-item {
+        display: flex;
     }
-    .chat-eingabe {
-        position: absolute;
-        bottom: 0px;
-        display: block;
-        width: 100%;
-        button {
-            margin: 0px !important;
-        }
-        ion-spinner {
-            width: 12px;
-            height: 12px;
-        }
-        ion-spinner * {
-            stroke: var(--ion-color-light);
-            fill: white;
-            margin: 0px !important;
-        }
+    ion-list {
+        --ion-item-background: transparent;
     }
-    .messages {
-        display: -webkit-box !important;
-        display: -moz-box !important;
-        display: -ms-flexbox !important;
-        display: -webkit-flex !important;
-        display: flex !important;
-        -webkit-align-content: center !important;
-        -ms-flex-line-pack: center !important;
-        align-content: center !important;
-        -webkit-box-align: center !important;
-        -moz-box-align: center !important;
-        -webkit-align-items: center !important;
-        -ms-flex-align: center !important;
-        align-items: center !important;
-        margin-bottom: 5px !important;
-        h3 {
-            font-size: 12px;
-            margin: 0px;
-            padding-bottom: 10px;
+
+    ion-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .message-list {
+        height: 100%;
+        .my-message {
+            justify-content: flex-end;
+            .message-bubble {
+                background: var(--ion-color-primary);
+                .my-message-text {
+                    color: white;
+                }
+            }
         }
-        p {
-            margin: 0px;
+        .other-message {
+            padding-left: 10px;
         }
-        .time {
+
+        .message-bubble {
+            background: var(--ion-color-light);
+            border-radius: 16px;
+            padding: 8px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .message-date {
             font-size: 10px;
-            color: rgb(180, 179, 179);
-        }
-        .message {
-            -webkit-box-flex: 1 !important;
-            -moz-box-flex: 1 !important;
-            -webkit-flex: 1 1 auto !important;
-            -ms-flex: 1 1 auto !important;
-            flex: 1 1 auto !important;
-            padding: 5px !important;
-            -webkit-transition: all 250ms ease-in-out !important;
-            transition: all 250ms ease-in-out !important;
-            overflow: hidden !important;
-            text-align: left !important;
-            -webkit-transform: translate3d(0, 0, 0) !important;
-            -moz-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important;
+            color: var(--ion-color-medium);
         }
     }
-    .messages.other {
-        .message {
-            -webkit-transform: translate3d(0, 0, 0) !important;
-            -moz-transform: translate3d(0, 0, 0) !important;
-            transform: translate3d(0, 0, 0) !important;
-            text-align: right !important;
+
+    .chat-message-input {
+        padding-left: 8px;
+    }
+    ```
+    {% endcode %}
+5. Versuche nun als nächsten den soeben kopierten Code zu verstehen. Schon gesehen dass du mit `var(...)` auch hier im SCSS auf die Ionic-Farben zugreifen kannst?
+6.  Wir helfen dir nochmals, ersetze dein `ion-content` mit folgendem Code. Versuch auch hier zu verstehen was du kopierst.  Deine Todo's sind mit `/* TODO */` markiert. Es gibt einige neue Dinge, wie z.B.\
+    \- [ng-container](https://angular.io/api/core/ng-container)\
+    \- [ng-template](https://angular.io/api/core/ng-template)
+
+    {% code title="chat.page.html" lineNumbers="true" %}
+    ```html
+    <ion-content
+        class="message-list"
+    >
+        <ion-list>
+            <ng-container
+                *ngFor="/* TODO */"
+            >
+                <ng-container
+                    *ngIf="isMyMessage(/* TODO */); else isForeignMessage"
+                >
+                    <ion-item class="my-message ion-no-padding" lines="none">
+                        <ion-label class="message-bubble" slot="end">
+                            <p
+                                class="my-message-text"
+                                [style.max-width]="getMessageBubbleWidth(/* TODO */)"
+                            >
+                                {{ /* TODO */ }}
+                            </p>
+                            <div class="message-date" >
+                                {{ /* TODO */.toDate() | date:
+                                'dd.MM.yyyy HH:mm' }}
+                            </div>
+                        </ion-label>
+                    </ion-item>
+                </ng-container>
+                <ng-template #isForeignMessage>
+                    <ion-item lines="none" class="other-message ion-no-padding">
+                        <ion-avatar slot="start">
+                            <ion-img
+                                [src]="/* TODO */"
+                            ></ion-img>
+                        </ion-avatar>
+                        <ion-label class="message-bubble ion-text-wrap">
+                            <h5 [style.color]="stringToColor(/* TODO */)">
+                                {{ /* TODO */}}
+                            </h5>
+                            <p
+                                [style.max-width]="getMessageBubbleWidth( /* TODO */)"
+                            >
+                                {{ /* TODO */}}
+                            </p>
+                            <div class="message-date" >
+                                {{ /* TODO */.toDate() | date:
+                                'dd.MM.yyyy HH:mm'}}
+                            </div>
+                        </ion-label>
+                      </ion-button>
+                    </ion-item>
+                </ng-template>
+            </ng-container>
+        </ion-list>
+    </ion-content>
+    ```
+    {% endcode %}
+7.  Füge nun unterhalb des `ion-content`  ein Footer ein:
+
+    {% code title="chat.page.html" %}
+    ```html
+    <ion-footer>
+        <form >
+            <ion-toolbar>
+                <ion-textarea
+                    type="text"
+                    name="message"
+                    class="chat-message-input"
+                >
+                </ion-textarea>
+
+                <ion-button
+                    type="submit"
+                >
+                </ion-button>
+            </ion-toolbar>
+        </form>
+    </ion-footer>
+
+    ```
+    {% endcode %}
+8.  Kopieren folgenden TS-Code in dein Projekt:
+
+    {% code title="chat.page.ts" lineNumbers="true" %}
+    ```typescript
+    import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+    import { IonContent } from '@ionic/angular';
+    import {
+        AngularFirestore,
+        AngularFirestoreCollection,
+    } from '@angular/fire/compat/firestore';
+    import { FormControl, FormGroup, Validators } from '@angular/forms';
+    import { AlertController } from '@ionic/angular';
+    import { Timestamp } from 'firebase/firestore';
+    import { Observable } from 'rxjs';
+    import { ChatMessage } from '../_types/chatmessage.types';
+
+    @Component({
+        selector: 'app-chat',
+        templateUrl: './chat.page.html',
+        styleUrls: ['./chat.page.scss'],
+    })
+    export class ChatPage implements OnInit {
+        @ViewChild(IonContent) ionContent: IonContent;
+        chatForm: FormGroup;
+        showSpinnerIcon: boolean = false;
+        showDates: boolean = false;
+        chatMessagesRef: AngularFirestoreCollection<ChatMessage>;
+        chatMessagesCollection$: Observable<ChatMessage[]>;
+
+        /* TODO: Bitte anpassen */
+        groupNumber: string = '/* TODO */'; // Bsp. G1
+        currentAuthor: string = '/* TODO */'; // Bsp. Ralph
+        currentAuthorAvatarImageUrl: string =
+            '/* TODO */'; // Bsp. https://www.w3schools.com/howto/img_avatar.png
+
+        constructor(
+            private afs: AngularFirestore,
+            private alertCtrl: AlertController
+        ) {
+            /* TODO: Daten von Firebase holen */
+
+
         }
-        span {
-            color: var(--ion-color-light) !important;
-            background: var(--ion-color-primary) !important;
+
+        ngOnInit() {
+            /* TODO: Formularfelder definieren */
+            this.chatForm = new FormGroup({
+
+            });
+        }
+
+        isMyMessage(chatMessageAuthor: string): Boolean {
+            /* TODO: Vergleich ob chatMessage-Author der aktuelle Author */
+        }
+
+        sendMessage() {
+            if (this.chatForm.get('message').value != '') {
+                    /* TODO: Spinner einschalten */
+
+                    /* TODO: Mit der add(...) Methode 
+                       eine Nachricht auf der ChatMessage-Referenz schreiben */
+                
+                    /* TODO: Formular zurücksetzen */
+                }
+            }
+        }
+
+        /* Zusatzaufgabe */
+        swipeEvent(swipe) {
+            // 2  = Right to left swipe
+            // 4  = Left to right swipe
+            if (swipe.direction == 2 || swipe.direction == 4) {
+                this.showDates = !this.showDates; // Toggle
+            }
+        }
+
+        async updateMessage(id: string, updatedText: string) {
+            /* TODO: ChatMessage updaten */
+
+        }
+
+        async deleteMessage(id: string) {
+             /* TODO: ChatMessage löschen */
+        }
+
+        /* Hilfestellungen */
+        ngAfterViewChecked() {
+            this.scrollContent('bottom'); // Scrollt ans Ende
+        }
+
+        scrollContent(scroll) {
+            if (scroll === 'top') {
+                this.ionContent.scrollToTop(300);
+            } else if (scroll === 'bottom') {
+                this.ionContent.scrollToBottom(300);
+            }
+        }
+
+        stringToColor(inputString: string) {
+            if (inputString) {
+                let hash = 0;
+                for (let i = 0; i < inputString.length; i++) {
+                    hash = inputString.charCodeAt(i) + ((hash << 5) - hash);
+                }
+                let color = '#';
+                for (let i = 0; i < 3; i++) {
+                    let value = (hash >> (i * 8)) & 0xff;
+                    color += ('00' + value.toString(16)).substr(-2);
+                }
+                return color;
+            }
+        }
+
+        getMessageBubbleWidth(text: string): string {
+            const maxWidth = 300;
+            const minWidth = 50;
+            const measureElement = document.createElement('span');
+            measureElement.style.visibility = 'hidden';
+            measureElement.style.whiteSpace = 'pre';
+            measureElement.innerText = text;
+            document.body.appendChild(measureElement);
+            const width = Math.max(measureElement.offsetWidth, minWidth);
+            document.body.removeChild(measureElement);
+            return Math.min(width, maxWidth) + 'px';
         }
     }
-    ```
-4. Setze im HTML den `ion-content` so, dass er nicht scrollt und kein padding hat.
-5. Ändere die Navigationsleiste so ab, dass sie eine Rote Farbe erhält.
-6.  Wir helfen dir nochmals, füge folgenden Code direkt innerhalb von `ion-content` ein. Versuch dabei den Code zu verstehen. Damit (swipe) funktioniert, musst du das `HammerModule` in dein `app.module.ts` hinzufügen. Versuch dies doch als Zusatzaufgabe in einem zweiten Schritt.
-
-    ```markup
-     <div #scrollMe class="chat-nachrichten" (swipe)="swipeEvent($event)">
-            <ion-list>
-                <div class="messages" [class.other]="chat.username === this.currentUser">
-                    <div class="message">
-                        <span>
-                            <h3 *ngIf="chat.username" >{{chat.username}} </h3>                                                    
-                            <p *ngIf="chat.text">{{chat.text}}</p>
-                         </span>
-                        <div class="time" *ngIf="showDates">{{chat.date}}</div>
-                    </div>
-                </div>
-            </ion-list>
-        </div>
-    ```
-7. Unterhalb dieses divs fügst du ein `form` mit der CSS-Klasse `chat-eingabe` darunter ein. Dieses Form wird unsere Eingabe sein.
-8. Im `form` möchten wir mit einem `ion-grid` den Input und Button nebeneinander platzieren (Tipp: `size="10"` / `size="2"` sehen nicht schlecht aus).
-9.  Den Button möchten wir mit einem Icon lösen, dazu kannst du folgenden Code verwenden:
-
-    ```markup
-    <ion-icon *ngIf="!showSpinnerIcon" name="send"></ion-icon>
-    <ion-spinner *ngIf="showSpinnerIcon" name="bubbles"></ion-spinner>
-    ```
-10. Nun musst du deinem Projekt `@angular/fire` und `firebase` hinzufügen
-11. ```bash
-    npm install @angular/fire firebase --save
-    ```
-12. Um mit unserer Firebase-Chat-API zu kommunizieren, benötigt es einige Änderungen im `app.module.ts`:  &#x20;
-13. Wir müssen die Angularfire2Module importieren:   \
-
 
     ```
-       // AngularFire2 importieren
-       import { AngularFireModule } from '@angular/fire/compat';
-       import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-       import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-    ```
+    {% endcode %}
+
+    \
+    Auch hier sind die `TODO`'s im Code markiert. Wir gehen in den Aufgaben aber schrittweise an den Chat heran.
+9.  Erstelle zuerst ein neuen Ordner `src/app/_types`  und füge anschliessend eine neue Datei `chatmessage.types.ts` mit folgendem Inhalt ein:\
 
 
-14. Wir setzen auf eine gemeinsame Firebase-Konfiguration für diese Übung. Kopiere folgenden Inhalt in dein src/environments/environment.ts \
+    {% code title="chatmessage.types.ts" %}
+    ```typescript
+    import { Timestamp } from 'firebase/firestore';
 
-
-{% code title="environment.ts" %}
-```javascript
-export const environment = {
-  production: false,
-  // Neu hinzufügen
-  firebaseConfig: {
-    apiKey: "AIzaSyDJgmwqHki4FjNxduVqkoYUQIp8G0QYyOo",
-    authDomain: "m335-uebungen.firebaseapp.com",
-    databaseURL: "https://m335-uebungen.firebaseio.com",
-    projectId: "m335-uebungen",
-    storageBucket: "m335-uebungen.appspot.com",
-    messagingSenderId: "675049996439",
-    appId: "1:675049996439:web:9b2aed3cfc2b9fabe669d2"
-  }
-};
-```
-{% endcode %}
-
-1. Wir fügen die Angularfire in den `imports` hinzu: &#x20;
-
-```javascript
-        AngularFireModule.initializeApp(firebaseConfig),
-        AngularFireDatabaseModule,
-        AngularFireAuthModule
-```
-
-Hier die komplette Datei
-
-{% code title="app.module.ts" %}
-````javascript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { IonicStorageModule } from '@ionic/storage-angular';
-
-// AngularFire2 importieren
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-​
-// Environments importieren
-import { environment } from "../environments/environment";
-​
-@NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    IonicStorageModule.forRoot(),
-    AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFireDatabaseModule,
-    AngularFireAuthModule
-  ],
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}
-
-```
-````
-{% endcode %}
-
-1. Um nun die Daten zu laden müssen wir die _ChatPage_ anpassen. Hier eine Vorlage mit TODO's für dich: &#x20;
-
-{% code title="chat.page.ts" %}
-```javascript
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
-import { Observable } from 'rxjs';
-
-@Component({
-  selector: 'app-chat',
-  templateUrl: './chat.page.html',
-  styleUrls: ['./chat.page.scss'],
-})
-export class ChatPage implements OnInit {
-  // TODO: In der Angular Doku nachlesen, was ViewChild macht und basierend auf deinem HTML XXXXX ersetzen 
-  @ViewChild('XXXXX', {static: false}) messageInput;
-  @ViewChild('XXXXX', {static: false}) private myScrollContainer: ElementRef;
-
-  message: string;
-  showSpinnerIcon = false;
-  showDates = false;
-  chatList: Observable<ChatMessage[]>;
-  chatListRef: AngularFireList<ChatMessage>;
-  // TODO: Passe deine Gruppennummer und deinen Namen an
-  groupNumber = 'G0'; // Bsp. G1
-  currentUser = 'Roomies Ralph'; // Bsp. Ralph
-
-  constructor(private afDb: AngularFireDatabase) {
-    this.chatListRef = afDb.list('/chats/' + this.groupNumber);
-    this.chatList = this.chatListRef.valueChanges();
-  }
-
-  ngOnInit() {
-    // TODO: An das Ende scrollen
-  }
-
-  ngAfterViewChecked() {
-    // TODO: An das Ende scrollen
-  }
-
-  scrollToBottom(): void {
-    try {
-      this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
-    } catch (err) { }
-  }
-  swipeEvent(swipe) {
-    // 2  = Right to left swipe
-    // 4  = Left to right swipe
-    if (swipe.direction === 2 || swipe.direction === 4) {
-      // TODO: Datum ein resp. ausblenden
+    export interface ChatMessage {
+        id?: string;
+        author: string;
+        text: string;
+        dateCreated: Timestamp;
+        avatarImageUrl?: string;
     }
-  }
-  sendMessage(e) {
-    if (this.message !== '') {
-      // TODO: Spinner anzeigen
-      let formattedDate = new Date().toLocaleString();
+    ```
+    {% endcode %}
 
-      // TODO: Mittels .push() die Nachricht an Firebase senden 
-      // gesendet muss werden: { username: <DEIN-USERNAME> , text: <NACHRICHT>, date: formattedDate }
+    Hier siehst du also schon mal, wie eine `ChatMessage` genau aussehen wird.
 
-      // TODO: Cleanup: Nachricht löschen und Spinner ausblenden
-    }
-  }
-}
-interface ChatMessage {
-  username: string;
-  text: string;
-  date: any;
-}
-```
-{% endcode %}
+## Aufgaben
 
-1. Spätestens jetzt möchten wir die Chatnachrichten noch ausgeben, studier den Code oben genau und gib mittels`*ngFor` die Nachrichten in deinem Template aus.  Wichtig: Da es sich bei der `chatList` um ein Observable handelt, musst du ein Pipe `| async` anhängen. Mehr Codebeispiele findest du auch [hier](https://github.com/angular/angularfire)
+1. Als Erstes möchten wir die bereits vorhanden Chat-Messages deiner Gruppe anzeigen.  Passe dazu Gruppennummer, den Author und dein Avatar-URL im `chat.page.ts` (Zeile 27-29) an.
+2.  Nun müssen wir im `constructor` der `chatMessageRef` eine Referenz auf die Google Firebase Daten zuweisen. Die Datenstruktur in Firebase sieht so aus:
 
-## Zusatz
+    <figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-1. Zusatz: Füge eine Funktion hinzu, dass wie bei WhatsApp die Namen der anderen Benutzern in einer anderen Farbe erscheinen. Tipp:  Schau dir `ngStyle` in der Angular Doku an.
-2. Zusatz: Passe das Styling so an, dass das Datum rechts neben der Nachricht und nicht mehr unterhalb eingeblendet wird
-3. Zusatz: Erweitere deine Chat-App um Nachrichten weiterleiten zu können
+    ```typescript
+    this.chatMessagesRef = afs
+         .collection</*TODO*/>('/*TODO*/')
+         .doc(this.groupNumber)
+         .collection</*TODO*/>('/*TODO*/', (ref) =>
+             ref.orderBy('dateCreated', 'asc')
+         );
+    ```
+
+    Im folgendem Beispiel musst du die `/* TODO */` mit den Werden `chats` , `this.groupNumber`,  `messages` und `ChatMessage` Beispiel\
+    🤙🏻 Solltest du hier Probleme haben, frage dein Pultnachbar oder den Instruktor
+3.  Als nächsten _watchen_ wir auf Änderungen auf dieser definierten Chat-Message Referenz. Die Dokumenten-ID brauchen wir später ebenfalls wieder. \
+
+
+    ```typescript
+    this.chatMessagesCollection$ = this.chatMessagesRef.valueChanges({
+        idField: 'id',
+    });
+    ```
+
+    \=> Als Best-Practice im Alltag hat sich etabliert, dass wir [Observables](https://angular.io/guide/observables-in-angular)   mit eine **$** kennzeichnen, siehe `chatMessagesCollection$`
+4. Das TS ist also bereit, nun ist es Zeit dass du mit `*ngFor` das Observable im HTML ausgibst. Wechsle nun ins `chat.page.html` und interiere mit einer [Asynchronen-Pipe](https://angular.io/api/common/AsyncPipe) `| async`  über das Observable. Gib der einzelnen Nachricht einen Namen, z.B. `chatMessage`  \
+
+5. Nun kannst du im HTML diverse TODO's sehr einfach lösen. Gibt dazu die Werte deiner soeben im ngFor deklarierten `chatMessage` an der richtigen Stelle aus. &#x20;
+6. Es gibt eine Funktionen `isMyMessage(...), getMEssageBubbleWidth(...), stringToColor(...)` im HTML, welcher wir Daten  einer Chat-Message übergeben müssen. Studiere dazu die Funktionen im TS und übergib ihnen die passenden Werte.
+7. Als letztes fehlt noch das schöne Avatar-Bild. Dem `src` des `ion-avatar'`s wollen wir nur die `avatarImageUrl` der `chatMessage` übergeben, wenn diese auch gesetzt ist. Sonst soll ein Fallback-Avatar-Bild angezeigt werden. Verwende dazu eine Angular-Binding (Tipp: Eckige Klammern und ein [Conditional-Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional\_Operator)&#x20;
+8. Hast du alles richtig gemacht, sollte die Liste der Chat-Nachrichten schön formatiert erscheinen.  Sonst frag doch dein Pultnachbar um Hilfe, sollte es harzen ist dein Instruktor auch für dich da.&#x20;
+9. Weiter gehts mit Senden einer Nachricht...
+10. Erstelle ein `form`-Tag um die `ion-toolbar`. Zuerst im HTML indem du die `formGroup` und das `ngSubmit` mit dem TS verknüpfst. Anschliessend indem du die `ion-textarea` mit dem TS über `formControlName`. Du findest im `ngOnInit` die passende FormGroup dazu. Als Validatoren kannst du z.B. `required` und eine `minLength()` einsetzen.&#x20;
+11. Füge deiner `ion-textarea` nun auch ein placeholder hinzu
+12. Style nun den `ion-button` wie im Screen um. roter Farbe, am rechten Rand. Inhalt ist entweder ein Icon oder Spinner:
+
+    ```html
+    <ion-icon *ngIf="!showSpinnerIcon" name="send"> </ion-icon>
+    <ion-spinner *ngIf="showSpinnerIcon" name="bubbles">
+    ```
+13. Der Button soll nur enabled sein, wenn das Formular valid ist
+14. Als nächstes möchten wir noche ein ChatMessage schreiben können. Schau dir dazu die sendMessage(...) Funktion im TS an.
+15. Es gibt diverse `/* TODO */` zu lösen. Eine neue Nachricht kann an die `chatMessageRef` mittels `add(..)` gesendet werden. Mehr verraten wir nicht, suche im Internet nach Beispielen wie du eine neue ChatMessage hinzufügen und den Spinner zur richtigen Zeit ein/ausblenden kannst.&#x20;
+16. Wurde die Nachricht gespeichert, soll die `ion-textarea` zurückgesetzt werden.
+17. Füge nun im HTML allen Orten mit Datum noch ein `*ngIf` hinzu, so dass das Datum nur angezeigt wird wenn `showDates`  wahr ist.
+
+## Zusatzaufgaben
+
+
+
+1. Datum : Das Datum wird normalerweise nicht angezeigt. Nun soll mittels Links- & Rechts-Swipe auf dem `ion-content` die Funktion `swipeEvent(...)` getriggert werden. Schau dir dazu zuerst die Funktion `swipeEvent(...)` im TS an.\
+   Anschliessend kannst du mittels `swipeLeft` & `swipeRight` event die Funktion triggern. \
+   ![](../.gitbook/assets/image.png)
+2. Gott-Modus: Teil deinem Instruktor mit dass du hier angekommen bist. Er kann dir in seinen Musterlösung ein cooles Feature um die Funktionen `updateMessage(...)`, `deleteMessage(...)` zeigen.\
+   Dazu gilt es wie folgt vorzugehen:\
+   \- HTML erweitern (Input zum Bearbeiten + Trash-Icon) \
+   \- Funktionen ausprogrammieren, Tipp: Intellisense bei `chatMessagesRef` anschauen \
+   \- Logik beim Senden einer Nachricht einbauen, dass der Gott-Modus aktiviert/deaktivert werden kann.\
+   ![](<../.gitbook/assets/image (12).png>)\

@@ -1,6 +1,6 @@
 ---
 description: Modul 335 - Mobile-Applikation realisieren
-cover: .gitbook/assets/image (2).png
+cover: .gitbook/assets/image (2) (1).png
 coverY: 0
 layout: landing
 ---
