@@ -10,6 +10,7 @@ Filter resp. auch Pipes genannt können in Angular hinzugefügt werden um Daten 
 * `lowercase` Formatiert ein String zu kleinbuchstaben
 * `uppercase` Formatiert ein String zu GROSSBUCHSTABEN.
 * `number` Formatiert einen String in eine Zahl
+* `async`  Abonniert einen Observable oder ein Promise und gibt den letzten Wert zurück, den es ausgegeben hat. Sie dazu mehr unter:  [https://angular.io/api/common/AsyncPipe](https://angular.io/api/common/AsyncPipe)&#x20;
 
 Beispiel:
 
