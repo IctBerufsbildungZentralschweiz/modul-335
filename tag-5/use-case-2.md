@@ -86,7 +86,7 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 
 ### Ferienorte
 
-* In einer Liste werden alle in der Firebase Realtime Database vorhanden Ferienorte mit Name angezeigt
+* In einer Liste werden alle in der Firestore Collection vorhanden Ferienorte mit Name angezeigt
 * Ich kann ein über den "Plus"-Button in der Navigation einen neuen Ferienort hinzufügen
 * Dabei wird ein `AlertController` mit Inputfelder verwendet
 * Speichere ich den Datensatz wird dieser der Liste angehängt und in Firebase persistiert
