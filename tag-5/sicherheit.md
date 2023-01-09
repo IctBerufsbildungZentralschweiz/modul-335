@@ -9,7 +9,7 @@
 
 ### Man in the Middle
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (1).png>)
 
 \==> SSL-Pinning in der App implementieren
 
