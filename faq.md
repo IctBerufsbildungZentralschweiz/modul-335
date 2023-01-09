@@ -71,21 +71,21 @@ Oft generiert man sich dynamisch z.B. aus einer Datenbank eine Liste. Möchte ma
 
 Wird dir folgende Meldung als Error angezeigt?
 
-```text
+```
 Error: Cannot find module "angularfire2/auth"
 ```
 
 Dann fehlt angularfire2 in deinen `node_modules`. Gehe dazu in deinen Projektordner und gib folgendes ein:
 
 ```bash
-npm install angularfire2 firebase --save
+npm install @angular/fire firebase --save
 ```
 
 ## Runtime Error - No component factory found
 
 Wird dir folgende Meldung als Error angezeigt?
 
-```text
+```
 Error: Uncaught (in promise): Error: No component factory found for ErsteSeitePage. Did you add it to @NgModule.entryComponents?
 Error: No component factory found for ErsteSeitePage. Did you add it to @NgModule.entryComponents?
 ```
@@ -111,13 +111,13 @@ Das Property selber ist nicht das Problem, jedoch das Objekt selber. Es wird ver
 {{ item?.myValue }}
 ```
 
-## Runtime Error - Uncaught \(in promise\): invalid link: MyPage
+## Runtime Error - Uncaught (in promise): invalid link: MyPage
 
 Dieser Fehler tritt auf wenn du versuchst auf eine Seite MyPage zu navigieren, die nicht existiert. Hast du den Namen richtig geschrieben?
 
 ## Runtime Error - \_co.myFunction is not a function
 
-Dieser Fehler ist relativ einfach zu finden. Du rufst in deinem Template eine nicht definierte Funktion myFunction auf \(z.B. beim Klick eines Buttons\). Stelle sicher das in deiner Component die entsprechende Funktion auch definiert ist.
+Dieser Fehler ist relativ einfach zu finden. Du rufst in deinem Template eine nicht definierte Funktion myFunction auf (z.B. beim Klick eines Buttons). Stelle sicher das in deiner Component die entsprechende Funktion auch definiert ist.
 
 ## Mein Code wird nicht angezeigt
 
@@ -141,9 +141,9 @@ Wird z.B. dein neuer Code nicht angezeigt:
 
 In diesem Fall befindet sich das `<h1>`-Tag ausserhalb von `ion-content` oder `ion-header`, daher wird dies von Ionic nicht interpretiert.
 
-Generell empfiehlt sich folgendes zu prüfen: 1\) Hast du deine Änderung gespeichert? 2\) Läuft dein `ionic serve` noch korrekt \(ohne Fehler\) resp. hast du den Befehl schon mal neu gestartet? 3\) Prüfe mittels Git deine Änderungen an den Dateien, findest du den Fehler so?
+Generell empfiehlt sich folgendes zu prüfen: 1) Hast du deine Änderung gespeichert? 2) Läuft dein `ionic serve` noch korrekt (ohne Fehler) resp. hast du den Befehl schon mal neu gestartet? 3) Prüfe mittels Git deine Änderungen an den Dateien, findest du den Fehler so?
 
-## Wie kann ich umgebungsspezifsche Variablen definieren \(z.B. für Produktion / Entwicklung\)?
+## Wie kann ich umgebungsspezifsche Variablen definieren (z.B. für Produktion / Entwicklung)?
 
 Sobald deine App in den App-Store kommt, möchtest du z.B. `console.log` ausschalten oder eine andere URL brauchen.
 
@@ -163,11 +163,10 @@ Wichtig ist hier zu wissen, dass du in deiner finalen App evt. wieder eine Scrol
 
 ## Wie kann ich die ionic App auf alle Netzwerkinterfaces öffnen?
 
-```text
+```
 ng run app:serve --host=0.0.0.0 --port=8100
 ```
 
 ## Beim ausführen von ionic kommt ein Fehler, dass die Scriptausführung nicht zugelassen ist
 
 [https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts](https://superuser.com/questions/106360/how-to-enable-execution-of-powershell-scripts)
-
