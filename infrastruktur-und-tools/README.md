@@ -19,7 +19,7 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
   * [ ] Angular Snippets
   * [ ] Auto Close Tag
   * [ ] Auto Rename Tag
-  * [ ] Beautify
+  * [ ] Prettier
   * [ ] Ionic Snippets
 * [ ] Android Studio  [https://developer.android.com/studio](https://developer.android.com/studio)
   * [ ] und/oder Xcode für iPhone mit Mac
@@ -28,7 +28,7 @@ Im Verlauf dieses Kurses werden einige Tools benötigt, die Ihr jetzt installier
 * [ ] Rufen dann im Visual Studio Code folgendes auf
 
 ```bash
-npm i -g @ionic/cli   # Auf macOS / Linux muss sudo verwendet werden
+npm i -g @ionic/cli   # Auf macOS / Linux muss evt. sudo verwendet werden
 ```
 
 * [ ] Browser (Chrome, Firefox, …)
