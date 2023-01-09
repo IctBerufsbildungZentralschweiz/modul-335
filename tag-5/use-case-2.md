@@ -80,9 +80,8 @@ Wer geht schon nicht gerne in die Ferien? Ich natürlich auch, daher möchte ich
 ### Galerie
 
 * Die Galerie-Seite ist nach dem Login die Standardseite
-* Die Galerie zeigt Bilder der Firebase Realtime Database an
-* Die jeweilige Gruppennummer ist einzuhalten (Bsp. `groupNumber: string = "G1";` )
-* Die Bild-URL soll dabei von der Firebase Realtime Database geladen werden
+* Die Galerie zeigt Bilder der Firestore Collection an
+* Die Bild-URL soll dabei ebenfalls von der Collection geladen werden
 * Die Bilder sollen in einem Grid dargestellt werden
 
 ### Ferienorte
