@@ -210,7 +210,6 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
         chatForm: FormGroup;
         showSpinnerIcon: boolean = false;
         showDates: boolean = false;
-        groupNumber: number = environment.m335GroupNumber;
         chatMessagesCollection: AngularFirestoreCollection<ChatMessage>;
         chatMessages$: Observable<ChatMessage[]>;
 
