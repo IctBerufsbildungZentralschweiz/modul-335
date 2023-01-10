@@ -320,7 +320,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
 
     {% code title="chatmessage.types.ts" %}
     ```typescript
-    import { Timestamp } from 'firebase/firestore';
+    import { Timestamp } from '@firebase/firestore-types';
 
     export interface ChatMessage {
         id?: string;
@@ -340,7 +340,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
 1. Als Erstes möchten wir die bereits vorhanden Chat-Messages deiner Gruppe anzeigen.  Passe den Author und dein Avatar-URL im `chat.page.ts` (Zeile 29 + 30) an.
 2.  Die Datenstruktur in unserem gemeinsamen Google Firebase Projekt sieht folgendermassen aus:
 
-    <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 3. Mach dich in der offiziellen Angularfire-Dokumentation schlau wie man mit einer Firestore Collection interagieren kann:\
    [https://github.com/angular/angularfire/blob/master/docs/firestore/collections.md](https://github.com/angular/angularfire/blob/master/docs/firestore/collections.md)
 4.  Wir werden nun im `constructor` der `chatMessageCollection` eine Referenz auf die  Firebase Collection _chats_ zuweisen, als Response erhalten wir eine `AngularFirestoreCollection` vom Typ `ChatMessage.`
@@ -394,7 +394,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
 
 1. Datum : Das Datum wird normalerweise nicht angezeigt. Nun soll mittels Links- & Rechts-Swipe auf dem `ion-content` die Funktion `swipeEvent(...)` getriggert werden. Schau dir dazu zuerst die Funktion `swipeEvent(...)` im TS an.\
    Anschliessend kannst du mittels `swipeLeft` & `swipeRight` event die Funktion triggern. \
-   ![](../.gitbook/assets/image.png)
+   ![](<../.gitbook/assets/image (2).png>)
 2. Gott-Modus: Teil deinem Instruktor mit dass du hier angekommen bist. Er kann dir in seinen Musterlösung ein cooles Feature um die Funktionen `updateMessage(...)`, `deleteMessage(...)` zeigen.\
    Dazu gilt es wie folgt vorzugehen:\
    \- HTML erweitern (Input zum Bearbeiten + Trash-Icon) \
