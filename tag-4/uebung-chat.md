@@ -195,7 +195,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
     } from '@angular/fire/compat/firestore';
     import { FormControl, FormGroup, Validators } from '@angular/forms';
     import { AlertController } from '@ionic/angular';
-    import { Timestamp } from 'firebase/firestore';
+    import { Timestamp } from '@firebase/firestore-types';
     import { Observable } from 'rxjs';
     import { ChatMessage } from '../_types/chatmessage.types';
     import { environment } from 'src/environments/environment';
