@@ -105,27 +105,23 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
 
     {% code title="chat.page.html" lineNumbers="true" %}
     ```html
-    <ion-content
-        class="message-list"
-    >
+    <ion-content class="message-list">
         <ion-list>
-            <ng-container
-                *ngFor="/* TODO */"
-            >
+            <ng-container *ngFor="">
                 <ng-container
-                    *ngIf="isMyMessage(/* TODO */); else isForeignMessage"
+                    *ngIf="isMyMessage('/* TODO */'); else isForeignMessage"
                 >
                     <ion-item class="my-message ion-no-padding" lines="none">
                         <ion-label class="message-bubble" slot="end">
                             <p
                                 class="my-message-text"
-                                [style.max-width]="getMessageBubbleWidth(/* TODO */)"
+                                [style.max-width]="getMessageBubbleWidth('/* TODO */')"
                             >
-                                {{ /* TODO */ }}
+                                <!--  {{ /* TODO */ }} -->
                             </p>
-                            <div class="message-date" >
-                                {{ /* TODO */.toDate() | date:
-                                'dd.MM.yyyy HH:mm' }}
+                            <div class="message-date">
+                                <!-- {{ /* TODO */.toDate() | date:
+                                'dd.MM.yyyy HH:mm' }}-->
                             </div>
                         </ion-label>
                     </ion-item>
@@ -133,25 +129,22 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
                 <ng-template #isForeignMessage>
                     <ion-item lines="none" class="other-message ion-no-padding">
                         <ion-avatar slot="start">
-                            <ion-img
-                                [src]="/* TODO */"
-                            ></ion-img>
+                            <!-- <ion-img [src]="/* TODO */"></ion-img>-->
                         </ion-avatar>
                         <ion-label class="message-bubble ion-text-wrap">
-                            <h5 [style.color]="stringToColor(/* TODO */)">
-                                {{ /* TODO */}}
+                            <h5 [style.color]="stringToColor('/* TODO */')">
+                                <!-- {{ /* TODO */}}-->
                             </h5>
                             <p
-                                [style.max-width]="getMessageBubbleWidth( /* TODO */)"
+                                [style.max-width]="getMessageBubbleWidth('/* TODO */')"
                             >
-                                {{ /* TODO */}}
+                                <!--  {{ /* TODO */}}-->
                             </p>
-                            <div class="message-date" >
-                                {{ /* TODO */.toDate() | date:
-                                'dd.MM.yyyy HH:mm'}}
+                            <div class="message-date">
+                                <!--  {{ /* TODO */.toDate() | date: 'dd.MM.yyyy HH:mm'}}-->
                             </div>
+                            <
                         </ion-label>
-                      </ion-button>
                     </ion-item>
                 </ng-template>
             </ng-container>
