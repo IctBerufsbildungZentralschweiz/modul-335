@@ -287,6 +287,8 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
                     color += ('00' + value.toString(16)).substr(-2);
                 }
                 return color;
+            } else {
+                return '#000000';
             }
         }
 
