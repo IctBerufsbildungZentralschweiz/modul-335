@@ -234,8 +234,9 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
             });
         }
 
-        isMyMessage(chatMessageAuthor: string): Boolean {
+        isMyMessage(chatMessageAuthor: string): boolean {
             /* TODO: Vergleich ob chatMessage-Author der aktuelle Author */
+            return true
         }
 
         sendMessage() {
@@ -246,9 +247,9 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
                        eine Nachricht auf der ChatMessage-Referenz schreiben */
                 
                     /* TODO: Formular zurücksetzen */
-                }
             }
         }
+       
 
         /* Zusatzaufgabe */
         swipeEvent(swipe) {
@@ -273,11 +274,11 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
             this.scrollContent('bottom'); // Scrollt ans Ende
         }
 
-        scrollContent(scroll) {
+        scrollContent(scroll: any) {
             if (scroll === 'top') {
-                this.ionContent.scrollToTop(300);
+                this.ionContent?.scrollToTop(300);
             } else if (scroll === 'bottom') {
-                this.ionContent.scrollToBottom(300);
+                this.ionContent?.scrollToBottom(300);
             }
         }
 
