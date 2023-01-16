@@ -245,7 +245,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
        
 
         /* Zusatzaufgabe */
-        swipeEvent(swipe) {
+        swipeEvent(swipe: any) {
             // 2  = Right to left swipe
             // 4  = Left to right swipe
             if (swipe.direction == 2 || swipe.direction == 4) {
