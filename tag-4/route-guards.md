@@ -221,7 +221,7 @@ import { User } from '@angular/fire/auth';
 import { map } from 'rxjs/operators';
 
 // Standardverhalten festlegen
-const authPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToAuth;
+const authPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToLogin;
 const redirectUnauthorizedToLogin: AuthPipe = map((user: User | null) => {
     // if not logged in, redirect to `login`
     // if logged in, allow redirect
