@@ -181,16 +181,14 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
     ```typescript
     import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
     import { IonContent } from '@ionic/angular';
-    import {
-        AngularFirestore,
-        AngularFirestoreCollection,
-    } from '@angular/fire/compat/firestore';
     import { FormControl, FormGroup, Validators } from '@angular/forms';
     import { AlertController } from '@ionic/angular';
     import { Timestamp } from '@firebase/firestore-types';
     import { Observable } from 'rxjs';
     import { ChatMessage } from '../_types/chatmessage.types';
     import { environment } from 'src/environments/environment';
+    import {addDoc, collection, collectionData, deleteDoc, doc, Firestore, orderBy, query, where} from '@angular/fire/firestore';
+    import {map} from 'rxjs/operators';
 
     @Component({
         selector: 'app-chat',
