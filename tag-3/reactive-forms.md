@@ -85,14 +85,15 @@ export class FormExamplePage implements OnInit {
   // formGroup erstellen
   contactForm: FormGroup; 
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
     this.contactForm = new FormGroup({
       lastname: new FormControl(null),
       firstname: new FormControl(null),
       email: new FormControl(null)
     });
+  }
+
+  ngOnInit() {
   }
 
   sendContactForm() {
