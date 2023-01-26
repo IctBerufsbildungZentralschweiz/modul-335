@@ -94,11 +94,11 @@ export class AuthService implements OnDestroy {
         }
     }
 
-    async loginWithEmailAndPassword(user: User) {
+    async loginWithEmailAndPassword(username: string, password: string) {
         // TODO: Login für Benutzer ausprogrammieren
     }
 
-    async createUserWithEmailAndPassword(user: User) {
+    async createUserWithEmailAndPassword(username: string, password: string) {
         // TODO: Registrierung für den Benutzer ausprogrammieren
     }
 
