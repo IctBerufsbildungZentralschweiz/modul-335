@@ -223,12 +223,12 @@ import { map } from 'rxjs/operators';
 // Standardverhalten festlegen
 const redirectUnauthorizedToLoginPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToLogin;
 const redirectUnauthorizedToLogin: AuthPipe = map((user: User | null) => {
-    return !!user ? true : ['login'];
+    return user ? true : ['login'];
 });
 
 const redirectAuthorizedToHomePipeGenerator: AuthPipeGenerator = () => redirectAuthorizedToHome;
 const redirectAuthorizedToHome: AuthPipe = map((user: User | null) => {
-    return !!user ? ['home'] : true;
+    return user ? ['home'] : true;
 });
 
 const routes: Routes = [
