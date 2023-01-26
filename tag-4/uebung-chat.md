@@ -203,7 +203,6 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
         chatForm: FormGroup;
         showSpinnerIcon: boolean = false;
         showDates: boolean = false;
-        chatMessagesCollection: AngularFirestoreCollection<ChatMessage>;
         chatMessages$: Observable<ChatMessage[]>;
 
         /* TODO: Bitte anpassen */
@@ -212,7 +211,7 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
             '/* TODO */'; // Bsp. https://www.w3schools.com/howto/img_avatar.png
 
         constructor(
-            private afs: AngularFirestore,
+            private afs: Firestore,
             private alertCtrl: AlertController
         ) {
             /* TODO: Daten von Firebase holen */
@@ -339,50 +338,41 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
     <figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 3. Mach dich in der offiziellen Angularfire-Dokumentation schlau wie man mit einer Firestore Collection interagieren kann:\
    [https://github.com/angular/angularfire/blob/master/docs/firestore/collections.md](https://github.com/angular/angularfire/blob/master/docs/firestore/collections.md)
-4.  Wir werden nun im `constructor` der `chatMessageCollection` eine Referenz auf die  Firebase Collection _chats_ zuweisen, als Response erhalten wir eine `AngularFirestoreCollection` vom Typ `ChatMessage.`
+4.  Wir werden nun im `constructor` der `chatMessageCollection` eine Referenz auf die  Firebase Collection _chats_ zuweisen
 
     ```typescript
-    this.chatMessagesCollection = afs.collection<ChatMessage>(
-        'chats',
-        (ref) =>
-            ref
-                .where('groupNumber', '==', environment.m335GroupNumber)
-                .orderBy('dateCreated', 'asc')
-    );
+    this.chatMessages$ = collectionData(query(collection(this.afs, 'chats'),
+      where('groupNumber', '==', environment.m335GroupNumber)
+    , orderBy('dateCreated', 'asc')
+    ), {
+      idField: 'id',
+    }).pipe(map(x => x as ChatMessage[]))
     ```
 
     Mit `where(...)` wird  in den _Values_ nach der Gruppennummer aus deinem `environments.ts` gefiltert und mit `orderBy(...)` nach dem Datum von `dateCreated` sortiert.\
     \
-    🤙🏻 Solltest du hier Probleme haben, frage dein Pultnachbar oder den Instruktor
-5.  Als nächsten _watchen_ wir auf Änderungen auf dieser definierten Chat-Message Collection. Die Dokumenten-ID brauchen wir später ebenfalls wieder. \
-
-
-    ```typescript
-    this.chatMessages$ = this.chatMessagesCollection.valueChanges({
-        idField: 'id',
-    });
-    ```
-
-    \=> Als Antwort kriegen wir ein  [Observables](https://angular.io/guide/observables-in-angular)  vom Typ `ChatMessage[].` Als Best-Practice im Alltag hat sich etabliert, dass wir Observables mit einem **$** kennzeichnen, siehe `chatMessages$`
-6. Das TS ist also bereit, nun ist es Zeit dass du mit `*ngFor` das Observable im HTML ausgibst. Wechsle nun ins `chat.page.html` und iteriere mit einer [Asynchronen-Pipe](https://angular.io/api/common/AsyncPipe) `| async`  über das Observable. Verwende dazu einen passenden Namen z.B. `chatMessage` &#x20;
-7. Nun kannst du im HTML diverse TODO's sehr einfach lösen. Gibt dazu die Werte deiner soeben im `ngFor` deklarierten `chatMessage` an der richtigen Stelle aus. &#x20;
-8. Es gibt eine Funktionen `isMyMessage(...), getMEssageBubbleWidth(...), stringToColor(...)` im HTML, welcher wir Daten  einer Chat-Message übergeben müssen. Studiere dazu die Funktionen im TS und übergib ihnen die passenden Werte.
-9. Als letztes fehlt noch das schöne Avatar-Bild. Dem `src` des `ion-avatar'`s wollen wir nur die `avatarImageUrl` der `chatMessage` übergeben, wenn diese auch gesetzt ist. Sonst soll ein Fallback-Avatar-Bild angezeigt werden. Verwende dazu eine Angular-Binding (Tipp: Eckige Klammern und ein [Conditional-Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional\_Operator)&#x20;
-10. Hast du alles richtig gemacht, sollte die Liste der Chat-Nachrichten schön formatiert erscheinen.  Sonst frag doch dein Pultnachbar um Hilfe, sollte es harzen ist dein Instruktor auch für dich da.&#x20;
-11. Weiter gehts mit Senden einer Nachricht...
-12. Erstelle ein `form`-Tag um die `ion-toolbar`. Zuerst im HTML indem du die `formGroup` und das `ngSubmit` mit dem TS verknüpfst. Anschliessend indem du die `ion-textarea` mit dem TS über `formControlName`. Du findest im `ngOnInit` die passende FormGroup dazu. Als Validatoren kannst du z.B. `required` und eine `minLength()` einsetzen.&#x20;
-13. Füge deiner `ion-textarea` nun auch ein placeholder hinzu
-14. Style nun den `ion-button` wie im Screen um. roter Farbe, am rechten Rand. Inhalt ist entweder ein Icon oder Spinner:
+    🤙🏻 Solltest du hier Probleme haben, frage dein Pultnachbar oder den Instruktor\
+    \
+    \=> Die Antwort mappen wir noch zum vom Typ `ChatMessage[].` Als Best-Practice im Alltag hat sich etabliert, dass wir Observables mit einem **$** kennzeichnen, siehe `chatMessages$`
+5. Das TS ist also bereit, nun ist es Zeit dass du mit `*ngFor` das Observable im HTML ausgibst. Wechsle nun ins `chat.page.html` und iteriere mit einer [Asynchronen-Pipe](https://angular.io/api/common/AsyncPipe) `| async`  über das Observable. Verwende dazu einen passenden Namen z.B. `chatMessage` &#x20;
+6. Nun kannst du im HTML diverse TODO's sehr einfach lösen. Gibt dazu die Werte deiner soeben im `ngFor` deklarierten `chatMessage` an der richtigen Stelle aus. &#x20;
+7. Es gibt eine Funktionen `isMyMessage(...), getMEssageBubbleWidth(...), stringToColor(...)` im HTML, welcher wir Daten  einer Chat-Message übergeben müssen. Studiere dazu die Funktionen im TS und übergib ihnen die passenden Werte.
+8. Als letztes fehlt noch das schöne Avatar-Bild. Dem `src` des `ion-avatar'`s wollen wir nur die `avatarImageUrl` der `chatMessage` übergeben, wenn diese auch gesetzt ist. Sonst soll ein Fallback-Avatar-Bild angezeigt werden. Verwende dazu eine Angular-Binding (Tipp: Eckige Klammern und ein [Conditional-Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional\_Operator)&#x20;
+9. Hast du alles richtig gemacht, sollte die Liste der Chat-Nachrichten schön formatiert erscheinen.  Sonst frag doch dein Pultnachbar um Hilfe, sollte es harzen ist dein Instruktor auch für dich da.&#x20;
+10. Weiter gehts mit Senden einer Nachricht...
+11. Erstelle ein `form`-Tag um die `ion-toolbar`. Zuerst im HTML indem du die `formGroup` und das `ngSubmit` mit dem TS verknüpfst. Anschliessend indem du die `ion-textarea` mit dem TS über `formControlName`. Du findest im `ngOnInit` die passende FormGroup dazu. Als Validatoren kannst du z.B. `required` und eine `minLength()` einsetzen.&#x20;
+12. Füge deiner `ion-textarea` nun auch ein placeholder hinzu
+13. Style nun den `ion-button` wie im Screen um. roter Farbe, am rechten Rand. Inhalt ist entweder ein Icon oder Spinner:
 
     ```html
     <ion-icon *ngIf="!showSpinnerIcon" name="send"> </ion-icon>
     <ion-spinner *ngIf="showSpinnerIcon" name="bubbles">
     ```
-15. Der Button soll nur enabled sein, wenn das Formular valid ist
-16. Als nächstes möchten wir noche ein ChatMessage schreiben können. Schau dir dazu die sendMessage(...) Funktion im TS an.
-17. Es gibt diverse `/* TODO */` zu lösen. Eine neue Nachricht kann an die `chatMessageRef` mittels `add(..)` gesendet werden. Mehr verraten wir nicht, suche im Internet nach Beispielen wie du eine neue ChatMessage hinzufügen und den Spinner zur richtigen Zeit ein/ausblenden kannst.&#x20;
-18. Wurde die Nachricht gespeichert, soll die `ion-textarea` zurückgesetzt werden.
-19. Füge nun im HTML allen Orten mit Datum noch ein `*ngIf` hinzu, so dass das Datum nur angezeigt wird wenn `showDates`  wahr ist.
+14. Der Button soll nur enabled sein, wenn das Formular valid ist
+15. Als nächstes möchten wir noche ein ChatMessage schreiben können. Schau dir dazu die sendMessage(...) Funktion im TS an.
+16. Es gibt diverse `/* TODO */` zu lösen. Eine neue Nachricht kann an firebase mittels `addDoc(..)` gesendet werden. Mehr verraten wir nicht, suche im Internet nach Beispielen wie du eine neue ChatMessage hinzufügen und den Spinner zur richtigen Zeit ein/ausblenden kannst.&#x20;
+17. Wurde die Nachricht gespeichert, soll die `ion-textarea` zurückgesetzt werden.
+18. Füge nun im HTML allen Orten mit Datum noch ein `*ngIf` hinzu, so dass das Datum nur angezeigt wird wenn `showDates`  wahr ist.
 
 ## Zusatzaufgaben
 
