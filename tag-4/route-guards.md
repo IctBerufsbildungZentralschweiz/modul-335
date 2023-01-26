@@ -222,9 +222,14 @@ import { map } from 'rxjs/operators';
 
 // Standardverhalten festlegen
 const authPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToLogin;
+// Standardverhalten festlegen
+const redirectUnauthorizedToLoginPipeGenerator: AuthPipeGenerator = () => redirectUnauthorizedToLogin;
 const redirectUnauthorizedToLogin: AuthPipe = map((user: User | null) => {
-    // if not logged in, redirect to `login`
-    // if logged in, allow redirect
+    return !!user ? true : ['login'];
+});
+
+const redirectAuthorizedToHomePipeGenerator: AuthPipeGenerator = () => redirectAuthorizedToHome;
+const redirectAuthorizedToHome: AuthPipe = map((user: User | null) => {
     return !!user ? true : ['login'];
 });
 
@@ -238,24 +243,24 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule),
     canActivate: [AuthGuard],
-    data: { authGuardPipe: authPipeGenerator },
+    data: { authGuardPipe: redirectUnauthorizedToLoginPipeGenerator },
   },
   {
     path: 'list',
     loadChildren: () => import('./list/list.module').then( m => m.ListPageModule),
     canActivate: [AuthGuard],
-    data: { authGuardPipe: authPipeGenerator },
+    data: { authGuardPipe: redirectUnauthorizedToLoginPipeGenerator },
   },
   { path: 'login', 
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule),
     canActivate: [AuthGuard],
-    data: { authGuardPipe: authPipeGenerator },
+    data: { authGuardPipe: redirectAuthorizedToHomePipeGenerator },
   },
   {
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule), 
     canActivate: [AuthGuard],
-    data: { authGuardPipe: authPipeGenerator },
+    data: { authGuardPipe: redirectAuthorizedToHomePipeGenerator },
   }
 ];
 
