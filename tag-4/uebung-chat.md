@@ -143,7 +143,6 @@ Wir werden nun einen kleinen Chat schreiben. Er soll am Ende dieser Übung in et
                             <div class="message-date">
                                 <!--  {{ /* TODO */.toDate() | date: 'dd.MM.yyyy HH:mm'}}-->
                             </div>
-                            <
                         </ion-label>
                     </ion-item>
                 </ng-template>
