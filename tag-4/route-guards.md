@@ -228,7 +228,7 @@ const redirectUnauthorizedToLogin: AuthPipe = map((user: User | null) => {
 
 const redirectAuthorizedToHomePipeGenerator: AuthPipeGenerator = () => redirectAuthorizedToHome;
 const redirectAuthorizedToHome: AuthPipe = map((user: User | null) => {
-    return !!user ? true : ['login'];
+    return !!user ? ['home'] : true;
 });
 
 const routes: Routes = [
